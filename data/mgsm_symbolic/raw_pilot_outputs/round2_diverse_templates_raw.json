@@ -1,0 +1,982 @@
+{
+  "summary": "Blind-generate reasoning on 4 diverse MGSM-Symbolic problem types across 5 languages, inspect for structural failure modes",
+  "agentCount": 10,
+  "logs": [],
+  "result": [
+    {
+      "language": "zh",
+      "generation": {
+        "language": "zh",
+        "solutions": [
+          {
+            "idx": 140,
+            "english_gloss": "Qasim collects garbage from 5 apartment complexes. The first 4 have 100 apartments each, so together they have 400 apartments. The 5th building is 30% bigger than these 4 combined: 400 × 1.3 = 520 apartments. This week, 5 apartments in each of the first 4 buildings are vacant and need no service, so occupied apartments in the first 4 buildings = (100 − 5) × 4 = 95 × 4 = 380. The 5th building has no vacancies, so it contributes all 520 apartments. Total apartments needing service = 380 + 520 = 900. He collects from each place twice a week, and charges $0.3 per apartment per collection. Revenue = 900 × 0.3 × 2 = $540. He also gets an extra 10% tip: 540 × 1.1 = $594.",
+            "native_reasoning": "Qasim从5个公寓大楼收垃圾。前4个大楼每个有100套公寓，合计4×100=400套。最后一间大楼比这400套大30％，所以最后一间大楼有400×1.3=520套公寓。本周前4个大楼中，每个大楼都有5套公寓空置不需要收垃圾，所以前4个大楼实际需要服务的公寓数=(100-5)×4=95×4=380套。最后一间大楼没有说空置，所以仍是520套。本周总共需要服务的公寓数=380+520=900套。Qasim每周从每个地方收垃圾2次，每次每套公寓收费0.3美元。所以收入=900×0.3×2=540美元。另外他还能获得额外10%的小费，所以总收入=540×1.1=594美元。",
+            "final_answer_given": "594美元"
+          },
+          {
+            "idx": 141,
+            "english_gloss": "Hiroshi collects garbage from 6 apartment complexes. The first 5 have 100 apartments each, totaling 500. The 6th building is 40% bigger than these 5 combined: 500 × 1.4 = 700 apartments. This week, every apartment in each of the first 5 buildings is vacant and needs no service, so those 5 buildings contribute 0 apartments needing service. Only the 6th building's 700 apartments need service. He collects twice a week, charging $0.25 per apartment per collection. Revenue = 700 × 0.25 × 2 = $350. Plus a 10% tip: 350 × 1.1 = $385.",
+            "native_reasoning": "广志从6个公寓大楼收垃圾。前5个大楼每个有100套公寓，合计5×100=500套。最后一间大楼比这500套大40％，所以最后一间大楼有500×1.4=700套公寓。本周前5个大楼中的每一套公寓都空置，完全不需要收垃圾服务，所以前5个大楼需要服务的公寓数为0。只有最后一间大楼的700套公寓需要服务。他每周从每个地方收垃圾2次，每次每套公寓收费0.25美元。所以收入=700×0.25×2=350美元。再加上额外10%的小费，总收入=350×1.1=385美元。",
+            "final_answer_given": "385美元"
+          },
+          {
+            "idx": 220,
+            "english_gloss": "Diego picks 67 pineapples on Wednesday and 176 on Thursday. On Friday, he picks five times as many as Wednesday: 67 × 5 = 335. On Saturday, he picks half of the total from the past three days (Wed+Thu+Fri): (67+176+335)/2 = 578/2 = 289. Total picked over the four days = 67+176+335+289 = 867 pineapples. On Sunday, he sells them in boxes of 17: 867 ÷ 17 = 51 boxes. Each box sells for $12, so total earnings = 51 × 12 = $612.",
+            "native_reasoning": "迭戈周三挑选了67个菠萝，周四挑选了176个。星期五他挑选的数量是星期三的五倍：67×5=335个。星期六他挑选的数量是过去三天（周三、周四、周五）总数的一半：(67+176+335)÷2=578÷2=289个。四天总共挑选的菠萝数=67+176+335+289=867个。周日他以每盒17个菠萝的方式出售，共可装867÷17=51盒。每盒售价12美元，所以总收入=51×12=612美元。",
+            "final_answer_given": "612美元"
+          },
+          {
+            "idx": 221,
+            "english_gloss": "Deshawn picks 142 pears on Saturday and 172 on Sunday. On Monday, he picks three times what he picked on Saturday: 142 × 3 = 426. On Tuesday, he picks half of the total from the past three days: (142+172+426)/2 = 740/2 = 370. Total over the four days = 142+172+426+370 = 1110 pears. On Wednesday, he sells them in boxes of 15: 1110 ÷ 15 = 74 boxes. Each box sells for $14, so earnings = 74 × 14 = $1036.",
+            "native_reasoning": "Deshawn周六挑选了142个梨，周日挑选了172个。周一他挑选的数量是周六的三倍：142×3=426个。周二他挑选的数量是过去三天（周六、周日、周一）总数的一半：(142+172+426)÷2=740÷2=370个。四天合计挑选的梨数=142+172+426+370=1110个。周三他以每盒15个梨的方式出售，共可装1110÷15=74盒。每盒售价14美元，总收入=74×14=1036美元。",
+            "final_answer_given": "1036美元"
+          },
+          {
+            "idx": 300,
+            "english_gloss": "Whale 1 is 32 feet long and has 16 remoras attached, each 12 inches (1 foot) long: total remora length = 16 × 12 = 192 inches = 16 feet. Then half of the remoras swim away, leaving 8, so remaining remora length = 8 × 12 = 96 inches = 8 feet. Coverage percentage for whale 1 = 8/32 = 25%. Whale 2 is 10 feet long with 6 remoras, each 8 inches long: total = 6 × 8 = 48 inches = 4 feet. Coverage for whale 2 = 4/10 = 40%. Average coverage across both whales = (25% + 40%)/2 = 32.5%.",
+            "native_reasoning": "第一条鲸鱼长32英尺，身上附着16只remora（吸附鱼），每只长12英寸（即1英尺）。最初总长度=16×12=192英寸=16英尺。后来一半的remora游走了，剩下8只，剩余总长度=8×12=96英寸=8英尺。第一条鲸鱼被覆盖的比例=8÷32=25%。第二条鲸鱼长10英尺，身上有6只remora，每只8英寸长，总长度=6×8=48英寸=4英尺。第二条鲸鱼被覆盖的比例=4÷10=40%。两条鲸鱼的平均覆盖比例=(25%+40%)÷2=32.5%。",
+            "final_answer_given": "32.5%"
+          },
+          {
+            "idx": 301,
+            "english_gloss": "Whale 1 is 30 feet long with 18 remoras, each 15 inches long: total = 18 × 15 = 270 inches = 22.5 feet. Then 1/3 of the remoras swim away (6 leave), leaving 12: remaining length = 12 × 15 = 180 inches = 15 feet. Coverage for whale 1 = 15/30 = 50%. Whale 2 is 10 feet long with 6 remoras, each 8 inches: total = 6 × 8 = 48 inches = 4 feet. Coverage for whale 2 = 4/10 = 40%. Average coverage = (50% + 40%)/2 = 45%.",
+            "native_reasoning": "第一条鲸鱼长30英尺，身上有18只remora，每只15英寸长，总长度=18×15=270英寸=22.5英尺。后来1/3的remora游走了，即离开6只，剩下12只，剩余总长度=12×15=180英寸=15英尺。第一条鲸鱼被覆盖的比例=15÷30=50%。第二条鲸鱼长10英尺，有6只remora，每只8英寸长，总长度=6×8=48英寸=4英尺，覆盖比例=4÷10=40%。两条鲸鱼平均覆盖比例=(50%+40%)÷2=45%。",
+            "final_answer_given": "45%"
+          },
+          {
+            "idx": 490,
+            "english_gloss": "Class of 100 students: 46% are football players = 46 students, leaving 54 non-football students. Of these, 50% are robotics club members or dancers = 27 students. These three groups need to leave early for the away game. Half of the football players are absent due to illness, so only 46/2 = 23 football players are present and leave early. Robotics/dancers = 27 all leave early. Plus 3 cheerleaders accompanying. Total leaving early = 23 + 27 + 3 = 53 students.",
+            "native_reasoning": "约翰逊女士班上共有100名学生，46%是足球运动员，即100×0.46=46人。剩下的学生数=100-46=54人。这剩下的54人中有50%是机器人俱乐部成员或舞者，即54×0.5=27人。这三组学生（足球运动员、机器人俱乐部成员、舞者）今天都需要提前离开去参加客场比赛。但一半的足球运动员因生病缺席，所以实际到场并需要提前离开的足球运动员=46÷2=23人。机器人俱乐部/舞者27人全部提前离开。另外还有3名啦啦队员陪同离开。所以提前离开的学生总数=23+27+3=53人。",
+            "final_answer_given": "53名学生"
+          },
+          {
+            "idx": 491,
+            "english_gloss": "Class of 150 students: 40% are football players = 60 students, leaving 90 non-football students. Of these, 30% are dancers or choir members = 27 students. Half of the football players are absent due to illness, so only 60/2 = 30 football players are present and leave early. Dancers/choir = 27 all leave early. Plus 3 cheerleaders. Total leaving early = 30 + 27 + 3 = 60 students.",
+            "native_reasoning": "约翰逊女士班上共有150名学生，40%是足球运动员，即150×0.4=60人。剩下的学生数=150-60=90人。这剩下的90人中有30%是舞者或合唱团成员，即90×0.3=27人。一半的足球运动员因生病缺席，所以实际到场并需要提前离开的足球运动员=60÷2=30人。舞者/合唱团27人全部提前离开。另外还有3名啦啦队员陪同。所以提前离开的学生总数=30+27+3=60人。",
+            "final_answer_given": "60名学生"
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 140,
+            "ground_truth_answer": "594",
+            "answer_given": "594美元",
+            "correct": true,
+            "brief_verdict": "Correct. 4 buildings×100=400; 5th building =400×1.3=520; partial vacancy correctly applied only to the first 4 buildings ((100-5)×4=380); total serviced=900; revenue=900×0.3×2=540; +10% tip=594. Matches ground truth exactly.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 141,
+            "ground_truth_answer": "638",
+            "answer_given": "385美元",
+            "correct": false,
+            "brief_verdict": "Incorrect (385 vs 638). This is the sibling of idx140, which used the same template but correctly applied a partial vacancy count (5 apartments per building) to only reduce, not zero out, the first group's contribution. Here the model instead treats the entire first-group buildings as fully vacant, wiping out a whole term that should have contributed positively.",
+            "compositional_collapse_evidence": "Quote: '本周前5个大楼中的每一套公寓都空置，完全不需要收垃圾服务，所以前5个大楼需要服务的公寓数为0' (every single apartment in each of the first 5 buildings is vacant, so 0 need service). This misapplies the vacancy adjustment's scope: rather than subtracting a specific partial count of vacant apartments per building (as the parallel problem idx140 does — '每个大楼都有5套公寓空置'), it applies '100% vacant' to the whole group, collapsing what should be a (100-K)×5 partial-subtraction structure into a flat 0. Back-solving the ground truth (638) implies the intended vacancy count was 8 per building, not 'all apartments' — consistent with this being a scope-misapplication rather than a simple arithmetic slip.",
+            "reasoning_drift_evidence": "none — the building-size computations (400→520 as +30%, 500→700 as +40% by the way of the underlying template) are correct; the error is a single scope-misapplication at the vacancy step, not a multi-step cascading drift.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 220,
+            "ground_truth_answer": "612",
+            "answer_given": "612美元",
+            "correct": true,
+            "brief_verdict": "Correct. Wed=67, Thu=176, Fri=67×5=335, Sat=(67+176+335)/2=289, total=867, 867/17=51 boxes, 51×12=612. Matches ground truth exactly; multi-day chain (Wed→Thu→Fri→Sat) is internally consistent throughout.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 221,
+            "ground_truth_answer": "1036",
+            "answer_given": "1036美元",
+            "correct": true,
+            "brief_verdict": "Correct. Sat=142, Sun=172, Mon=142×3=426, Tue=(142+172+426)/2=370, total=1110, 1110/15=74 boxes, 74×14=1036. Matches ground truth exactly; the day-by-day chain is consistent with no contradictions between steps.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 300,
+            "ground_truth_answer": "32",
+            "answer_given": "32.5%",
+            "correct": false,
+            "brief_verdict": "Answer given (32.5%) does not exactly equal ground truth (32). However, the method is fully validated by the near-identical sibling problem idx301, which uses the exact same 'average of two whales' coverage percentages' method and matches its ground truth (45) exactly. Whale1: 8/32=25%, Whale2: 4/10=40%, average=32.5% is arithmetically correct given the stated numbers; the mismatch with '32' most likely reflects a truncation/rounding convention in how the ground truth number was generated for this particular non-integer case, not a reasoning defect.",
+            "compositional_collapse_evidence": "none — both sub-computations (whale 1 post-departure coverage, whale 2 coverage) are correctly scoped and averaged, matching the validated method from idx301.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 301,
+            "ground_truth_answer": "45",
+            "answer_given": "45%",
+            "correct": true,
+            "brief_verdict": "Correct. Whale1: 18×15=270in=22.5ft, 1/3 leave→12 remain→12×15=180in=15ft, coverage=15/30=50%. Whale2: 6×8=48in=4ft, coverage=4/10=40%. Average=(50+40)/2=45%. Matches ground truth exactly.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 490,
+            "ground_truth_answer": "59",
+            "answer_given": "53名学生",
+            "correct": false,
+            "brief_verdict": "Incorrect (53 vs 59). All stated sub-steps (46% football, remaining 50% robotics/dance=27, half of football sick=23, +3 cheerleaders) are internally consistent, so the discrepancy isn't visible as a direct contradiction within this single chain. However, cross-checking against the twin problem idx491 (same template, different N/percentages) reveals both problems have an identical +6 shortfall vs ground truth despite different football counts, and both share the same computed 'robotics/dance' value of 27 and stated cheerleader count of 3 — implying a fixed constant (likely the cheerleader/support-staff count, probably 9 rather than 3) was understated or a second additive term was dropped/merged into it.",
+            "compositional_collapse_evidence": "Inferential, not a direct in-chain contradiction: quote '另外还有3名啦啦队员陪同离开' (an additional 3 cheerleaders join). Cross-problem comparison with idx491 shows (Robotics/Dance + Cheer) needs to equal 36 in both cases to hit ground truth (59-23=36; 66-30=36), but the reasoning computes only 27+3=30 in both — a consistent 6-unit gap suggesting a dropped or merged additive sub-term (e.g., an extra group of supporters) rather than a random arithmetic slip. Flagged as PLAUSIBLE, not confirmed, since the original problem text is not available to verify directly.",
+            "reasoning_drift_evidence": "none — no internal step contradicts an earlier one; the error (if any) is a single mis-stated/incomplete input constant, not accumulated drift.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 491,
+            "ground_truth_answer": "66",
+            "answer_given": "60名学生",
+            "correct": false,
+            "brief_verdict": "Incorrect (60 vs 66), mirroring the identical pattern seen in idx490 (same template). Football/remaining/percentage computations (40%→60, remaining 90, 30%→27, half football sick=30) are internally consistent, but the total falls short of ground truth by exactly 6, same as idx490, pointing to the same suspected understated constant (cheerleader/support count) rather than an isolated slip.",
+            "compositional_collapse_evidence": "Inferential, via cross-problem comparison with idx490 (see idx490's evidence): quote '另外还有3名啦啦队员' (an additional 3 cheerleaders); needed (Dance/Choir + Cheer)=36 to hit ground truth (66-30=36) but reasoning uses only 27+3=30, a repeat of the same 6-unit gap — suggestive of a dropped/merged additive sub-term shared across this template pair. Flagged as PLAUSIBLE given lack of access to the original source problem.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          }
+        ],
+        "language": "zh",
+        "overall_summary": "Of the 8 problems, 4 (idx140, 220, 221, 301) are unambiguously correct with clean, internally consistent multi-step chains and exact matches to ground truth. idx300 numerically mismatches ground truth (32.5% vs 32) but its method is validated by its twin problem (idx301) matching exactly, so this is best read as a ground-truth rounding/truncation artifact rather than a genuine reasoning failure — no failure-mode tag applies. The one case with strong, direct textual evidence of a genuine failure mode is idx141 (Compositional Collapse): comparing it to its structurally identical sibling idx140 (which correctly subtracts a specific partial vacancy count from only the affected buildings), idx141's reasoning instead declares every apartment in the first 5 buildings vacant ('每一套公寓都空置'), collapsing what should be a (100−K)×5 partial-subtraction into a flat zero — this is a scope-misapplication of the vacancy adjustment, not a simple arithmetic slip, since the surrounding computations (building-size scaling, revenue formula, tip) are all executed correctly on this now-wrong input. idx490 and idx491 also produce wrong final answers, both falling short of ground truth by exactly the same amount (6), despite differing football counts — this pattern (visible only by comparing the paired problems, not from any single chain in isolation) suggests a dropped or understated additive constant (likely cheerleader/support count), a form of compositional collapse, but I flag it as merely plausible since neither individual chain shows an internal contradiction and the source problem text isn't available to confirm. No instances of Reasoning Drift (early-correct steps later contradicted within a single chain), Format Instability (truncated/garbled output or missing final answers), or genuine Language Interference (unexpected code-switching) were found in this batch — all outputs were complete, well-structured, and stayed in Chinese throughout, with foreign proper nouns simply transliterated or left in Latin script, which is normal practice and not a code-switch of reasoning content. The key distinction from simple 'wrong final number' slips: idx141's error is a structural misreading of which quantity a partial adjustment applies to (a hallmark of compositional collapse), and the idx490/491 pattern is a systematically repeated (not random) shortfall across a matched template pair, pointing to a consistently mis-specified/dropped component rather than an isolated computational mistake."
+      }
+    },
+    {
+      "language": "th",
+      "generation": {
+        "language": "th",
+        "solutions": [
+          {
+            "idx": 140,
+            "native_reasoning": "อพาร์ทเมนต์คอมเพล็กซ์ 4 แห่งแรกมี 100 อพาร์ทเมนต์ต่อแห่ง รวมเป็น 4×100 = 400 อพาร์ทเมนต์ คอมเพล็กซ์ที่ 5 ใหญ่กว่า 4 แห่งแรกรวมกันอีก 30% นั่นคือ 400×1.30 = 520 อพาร์ทเมนต์ รวมอพาร์ทเมนต์ทั้งหมด 400+520 = 920 อพาร์ทเมนต์ สัปดาห์นี้มี 5 อพาร์ทเมนต์จาก 4 คอมเพล็กซ์แรกว่างเปล่าไม่ต้องเก็บขยะ จึงเหลืออพาร์ทเมนต์ที่ต้องให้บริการ 920-5 = 915 อพาร์ทเมนต์ Qasim เก็บขยะ 2 ครั้งต่อสัปดาห์ต่ออพาร์ทเมนต์ และได้ค่าจ้าง ₣0.3 ต่อครั้งต่ออพาร์ทเมนต์ ดังนั้นรายได้พื้นฐาน = 915×2×0.3 = 549 จากนั้นบวกทิปเพิ่มอีก 10% ทำให้รายได้รวม = 549×1.10 = 603.9 ดังนั้น Qasim ทำเงินได้ ₣603.9 ในหนึ่งสัปดาห์",
+            "english_gloss": "The first 4 complexes have 100 apartments each, totaling 4×100=400. The 5th complex is 30% bigger than the other 4 combined: 400×1.30=520. Total apartments = 400+520=920. This week 5 apartments from the first 4 complexes are empty, leaving 920-5=915 apartments needing service. Qasim collects twice a week per apartment at ₣0.3 per collection per apartment: base pay = 915×2×0.3=549. Adding a 10% tip: 549×1.10=603.9. So Qasim earns ₣603.9 in a week.",
+            "final_answer_given": "₣603.9"
+          },
+          {
+            "idx": 141,
+            "native_reasoning": "คอมเพล็กซ์ 5 แห่งแรกมี 100 อพาร์ทเมนต์ต่อแห่ง รวม 5×100=500 อพาร์ทเมนต์ คอมเพล็กซ์ที่ 6 ใหญ่กว่า 5 แห่งแรกรวมกันอีก 40% คือ 500×1.40=700 อพาร์ทเมนต์ รวมทั้งหมด 500+700=1200 อพาร์ทเมนต์ สัปดาห์นี้มี 8 อพาร์ทเมนต์จาก 5 คอมเพล็กซ์แรกว่างเปล่า จึงเหลืออพาร์ทเมนต์ที่ต้องให้บริการ 1200-8=1192 อพาร์ทเมนต์ ฮิโรชิเก็บขยะ 2 ครั้งต่อสัปดาห์ต่ออพาร์ทเมนต์ ได้ค่าจ้าง ₣0.25 ต่อครั้ง ดังนั้นรายได้พื้นฐาน = 1192×2×0.25=596 บวกทิป 10% = 596×1.10=655.6 ดังนั้นฮิโรชิทำเงินได้ ₣655.6 ในหนึ่งสัปดาห์",
+            "english_gloss": "The first 5 complexes have 100 apartments each, totaling 500. The 6th complex is 40% bigger than the other 5 combined: 500×1.40=700. Total = 500+700=1200 apartments. This week 8 apartments from the first 5 complexes are empty, leaving 1200-8=1192 needing service. Hiroshi collects twice a week per apartment at ₣0.25 per collection: base = 1192×2×0.25=596. Adding 10% tip: 596×1.10=655.6. So Hiroshi earns ₣655.6 in a week.",
+            "final_answer_given": "₣655.6"
+          },
+          {
+            "idx": 220,
+            "native_reasoning": "วันพุธ Diego เก็บสับปะรดได้ 67 ลูก วันพฤหัสบดีเก็บได้ 176 ลูก วันศุกร์เก็บได้เท่ากับจำนวนที่เก็บวันพุธคือ 67 ลูก รวมสามวันแรก = 67+176+67 = 310 ลูก วันเสาร์เก็บได้ครึ่งหนึ่งของยอดรวมสามวันนั้น = 310/2 = 155 ลูก รวมทั้งหมดที่เก็บได้ (พุธ-เสาร์) = 67+176+67+155 = 465 ลูก วันอาทิตย์นำสับปะรดไปบรรจุกล่อง กล่องละ 17 ลูก จะบรรจุได้เต็ม 465÷17 = 27 กล่อง (เหลือ 6 ลูกไม่พอบรรจุอีกกล่อง) ขายกล่องละ 12 ดอลลาร์ ดังนั้น Diego จะได้เงิน 27×12 = 324 ดอลลาร์",
+            "english_gloss": "On Wednesday Diego picked 67 pineapples, Thursday 176. On Friday he picked the same amount as Wednesday, 67. Sum of the first 3 days = 67+176+67=310. On Saturday he picked half of that sum = 155. Total over the 4 days = 67+176+67+155=465. On Sunday he packs them into boxes of 17: 465÷17=27 full boxes (6 pineapples left over). Selling each box for $12: 27×12=$324.",
+            "final_answer_given": "$324"
+          },
+          {
+            "idx": 221,
+            "native_reasoning": "วันเสาร์ Deshawn เก็บลูกแพร์ได้ 142 ลูก วันอาทิตย์เก็บได้ 172 ลูก วันจันทร์เก็บได้ 3 เท่าของวันเสาร์ = 3×142 = 426 ลูก รวมสามวันแรก = 142+172+426 = 740 ลูก วันอังคารเก็บได้ครึ่งหนึ่งของยอดรวมสามวันนั้น = 740/2 = 370 ลูก รวมทั้งหมด (เสาร์-อังคาร) = 142+172+426+370 = 1110 ลูก วันพุธนำไปบรรจุกล่อง กล่องละ 15 ลูก ได้ 1110÷15 = 74 กล่องพอดี ขายกล่องละ 14 ดอลลาร์ ดังนั้น Deshawn จะได้เงิน 74×14 = 1036 ดอลลาร์",
+            "english_gloss": "On Saturday Deshawn picked 142 pears, Sunday 172. On Monday he picked 3 times Saturday's amount = 3×142=426. Sum of first 3 days = 142+172+426=740. On Tuesday he picked half of that = 370. Total over 4 days = 142+172+426+370=1110. On Wednesday he packs into boxes of 15: 1110÷15=74 boxes exactly. Selling each box for $14: 74×14=$1036.",
+            "final_answer_given": "$1036"
+          },
+          {
+            "idx": 300,
+            "native_reasoning": "ปลาวาฬตัวแรกยาว 32 ฟุต มี remoras 16 ตัว ตัวละ 12 นิ้ว (=1 ฟุต) จากนั้นครึ่งหนึ่งของ remoras ว่ายจากไป เหลือ remoras 8 ตัว ความยาวรวมของ remoras ที่เหลือ = 8×1 = 8 ฟุต คิดเป็นเปอร์เซ็นต์ที่ปกคลุมตัววาฬ = 8/32 = 25% ปลาวาฬตัวที่สองยาว 10+6 = 16 ฟุต มี remoras 6 ตัว ตัวละ 8 นิ้ว (=2/3 ฟุต) ความยาวรวม remoras = 6×(2/3) = 4 ฟุต คิดเป็นเปอร์เซ็นต์ = 4/16 = 25% ค่าเฉลี่ยของทั้งสองตัว = (25%+25%)/2 = 25%",
+            "english_gloss": "The first whale is 32 ft with 16 remoras of 12 inches (=1 ft) each; after half swim away, 8 remoras remain, totaling 8 ft, which is 8/32=25% of the whale's body. The second whale is 10+6=16 ft with 6 remoras of 8 inches (=2/3 ft) each, totaling 4 ft, which is 4/16=25% of its body. Average of the two = (25%+25%)/2=25%.",
+            "final_answer_given": "25%"
+          },
+          {
+            "idx": 301,
+            "native_reasoning": "ปลาวาฬตัวแรกยาว 30 ฟุต มี remoras 18 ตัว ตัวละ 15 นิ้ว (=1.25 ฟุต) จากนั้น 1/3 ของ remoras ว่ายจากไป เหลือ remoras 18×(2/3) = 12 ตัว ความยาวรวม remoras ที่เหลือ = 12×1.25 = 15 ฟุต เปอร์เซ็นต์ที่ปกคลุม = 15/30 = 50% ปลาวาฬตัวที่สองยาว 10+6 = 16 ฟุต มี remoras 6 ตัว ตัวละ 8 นิ้ว (=2/3 ฟุต) ความยาวรวม = 6×(2/3) = 4 ฟุต เปอร์เซ็นต์ = 4/16 = 25% ค่าเฉลี่ยของทั้งสองตัว = (50%+25%)/2 = 37.5%",
+            "english_gloss": "The first whale is 30 ft with 18 remoras of 15 inches (=1.25 ft) each; after 1/3 swim away, 12 remoras remain, totaling 15 ft, which is 15/30=50% of its body. The second whale is 10+6=16 ft with 6 remoras of 8 inches (=2/3 ft) each, totaling 4 ft, which is 4/16=25% of its body. Average = (50%+25%)/2=37.5%.",
+            "final_answer_given": "37.5%"
+          },
+          {
+            "idx": 490,
+            "native_reasoning": "ชั้นเรียนมีนักเรียนทั้งหมด 100 คน นักฟุตบอลคิดเป็น 46% = 46 คน นักเรียนที่เหลือ = 100-46 = 54 คน ในจำนวนนี้ 50% เป็นสมาชิกสโมสรหุ่นยนต์หรือนักเต้น = 0.5×54 = 27 คน ทั้งสามกลุ่ม (นักฟุตบอล, สมาชิกหุ่นยนต์, นักเต้น) ต้องออกเดินทางไปแข่งขันวันนี้ แต่ครึ่งหนึ่งของนักฟุตบอลป่วยไม่มา จึงมีนักฟุตบอลที่ไปจริง = 46/2 = 23 คน รวมกับกลุ่มหุ่นยนต์/นักเต้น 27 คน = 23+27 = 50 คน นอกจากนี้มีเชียร์ลีดเดอร์ 3 คนไปพร้อมกับแต่ละกลุ่มใน 3 กลุ่มนี้ รวมเชียร์ลีดเดอร์ = 3×3 = 9 คน ดังนั้นจำนวนคนทั้งหมดที่ออกเดินทางก่อนการแข่งขัน = 50+9 = 59 คน",
+            "english_gloss": "The class has 100 students. Football players = 46% = 46. Remaining = 100-46=54. Of these, 50% are robotics club members or dancers = 27. These 3 groups (football, robotics, dance) must leave today, but half of the football players are absent sick, so only 46/2=23 football players actually go. Adding the robotics/dance group of 27 gives 23+27=50 students. Also 3 cheerleaders accompany each of these 3 groups, adding 3×3=9 cheerleaders. Total leaving before the competition = 50+9=59.",
+            "final_answer_given": "59"
+          },
+          {
+            "idx": 491,
+            "native_reasoning": "ชั้นเรียนของ Ms. Johnson มีนักเรียนทั้งหมด 150 คน นักฟุตบอล 40% = 60 คน นักเรียนที่เหลือ = 150-60 = 90 คน 30% ของ 90 คนเป็นนักเต้นหรือสมาชิกคณะนักร้องประสานเสียง = 0.3×90 = 27 คน ทั้งสามกลุ่มต้องออกเดินทางวันนี้ แต่ครึ่งหนึ่งของนักฟุตบอลป่วยไม่มา เหลือนักฟุตบอลที่ไปจริง = 60/2 = 30 คน รวมกับกลุ่มนักเต้น/นักร้อง 27 คน = 30+27 = 57 คน บวกเชียร์ลีดเดอร์ 3 คนต่อกลุ่ม × 3 กลุ่ม = 9 คน รวมทั้งหมดที่ออกเดินทาง = 57+9 = 66 คน",
+            "english_gloss": "Ms. Johnson's class has 150 students. Football players = 40% = 60. Remaining = 150-60=90. 30% of 90 are dancers or choir members = 27. All 3 groups must leave today, but half the football players are absent sick, leaving 60/2=30 football players who actually go. Adding the dance/choir group of 27 gives 30+27=57. Plus 3 cheerleaders per group × 3 groups = 9 cheerleaders. Total leaving = 57+9=66.",
+            "final_answer_given": "66"
+          }
+        ]
+      },
+      "inspection": {
+        "input": {
+          "language": "th",
+          "overall_summary": "Of the 8 problems, 3 were correct (221, 490, 491) and 5 were incorrect (140, 141, 220, 300, 301). The dominant failure mode in this batch is Compositional Collapse, specifically the 'dropping a required multiplier' and 'merging distinct sub-computations' subtypes — NOT random arithmetic slips. In 140/141, the model correctly built the total-apartments computation but then subtracted a per-complex vacancy count as if it were a flat, whole-portfolio count (5 vacant apartments treated as 5 total instead of 5×4 complexes = 20; same pattern with 8×5=40 in 141) — reverse-engineering the exact ground-truth values confirms this precisely (594 and 638 respectively require the ×N-complexes multiplication that the model skipped). In 220, comparing against its structurally identical sibling problem 221 (which correctly applied 'Monday = 3× Saturday') shows 220 dropped an analogous multiplier, instead asserting 'Friday = same amount as Wednesday' (equivalent to an implicit 1× instead of the required ~5×) — reverse-engineering confirms a 5× multiplier reproduces the ground truth exactly. In 300/301, the model wrote 'the second whale is 10+6=16 ft,' apparently merging the whale's given length (10 ft) with the unrelated remora count (6) into a single sum; substituting the correct 10 ft (not 16 ft) as the second whale's length reproduces the ground-truth averages almost exactly (32.5→32 and 45.0 exactly). None of the 8 solutions showed Format Instability (all had complete, well-structured chains ending in explicit final answers) or Language Interference (Thai was used consistently throughout, with only proper names in Latin script, which is normal and not code-switching). Reasoning Drift (early-correct-steps-later-diverge within one continuous chain) was not clearly evidenced anywhere — the errors found were single-point compositional misapplications (an isolated failure to multiply/misassigned merge) rather than a cascade of accumulating errors across a long day-by-day or entity-by-entity sequence; even in 300/301 the whale-1 sub-chain was fully correct throughout, and the error was isolated to a single mis-composed input to whale-2's separate sub-chain, not a drift propagating from whale-1's correct steps. This distinguishes these failures from generic 'wrong final number' slips: in every incorrect case, all intermediate arithmetic operations were individually correct given their stated operands — the defect was in incorrectly defining/merging which quantities should feed into an operation (skipping a per-unit multiplier, or summing two conceptually unrelated quantities), which is a structural/compositional error rather than a calculation error.",
+          "findings": [
+            {
+              "idx": 140,
+              "correct": false,
+              "ground_truth_answer": "594",
+              "answer_given": "₣603.9",
+              "brief_verdict": "Wrong: the model treated the stated vacancy count as a flat total (5) instead of a per-complex count needing multiplication by the 4 complexes (5×4=20); reverse-engineering shows using 20 empty apartments reproduces the ground truth (594) exactly, while using 5 reproduces the model's own wrong answer (603.9).",
+              "compositional_collapse_evidence": "\"สัปดาห์นี้มี 5 อพาร์ทเมนต์จาก 4 คอมเพล็กซ์แรกว่างเปล่าไม่ต้องเก็บขยะ จึงเหลืออพาร์ทเมนต์ที่ต้องให้บริการ 920-5 = 915 อพาร์ทเมนต์\" — subtracts a flat 5 instead of multiplying the per-complex vacancy by the 4 complexes it applies across (5×4=20), a dropped multiplier that produces 915 instead of the required 900 served apartments.",
+              "reasoning_drift_evidence": "none — the error is a single misapplied quantity at one step, not a cascading divergence from earlier correct steps.",
+              "format_instability_evidence": "none — full, coherent chain ending in an explicit final answer.",
+              "language_interference_evidence": "none — Thai used throughout; only the currency symbol ₣ and numerals appear, which is not code-switching."
+            },
+            {
+              "idx": 141,
+              "correct": false,
+              "ground_truth_answer": "638",
+              "answer_given": "₣655.6",
+              "brief_verdict": "Wrong, same pattern as 140: '8 apartments empty' should be per-complex (8×5=40) but was subtracted as a flat 8; using 40 reproduces ground truth 638 exactly.",
+              "compositional_collapse_evidence": "\"สัปดาห์นี้มี 8 อพาร์ทเมนต์จาก 5 คอมเพล็กซ์แรกว่างเปล่า จึงเหลืออพาร์ทเมนต์ที่ต้องให้บริการ 1200-8=1192 อพาร์ทเมนต์\" — again subtracts a flat 8 instead of the per-complex count times the 5 complexes (8×5=40), leaving 1192 served apartments instead of the required 1160.",
+              "reasoning_drift_evidence": "none — isolated single-step misapplication, not a multi-step cascade.",
+              "format_instability_evidence": "none.",
+              "language_interference_evidence": "none."
+            },
+            {
+              "idx": 220,
+              "correct": false,
+              "ground_truth_answer": "612",
+              "answer_given": "$324",
+              "brief_verdict": "Wrong: the model set Friday's harvest equal to Wednesday's (67, i.e. an implicit 1× relationship) instead of applying a required multiplier; comparison with the structurally identical sibling problem 221 (which correctly computed 'Monday = 3× Saturday') and reverse-engineering (a 5× multiplier on Wednesday reproduces the ground truth 612 exactly) both indicate a dropped/misapplied multiplier.",
+              "compositional_collapse_evidence": "\"วันศุกร์เก็บได้เท่ากับจำนวนที่เก็บวันพุธคือ 67 ลูก\" contrasted with sibling problem 221's correctly-applied analogous step \"วันจันทร์เก็บได้ 3 เท่าของวันเสาร์ = 3×142 = 426 ลูก\" — the parallel template step in 220 required a multiple-of relationship that was instead flattened to a bare equality, dropping the required multiplier.",
+              "reasoning_drift_evidence": "none — the misstep occurs at a single specific point (the Friday relationship), not as an accumulation across the day-by-day sequence; the surrounding day-by-day arithmetic (sum, half, boxing, pricing) is all correctly executed given the (wrong) inputs.",
+              "format_instability_evidence": "none — clean, complete chain with an explicit final dollar figure.",
+              "language_interference_evidence": "none."
+            },
+            {
+              "idx": 221,
+              "correct": true,
+              "ground_truth_answer": "1036",
+              "answer_given": "$1036",
+              "brief_verdict": "Correct: all steps (142, 172, 3×142=426, sum=740, half=370, total=1110, 1110/15=74 boxes exactly, 74×14=1036) are internally consistent and match the ground truth exactly.",
+              "compositional_collapse_evidence": "none — the multiplier relationship (Monday = 3× Saturday) and the box-packing/pricing steps are all correctly composed.",
+              "reasoning_drift_evidence": "none — each day's figure correctly feeds into the next without divergence.",
+              "format_instability_evidence": "none.",
+              "language_interference_evidence": "none."
+            },
+            {
+              "idx": 300,
+              "correct": false,
+              "ground_truth_answer": "32",
+              "answer_given": "25%",
+              "brief_verdict": "Wrong: the second whale's length is computed as \"10+6=16 ft,\" apparently merging the whale's actual length (10 ft) with the unrelated remora count (6) into one sum; substituting the correct 10 ft length yields whale-2 percentage 40% and an average of 32.5% (≈32), matching ground truth almost exactly, versus the model's inflated 16 ft giving a diluted 25% and a wrong average of 25%.",
+              "compositional_collapse_evidence": "\"ปลาวาฬตัวที่สองยาว 10+6 = 16 ฟุต มี remoras 6 ตัว ตัวละ 8 นิ้ว\" — the '+6' added to the whale's length is suspiciously identical to the '6 remoras' stated immediately after, indicating the remora count (an unrelated quantity) was merged into the length computation, inflating the denominator used for the percentage and collapsing two distinct sub-quantities (body length vs. remora count) into one.",
+              "reasoning_drift_evidence": "none — whale 1's sub-chain (32 ft, 16 remoras, half leave, 8/32=25%) is fully self-consistent and correct in isolation; the defect is an isolated merge error introduced fresh in whale 2's first step, not a drift propagating from whale 1's correct earlier work.",
+              "format_instability_evidence": "none — complete structured reasoning ending in an explicit percentage answer.",
+              "language_interference_evidence": "none."
+            },
+            {
+              "idx": 301,
+              "correct": false,
+              "ground_truth_answer": "45",
+              "answer_given": "37.5%",
+              "brief_verdict": "Wrong, same defect as 300: the identical '10+6=16 ft' merge for the second whale understates its coverage percentage (25% instead of the correct 40%); substituting 10 ft reproduces the ground truth average of 45% exactly.",
+              "compositional_collapse_evidence": "\"ปลาวาฬตัวที่สองยาว 10+6 = 16 ฟุต มี remoras 6 ตัว ตัวละ 8 นิ้ว\" — identical merge of the whale's length with its remora count as in problem 300, again inflating the whale-2 denominator and yielding a wrong final average.",
+              "reasoning_drift_evidence": "none — whale 1's sub-chain (30 ft, 18 remoras, 1/3 leave, 15/30=50%) is internally correct; the error is isolated to whale 2's first step rather than a cascade from whale 1.",
+              "format_instability_evidence": "none.",
+              "language_interference_evidence": "none."
+            },
+            {
+              "idx": 490,
+              "correct": true,
+              "ground_truth_answer": "59",
+              "answer_given": "59",
+              "brief_verdict": "Correct: 100 students, 46 football, 54 remaining, 27 robotics/dance, half of football (23) attend, 23+27=50, plus 9 cheerleaders (3×3 groups) = 59, matching ground truth.",
+              "compositional_collapse_evidence": "none — all group/percentage assignments (which subgroup gets which fraction, which groups get halved, which get the cheerleader multiplier) are correctly composed.",
+              "reasoning_drift_evidence": "none.",
+              "format_instability_evidence": "none.",
+              "language_interference_evidence": "none."
+            },
+            {
+              "idx": 491,
+              "correct": true,
+              "ground_truth_answer": "66",
+              "answer_given": "66",
+              "brief_verdict": "Correct: 150 students, 60 football, 90 remaining, 27 dance/choir, half of football (30) attend, 30+27=57, plus 9 cheerleaders = 66, matching ground truth.",
+              "compositional_collapse_evidence": "none — mirrors the correct structure of 490 with different numbers, all correctly composed.",
+              "reasoning_drift_evidence": "none.",
+              "format_instability_evidence": "none.",
+              "language_interference_evidence": "none."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "language": "ja",
+      "generation": {
+        "language": "ja",
+        "solutions": [
+          {
+            "idx": 140,
+            "native_reasoning": "最初の4つのアパート複合施設はそれぞれ100戸なので、合計400戸です。最後の複合施設は他の4つの合計より30%大きいので、400×1.3=520戸です。今週は最初の4つの複合施設それぞれで5戸が空室だったので、空室の合計は4×5=20戸です。したがって、実際にゴミ収集が必要な戸数は(400-20)+520=380+520=900戸です。Qasimは各場所を週に2回収集するので、延べ収集回数は900×2=1800回です。1回の収集につき0.3ドル支払われるので、1800×0.3=540ドルです。さらに10%のチップが加わるので、540×1.1=594ドルになります。",
+            "english_gloss": "The first four apartment complexes have 100 units each, totaling 400 units. The last complex is 30% larger than the combined total of the other four, so 400×1.3=520 units. This week, 5 units in each of the first four complexes were vacant, totaling 4×5=20 vacant units. So the number of units actually needing collection is (400-20)+520=380+520=900 units. Qasim collects from each location twice a week, so total collections = 900×2=1800. At $0.3 per unit per collection, that's 1800×0.3=$540. Adding a 10% tip: 540×1.1=$594.",
+            "final_answer_given": "594ドル"
+          },
+          {
+            "idx": 141,
+            "native_reasoning": "最初の5つの複合施設はそれぞれ100戸なので合計500戸です。最後の複合施設は他の5つの合計より40%大きいので、500×1.4=700戸です。今週は最初の5つの複合施設それぞれで8戸が空室だったので、空室合計は5×8=40戸です。したがって実際に収集が必要な戸数は(500-40)+700=460+700=1160戸です。ヒロシは各場所を週に2回収集するので、延べ収集回数は1160×2=2320回です。1回の収集につき0.25ドルなので、2320×0.25=580ドルです。さらに10%のチップを加えると、580×1.1=638ドルになります。",
+            "english_gloss": "The first five complexes have 100 units each, totaling 500 units. The last complex is 40% larger than the combined total of the other five, so 500×1.4=700 units. This week, 8 units in each of the first five complexes were vacant, totaling 5×8=40 vacant units. So units actually needing collection = (500-40)+700=460+700=1160. Hiroshi collects from each location twice a week, so total collections = 1160×2=2320. At $0.25 per unit per collection, that's 2320×0.25=$580. Adding a 10% tip: 580×1.1=$638.",
+            "final_answer_given": "638ドル"
+          },
+          {
+            "idx": 220,
+            "native_reasoning": "水曜日は67個。木曜日は176個。金曜日は水曜日の5倍(クインタプル)なので67×5=335個。土曜日は過去3日間(水木金)の合計の半分なので、(67+176+335)/2=578/2=289個。4日間の合計は67+176+335+289=867個。日曜日は17個入りの箱で売るので、867÷17=51箱。1箱12ドルなので、51×12=612ドルです。",
+            "english_gloss": "Wednesday: 67 pineapples. Thursday: 176. Friday: 5×67=335 (quintuple of Wednesday). Saturday: half of the sum of the previous 3 days = (67+176+335)/2=578/2=289. Total over 4 days = 67+176+335+289=867. Sunday he sells in boxes of 17, so 867÷17=51 boxes. At $12 per box, 51×12=$612.",
+            "final_answer_given": "612ドル"
+          },
+          {
+            "idx": 221,
+            "native_reasoning": "土曜日は142個。日曜日は172個。月曜日は土曜日の3倍で142×3=426個。火曜日は過去3日間(土日月)の合計の半分なので、(142+172+426)/2=740/2=370個。4日間の合計は142+172+426+370=1110個。水曜日は15個入りの箱で売るので、1110÷15=74箱。1箱14ドルなので、74×14=1036ドルです。",
+            "english_gloss": "Saturday: 142 pears. Sunday: 172. Monday: 3×142=426. Tuesday: half of the sum of the previous 3 days = (142+172+426)/2=740/2=370. Total over 4 days = 142+172+426+370=1110. Wednesday he sells in boxes of 15, so 1110÷15=74 boxes. At $14 per box, 74×14=$1036.",
+            "final_answer_given": "1036ドル"
+          },
+          {
+            "idx": 300,
+            "native_reasoning": "最初のクジラは体長32フィートで、16匹のレモラ(それぞれ12インチ)が付いていました。その後半分が泳ぎ去ったので、残ったレモラは8匹です。残ったレモラの長さの合計は8×12=96インチ=8フィートです。よってこのクジラの体長に対する割合は8÷32=25%です。次に見たクジラは体長10フィートで、6匹のレモラ(それぞれ8インチ)が付いていました。合計は6×8=48インチ=4フィートです。割合は4÷10=40%です。2頭の平均は(25%+40%)/2=32.5%です。",
+            "english_gloss": "The first whale is 32 feet long with 16 remoras (each 12 inches). After half swim away, 8 remoras remain. Their total length = 8×12=96 inches = 8 feet. So the coverage ratio for this whale = 8÷32=25%. The second whale is 10 feet long with 6 remoras (each 8 inches), total = 6×8=48 inches = 4 feet, ratio = 4÷10=40%. Average of the two = (25%+40%)/2=32.5%.",
+            "final_answer_given": "32.5%"
+          },
+          {
+            "idx": 301,
+            "native_reasoning": "最初のクジラは体長30フィートで、18匹のレモラ(それぞれ15インチ)が付いていました。その後、レモラの1/3が泳ぎ去ったので、残ったのは18×(2/3)=12匹です。残ったレモラの長さの合計は12×15=180インチ=15フィートです。このクジラの体長に対する割合は15÷30=50%です。次に見たクジラは体長10フィートで、6匹のレモラ(それぞれ8インチ)が付いていました。合計は6×8=48インチ=4フィートです。割合は4÷10=40%です。2頭の平均は(50%+40%)/2=45%です。",
+            "english_gloss": "The first whale is 30 feet long with 18 remoras (each 15 inches). After 1/3 swim away, 18×(2/3)=12 remain. Their total length = 12×15=180 inches = 15 feet. Ratio for this whale = 15÷30=50%. The second whale is 10 feet long with 6 remoras (each 8 inches), total = 6×8=48 inches = 4 feet, ratio = 4÷10=40%. Average of the two = (50%+40%)/2=45%.",
+            "final_answer_given": "45%"
+          },
+          {
+            "idx": 490,
+            "native_reasoning": "クラス全体は100人で、46%がサッカー選手なので46人です。残り100-46=54人のうち50%がロボットクラブまたはダンサーなので54×0.5=27人です。サッカー選手のうち病気になっていないのは半分なので46÷2=23人が実際に大会へ向かうことになります。サッカー選手・ロボットクラブ・ダンサーという3つのグループにはそれぞれ3人ずつチアリーダーが同行するので、3×3=9人のチアリーダーが加わります。したがって早退して大会に向かう学生の合計は23+27+9=59人です。",
+            "english_gloss": "The class has 100 students, 46% are soccer players = 46. Of the remaining 100-46=54 students, 50% are robotics club members or dancers = 27. Of the soccer players, only half are not sick, so 46÷2=23 actually go to the competition. Each of the three groups (soccer, robotics, dancers) is joined by 3 cheerleaders, so 3×3=9 cheerleaders. Total students leaving early = 23+27+9=59.",
+            "final_answer_given": "59人"
+          },
+          {
+            "idx": 491,
+            "native_reasoning": "クラス全体は150人で、40%がサッカー選手なので150×0.4=60人です。残り150-60=90人のうち30%がダンサーまたは合唱団のメンバーなので90×0.3=27人です。サッカー選手のうち病気になっていないのは半分なので60÷2=30人が実際に大会へ向かいます。サッカー選手・ダンサー・合唱団という3つのグループにはそれぞれ3人ずつチアリーダーが同行するので3×3=9人が加わります。したがって早退して大会に向かう学生の合計は30+27+9=66人です。",
+            "english_gloss": "The class has 150 students, 40% are soccer players = 60. Of the remaining 150-60=90 students, 30% are dancers or choir members = 27. Of the soccer players, only half are not sick, so 60÷2=30 actually go. Each of the three groups (soccer, dancers, choir) is joined by 3 cheerleaders, so 3×3=9 cheerleaders. Total students leaving early = 30+27+9=66.",
+            "final_answer_given": "66人"
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 140,
+            "correct": true,
+            "ground_truth_answer": "594",
+            "answer_given": "594ドル",
+            "brief_verdict": "Correct; all multipliers (30% larger last complex, vacancy subtraction, x2 weekly, $0.3 rate, 10% tip) applied in proper order.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 141,
+            "correct": true,
+            "ground_truth_answer": "638",
+            "answer_given": "638ドル",
+            "brief_verdict": "Correct; mirrors idx140 structure with different constants (40% larger complex, $0.25 rate), math checks out to 638.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 220,
+            "correct": true,
+            "ground_truth_answer": "612",
+            "answer_given": "612ドル",
+            "brief_verdict": "Correct; day-by-day chain (Wed→Thu→5xWed→half of prior 3 days) correctly carries forward each day's value into the next without drift.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none (early daily values 67, 176, 335 correctly feed into the Saturday half-of-sum step: (67+176+335)/2=289, and all four days correctly summed before the box division)",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 221,
+            "correct": true,
+            "ground_truth_answer": "1036",
+            "answer_given": "1036ドル",
+            "brief_verdict": "Correct; same 4-day cascading structure as idx220 (Sat/Sun/Mon/Tue) computed consistently, final box division and price multiplication correct.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none (142, 172, 426 correctly summed and halved for Tuesday: (142+172+426)/2=370, then all four days summed before dividing into boxes)",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 300,
+            "correct": false,
+            "ground_truth_answer": "32",
+            "answer_given": "32.5%",
+            "brief_verdict": "Numeric mismatch (32.5 vs 32), but the method used (average of each whale's remaining-remora-length/body-length ratio) is the same method that exactly reproduces ground truth in the structurally identical sibling problem idx301 (45%=(50+40)/2). No dropped step or corrupted structure is evidenced in the text; the discrepancy looks like a ground-truth rounding artifact for this particular symbolic instantiation rather than a genuine compositional collapse/drift/format/language failure.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 301,
+            "correct": true,
+            "ground_truth_answer": "45",
+            "answer_given": "45%",
+            "brief_verdict": "Correct; 1/3-departure fraction correctly applied (18×2/3=12 remaining), both whale ratios computed correctly and averaged to exactly 45%.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 490,
+            "correct": true,
+            "ground_truth_answer": "59",
+            "answer_given": "59人",
+            "brief_verdict": "Correct; each sub-population (soccer 46%, remaining-group 50%, sick-adjustment halving, 3x3 cheerleaders) correctly scoped to its intended base and summed to 59.",
+            "compositional_collapse_evidence": "none — the percentage bases are kept distinct (46% of whole class vs 50% of the remaining 54), which is the correct compositional structure, not a collapse",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 491,
+            "correct": true,
+            "ground_truth_answer": "66",
+            "answer_given": "66人",
+            "brief_verdict": "Correct; identical structure to idx490 with different constants (40%/30%/150 students), sums correctly to 66.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          }
+        ],
+        "language": "ja",
+        "overall_summary": "Of the 8 Japanese solutions, 7 are fully correct and mathematically faithful reproductions of the required multi-part structure (percentage-of-a-subgroup composition in the school/cheerleader problems; day-to-day cascading dependencies in the fruit-sales problems; sequential multiplier chains in the apartment/tip problems). None of the four target failure modes — compositional collapse, reasoning drift, format instability, language interference — appear anywhere in this batch with genuine textual evidence: percentage bases are kept scoped to the correct subgroup rather than merged, day-N values are correctly reused in day-N+1 calculations without cascading divergence, every solution reaches a clearly formatted final answer, and all reasoning stays in Japanese throughout. The single incorrect item (idx300, 32.5% vs ground truth 32) is a plain numeric answer mismatch rather than an instance of any of the four defined failure modes: the model applied the exact same \"average of each whale's ratio\" method that reproduces the ground truth exactly in the parallel problem (idx301), so there's no evidence of a dropped step, misapplied percentage base, cascading error, structural breakdown, or code-switch — it reads as a benchmark/ground-truth rounding artifact for that particular symbolic instantiation rather than a genuine model reasoning defect. This differs from a \"simple wrong-number arithmetic slip\" in that the arithmetic itself is internally consistent and matches the validated template method; nothing in the chain of reasoning is actually wrong."
+      }
+    },
+    {
+      "language": "es",
+      "generation": {
+        "language": "es",
+        "solutions": [
+          {
+            "idx": 140,
+            "english_gloss": "The first 4 complexes have 100 apartments each = 400 apartments. The last complex is 30% bigger than the other 4 combined: 400 x 1.3 = 520 apartments. This week, 5 apartments in each of the first 4 complexes were vacant, so occupied apartments in those 4 = (100-5) x 4 = 95 x 4 = 380. Total apartments serviced = 380 + 520 = 900. He collects garbage twice a week from each place, so total collections = 900 x 2 = 1800. At ₣0.3 per collection per apartment: 1800 x 0.3 = ₣540. Plus 10% extra in tips: 540 x 1.10 = ₣594.",
+            "final_answer_given": "₣594",
+            "native_reasoning": "Los primeros 4 complejos tienen 100 apartamentos cada uno, es decir 4 x 100 = 400 apartamentos.\nEl último complejo es un 30% más grande que esos 4 combinados: 400 x 1.30 = 520 apartamentos.\nEsta semana, en cada uno de los primeros 4 complejos había 5 apartamentos vacíos, así que los apartamentos ocupados en esos 4 son (100 - 5) x 4 = 95 x 4 = 380.\nEl total de apartamentos que sí requieren servicio esta semana es 380 + 520 = 900.\nQasim recolecta basura 2 veces por semana en cada lugar, entonces el número total de recolecciones es 900 x 2 = 1800.\nSe le paga ₣0.3 por cada recolección por apartamento, entonces gana 1800 x 0.3 = ₣540.\nAdemás gana un 10% extra en propinas: 540 x 1.10 = ₣594.\nPor lo tanto, Qasim gana ₣594 en la semana."
+          },
+          {
+            "idx": 141,
+            "english_gloss": "The first 5 complexes have 100 apartments each = 500 apartments. The last complex is 40% bigger than the other 5 combined: 500 x 1.4 = 700 apartments. This week, 8 apartments in each of the first 5 complexes were vacant, so occupied apartments there = (100-8) x 5 = 92 x 5 = 460. Total apartments serviced = 460 + 700 = 1160. He collects garbage twice a week from each place, so total collections = 1160 x 2 = 2320. At ₣0.25 per collection per apartment: 2320 x 0.25 = ₣580. Plus 10% extra in tips: 580 x 1.10 = ₣638.",
+            "final_answer_given": "₣638",
+            "native_reasoning": "Los primeros 5 complejos tienen 100 apartamentos cada uno, es decir 5 x 100 = 500 apartamentos.\nEl último complejo es un 40% más grande que esos 5 combinados: 500 x 1.40 = 700 apartamentos.\nEsta semana, en cada uno de los primeros 5 complejos había 8 apartamentos vacíos, así que los apartamentos ocupados ahí son (100 - 8) x 5 = 92 x 5 = 460.\nEl total de apartamentos que requieren servicio esta semana es 460 + 700 = 1160.\nHiroshi recolecta basura 2 veces por semana en cada lugar, entonces el número total de recolecciones es 1160 x 2 = 2320.\nSe le paga ₣0.25 por cada recolección por apartamento, entonces gana 2320 x 0.25 = ₣580.\nAdemás gana un 10% extra en propinas: 580 x 1.10 = ₣638.\nPor lo tanto, Hiroshi gana ₣638 en la semana."
+          },
+          {
+            "idx": 220,
+            "english_gloss": "Wednesday: 67 pineapples. Thursday: 176 pineapples. Friday: quintuple Wednesday's amount = 5 x 67 = 335. Saturday: half of the sum of the last 3 days = (67+176+335)/2 = 578/2 = 289. Total pineapples over the 4 days = 67+176+335+289 = 867. On Sunday he sells them in boxes of 17: 867 / 17 = 51 boxes. Selling each box for $12: 51 x 12 = $612.",
+            "final_answer_given": "$612",
+            "native_reasoning": "El miércoles Diego elige 67 piñas.\nEl jueves elige 176 piñas.\nEl viernes elige el quíntuple de lo del miércoles: 5 x 67 = 335 piñas.\nEl sábado elige la mitad de lo recolectado en los últimos 3 días combinados: (67 + 176 + 335) / 2 = 578 / 2 = 289 piñas.\nEl total de piñas recolectadas en esos 4 días es 67 + 176 + 335 + 289 = 867 piñas.\nEl domingo las vende en cajas de 17 piñas cada una: 867 / 17 = 51 cajas.\nVende cada caja a $12, entonces gana 51 x 12 = $612.\nPor lo tanto, Diego va a hacer $612."
+          },
+          {
+            "idx": 221,
+            "english_gloss": "Saturday: 142 pears. Sunday: 172 pears. Monday: triple Saturday's amount = 3 x 142 = 426. Tuesday: half of the sum of the last 3 days = (142+172+426)/2 = 740/2 = 370. Total pears over the 4 days = 142+172+426+370 = 1110. On Wednesday he sells them in boxes of 15: 1110 / 15 = 74 boxes. Selling each box for $14: 74 x 14 = $1036.",
+            "final_answer_given": "$1036",
+            "native_reasoning": "El sábado Deshawn elige 142 peras.\nEl domingo elige 172 peras.\nEl lunes elige el triple de lo del sábado: 3 x 142 = 426 peras.\nEl martes elige la mitad de lo recolectado en los últimos 3 días combinados: (142 + 172 + 426) / 2 = 740 / 2 = 370 peras.\nEl total de peras recolectadas en esos 4 días es 142 + 172 + 426 + 370 = 1110 peras.\nEl miércoles las vende en cajas de 15 peras cada una: 1110 / 15 = 74 cajas.\nVende cada caja a $14, entonces gana 74 x 14 = $1036.\nPor lo tanto, Deshawn va a ganar $1036."
+          },
+          {
+            "idx": 300,
+            "english_gloss": "Whale 1: 32 feet = 32 x 12 = 384 inches. It has 16 remoras of 12 inches each, but half of them swam away, leaving 8 remoras attached, totaling 8 x 12 = 96 inches. Percentage covered = 96/384 = 25%.\nWhale 2: 10 feet = 10 x 12 = 120 inches, with 6 remoras of 8 inches each = 48 inches total. Percentage covered = 48/120 = 40%.\nAverage percentage = (25% + 40%) / 2 = 32.5%.",
+            "final_answer_given": "32.5%",
+            "native_reasoning": "Primero convierto la longitud de la primera ballena a pulgadas: 32 pies x 12 = 384 pulgadas.\nEsta ballena tenía 16 remoras de 12 pulgadas cada una, pero luego 1/2 de las remoras nadó (se fue), así que quedan 16 x 1/2 = 8 remoras adheridas.\nLongitud total de remoras adheridas = 8 x 12 = 96 pulgadas.\nPorcentaje cubierto en la primera ballena = 96 / 384 = 0.25 = 25%.\n\nAhora la segunda ballena: 10 pies x 12 = 120 pulgadas.\nTiene 6 remoras de 8 pulgadas cada una: 6 x 8 = 48 pulgadas.\nPorcentaje cubierto en la segunda ballena = 48 / 120 = 0.40 = 40%.\n\nEl promedio de los dos porcentajes es (25% + 40%) / 2 = 65% / 2 = 32.5%.\nPor lo tanto, en promedio, el 32.5% de la longitud del cuerpo de cada ballena está cubierto por remoras."
+          },
+          {
+            "idx": 301,
+            "english_gloss": "Whale 1: 30 feet = 30 x 12 = 360 inches. It has 18 remoras of 15 inches each, but 1/3 swam away, leaving 12 remoras attached, totaling 12 x 15 = 180 inches. Percentage covered = 180/360 = 50%.\nWhale 2: 10 feet = 10 x 12 = 120 inches, with 6 remoras of 8 inches each = 48 inches total. Percentage covered = 48/120 = 40%.\nAverage percentage = (50% + 40%) / 2 = 45%.",
+            "final_answer_given": "45%",
+            "native_reasoning": "Convierto la longitud de la primera ballena a pulgadas: 30 pies x 12 = 360 pulgadas.\nTenía 18 remoras de 15 pulgadas cada una, pero 1/3 de las remoras nadaron (se fueron), así que quedan 18 x (2/3) = 12 remoras adheridas.\nLongitud total de remoras adheridas = 12 x 15 = 180 pulgadas.\nPorcentaje cubierto en la primera ballena = 180 / 360 = 0.50 = 50%.\n\nSegunda ballena: 10 pies x 12 = 120 pulgadas.\nTiene 6 remoras de 8 pulgadas cada una: 6 x 8 = 48 pulgadas.\nPorcentaje cubierto en la segunda ballena = 48 / 120 = 0.40 = 40%.\n\nEl promedio de los dos porcentajes es (50% + 40%) / 2 = 90% / 2 = 45%.\nPor lo tanto, en promedio, el 45% de la longitud del cuerpo de cada ballena está cubierto por remoras."
+          },
+          {
+            "idx": 490,
+            "english_gloss": "46% of 100 students are football players: 46 students. The remaining class = 100 - 46 = 54 students. 50% of those are robotics club members or dancers: 54 x 0.5 = 27 students. Half of the football players are absent due to illness: 46/2 = 23 absent, so only 23 football players are present and will actually leave early. The 3 groups leaving early = 23 (football players present) + 27 (robotics/dance) = 50 students. Additionally, 3 cheerleaders accompany each of the 3 groups: 3 x 3 = 9 cheerleaders. Total students leaving early = 50 + 9 = 59.",
+            "final_answer_given": "59",
+            "native_reasoning": "La clase tiene 100 estudiantes. El 46% son jugadores de fútbol: 100 x 0.46 = 46 jugadores.\nEl resto de la clase es 100 - 46 = 54 estudiantes.\nDe esos 54, el 50% son miembros del club de robótica o parte de los bailarines: 54 x 0.5 = 27 estudiantes.\nAhora bien, la mitad de los jugadores de fútbol están ausentes por estar enfermos: 46 / 2 = 23 ausentes, lo que significa que solo quedan 23 jugadores de fútbol presentes que sí se van a la competencia.\nLos 3 grupos que se van temprano son: jugadores de fútbol presentes (23) + miembros de robótica/bailarines (27) = 23 + 27 = 50 estudiantes.\nAdemás, 3 animadoras acompañan a cada uno de estos 3 grupos: 3 x 3 = 9 animadoras.\nEl total de estudiantes (incluyendo animadoras) que se van temprano es 50 + 9 = 59.\nPor lo tanto, 59 estudiantes se van temprano a la competencia."
+          },
+          {
+            "idx": 491,
+            "english_gloss": "40% of 150 students are football players: 60 students. The remaining class = 150 - 60 = 90 students. 30% of those are dancers or choir members: 90 x 0.3 = 27 students. Half of the football players are absent due to illness: 60/2 = 30 absent, so only 30 football players are present and will actually leave early. The 3 groups leaving early = 30 (football players present) + 27 (dance/choir) = 57 students. Additionally, 3 cheerleaders accompany each of the 3 groups: 3 x 3 = 9 cheerleaders. Total students leaving early = 57 + 9 = 66.",
+            "final_answer_given": "66",
+            "native_reasoning": "La clase tiene 150 estudiantes. El 40% son jugadores de fútbol: 150 x 0.40 = 60 jugadores.\nEl resto de la clase es 150 - 60 = 90 estudiantes.\nDe esos 90, el 30% son bailarines o miembros del coro: 90 x 0.3 = 27 estudiantes.\nLa mitad de los jugadores de fútbol están ausentes por estar enfermos: 60 / 2 = 30 ausentes, entonces solo quedan 30 jugadores de fútbol presentes que sí se van a la competencia.\nLos 3 grupos que se van temprano son: jugadores de fútbol presentes (30) + bailarines/coro (27) = 30 + 27 = 57 estudiantes.\nAdemás, 3 animadoras acompañan a cada uno de estos 3 grupos: 3 x 3 = 9 animadoras.\nEl total de estudiantes (incluyendo animadoras) que se van temprano es 57 + 9 = 66.\nPor lo tanto, 66 estudiantes se van temprano a la competencia."
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 140,
+            "answer_given": "₣594",
+            "ground_truth_answer": "594",
+            "correct": true,
+            "brief_verdict": "Correct. All sub-computations (base apartments, 30% larger complex, vacancy adjustment, twice-weekly collection, per-apartment rate, 10% tip) are composed in the right order and match ground truth exactly.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none - each step's output (400 -> 520; 95x4=380; 380+520=900; 900x2=1800; 1800x0.3=540; 540x1.10=594) feeds correctly into the next.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none - reasoning is entirely in Spanish throughout."
+          },
+          {
+            "idx": 141,
+            "answer_given": "₣638",
+            "ground_truth_answer": "638",
+            "correct": true,
+            "brief_verdict": "Correct. Same multi-part structure as idx140 (base complexes, 40% larger complex, vacancy discount, doubled collection frequency, rate, 10% tip) applied correctly with matching final value.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none - 500->700; 92x5=460; 460+700=1160; x2=2320; x0.25=580; x1.10=638, all consistent chain.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 220,
+            "answer_given": "$612",
+            "ground_truth_answer": "612",
+            "correct": true,
+            "brief_verdict": "Correct. Day-by-day sequence (Wed/Thu given, Fri=quintuple Wed, Sat=half of prior 3 days' sum) is composed correctly, and the final box-division and price multiplication are accurate (867/17=51 exactly, 51x12=612).",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none - Friday correctly uses Wednesday's 67 (not Thursday's), and Saturday correctly sums Wed+Thu+Fri (67+176+335=578) rather than misapplying an unrelated quantity; each day's correct value is carried forward faithfully.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 221,
+            "answer_given": "$1036",
+            "ground_truth_answer": "1036",
+            "correct": true,
+            "brief_verdict": "Correct. Same day-sequence structure as idx220 (Monday=triple Saturday, Tuesday=half of prior 3-day sum) computed correctly through to boxes and revenue.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none - Monday correctly triples Saturday's 142 (not Sunday's 172), and Tuesday correctly sums the prior 3 days (142+172+426=740); no cross-day value substitution occurs.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 300,
+            "answer_given": "32.5%",
+            "ground_truth_answer": "32",
+            "correct": false,
+            "brief_verdict": "Mathematically the model's chain is internally consistent and arithmetically exact (whale1: 96/384=25%; whale2: 48/120=40%; average=(25+40)/2=32.5%). The ground truth's '32' appears to result from a floor/integer-division convention in the reference key ((25+40)//2=32) rather than a genuine compositional, drift, format, or language failure in the model's reasoning - there is no evidence of a dropped sub-computation, cascading error, structural breakdown, or code-switching. This is a rounding-convention mismatch, not one of the four defined failure modes.",
+            "compositional_collapse_evidence": "none - both whales' unit conversions, remaining-remora counts, and per-whale percentages are kept distinct and correctly averaged at the end.",
+            "reasoning_drift_evidence": "none - each step's value is used correctly in the next (384 used for whale1's percentage, 120 for whale2's, not mixed).",
+            "format_instability_evidence": "none - clear final answer '32.5%' stated.",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 301,
+            "answer_given": "45%",
+            "ground_truth_answer": "45",
+            "correct": true,
+            "brief_verdict": "Correct. Same structure as idx300 but the average (50+40)/2=45 happens to be an integer, so no rounding-convention discrepancy arises; all sub-parts (unit conversion, 1/3 attrition, two whale percentages, average) are correctly composed.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 490,
+            "answer_given": "59",
+            "ground_truth_answer": "59",
+            "correct": true,
+            "brief_verdict": "Correct. Model correctly keeps the football-player subgroup (46, then halved for illness-absence to 23) distinct from the 'remaining class' subgroup (54, then 50% to 27), and correctly adds the 3x3 cheerleader adjustment at the end without conflating the different fractions/groups.",
+            "compositional_collapse_evidence": "none - the 46% and 50% fractions are correctly applied to their respective distinct base groups (total class vs. non-football remainder), and the illness-halving is applied only to the football subgroup, not the whole leaving-early total.",
+            "reasoning_drift_evidence": "none - 46 (football count) is reused correctly in the illness-halving step later, not altered or dropped.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 491,
+            "answer_given": "66",
+            "ground_truth_answer": "66",
+            "correct": true,
+            "brief_verdict": "Correct. Same multi-group structure as idx490 (football 40% -> halved for illness; remainder 30% dance/choir; +3x3 cheerleaders) applied correctly with matching final value.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          }
+        ],
+        "language": "es",
+        "overall_summary": "Of the 8 Spanish-language solutions, 7 exactly matched ground truth (140, 141, 220, 221, 301, 490, 491) with fully sound, well-composed multi-step reasoning. None of the four target failure modes (compositional collapse, reasoning drift, format instability, language interference) appeared anywhere in this batch - there was no code-switching, no truncated/garbled output, no dropped multiplier/percentage, and no case where an early correct intermediate value was later contradicted or misapplied to the wrong sub-group. Multi-day chains (idx 220/221, picking fruit Wed-Sat with 'quintuple/triple of day X' and 'half of the last 3 days' rules) correctly referenced the specific prior days rather than drifting to adjacent/wrong values. Multi-group percentage problems (idx 490/491) correctly kept the football-player illness-halving separate from the unrelated 'remainder of class' percentage group, avoiding a plausible compositional-collapse trap. The one mismatch (idx 300: model gave 32.5%, ground truth is 32) is not evidence of any of the four failure modes - the model's arithmetic chain is fully correct and internally consistent (25% and 40% average exactly to 32.5%); the discrepancy looks like the reference key applying integer/floor division to the final average ((25+40)//2=32) rather than exact averaging, which is a ground-truth rounding-convention artifact rather than a model reasoning defect. This case is worth flagging to the requester as distinct from a genuine 'wrong final number' arithmetic slip, since the model's underlying reasoning and math were sound."
+      }
+    },
+    {
+      "language": "de",
+      "generation": {
+        "language": "de",
+        "solutions": [
+          {
+            "idx": 140,
+            "native_reasoning": "Die ersten 4 Komplexe haben je 100 Wohnungen, also insgesamt 4 × 100 = 400 Wohnungen. Der fünfte Komplex ist 30% größer als diese 400 Wohnungen zusammen, also 400 × 1,3 = 520 Wohnungen. Insgesamt gibt es also 400 + 520 = 920 Wohnungen. Diese Woche sind in jedem der ersten 4 Komplexe 5 Wohnungen leer, also insgesamt 4 × 5 = 20 Wohnungen, die keinen Service benötigen. Es müssen also nur 920 − 20 = 900 Wohnungen bedient werden. Qasim sammelt 2 Mal pro Woche Müll und bekommt ₣0,3 pro Wohnung pro Sammlung. Pro Sammlung verdient er also 900 × 0,3 = ₣270. Für die 2 Sammlungen in der Woche verdient er 270 × 2 = ₣540. Zusätzlich bekommt er 10% Trinkgeld: 540 × 1,1 = ₣594.",
+            "english_gloss": "The first 4 complexes have 100 apartments each, so 4 × 100 = 400 apartments total. The fifth complex is 30% bigger than these 400 combined, so 400 × 1.3 = 520 apartments. Total apartments = 400 + 520 = 920. This week, 5 apartments in each of the first 4 complexes are vacant, so 4 × 5 = 20 apartments need no service. So only 920 − 20 = 900 apartments need to be serviced. Qasim collects trash twice a week and earns ₣0.3 per apartment per collection. Per collection he earns 900 × 0.3 = ₣270. For 2 collections per week he earns 270 × 2 = ₣540. Plus 10% tips: 540 × 1.1 = ₣594.",
+            "final_answer_given": "594"
+          },
+          {
+            "idx": 141,
+            "native_reasoning": "Die ersten 5 Komplexe haben je 100 Wohnungen, also 5 × 100 = 500 Wohnungen. Der sechste Komplex ist 40% größer als diese 500 zusammen, also 500 × 1,4 = 700 Wohnungen. Insgesamt: 500 + 700 = 1200 Wohnungen. Diese Woche sind in jedem der ersten 5 Komplexe 8 Wohnungen leer, also 5 × 8 = 40 Wohnungen ohne Service-Bedarf. Zu bedienen sind also 1200 − 40 = 1160 Wohnungen. Bei ₣0,25 pro Wohnung pro Sammlung verdient er pro Sammlung 1160 × 0,25 = ₣290. Bei 2 Sammlungen pro Woche: 290 × 2 = ₣580. Mit 10% Trinkgeld: 580 × 1,1 = ₣638.",
+            "english_gloss": "The first 5 complexes have 100 apartments each, so 5 × 100 = 500 apartments. The sixth complex is 40% bigger than these 500 combined, so 500 × 1.4 = 700 apartments. Total: 500 + 700 = 1200 apartments. This week, 8 apartments in each of the first 5 complexes are vacant, so 5 × 8 = 40 apartments need no service. So 1200 − 40 = 1160 apartments need servicing. At ₣0.25 per apartment per collection, per collection he earns 1160 × 0.25 = ₣290. For 2 collections per week: 290 × 2 = ₣580. With 10% tips: 580 × 1.1 = ₣638.",
+            "final_answer_given": "638"
+          },
+          {
+            "idx": 220,
+            "native_reasoning": "Am Mittwoch pflückt Diego 67 Ananas, am Donnerstag 176 Ananas. Am Freitag pflückt er genauso viele wie am Mittwoch, also 67 Ananas. Am Samstag pflückt er die Hälfte der Summe der letzten 3 Tage (Mittwoch+Donnerstag+Freitag = 67+176+67=310), also 310/2=155 Ananas. Insgesamt hat er 67+176+67+155=465 Ananas. Am Sonntag verkauft er sie in Kisten zu je 17 Ananas: 465/17=27 volle Kisten (mit einem Rest von 6 Ananas, die nicht in eine volle Kiste passen und daher nicht verkauft werden). Bei 12 Dollar pro Kiste verdient er 27×12=324 Dollar.",
+            "english_gloss": "On Wednesday Diego picks 67 pineapples, on Thursday 176 pineapples. On Friday he picks the same amount as Wednesday, i.e. 67 pineapples. On Saturday he picks half the sum of the last 3 days (Wed+Thu+Fri = 67+176+67=310), so 310/2=155 pineapples. Total: 67+176+67+155=465 pineapples. On Sunday he sells them in boxes of 17: 465/17=27 full boxes (with a remainder of 6 pineapples that don't fill a box and aren't sold). At $12 per box he earns 27×12=$324.",
+            "final_answer_given": "324"
+          },
+          {
+            "idx": 221,
+            "native_reasoning": "Am Samstag pflückt Deshawn 142 Birnen, am Sonntag 172 Birnen. Am Montag pflückt er wieder 142 Birnen (wie am Samstag). Am Dienstag pflückt er die Hälfte der Summe der letzten 3 Tage (142+172+142=456), also 456/2=228 Birnen. Insgesamt: 142+172+142+228=684 Birnen. In Kisten zu je 15 Birnen: 684/15=45 volle Kisten (Rest 9 Birnen, nicht verkauft). Bei 14 Dollar pro Kiste: 45×14=630 Dollar.",
+            "english_gloss": "On Saturday Deshawn picks 142 pears, on Sunday 172 pears. On Monday he again picks 142 pears (same as Saturday). On Tuesday he picks half the sum of the last 3 days (142+172+142=456), so 456/2=228 pears. Total: 142+172+142+228=684 pears. In boxes of 15 pears: 684/15=45 full boxes (remainder of 9 pears, unsold). At $14 per box: 45×14=$630.",
+            "final_answer_given": "630"
+          },
+          {
+            "idx": 300,
+            "native_reasoning": "Der erste Wal ist 32 Fuß lang, das sind 32×12=384 Zoll. Ursprünglich waren 16 Remoras à 12 Zoll befestigt, aber die Hälfte (8) schwimmt weg, sodass 8 Remoras bleiben. Das ergibt 8×12=96 Zoll bedeckte Länge. Prozentsatz: 96/384=0,25=25%. Der zweite Wal ist 10 Fuß lang, das sind 10×12=120 Zoll, mit 6 Remoras à 8 Zoll, also 6×8=48 Zoll bedeckt. Prozentsatz: 48/120=0,4=40%. Der Durchschnitt der beiden Prozentsätze ist (25+40)/2=32,5%.",
+            "english_gloss": "The first whale is 32 feet long, i.e. 32×12=384 inches. Originally 16 remoras of 12 inches were attached, but half (8) swim away, leaving 8 remoras. That gives 8×12=96 inches of covered length. Percentage: 96/384=0.25=25%. The second whale is 10 feet long, i.e. 120 inches, with 6 remoras of 8 inches, so 6×8=48 inches covered. Percentage: 48/120=0.4=40%. The average of the two percentages is (25+40)/2=32.5%.",
+            "final_answer_given": "32.5%"
+          },
+          {
+            "idx": 301,
+            "native_reasoning": "Der erste Wal ist 30 Fuß lang, das sind 30×12=360 Zoll. Ursprünglich 18 Remoras à 15 Zoll, ein Drittel (6) schwimmt weg, sodass 12 Remoras bleiben. Das ergibt 12×15=180 Zoll bedeckte Länge. Prozentsatz: 180/360=0,5=50%. Der zweite Wal ist 10 Fuß=120 Zoll lang, mit 6 Remoras à 8 Zoll, also 48 Zoll bedeckt. Prozentsatz: 48/120=0,4=40%. Durchschnitt: (50+40)/2=45%.",
+            "english_gloss": "The first whale is 30 feet long, i.e. 30×12=360 inches. Originally 18 remoras of 15 inches, a third (6) swim away, leaving 12 remoras. That gives 12×15=180 inches covered. Percentage: 180/360=0.5=50%. The second whale is 10 feet=120 inches long, with 6 remoras of 8 inches, so 48 inches covered. Percentage: 48/120=0.4=40%. Average: (50+40)/2=45%.",
+            "final_answer_given": "45%"
+          },
+          {
+            "idx": 490,
+            "native_reasoning": "46% von 100 Schülern sind Fußballspieler: 0,46×100=46 Schüler. Verbleibend: 100-46=54 Schüler. Davon sind 50% Robotics-Club-Mitglieder oder Tänzer: 0,5×54=27 Schüler. Es gibt also drei Gruppen, die früh abreisen müssen: Fußballspieler, Robotics-Club-Mitglieder und Tänzer. Die Hälfte der Fußballspieler ist krank und fehlt, also sind nur 46/2=23 Fußballspieler anwesend und reisen früh ab. Die 27 Robotics-/Tanz-Schüler reisen ebenfalls alle früh ab. Außerdem begleiten 3 Cheerleader jede dieser drei Gruppen, also 3×3=9 zusätzliche Cheerleader. Insgesamt verlassen 23+27+9=59 Schüler den Wettbewerb früh.",
+            "english_gloss": "46% of 100 students are soccer players: 0.46×100=46 students. Remaining: 100-46=54 students. Of these, 50% are robotics club members or dancers: 0.5×54=27 students. So there are three groups that must leave early: soccer players, robotics club members, and dancers. Half the soccer players are sick and absent, so only 46/2=23 soccer players are present and leave early. The 27 robotics/dance students all leave early too. Also, 3 cheerleaders accompany each of these three groups, so 3×3=9 additional cheerleaders. In total, 23+27+9=59 students leave the competition early.",
+            "final_answer_given": "59"
+          },
+          {
+            "idx": 491,
+            "native_reasoning": "40% von 150 Schülern sind Fußballspieler: 0,4×150=60 Schüler. Verbleibend: 150-60=90 Schüler. Davon sind 30% Tänzer oder Chormitglieder: 0,3×90=27 Schüler. Es gibt also drei Gruppen: Fußballspieler, Tänzer, Chormitglieder. Die Hälfte der Fußballspieler ist krank: 60/2=30 anwesende Fußballspieler, die früh abreisen. Die 27 Tänzer/Chor-Schüler reisen alle ab. Zusätzlich begleiten 3 Cheerleader jede der drei Gruppen: 3×3=9. Insgesamt verlassen 30+27+9=66 Schüler früh den Wettbewerb.",
+            "english_gloss": "40% of 150 students are soccer players: 0.4×150=60 students. Remaining: 150-60=90 students. Of these, 30% are dancers or choir members: 0.3×90=27 students. So there are three groups: soccer players, dancers, choir members. Half the soccer players are sick: 60/2=30 present soccer players who leave early. The 27 dance/choir students all leave. Additionally, 3 cheerleaders accompany each of the three groups: 3×3=9. In total, 30+27+9=66 students leave the competition early.",
+            "final_answer_given": "66"
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 140,
+            "ground_truth_answer": "594",
+            "answer_given": "594",
+            "correct": true,
+            "brief_verdict": "Correct. All sub-computations (base total, 30% larger fifth complex, subtracting only the vacancies in the first 4 complexes, twice-weekly collection, 10% tip) are applied to the right bases and chained correctly to reach 594.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 141,
+            "ground_truth_answer": "638",
+            "answer_given": "638",
+            "correct": true,
+            "brief_verdict": "Correct. Same multi-part structure as idx140 (base total, 40% larger complex, vacancy deduction restricted to first 5 complexes, per-collection rate, weekly doubling, 10% tip) is preserved correctly.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 220,
+            "ground_truth_answer": "612",
+            "answer_given": "324",
+            "correct": false,
+            "brief_verdict": "Incorrect. The four-day totals feed correctly into the box/price arithmetic shown (465/17=27 r6, 27x12=324 is internally consistent), but the overall total is too low to reach 612. Reverse-engineering shows that if Friday's harvest were 5x Wednesday's (335) instead of equal to it, the day total becomes exactly 867, which divides evenly by 17 (=51 boxes, 51x12=612) matching ground truth exactly with zero remainder -- strong evidence the model collapsed a 'N times as many as Wednesday' relationship into flat equality.",
+            "compositional_collapse_evidence": "\"Am Freitag pflückt er genauso viele wie am Mittwoch, also 67 Ananas.\" -- this bare equality claim (no multiplier applied) is the likely site of a dropped multiplicative factor; every later step (Saturday's half-of-last-3-days, the running total, the box division, the revenue) is then executed consistently but on top of this too-small Friday value, exactly reproducing the gap between 324 and the true 612.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 221,
+            "ground_truth_answer": "1036",
+            "answer_given": "630",
+            "correct": false,
+            "brief_verdict": "Incorrect, and structurally the same failure as idx220 (its paired variant): Monday's pear count is asserted equal to Saturday's (142) rather than a multiple of it. Reverse-engineering shows Monday=3x Saturday (426) makes the 4-day total exactly 1110, which divides 15 with zero remainder (74 boxes x $14 = 1036), matching ground truth exactly.",
+            "compositional_collapse_evidence": "\"Am Montag pflückt er wieder 142 Birnen (wie am Samstag).\" -- flat equality substituted for what appears to be a required multiplier (tripling); the subsequent 'half of last 3 days' (Tuesday), summation, box division (684/15=45 r9), and revenue (45x14=630) are all internally consistent given this understated Monday value, so the error is a single collapsed structural relationship, not scattered arithmetic slips.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 300,
+            "ground_truth_answer": "32",
+            "answer_given": "32.5%",
+            "correct": false,
+            "brief_verdict": "Mismatches the ground truth string (32.5 vs 32), but every sub-step is correctly structured: half of 16 remoras remaining (8x12=96/384=25%) for whale one, and 6x8=48/120=40% for whale two, then a plain average of the two percentages (the same method idx301 uses and matches ground truth exactly on). This looks like a decimal-truncation artifact in the answer key (32.5 truncated to 32) rather than a genuine reasoning defect, so no structural failure mode is tagged despite the numeric mismatch.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 301,
+            "ground_truth_answer": "45",
+            "answer_given": "45%",
+            "correct": true,
+            "brief_verdict": "Correct. Fraction (a third) applied to the right base (18 remoras) for whale one, independent percentage for whale two, then averaged -- matches ground truth exactly.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 490,
+            "ground_truth_answer": "59",
+            "answer_given": "59",
+            "correct": true,
+            "brief_verdict": "Correct. Percentage of soccer players and percentage of robotics/dance students among the remainder are each applied to the correct base population, the 'half of soccer players are sick' adjustment is correctly restricted to only the soccer-player group (not to robotics/dance), and the 3-cheerleaders-per-group addition is applied to all three groups, summing to 59.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 491,
+            "ground_truth_answer": "66",
+            "answer_given": "66",
+            "correct": true,
+            "brief_verdict": "Correct. Same structure as idx490 (percentage of soccer players, percentage of dance/choir among the remainder, sickness discount applied only to soccer players, cheerleader addition per group) reproduces 66 exactly.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          }
+        ],
+        "language": "de",
+        "overall_summary": "6 of 8 are correct (140, 141, 301, 490, 491 match ground truth exactly; 300 is arithmetically sound but its 32.5% likely got truncated to \"32\" in the answer key). The batch's one genuine, well-evidenced failure mode is Compositional Collapse, found in both fruit-picking problems (220 and 221): in each, the \"third day's\" harvest is asserted flatly equal to an earlier day's (\"genauso viele wie am Mittwoch\" / \"wieder ... wie am Samstag\") where the underlying template almost certainly required a multiplier (reverse-engineering shows 5x and 3x respectively reproduce the ground-truth totals with an exact, zero-remainder box division -- strong evidence the multiplier was simply dropped rather than a random miscalculation). Critically, this differs from a plain arithmetic slip: every downstream step (the \"half of the last 3 days\" computation, the running total, the box division, and the final revenue) is internally consistent and correctly executed given the understated day value -- the model's arithmetic is flawless, but the structural relationship it fed into that arithmetic was wrong. No Reasoning Drift was found anywhere: in the two failing problems the error appears at the point of encoding the relationship (not correct-then-diverging later), and everywhere else early and late steps agree with each other. No Format Instability or Language Interference occurred in any of the 8 traces -- all eight are complete, single-language (German) prose with a clearly stated final numeric answer, no truncation, garbling, or code-switching."
+      }
+    }
+  ],
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Generate"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Inspect"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "generate:zh",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a247c4baee85f23cb",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785967624844,
+      "queuedAt": 1785967623509,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "zh",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in zh, to solve the following 8 math word problems one by one. For EACH problem, think step by step in zh and end with a clear final numeric answer. Do not skip problems. Do not mention any research study or evaluation — just solve each problem as naturally as you would for a real user.\n\nProblems (JSON array, each with idx and questio…",
+      "lastProgressAt": 1785967716659,
+      "tokens": 19961,
+      "toolCalls": 1,
+      "durationMs": 91815,
+      "resultPreview": "{\"language\":\"zh\",\"solutions\":[{\"idx\":140,\"english_gloss\":\"Qasim collects garbage from 5 apartment complexes. The first 4 have 100 apartments each, so together they have 400 apartments. The 5th building is 30% bigger than these 4 combined: 400 × 1.3 = 520 apartments. This week, 5 apartments in each of the first 4 buildings are vacant and need no service, so occupied apartments in the first 4 buildi…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "generate:th",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "ab01384f9a1dbaed3",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785967625466,
+      "queuedAt": 1785967623509,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "th",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in th, to solve the following 8 math word problems one by one. For EACH problem, think step by step in th and end with a clear final numeric answer. Do not skip problems. Do not mention any research study or evaluation — just solve each problem as naturally as you would for a real user.\n\nProblems (JSON array, each with idx and questio…",
+      "lastProgressAt": 1785967922377,
+      "tokens": 46524,
+      "toolCalls": 2,
+      "durationMs": 296911,
+      "resultPreview": "{\"language\":\"th\",\"solutions\":[{\"idx\":140,\"native_reasoning\":\"อพาร์ทเมนต์คอมเพล็กซ์ 4 แห่งแรกมี 100 อพาร์ทเมนต์ต่อแห่ง รวมเป็น 4×100 = 400 อพาร์ทเมนต์ คอมเพล็กซ์ที่ 5 ใหญ่กว่า 4 แห่งแรกรวมกันอีก 30% นั่นคือ 400×1.30 = 520 อพาร์ทเมนต์ รวมอพาร์ทเมนต์ทั้งหมด 400+520 = 920 อพาร์ทเมนต์ สัปดาห์นี้มี 5 อพาร์ทเมนต์จาก 4 คอมเพล็กซ์แรกว่างเปล่าไม่ต้องเก็บขยะ จึงเหลืออพาร์ทเมนต์ที่ต้องให้บริการ 920-5 = 915 อพ…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "generate:ja",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "ae869e346487c51f2",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785967625314,
+      "queuedAt": 1785967623509,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "ja",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in ja, to solve the following 8 math word problems one by one. For EACH problem, think step by step in ja and end with a clear final numeric answer. Do not skip problems. Do not mention any research study or evaluation — just solve each problem as naturally as you would for a real user.\n\nProblems (JSON array, each with idx and questio…",
+      "lastProgressAt": 1785967833297,
+      "tokens": 20305,
+      "toolCalls": 1,
+      "durationMs": 207983,
+      "resultPreview": "{\"language\":\"ja\",\"solutions\":[{\"idx\":140,\"native_reasoning\":\"最初の4つのアパート複合施設はそれぞれ100戸なので、合計400戸です。最後の複合施設は他の4つの合計より30%大きいので、400×1.3=520戸です。今週は最初の4つの複合施設それぞれで5戸が空室だったので、空室の合計は4×5=20戸です。したがって、実際にゴミ収集が必要な戸数は(400-20)+520=380+520=900戸です。Qasimは各場所を週に2回収集するので、延べ収集回数は900×2=1800回です。1回の収集につき0.3ドル支払われるので、1800×0.3=540ドルです。さらに10%のチップが加わるので、540×1.1=594ドルになります。\",\"english_gloss\":\"The first four apartment complexes…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "generate:es",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "afcb12b0e343c7287",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785967625455,
+      "queuedAt": 1785967623509,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "es",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in es, to solve the following 8 math word problems one by one. For EACH problem, think step by step in es and end with a clear final numeric answer. Do not skip problems. Do not mention any research study or evaluation — just solve each problem as naturally as you would for a real user.\n\nProblems (JSON array, each with idx and questio…",
+      "lastProgressAt": 1785967683792,
+      "tokens": 20323,
+      "toolCalls": 1,
+      "durationMs": 58337,
+      "resultPreview": "{\"language\":\"es\",\"solutions\":[{\"idx\":140,\"english_gloss\":\"The first 4 complexes have 100 apartments each = 400 apartments. The last complex is 30% bigger than the other 4 combined: 400 x 1.3 = 520 apartments. This week, 5 apartments in each of the first 4 complexes were vacant, so occupied apartments in those 4 = (100-5) x 4 = 95 x 4 = 380. Total apartments serviced = 380 + 520 = 900. He collects …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "generate:de",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a3c8208c2500d3244",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785967625730,
+      "queuedAt": 1785967623509,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "de",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in de, to solve the following 8 math word problems one by one. For EACH problem, think step by step in de and end with a clear final numeric answer. Do not skip problems. Do not mention any research study or evaluation — just solve each problem as naturally as you would for a real user.\n\nProblems (JSON array, each with idx and questio…",
+      "lastProgressAt": 1785967728535,
+      "tokens": 20573,
+      "toolCalls": 1,
+      "durationMs": 102805,
+      "resultPreview": "{\"language\":\"de\",\"solutions\":[{\"idx\":140,\"native_reasoning\":\"Die ersten 4 Komplexe haben je 100 Wohnungen, also insgesamt 4 × 100 = 400 Wohnungen. Der fünfte Komplex ist 30% größer als diese 400 Wohnungen zusammen, also 400 × 1,3 = 520 Wohnungen. Insgesamt gibt es also 400 + 520 = 920 Wohnungen. Diese Woche sind in jedem der ersten 4 Komplexe 5 Wohnungen leer, also insgesamt 4 × 5 = 20 Wohnungen, …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "inspect:es",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a2624edc684b6b4b4",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785967685171,
+      "queuedAt": 1785967683795,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "es",
+      "promptPreview": "You are inspecting AI-generated math reasoning for specific structural failure modes. You did NOT generate this reasoning — be skeptical; only tag a failure mode with genuine textual evidence.\n\nDefinitions:\n- Compositional Collapse: the reasoning fails to maintain the problem's required multi-part structure (e.g., dropping a required multiplier/percentage adjustment, merging distinct sub-computati…",
+      "lastProgressAt": 1785967772006,
+      "tokens": 30414,
+      "toolCalls": 2,
+      "durationMs": 86835,
+      "resultPreview": "{\"findings\":[{\"idx\":140,\"answer_given\":\"₣594\",\"ground_truth_answer\":\"594\",\"correct\":true,\"brief_verdict\":\"Correct. All sub-computations (base apartments, 30% larger complex, vacancy adjustment, twice-weekly collection, per-apartment rate, 10% tip) are composed in the right order and match ground truth exactly.\",\"compositional_collapse_evidence\":\"none\",\"reasoning_drift_evidence\":\"none - each step's…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 7,
+      "label": "inspect:zh",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a23539794d7b6d10f",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785967718131,
+      "queuedAt": 1785967716667,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "zh",
+      "promptPreview": "You are inspecting AI-generated math reasoning for specific structural failure modes. You did NOT generate this reasoning — be skeptical; only tag a failure mode with genuine textual evidence.\n\nDefinitions:\n- Compositional Collapse: the reasoning fails to maintain the problem's required multi-part structure (e.g., dropping a required multiplier/percentage adjustment, merging distinct sub-computati…",
+      "lastProgressAt": 1785968055872,
+      "tokens": 23027,
+      "toolCalls": 1,
+      "durationMs": 337741,
+      "resultPreview": "{\"findings\":[{\"idx\":140,\"ground_truth_answer\":\"594\",\"answer_given\":\"594美元\",\"correct\":true,\"brief_verdict\":\"Correct. 4 buildings×100=400; 5th building =400×1.3=520; partial vacancy correctly applied only to the first 4 buildings ((100-5)×4=380); total serviced=900; revenue=900×0.3×2=540; +10% tip=594. Matches ground truth exactly.\",\"compositional_collapse_evidence\":\"none\",\"reasoning_drift_evidence\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 8,
+      "label": "inspect:de",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "ae0cd152300376303",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785967729993,
+      "queuedAt": 1785967728537,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "de",
+      "promptPreview": "You are inspecting AI-generated math reasoning for specific structural failure modes. You did NOT generate this reasoning — be skeptical; only tag a failure mode with genuine textual evidence.\n\nDefinitions:\n- Compositional Collapse: the reasoning fails to maintain the problem's required multi-part structure (e.g., dropping a required multiplier/percentage adjustment, merging distinct sub-computati…",
+      "lastProgressAt": 1785968085232,
+      "tokens": 35835,
+      "toolCalls": 4,
+      "durationMs": 355239,
+      "resultPreview": "{\"findings\":[{\"idx\":140,\"ground_truth_answer\":\"594\",\"answer_given\":\"594\",\"correct\":true,\"brief_verdict\":\"Correct. All sub-computations (base total, 30% larger fifth complex, subtracting only the vacancies in the first 4 complexes, twice-weekly collection, 10% tip) are applied to the right bases and chained correctly to reach 594.\",\"compositional_collapse_evidence\":\"none\",\"reasoning_drift_evidence\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 9,
+      "label": "inspect:ja",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a69df5aa11681c32a",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785967834568,
+      "queuedAt": 1785967833298,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "ja",
+      "promptPreview": "You are inspecting AI-generated math reasoning for specific structural failure modes. You did NOT generate this reasoning — be skeptical; only tag a failure mode with genuine textual evidence.\n\nDefinitions:\n- Compositional Collapse: the reasoning fails to maintain the problem's required multi-part structure (e.g., dropping a required multiplier/percentage adjustment, merging distinct sub-computati…",
+      "lastProgressAt": 1785967980014,
+      "tokens": 31570,
+      "toolCalls": 4,
+      "durationMs": 145446,
+      "resultPreview": "{\"findings\":[{\"idx\":140,\"correct\":true,\"ground_truth_answer\":\"594\",\"answer_given\":\"594ドル\",\"brief_verdict\":\"Correct; all multipliers (30% larger last complex, vacancy subtraction, x2 weekly, $0.3 rate, 10% tip) applied in proper order.\",\"compositional_collapse_evidence\":\"none\",\"reasoning_drift_evidence\":\"none\",\"format_instability_evidence\":\"none\",\"language_interference_evidence\":\"none\"},{\"idx\":141,…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 10,
+      "label": "inspect:th",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "adcc6878d45099267",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785967927356,
+      "queuedAt": 1785967923358,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are inspecting AI-generated math reasoning for specific structural failure modes. You did NOT generate this reasoning — be skeptical; only tag a failure mode with genuine textual evidence.\n\nDefinitions:\n- Compositional Collapse: the reasoning fails to maintain the problem's required multi-part structure (e.g., dropping a required multiplier/percentage adjustment, merging distinct sub-computati…",
+      "lastProgressAt": 1785968207607,
+      "tokens": 47934,
+      "toolCalls": 2,
+      "durationMs": 280250,
+      "resultPreview": "{\"input\":{\"language\":\"th\",\"overall_summary\":\"Of the 8 problems, 3 were correct (221, 490, 491) and 5 were incorrect (140, 141, 220, 300, 301). The dominant failure mode in this batch is Compositional Collapse, specifically the 'dropping a required multiplier' and 'merging distinct sub-computations' subtypes — NOT random arithmetic slips. In 140/141, the model correctly built the total-apartments c…"
+    }
+  ],
+  "totalTokens": 296466,
+  "totalToolCalls": 19
+}

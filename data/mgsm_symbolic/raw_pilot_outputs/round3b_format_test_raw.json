@@ -1,0 +1,461 @@
+{
+  "summary": "Test Format Instability by requiring SWATH-style structured tag output across 5 languages/scripts (zh, th, bn, te, es)",
+  "agentCount": 10,
+  "logs": [],
+  "result": [
+    {
+      "language": "zh",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 40,
+            "raw_output": "<formalisation>Mateo的狗有149只幼犬，其中25只有斑点；穆罕默德的狗有49只幼犬，其中12只有斑点；易卜拉欣有54只狗，每只有13只幼犬（共54×13只）；Mateo未斑点的幼犬中有一半被发现实际上有以前看不见的斑点；求所有幼犬中有斑点的百分比。</formalisation>\n<reasoning>Step 1: 计算幼犬总数：149 + 49 + 54×13 = 149 + 49 + 702 = 900只幼犬。\nStep 2: 计算最初有斑点的幼犬数：Mateo的25只 + 穆罕默德的12只 = 37只（易卜拉欣的幼犬未提及斑点，视为0）。\nStep 3: 计算Mateo未斑点的幼犬数：149 - 25 = 124只。\nStep 4: 这124只中有一半实际上有斑点：124 ÷ 2 = 62只。\nStep 5: 更新后的总斑点幼犬数：37 + 62 = 99只。\nStep 6: 计算百分比：99 ÷ 900 × 100% = 11%。</reasoning>\n<answer>11%</answer>",
+            "english_gloss": "Total puppies = 149 + 49 + 54×13 = 900. Initially spotted puppies = 25 (Mateo) + 12 (Mohammed) = 37 (Ibrahim's puppies have no mentioned spots, treated as 0). Mateo's unspotted puppies = 149 - 25 = 124. Half of these (62) are found to actually have spots. Updated total spotted = 37 + 62 = 99. Percentage = 99/900 × 100% = 11%."
+          },
+          {
+            "idx": 41,
+            "raw_output": "<formalisation>奥斯卡的狗有130只幼犬，其中28只有斑点；安德烈的狗有44只幼犬，其中14只有斑点；金有66只狗，每只有11只幼犬（共66×11只）；奥斯卡未斑点的幼犬中有一半被发现实际上有以前看不见的斑点；求所有幼犬中有斑点的百分比。</formalisation>\n<reasoning>Step 1: 计算幼犬总数：130 + 44 + 66×11 = 130 + 44 + 726 = 900只幼犬。\nStep 2: 计算最初有斑点的幼犬数：奥斯卡的28只 + 安德烈的14只 = 42只（金的幼犬未提及斑点，视为0）。\nStep 3: 计算奥斯卡未斑点的幼犬数：130 - 28 = 102只。\nStep 4: 这102只中有一半实际上有斑点：102 ÷ 2 = 51只。\nStep 5: 更新后的总斑点幼犬数：42 + 51 = 93只。\nStep 6: 计算百分比：93 ÷ 900 × 100% ≈ 10.33%。</reasoning>\n<answer>约10.33%</answer>",
+            "english_gloss": "Total puppies = 130 + 44 + 66×11 = 900. Initially spotted puppies = 28 (Oscar) + 14 (Andre) = 42 (Kim's puppies have no mentioned spots, treated as 0). Oscar's unspotted puppies = 130 - 28 = 102. Half of these (51) are found to actually have spots. Updated total spotted = 42 + 51 = 93. Percentage = 93/900 × 100% ≈ 10.33%."
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 40,
+            "language": "zh",
+            "extracted_answer": "11%",
+            "ground_truth_answer": "89",
+            "math_correct": false,
+            "tags_well_formed": "yes",
+            "step_numbering_integrity": "Sequential Step 1 through Step 6, no gaps, duplicates, or renumbering",
+            "language_interference_evidence": "none - all Chinese text (numbers, punctuation, math operators ÷ × %) renders cleanly with no mojibake or encoding artifacts",
+            "format_instability_evidence": "none - <formalisation>...</formalisation><reasoning>...</reasoning><answer>...</answer> appear exactly once each, correctly opened/closed, in the correct order, with no content before/after/between tags",
+            "brief_verdict": "Structurally perfect (three tags, sequential steps, no leakage/corruption). The final numeric answer (11%) does not match the provided ground truth (89), but this is a reasoning/math discrepancy, not a format instability issue."
+          },
+          {
+            "idx": 41,
+            "language": "zh",
+            "extracted_answer": "约10.33%",
+            "ground_truth_answer": "91",
+            "math_correct": false,
+            "tags_well_formed": "yes",
+            "step_numbering_integrity": "Sequential Step 1 through Step 6, no gaps, duplicates, or renumbering",
+            "language_interference_evidence": "none - Chinese text and math symbols render correctly throughout, no garbling",
+            "format_instability_evidence": "none - all three tags present exactly once, properly nested and closed in correct order (formalisation → reasoning → answer), no stray text outside tags",
+            "brief_verdict": "Structurally perfect output, identical clean pattern to idx 40. Final answer (~10.33%) does not match ground truth (91), a math/interpretation error rather than a formatting defect."
+          }
+        ],
+        "language": "zh",
+        "overall_summary": "No format instability was observed in either zh item in this batch: both raw outputs contain exactly one well-formed &lt;formalisation&gt;, &lt;reasoning&gt; (with cleanly sequential Step 1–Step 6 labels), and &lt;answer&gt; tag, in the correct order, with no leaked prose, no truncation, and no garbled/mojibake Chinese text. Both responses follow the identical structural template (same total-puppies setup, same 6-step derivation), suggesting the model reliably reproduces the required scaffold in zh despite it being a more complex (non-Latin, non-spaced) script than the es Latin-script control. Notably, both items' final numeric answers diverge substantially from the supplied ground truth (11% vs 89, and ~10.33% vs 91) — this looks like a systematic math/interpretation error (likely a misreading of what the 'percentage' should be computed over, e.g. spotted vs. unspotted, or which owner's puppies remain unaccounted for spots) rather than any structural/format problem. Based on this small 2-item zh sample, format instability does not appear to correlate with script complexity — zh output formatting was fully intact — though a definitive correlation claim would require comparing against the th/bn/te batches and the es control at comparable sample sizes."
+      }
+    },
+    {
+      "language": "th",
+      "generation": {
+        "language": "th",
+        "solutions": [
+          {
+            "idx": 40,
+            "raw_output": "<formalisation>\nสุนัขของ Mateo มีลูกสุนัข 149 ตัว มีจุด 25 ตัว; สุนัขของโมฮัมเหม็ดมีลูกสุนัข 49 ตัว มีจุด 12 ตัว; อิบราฮิมมีสุนัข 54 ตัว แต่ละตัวมีลูกสุนัข 13 ตัวที่มีจุด (รวม 54×13 = 702 ตัวที่มีจุด); หลังไปสัตวแพทย์ ครึ่งหนึ่งของลูกสุนัขของ Mateo ที่ไม่มีจุด (149-25=124 ตัว) พบว่ามีจุดที่มองไม่เห็นมาก่อน (เพิ่มอีก 62 ตัว)\n</formalisation>\n<reasoning>Step 1: หาจำนวนลูกสุนัขทั้งหมด = 149 + 49 + (54×13) = 149 + 49 + 702 = 900 ตัว\nStep 2: หาจำนวนลูกสุนัขที่มีจุดก่อนไปสัตวแพทย์ = 25 (Mateo) + 12 (โมฮัมเหม็ด) + 702 (อิบราฮิม) = 739 ตัว\nStep 3: หาจำนวนลูกสุนัขของ Mateo ที่ไม่มีจุด = 149 - 25 = 124 ตัว\nStep 4: ครึ่งหนึ่งของลูกสุนัขที่ไม่มีจุดนี้พบว่ามีจุดที่มองไม่เห็นมาก่อน = 124 / 2 = 62 ตัว\nStep 5: จำนวนลูกสุนัขที่มีจุดทั้งหมดหลังไปสัตวแพทย์ = 739 + 62 = 801 ตัว\nStep 6: คำนวณร้อยละ = (801 / 900) × 100 = 89%</reasoning>\n<answer>89%</answer>",
+            "english_gloss": "Mateo's dog has 149 puppies, 25 with spots. Mohammed's dog has 49 puppies, 12 with spots. Ibrahim has 54 dogs, each with 13 puppies that have spots (54×13=702 spotted puppies). Total puppies = 149+49+702=900. Spotted before the vet visit = 25+12+702=739. Mateo's spotless puppies = 149-25=124; half of these (62) turn out to have spots that were not visible before, so new total spotted = 739+62=801. Percentage with spots = 801/900×100 = 89%."
+          },
+          {
+            "idx": 41,
+            "raw_output": "<formalisation>\nสุนัขของออสการ์มีลูกสุนัข 130 ตัว มีจุด 28 ตัว; สุนัขของอังเดรมีลูกสุนัข 44 ตัว มีจุด 14 ตัว; จินมีสุนัข 66 ตัว แต่ละตัวมีลูกสุนัข 11 ตัวที่มีจุด (รวม 66×11 = 726 ตัวที่มีจุด); หลังไปสัตวแพทย์ ครึ่งหนึ่งของลูกสุนัขของออสการ์ที่ไม่มีจุด (130-28=102 ตัว) พบว่ามีจุดที่มองไม่เห็นมาก่อน (เพิ่มอีก 51 ตัว)\n</formalisation>\n<reasoning>Step 1: หาจำนวนลูกสุนัขทั้งหมด = 130 + 44 + (66×11) = 130 + 44 + 726 = 900 ตัว\nStep 2: หาจำนวนลูกสุนัขที่มีจุดก่อนไปสัตวแพทย์ = 28 (ออสการ์) + 14 (อังเดร) + 726 (จิน) = 768 ตัว\nStep 3: หาจำนวนลูกสุนัขของออสการ์ที่ไม่มีจุด = 130 - 28 = 102 ตัว\nStep 4: ครึ่งหนึ่งของลูกสุนัขที่ไม่มีจุดนี้พบว่ามีจุดที่มองไม่เห็นมาก่อน = 102 / 2 = 51 ตัว\nStep 5: จำนวนลูกสุนัขที่มีจุดทั้งหมดหลังไปสัตวแพทย์ = 768 + 51 = 819 ตัว\nStep 6: คำนวณร้อยละ = (819 / 900) × 100 = 91%</reasoning>\n<answer>91%</answer>",
+            "english_gloss": "Oscar's dog has 130 puppies, 28 with spots. Andre's dog has 44 puppies, 14 with spots. Jin has 66 dogs, each with 11 puppies that have spots (66×11=726 spotted puppies). Total puppies = 130+44+726=900. Spotted before the vet visit = 28+14+726=768. Oscar's spotless puppies = 130-28=102; half of these (51) turn out to have spots that were not visible before, so new total spotted = 768+51=819. Percentage with spots = 819/900×100 = 91%."
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 40,
+            "tags_well_formed": "yes",
+            "step_numbering_integrity": "Sequential Step 1 through Step 6, no gaps/duplicates/renumbering",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none - consistent Thai script throughout formalisation/reasoning, with proper nouns (Mateo, โมฮัมเหม็ด, อิบราฮิม) appropriately transliterated/kept as names; no mojibake or script mixing errors",
+            "extracted_answer": "89%",
+            "ground_truth_answer": "89",
+            "math_correct": true,
+            "brief_verdict": "Well-formed: all three tags present exactly once in correct order (<formalisation>...</formalisation><reasoning>Step1..Step6</reasoning><answer>89%</answer>), no leakage, no cutoff, no format instability. Math also correct and matches ground truth."
+          },
+          {
+            "idx": 41,
+            "tags_well_formed": "yes",
+            "step_numbering_integrity": "Sequential Step 1 through Step 6, no gaps/duplicates/renumbering",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none - consistent Thai script throughout, proper nouns (Oscar/ออสการ์, Andre/อังเดร, Jin/จิน) handled consistently",
+            "extracted_answer": "91%",
+            "ground_truth_answer": "91",
+            "math_correct": true,
+            "brief_verdict": "Well-formed: all three tags present exactly once in correct order, sequential Step 1-6, no leakage or cutoff. No format instability. Math correct and matches ground truth."
+          }
+        ],
+        "language": "th",
+        "overall_summary": "No format instability observed in either Thai sample. Both outputs have the required <formalisation>/<reasoning>/<answer> tag triple present exactly once, correctly opened and closed, in the correct order, with no stray content before/after/between tags, no mojibake or encoding corruption, and no premature truncation. Reasoning steps are labeled sequentially (Step 1 through Step 6) with no skips, duplicates, or renumbering in either item. Both final answers (89% and 91%) also match the provided ground truth numbers (89 and 91), so this batch shows neither structural nor mathematical failure. Given only n=2 for Thai, this is a small sample, but it does not support a correlation between script complexity and format instability here — despite Thai being a non-Latin, complex script (distinct from the Latin-script es control), the model maintained perfect tag/step structure, suggesting that for this particular batch script complexity alone did not induce instability. A firmer conclusion about the zh/th/bn/te vs. es comparison would require aggregating across the full batch rather than this 2-item th subset.\""
+      }
+    },
+    {
+      "language": "bn",
+      "generation": {
+        "language": "bn",
+        "solutions": [
+          {
+            "idx": 40,
+            "raw_output": "<formalisation>মাতেওর কুকুরছানা = ১৪৯টি, দাগযুক্ত = ২৫টি; মোহাম্মদের কুকুরছানা = ৪৯টি, দাগযুক্ত = ১২টি; ইব্রাহিমের কুকুর = ৫৪টি, প্রতিটিতে কুকুরছানা = ১৩টি (মোট = ৫৪×১৩); মাতেওর দাগহীন কুকুরছানাদের অর্ধেকের মধ্যে আসলে দাগ পাওয়া গেছে; সব কুকুরছানার মধ্যে দাগযুক্তদের শতাংশ নির্ণয় করতে হবে।</formalisation>\n<reasoning>Step 1: মাতেওর মোট কুকুরছানা ১৪৯টি, যার মধ্যে ২৫টিতে প্রথমে দাগ দেখা গিয়েছিল, তাই দাগহীন কুকুরছানা = ১৪৯ - ২৫ = ১২৪টি।\nStep 2: এই ১২৪টি দাগহীন কুকুরছানার অর্ধেক, অর্থাৎ ১২৪ ÷ ২ = ৬২টিতে আসলে আগে অদৃশ্য দাগ ছিল। তাই মাতেওর মোট দাগযুক্ত কুকুরছানা = ২৫ + ৬২ = ৮৭টি।\nStep 3: মোহাম্মদের ৪৯টি কুকুরছানার মধ্যে ১২টি দাগযুক্ত, এখানে কোনো পরিবর্তন হয়নি।\nStep 4: ইব্রাহিমের ৫৪টি কুকুর আছে, প্রতিটিতে ১৩টি কুকুরছানা, তাই মোট কুকুরছানা = ৫৪ × ১৩ = ৭০২টি। এদের দাগের কোনো তথ্য দেওয়া হয়নি, তাই ধরে নেওয়া হচ্ছে এদের মধ্যে কারো দাগ নেই (০টি দাগযুক্ত)।\nStep 5: সব মিলিয়ে মোট কুকুরছানার সংখ্যা = ১৪৯ + ৪৯ + ৭০২ = ৯০০টি।\nStep 6: সব মিলিয়ে মোট দাগযুক্ত কুকুরছানার সংখ্যা = ৮৭ + ১২ + ০ = ৯৯টি।\nStep 7: দাগযুক্ত কুকুরছানার শতাংশ = (৯৯ ÷ ৯০০) × ১০০ = ১১%।</reasoning>\n<answer>১১%</answer>",
+            "english_gloss": "Mateo's dog has 149 puppies, 25 spotted, so 124 unspotted. Half of the unspotted ones (62) turned out to actually have spots, so Mateo's total spotted = 25+62=87. Mohammed's dog has 49 puppies, 12 spotted, unchanged. Ibrahim has 54 dogs x 13 puppies each = 702 puppies; since no spot information is given for them, it is assumed none of them have spots (0 spotted). Total puppies overall = 149+49+702=900. Total spotted overall = 87+12+0=99. Percentage spotted = (99/900)*100 = 11%."
+          },
+          {
+            "idx": 41,
+            "raw_output": "<formalisation>অস্কারের কুকুরছানা = ১৩০টি, দাগযুক্ত = ২৮টি; আন্দ্রের কুকুরছানা = ৪৪টি, দাগযুক্ত = ১৪টি; জিনের কুকুর = ৬৬টি, প্রতিটিতে কুকুরছানা = ১১টি (মোট = ৬৬×১১); অস্কারের দাগহীন কুকুরছানাদের অর্ধেকের মধ্যে আসলে দাগ পাওয়া গেছে; সব কুকুরছানার মধ্যে দাগযুক্তদের শতাংশ নির্ণয় করতে হবে।</formalisation>\n<reasoning>Step 1: অস্কারের মোট কুকুরছানা ১৩০টি, যার মধ্যে ২৮টিতে প্রথমে দাগ দেখা গিয়েছিল, তাই দাগহীন কুকুরছানা = ১৩০ - ২৮ = ১০২টি।\nStep 2: এই ১০২টি দাগহীন কুকুরছানার অর্ধেক, অর্থাৎ ১০২ ÷ ২ = ৫১টিতে আসলে আগে অদৃশ্য দাগ ছিল। তাই অস্কারের মোট দাগযুক্ত কুকুরছানা = ২৮ + ৫১ = ৭৯টি।\nStep 3: আন্দ্রের ৪৪টি কুকুরছানার মধ্যে ১৪টি দাগযুক্ত, এখানে কোনো পরিবর্তন হয়নি।\nStep 4: জিনের ৬৬টি কুকুর আছে, প্রতিটিতে ১১টি কুকুরছানা, তাই মোট কুকুরছানা = ৬৬ × ১১ = ৭২৬টি। এদের দাগের কোনো তথ্য দেওয়া হয়নি, তাই ধরে নেওয়া হচ্ছে এদের মধ্যে কারো দাগ নেই (০টি দাগযুক্ত)।\nStep 5: সব মিলিয়ে মোট কুকুরছানার সংখ্যা = ১৩০ + ৪৪ + ৭২৬ = ৯০০টি।\nStep 6: সব মিলিয়ে মোট দাগযুক্ত কুকুরছানার সংখ্যা = ৭৯ + ১৪ + ০ = ৯৩টি।\nStep 7: দাগযুক্ত কুকুরছানার শতাংশ = (৯৩ ÷ ৯০০) × ১০০ ≈ ১০.৩৩%।</reasoning>\n<answer>প্রায় ১০.৩৩%</answer>",
+            "english_gloss": "Oscar's dog has 130 puppies, 28 spotted, so 102 unspotted. Half of the unspotted ones (51) turned out to actually have spots, so Oscar's total spotted = 28+51=79. Andre's dog has 44 puppies, 14 spotted, unchanged. Jin has 66 dogs x 11 puppies each = 726 puppies; since no spot information is given for them, it is assumed none of them have spots (0 spotted). Total puppies overall = 130+44+726=900. Total spotted overall = 79+14+0=93. Percentage spotted = (93/900)*100 ≈ 10.33%."
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 40,
+            "tags_well_formed": "yes",
+            "step_numbering_integrity": "Sequential Step 1 through Step 7, no gaps/duplicates/renumbering",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none — content entirely in Bengali script apart from the literal English word \"Step\" which is part of the required reasoning-label format itself, not stray code-switching",
+            "extracted_answer": "১১% (11%)",
+            "ground_truth_answer": "89",
+            "math_correct": false,
+            "brief_verdict": "Structurally perfect (all three tags present exactly once, correctly ordered/closed; 7 sequential Step labels; no leaked content), but the underlying math/answer is wrong — model invented extra entities (Mohammed, Ibrahim) not implied by ground truth and computed an unrelated percentage (11%) instead of the expected count-type answer (89). This is a reasoning/task-fidelity failure, not a format-instability failure."
+          },
+          {
+            "idx": 41,
+            "tags_well_formed": "yes",
+            "step_numbering_integrity": "Sequential Step 1 through Step 7, no gaps/duplicates/renumbering",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none — same pattern as idx 40, only the formulaic English word \"Step\" appears, which is the expected label format",
+            "extracted_answer": "প্রায় ১০.৩৩% (approx. 10.33%)",
+            "ground_truth_answer": "91",
+            "math_correct": false,
+            "brief_verdict": "Structurally perfect (single well-formed instance of each tag in correct order, sequential Step 1-7, nothing leaking outside tags, clean ending), but answer is wrong relative to ground truth (91 vs ~10.33%) — again a math/task-interpretation error, not a formatting problem."
+          }
+        ],
+        "language": "bn",
+        "overall_summary": "No format instability was observed in this Bengali (bn) batch of 2 items. Both raw outputs contain exactly one properly opened and closed <formalisation>, <reasoning>, and <answer> tag in the correct order, with no stray prose before/after/between tags, no mojibake or encoding corruption, and no premature truncation — both responses end cleanly at </answer>. The reasoning sections use \"Step N:\" labels that are strictly sequential (1 through 7) in both items with no skips, duplicates, or renumbering. The only Latin-script token present is the literal English word \"Step\" inside the numbered labels, which is the expected/required format marker rather than unwanted language interference. Both items do have incorrect final answers relative to ground truth (idx 40: model got ~11% vs ground truth 89; idx 41: model got ~10.33% vs ground truth 91), but per the task instructions this is a math/reasoning-fidelity issue, explicitly separate from format instability. Given that this bn sample shows perfectly stable formatting despite using a non-Latin, complex (conjunct-heavy, its own numeral system) script, it does not on its own support a correlation between script complexity and format instability — at least for this small sample; a fuller correlation judgment would require comparing failure rates across the full zh/th/bn/te batches against the es Latin-script control, which is outside the scope of these 2 bn items alone. Note also that both bn items independently converged on a shared but very likely wrong interpretive framing (inventing a \"no additional dogs have spots\" assumption and computing a percentage rather than the count-type answer implied by the ground truth), which may indicate a systematic reasoning/task-comprehension issue in this problem template rather than anything script-related."
+      }
+    },
+    {
+      "language": "te",
+      "generation": {
+        "language": "te",
+        "solutions": [
+          {
+            "idx": 40,
+            "raw_output": "<formalisation>\nమాటియో కుక్కపిల్లలు = 149, వాటిలో మచ్చలు ఉన్నవి = 25.\nమొహమ్మద్ కుక్కపిల్లలు = 49, వాటిలో మచ్చలు ఉన్నవి = 12.\nఇబ్రహీమ్ కుక్కపిల్లలు = 54, వాటిలో మచ్చలు ఉన్నవి = 13.\nమాటియో యొక్క మచ్చలు లేని కుక్కపిల్లలలో సగం మందికి వాస్తవానికి మచ్చలు ఉన్నాయని కనుగొన్నారు.\n</formalisation>\n<reasoning>Step 1: మాటియో కుక్కపిల్లలలో మచ్చలు లేనివి = 149 - 25 = 124.\nStep 2: వీటిలో సగం మందికి వాస్తవానికి మచ్చలు ఉన్నాయని కనుగొన్నారు: 124 ÷ 2 = 62.\nStep 3: కాబట్టి మాటియో యొక్క మొత్తం మచ్చల కుక్కపిల్లలు = 25 + 62 = 87.\nStep 4: మొత్తం మచ్చల కుక్కపిల్లలు (మాటియో + మొహమ్మద్ + ఇబ్రహీమ్) = 87 + 12 + 13 = 112.\nStep 5: మొత్తం కుక్కపిల్లలు = 149 + 49 + 54 = 252.\nStep 6: మచ్చలు ఉన్న కుక్కపిల్లల శాతం = (112 ÷ 252) × 100 ≈ 44.44%.</reasoning>\n<answer>44.44%</answer>",
+            "english_gloss": "Matteo's dog has 149 puppies, 25 spotted; Mohammed's has 49 puppies, 12 spotted; Ibrahim's has 54 puppies, 13 spotted. Step 1: Matteo's unspotted puppies = 149-25=124. Step 2: Half of these turned out to actually be spotted: 124/2=62. Step 3: Matteo's total spotted puppies = 25+62=87. Step 4: Total spotted puppies overall = 87+12+13=112. Step 5: Total puppies overall = 149+49+54=252. Step 6: Percentage spotted = 112/252*100 ≈ 44.44%."
+          },
+          {
+            "idx": 41,
+            "raw_output": "<formalisation>\nఆస్కార్ కుక్కపిల్లలు = 130, వాటిలో మచ్చలు ఉన్నవి = 28.\nఆండ్రీ కుక్కపిల్లలు = 44, వాటిలో మచ్చలు ఉన్నవి = 14.\nజిన్ కుక్కపిల్లలు = 66, వాటిలో మచ్చలు ఉన్నవి = 11.\nఆస్కార్ యొక్క మచ్చలు లేని కుక్కపిల్లలలో సగం మందికి వాస్తవానికి మచ్చలు ఉన్నాయని కనుగొన్నారు.\n</formalisation>\n<reasoning>Step 1: ఆస్కార్ కుక్కపిల్లలలో మచ్చలు లేనివి = 130 - 28 = 102.\nStep 2: వీటిలో సగం మందికి వాస్తవానికి మచ్చలు ఉన్నాయని కనుగొన్నారు: 102 ÷ 2 = 51.\nStep 3: కాబట్టి ఆస్కార్ యొక్క మొత్తం మచ్చల కుక్కపిల్లలు = 28 + 51 = 79.\nStep 4: మొత్తం మచ్చల కుక్కపిల్లలు (ఆస్కార్ + ఆండ్రీ + జిన్) = 79 + 14 + 11 = 104.\nStep 5: మొత్తం కుక్కపిల్లలు = 130 + 44 + 66 = 240.\nStep 6: మచ్చలు ఉన్న కుక్కపిల్లల శాతం = (104 ÷ 240) × 100 ≈ 43.33%.</reasoning>\n<answer>43.33%</answer>",
+            "english_gloss": "Oscar's dog has 130 puppies, 28 spotted; Andre's has 44 puppies, 14 spotted; Jin's has 66 puppies, 11 spotted. Step 1: Oscar's unspotted puppies = 130-28=102. Step 2: Half of these turned out to actually be spotted: 102/2=51. Step 3: Oscar's total spotted puppies = 28+51=79. Step 4: Total spotted puppies overall = 79+14+11=104. Step 5: Total puppies overall = 130+44+66=240. Step 6: Percentage spotted = 104/240*100 ≈ 43.33%."
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 40,
+            "tags_well_formed": "yes",
+            "step_numbering_integrity": "Sequential Step 1 through Step 6, no gaps/duplicates/renumbering",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none — Telugu script used consistently for prose, with English 'Step N:' labels and Arabic numerals/percent signs mixed in as expected for this format; no script switching errors or mojibake",
+            "extracted_answer": "44.44%",
+            "ground_truth_answer": "89",
+            "math_correct": false,
+            "brief_verdict": "Structurally well-formed (all three tags present once, correctly ordered/closed, steps sequential); no format instability. Final numeric answer does not match ground truth (44.44% vs 89), but that is a reasoning/content error, not a formatting failure."
+          },
+          {
+            "idx": 41,
+            "tags_well_formed": "yes",
+            "step_numbering_integrity": "Sequential Step 1 through Step 6, no gaps/duplicates/renumbering",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none — same consistent Telugu/English/numeral mixing pattern as idx 40, no corruption or leakage",
+            "extracted_answer": "43.33%",
+            "ground_truth_answer": "91",
+            "math_correct": false,
+            "brief_verdict": "Structurally well-formed, identical clean tag/step pattern to idx 40; no format instability. Final answer (43.33%) does not match ground truth (91), a content/reasoning discrepancy rather than a structural one."
+          }
+        ],
+        "language": "te",
+        "overall_summary": "No format instability was observed in this Telugu (te) batch: both items have all three required tags (<formalisation>, <reasoning>, <answer>) present exactly once, correctly opened and closed, in the correct order, with no stray content before/after/between tags, no truncation, and no garbled or mojibake text. Step numbering inside <reasoning> is strictly sequential (1-6) in both cases with no skips, duplicates, or renumbering. The Telugu script (which is visually complex, with conjunct consonants and vowel diacritics) is rendered cleanly throughout, and the expected mixing of Telugu prose with English 'Step N:' labels and Arabic numerals/percent signs is consistent and not itself a defect. Given this small te sample shows zero structural breakage, it does not support a correlation between script complexity and format instability — the format held up just as well here as would be expected from a Latin-script (es) control, though a firmer comparison would require seeing the actual zh/th/bn/es outputs alongside a larger te sample. Note: both items' final answers are numerically wrong relative to the provided ground truth (44.44% vs 89, and 43.33% vs 91), but this is a math/content error, not a format instability issue, and is reported separately via the math_correct field."
+      }
+    },
+    {
+      "language": "es",
+      "generation": {
+        "language": "es",
+        "solutions": [
+          {
+            "idx": 40,
+            "raw_output": "<formalisation>\nCachorros de Mateo: 149 totales, 25 con manchas.\nCachorros de Mohammed: 49 totales, 12 con manchas.\nPerros de Ibrahim: 54 perros, cada uno con 13 cachorros con manchas (todos con manchas).\nMateo descubre que la mitad de sus cachorros sin manchas (149-25=124) en realidad tienen manchas.\nSe busca el porcentaje total de cachorros con manchas.\n</formalisation>\n<reasoning>Step 1: Cachorros sin manchas de Mateo antes de la visita = 149 - 25 = 124.\nStep 2: La mitad de esos cachorros (124 / 2 = 62) en realidad tienen manchas.\nStep 3: Total de cachorros con manchas de Mateo = 25 + 62 = 87.\nStep 4: Total de cachorros con manchas de Ibrahim = 54 × 13 = 702 (todos con manchas).\nStep 5: Total de cachorros con manchas de Mohammed = 12.\nStep 6: Total de todos los cachorros = 149 + 49 + (54 × 13) = 149 + 49 + 702 = 900.\nStep 7: Total de cachorros con manchas = 87 + 12 + 702 = 801.\nStep 8: Porcentaje = (801 / 900) × 100 = 89%.</reasoning>\n<answer>89</answer>",
+            "english_gloss": "Step 1: Mateo's unspotted puppies before the vet visit = 149 - 25 = 124. Step 2: Half of those (124/2=62) actually have spots. Step 3: Mateo's total spotted puppies = 25+62 = 87. Step 4: Ibrahim's total spotted puppies = 54×13 = 702 (all spotted). Step 5: Mohammed's total spotted puppies = 12. Step 6: Total puppies overall = 149+49+(54×13) = 149+49+702 = 900. Step 7: Total spotted puppies = 87+12+702 = 801. Step 8: Percentage = (801/900)×100 = 89%."
+          },
+          {
+            "idx": 41,
+            "raw_output": "<formalisation>\nCachorros de Oscar: 130 totales, 28 con manchas.\nCachorros de Andre: 44 totales, 14 con manchas.\nPerros de Jin: 66 perros, cada uno con 11 cachorros con manchas (todos con manchas).\nOscar descubre que la mitad de sus cachorros sin manchas (130-28=102) en realidad tienen manchas.\nSe busca el porcentaje total de cachorros con manchas.\n</formalisation>\n<reasoning>Step 1: Cachorros sin manchas de Oscar antes de la visita = 130 - 28 = 102.\nStep 2: La mitad de esos cachorros (102 / 2 = 51) en realidad tienen manchas.\nStep 3: Total de cachorros con manchas de Oscar = 28 + 51 = 79.\nStep 4: Total de cachorros con manchas de Jin = 66 × 11 = 726 (todos con manchas).\nStep 5: Total de cachorros con manchas de Andre = 14.\nStep 6: Total de todos los cachorros = 130 + 44 + (66 × 11) = 130 + 44 + 726 = 900.\nStep 7: Total de cachorros con manchas = 79 + 14 + 726 = 819.\nStep 8: Porcentaje = (819 / 900) × 100 = 91%.</reasoning>\n<answer>91</answer>",
+            "english_gloss": "Step 1: Oscar's unspotted puppies before the vet visit = 130 - 28 = 102. Step 2: Half of those (102/2=51) actually have spots. Step 3: Oscar's total spotted puppies = 28+51 = 79. Step 4: Jin's total spotted puppies = 66×11 = 726 (all spotted). Step 5: Andre's total spotted puppies = 14. Step 6: Total puppies overall = 130+44+(66×11) = 130+44+726 = 900. Step 7: Total spotted puppies = 79+14+726 = 819. Step 8: Percentage = (819/900)×100 = 91%."
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 40,
+            "tags_well_formed": "yes",
+            "step_numbering_integrity": "Sequential Step 1 through Step 8, no gaps, duplicates, or renumbering.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none - entirely in Spanish, consistent with target language, no code-switching or script mixing",
+            "extracted_answer": "89",
+            "ground_truth_answer": "89",
+            "math_correct": true,
+            "brief_verdict": "Well-formed output: <formalisation>, <reasoning> with sequential Step 1-8, and <answer> all present exactly once in correct order with no leakage. Math is also correct (89% matches ground truth)."
+          },
+          {
+            "idx": 41,
+            "tags_well_formed": "yes",
+            "step_numbering_integrity": "Sequential Step 1 through Step 8, no gaps, duplicates, or renumbering.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none - entirely in Spanish, consistent with target language, no code-switching or script mixing",
+            "extracted_answer": "91",
+            "ground_truth_answer": "91",
+            "math_correct": true,
+            "brief_verdict": "Well-formed output: <formalisation>, <reasoning> with sequential Step 1-8, and <answer> all present exactly once in correct order with no leakage. Math is also correct (91% matches ground truth)."
+          }
+        ],
+        "language": "es",
+        "overall_summary": "No format instability observed in this es (Latin-script) batch of 2 items. Both outputs have all three required tags (formalisation, reasoning, answer) present exactly once, properly opened and closed, in the correct order, with no stray content outside tags, no mojibake/encoding corruption, and no premature cutoffs. Step numbering in the reasoning block is strictly sequential (1-8) in both cases with no skips, duplicates, or renumbering. Both final answers also match the provided ground truth. As the Latin-script control condition, this clean result is consistent with the hypothesis that format instability (if present in the zh/th/bn/te batches) would correlate with script complexity — es shows no such instability, serving as a useful baseline for comparison against non-Latin scripts. Based on this small 2-item sample alone, no instability was found to compare against, but it establishes that the underlying task/model does not inherently produce format breakage when the script is simple/Latin-based."
+      }
+    }
+  ],
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Generate"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Inspect"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "generate:zh",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a54b4c15f6cf85a15",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970264312,
+      "queuedAt": 1785970262946,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in zh, to solve the following 2 math word problems. 你必须严格按照以下格式回答，不要添加任何其他内容：\n<formalisation>在此列出问题中的关键数值和关系</formalisation>\n<reasoning>Step 1: ...\nStep 2: ...\n(根据需要添加更多步骤)</reasoning>\n<answer>最终数字答案</answer>\n\nThis exact three-tag structure (formalisation, reasoning with numbered steps, answer) is REQUIRED for every response, no excep…",
+      "lastProgressAt": 1785970280133,
+      "tokens": 19227,
+      "toolCalls": 1,
+      "durationMs": 15821,
+      "resultPreview": "{\"solutions\":[{\"idx\":40,\"raw_output\":\"<formalisation>Mateo的狗有149只幼犬，其中25只有斑点；穆罕默德的狗有49只幼犬，其中12只有斑点；易卜拉欣有54只狗，每只有13只幼犬（共54×13只）；Mateo未斑点的幼犬中有一半被发现实际上有以前看不见的斑点；求所有幼犬中有斑点的百分比。</formalisation>\\n<reasoning>Step 1: 计算幼犬总数：149 + 49 + 54×13 = 149 + 49 + 702 = 900只幼犬。\\nStep 2: 计算最初有斑点的幼犬数：Mateo的25只 + 穆罕默德的12只 = 37只（易卜拉欣的幼犬未提及斑点，视为0）。\\nStep 3: 计算Mateo未斑点的幼犬数：149 - 25 = 124只。\\nStep 4: 这124只中有一半实际上有斑点：124 ÷ 2…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "generate:th",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "ac78801b1fdff8a04",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970264318,
+      "queuedAt": 1785970262946,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "th",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in th, to solve the following 2 math word problems. คุณต้องตอบตามรูปแบบนี้อย่างเคร่งครัดเท่านั้น ห้ามเพิ่มเนื้อหาอื่นใด:\n<formalisation>ระบุค่าตัวเลขและความสัมพันธ์หลักจากโจทย์ที่นี่</formalisation>\n<reasoning>Step 1: ...\nStep 2: ...\n(เพิ่มขั้นตอนตามความจำเป็น)</reasoning>\n<answer>คำตอบตัวเลขสุดท้าย</answer>\n\nThis exact three-tag stru…",
+      "lastProgressAt": 1785970314337,
+      "tokens": 19588,
+      "toolCalls": 1,
+      "durationMs": 50019,
+      "resultPreview": "{\"language\":\"th\",\"solutions\":[{\"idx\":40,\"raw_output\":\"<formalisation>\\nสุนัขของ Mateo มีลูกสุนัข 149 ตัว มีจุด 25 ตัว; สุนัขของโมฮัมเหม็ดมีลูกสุนัข 49 ตัว มีจุด 12 ตัว; อิบราฮิมมีสุนัข 54 ตัว แต่ละตัวมีลูกสุนัข 13 ตัวที่มีจุด (รวม 54×13 = 702 ตัวที่มีจุด); หลังไปสัตวแพทย์ ครึ่งหนึ่งของลูกสุนัขของ Mateo ที่ไม่มีจุด (149-25=124 ตัว) พบว่ามีจุดที่มองไม่เห็นมาก่อน (เพิ่มอีก 62 ตัว)\\n</formalisation>\\n…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "generate:bn",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a4c34e64dcd9cd9cb",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970266860,
+      "queuedAt": 1785970262946,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "bn",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in bn, to solve the following 2 math word problems. আপনাকে অবশ্যই কঠোরভাবে এই ফর্ম্যাট অনুসরণ করে উত্তর দিতে হবে, অন্য কিছু যোগ করবেন না:\n<formalisation>এখানে সমস্যার মূল সংখ্যাসূচক মান এবং সম্পর্কগুলি তালিকাভুক্ত করুন</formalisation>\n<reasoning>Step 1: ...\nStep 2: ...\n(প্রয়োজন অনুসারে আরও ধাপ যোগ করুন)</reasoning>\n<answer>চূড়ান্ত স…",
+      "lastProgressAt": 1785970340981,
+      "tokens": 19710,
+      "toolCalls": 1,
+      "durationMs": 74121,
+      "resultPreview": "{\"language\":\"bn\",\"solutions\":[{\"idx\":40,\"raw_output\":\"<formalisation>মাতেওর কুকুরছানা = ১৪৯টি, দাগযুক্ত = ২৫টি; মোহাম্মদের কুকুরছানা = ৪৯টি, দাগযুক্ত = ১২টি; ইব্রাহিমের কুকুর = ৫৪টি, প্রতিটিতে কুকুরছানা = ১৩টি (মোট = ৫৪×১৩); মাতেওর দাগহীন কুকুরছানাদের অর্ধেকের মধ্যে আসলে দাগ পাওয়া গেছে; সব কুকুরছানার মধ্যে দাগযুক্তদের শতাংশ নির্ণয় করতে হবে।</formalisation>\\n<reasoning>Step 1: মাতেওর মোট কুকুরছান…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "generate:te",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a9a550b7050f2d4a2",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970265584,
+      "queuedAt": 1785970262946,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "te",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in te, to solve the following 2 math word problems. మీరు తప్పనిసరిగా ఈ ఫార్మాట్‌ను ఖచ్చితంగా అనుసరించి సమాధానం ఇవ్వాలి, మరేదైనా జోడించవద్దు:\n<formalisation>సమస్యలోని కీలక సంఖ్యా విలువలు మరియు సంబంధాలను ఇక్కడ జాబితా చేయండి</formalisation>\n<reasoning>Step 1: ...\nStep 2: ...\n(అవసరమైన విధంగా మరిన్ని దశలను జోడించండి)</reasoning>\n<answer>చి…",
+      "lastProgressAt": 1785970329669,
+      "tokens": 19799,
+      "toolCalls": 1,
+      "durationMs": 64084,
+      "resultPreview": "{\"language\":\"te\",\"solutions\":[{\"idx\":40,\"raw_output\":\"<formalisation>\\nమాటియో కుక్కపిల్లలు = 149, వాటిలో మచ్చలు ఉన్నవి = 25.\\nమొహమ్మద్ కుక్కపిల్లలు = 49, వాటిలో మచ్చలు ఉన్నవి = 12.\\nఇబ్రహీమ్ కుక్కపిల్లలు = 54, వాటిలో మచ్చలు ఉన్నవి = 13.\\nమాటియో యొక్క మచ్చలు లేని కుక్కపిల్లలలో సగం మందికి వాస్తవానికి మచ్చలు ఉన్నాయని కనుగొన్నారు.\\n</formalisation>\\n<reasoning>Step 1: మాటియో కుక్కపిల్లలలో మచ్చలు లేనివ…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "generate:es",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a7655543d28b0ba86",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970267266,
+      "queuedAt": 1785970262946,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "es",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in es, to solve the following 2 math word problems. Debes responder siguiendo estrictamente este formato, sin añadir ningún otro contenido:\n<formalisation>Enumera aquí los valores numéricos clave y las relaciones del problema</formalisation>\n<reasoning>Step 1: ...\nStep 2: ...\n(añade más pasos según sea necesario)</reasoning>\n<answer>r…",
+      "lastProgressAt": 1785970298768,
+      "tokens": 19327,
+      "toolCalls": 1,
+      "durationMs": 31501,
+      "resultPreview": "{\"language\":\"es\",\"solutions\":[{\"idx\":40,\"raw_output\":\"<formalisation>\\nCachorros de Mateo: 149 totales, 25 con manchas.\\nCachorros de Mohammed: 49 totales, 12 con manchas.\\nPerros de Ibrahim: 54 perros, cada uno con 13 cachorros con manchas (todos con manchas).\\nMateo descubre que la mitad de sus cachorros sin manchas (149-25=124) en realidad tienen manchas.\\nSe busca el porcentaje total de cachor…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "inspect:zh",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a33d236b6d6d39bea",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970281925,
+      "queuedAt": 1785970280135,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "zh",
+      "promptPreview": "You are inspecting AI-generated output for FORMAT INSTABILITY — whether a required structural output format (three tags: <formalisation>, <reasoning> with numbered Step N: lines, <answer>) was maintained correctly, independent of whether the underlying math is right.\n\nBe skeptical and precise. For each item, check the raw_output field character-by-character for: (1) are all three tags present exac…",
+      "lastProgressAt": 1785970375739,
+      "tokens": 29643,
+      "toolCalls": 2,
+      "durationMs": 93813,
+      "resultPreview": "{\"findings\":[{\"idx\":40,\"language\":\"zh\",\"extracted_answer\":\"11%\",\"ground_truth_answer\":\"89\",\"math_correct\":false,\"tags_well_formed\":\"yes\",\"step_numbering_integrity\":\"Sequential Step 1 through Step 6, no gaps, duplicates, or renumbering\",\"language_interference_evidence\":\"none - all Chinese text (numbers, punctuation, math operators ÷ × %) renders cleanly with no mojibake or encoding artifacts\",\"form…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 7,
+      "label": "inspect:es",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "ad8fbaf2c2fc3df89",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970300273,
+      "queuedAt": 1785970298769,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "es",
+      "promptPreview": "You are inspecting AI-generated output for FORMAT INSTABILITY — whether a required structural output format (three tags: <formalisation>, <reasoning> with numbered Step N: lines, <answer>) was maintained correctly, independent of whether the underlying math is right.\n\nBe skeptical and precise. For each item, check the raw_output field character-by-character for: (1) are all three tags present exac…",
+      "lastProgressAt": 1785970316229,
+      "tokens": 20900,
+      "toolCalls": 1,
+      "durationMs": 15955,
+      "resultPreview": "{\"findings\":[{\"idx\":40,\"tags_well_formed\":\"yes\",\"step_numbering_integrity\":\"Sequential Step 1 through Step 8, no gaps, duplicates, or renumbering.\",\"format_instability_evidence\":\"none\",\"language_interference_evidence\":\"none - entirely in Spanish, consistent with target language, no code-switching or script mixing\",\"extracted_answer\":\"89\",\"ground_truth_answer\":\"89\",\"math_correct\":true,\"brief_verdic…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 8,
+      "label": "inspect:th",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a18b1962f17c3498c",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970315664,
+      "queuedAt": 1785970314342,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "th",
+      "promptPreview": "You are inspecting AI-generated output for FORMAT INSTABILITY — whether a required structural output format (three tags: <formalisation>, <reasoning> with numbered Step N: lines, <answer>) was maintained correctly, independent of whether the underlying math is right.\n\nBe skeptical and precise. For each item, check the raw_output field character-by-character for: (1) are all three tags present exac…",
+      "lastProgressAt": 1785970341764,
+      "tokens": 21260,
+      "toolCalls": 1,
+      "durationMs": 26099,
+      "resultPreview": "{\"findings\":[{\"idx\":40,\"tags_well_formed\":\"yes\",\"step_numbering_integrity\":\"Sequential Step 1 through Step 6, no gaps/duplicates/renumbering\",\"format_instability_evidence\":\"none\",\"language_interference_evidence\":\"none - consistent Thai script throughout formalisation/reasoning, with proper nouns (Mateo, โมฮัมเหม็ด, อิบราฮิม) appropriately transliterated/kept as names; no mojibake or script mixing …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 9,
+      "label": "inspect:te",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a16388236642e3dd2",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970330950,
+      "queuedAt": 1785970329669,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "te",
+      "promptPreview": "You are inspecting AI-generated output for FORMAT INSTABILITY — whether a required structural output format (three tags: <formalisation>, <reasoning> with numbered Step N: lines, <answer>) was maintained correctly, independent of whether the underlying math is right.\n\nBe skeptical and precise. For each item, check the raw_output field character-by-character for: (1) are all three tags present exac…",
+      "lastProgressAt": 1785970380025,
+      "tokens": 21165,
+      "toolCalls": 1,
+      "durationMs": 49075,
+      "resultPreview": "{\"findings\":[{\"idx\":40,\"tags_well_formed\":\"yes\",\"step_numbering_integrity\":\"Sequential Step 1 through Step 6, no gaps/duplicates/renumbering\",\"format_instability_evidence\":\"none\",\"language_interference_evidence\":\"none — Telugu script used consistently for prose, with English 'Step N:' labels and Arabic numerals/percent signs mixed in as expected for this format; no script switching errors or mojib…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 10,
+      "label": "inspect:bn",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "aee0f054c4a7d77c5",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970343171,
+      "queuedAt": 1785970340986,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "bn",
+      "promptPreview": "You are inspecting AI-generated output for FORMAT INSTABILITY — whether a required structural output format (three tags: <formalisation>, <reasoning> with numbered Step N: lines, <answer>) was maintained correctly, independent of whether the underlying math is right.\n\nBe skeptical and precise. For each item, check the raw_output field character-by-character for: (1) are all three tags present exac…",
+      "lastProgressAt": 1785970406663,
+      "tokens": 26977,
+      "toolCalls": 3,
+      "durationMs": 63492,
+      "resultPreview": "{\"findings\":[{\"idx\":40,\"tags_well_formed\":\"yes\",\"step_numbering_integrity\":\"Sequential Step 1 through Step 7, no gaps/duplicates/renumbering\",\"format_instability_evidence\":\"none\",\"language_interference_evidence\":\"none — content entirely in Bengali script apart from the literal English word \\\"Step\\\" which is part of the required reasoning-label format itself, not stray code-switching\",\"extracted_an…"
+    }
+  ],
+  "totalTokens": 217596,
+  "totalToolCalls": 13
+}

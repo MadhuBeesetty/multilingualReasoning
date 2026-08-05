@@ -1,0 +1,212 @@
+{
+  "zh": [
+    {
+      "idx": 20,
+      "question": "一家雾银行从海洋中滚入以覆盖城市。覆盖城市的每3英里需要30分钟。但是，我们知道风速将在一小时内减半。如果这座城市从海滨到对面的内陆边缘越过72英里，那么雾银行将需要多少分钟才​​能覆盖该城市的四分之一？",
+      "answer_number": "300"
+    },
+    {
+      "idx": 21,
+      "question": "一家雾银行从海洋中滚入以覆盖城市。覆盖城市每10英里的每10英里就需要75分钟。但是，我们知道风速将在一小时内减半。如果这座城市从海滨到对面的内陆边缘越过72英里，那么雾银行将需要几分钟才能覆盖城市的1/4？",
+      "answer_number": "210"
+    },
+    {
+      "idx": 22,
+      "question": "一家雾银行从海洋中滚入以覆盖城市。覆盖城市的每3英里需要60分钟。但是，我们知道风速将在一小时内减半。如果这座城市从海滨到对面的内陆边缘越过54英里，那么雾银行需要几分钟才能覆盖城市的1/3？",
+      "answer_number": "660"
+    },
+    {
+      "idx": 23,
+      "question": "一家雾银行从海洋中滚入以覆盖城市。覆盖城市每6英里需要60分钟。但是，我们知道风速将在一小时内减半。如果这座城市从海滨到对面的内陆边缘越过72英里，那么雾银行将需要多少分钟才​​能覆盖城市的1/3？",
+      "answer_number": "420"
+    },
+    {
+      "idx": 24,
+      "question": "一家雾银行从海洋中滚入以覆盖城市。覆盖城市每5英里需要25分钟。但是，我们知道风速将在一小时内减半。如果这座城市从海滨到对面的内陆边缘越过54英里，那么雾银行需要几分钟才能覆盖城市的1/2？",
+      "answer_number": "210"
+    },
+    {
+      "idx": 25,
+      "question": "一家雾银行从海洋中滚入以覆盖城市。覆盖城市的每3英里需要90分钟。但是，我们知道风速将在一小时内减半。如果这座城市从海滨到对面的内陆边缘越过78英里，那么雾银行将需要几分钟才能覆盖这座城市的三分之一？",
+      "answer_number": "1500"
+    },
+    {
+      "idx": 26,
+      "question": "一家雾银行从海洋中滚入以覆盖城市。每13英里的城市每13英里都需要30分钟。但是，我们知道风速将在一小时内减半。如果这座城市从海滨到对面的内陆边缘越过78英里，那么雾银行将需要几分钟才能覆盖城市的1/2？",
+      "answer_number": "120"
+    },
+    {
+      "idx": 27,
+      "question": "一家雾银行从海洋中滚入以覆盖城市。覆盖城市的每3英里需要15分钟。但是，我们知道风速将在一小时内减半。如果这座城市从海滨到对面的内陆边缘越过96英里，那么雾银行将需要多少分钟才​​能覆盖该城市的四分之一？",
+      "answer_number": "180"
+    }
+  ],
+  "th": [
+    {
+      "idx": 20,
+      "question": "ธนาคารหมอกหมอกเข้ามาจากมหาสมุทรเพื่อปกปิดเมืองใช้เวลา 30 นาทีในการครอบคลุมทุก ๆ 3 ไมล์ของเมืองอย่างไรก็ตามเรารู้ว่าความเร็วลมจะลดลงครึ่งหนึ่งในหนึ่งชั่วโมงหากเมืองนี้อยู่ห่างจากริมทะเลไปยังริมทะเลไปยังขอบฝั่งตรงข้าม 72 ไมล์จะต้องใช้เวลากี่นาทีสำหรับธนาคารหมอกที่จะครอบคลุมหนึ่งในสี่ของเมือง?",
+      "answer_number": "300"
+    },
+    {
+      "idx": 21,
+      "question": "ธนาคารหมอกหมอกเข้ามาจากมหาสมุทรเพื่อปกปิดเมืองใช้เวลา 75 นาทีในการครอบคลุมทุก ๆ 10 ไมล์ของเมืองอย่างไรก็ตามเรารู้ว่าความเร็วลมจะลดลงครึ่งหนึ่งในหนึ่งชั่วโมงหากเมืองนี้อยู่ห่างจากริมทะเลไปยังริมทะเลไปยังขอบฝั่งตรงข้าม 72 ไมล์จะต้องใช้เวลากี่นาทีสำหรับธนาคารหมอกที่จะครอบคลุม 1/4 ของเมือง?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 22,
+      "question": "ธนาคารหมอกหมอกเข้ามาจากมหาสมุทรเพื่อปกปิดเมืองใช้เวลา 60 นาทีในการครอบคลุมทุก ๆ 3 ไมล์ของเมืองอย่างไรก็ตามเรารู้ว่าความเร็วลมจะลดลงครึ่งหนึ่งในหนึ่งชั่วโมงหากเมืองอยู่ตรงข้ามกับริมทะเลไปยังขอบฝั่งตรงข้าม 54 ไมล์จะต้องใช้เวลากี่นาทีสำหรับธนาคารหมอกที่จะครอบคลุม 1/3 ของเมือง?",
+      "answer_number": "660"
+    },
+    {
+      "idx": 23,
+      "question": "ธนาคารหมอกหมอกเข้ามาจากมหาสมุทรเพื่อปกปิดเมืองใช้เวลา 60 นาทีในการครอบคลุมทุก ๆ 6 ไมล์ของเมืองอย่างไรก็ตามเรารู้ว่าความเร็วลมจะลดลงครึ่งหนึ่งในหนึ่งชั่วโมงหากเมืองนี้อยู่ห่างจากริมทะเลไปยังริมทะเลไปยังขอบฝั่งตรงข้าม 72 ไมล์จะต้องใช้เวลากี่นาทีสำหรับธนาคารหมอกที่จะครอบคลุม 1/3 ของเมือง?",
+      "answer_number": "420"
+    },
+    {
+      "idx": 24,
+      "question": "ธนาคารหมอกหมอกเข้ามาจากมหาสมุทรเพื่อปกปิดเมืองใช้เวลา 25 นาทีในการครอบคลุมทุก ๆ 5 ไมล์ของเมืองอย่างไรก็ตามเรารู้ว่าความเร็วลมจะลดลงครึ่งหนึ่งในหนึ่งชั่วโมงหากเมืองอยู่ตรงข้ามกับริมทะเลไปยังขอบฝั่งตรงข้าม 54 ไมล์จะต้องใช้เวลากี่นาทีสำหรับธนาคารหมอกที่ครอบคลุม 1/2 ของเมือง?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 25,
+      "question": "ธนาคารหมอกหมอกเข้ามาจากมหาสมุทรเพื่อปกปิดเมืองใช้เวลา 90 นาทีในการครอบคลุมทุก 3 ไมล์ของเมืองอย่างไรก็ตามเรารู้ว่าความเร็วลมจะลดลงครึ่งหนึ่งในหนึ่งชั่วโมงหากเมืองนี้อยู่ห่างจากริมทะเลไปยังริมทะเลไปยังขอบฝั่งตรงข้าม 78 ไมล์จะต้องใช้เวลากี่นาทีสำหรับธนาคารหมอกที่จะครอบคลุมหนึ่งในสามของเมือง?",
+      "answer_number": "1500"
+    },
+    {
+      "idx": 26,
+      "question": "ธนาคารหมอกหมอกเข้ามาจากมหาสมุทรเพื่อปกปิดเมืองใช้เวลา 30 นาทีในการครอบคลุมทุก ๆ 13 ไมล์ของเมืองอย่างไรก็ตามเรารู้ว่าความเร็วลมจะลดลงครึ่งหนึ่งในหนึ่งชั่วโมงหากเมืองนี้อยู่ห่างจากริมทะเลไปยังริมทะเลไปยังขอบฝั่งตรงข้าม 78 ไมล์จะต้องใช้เวลากี่นาทีสำหรับธนาคารหมอกที่จะครอบคลุม 1/2 ของเมือง?",
+      "answer_number": "120"
+    },
+    {
+      "idx": 27,
+      "question": "ธนาคารหมอกหมอกเข้ามาจากมหาสมุทรเพื่อปกปิดเมืองใช้เวลา 15 นาทีในการครอบคลุมทุก ๆ 3 ไมล์ของเมืองอย่างไรก็ตามเรารู้ว่าความเร็วลมจะลดลงครึ่งหนึ่งในหนึ่งชั่วโมงหากเมืองอยู่ตรงข้ามกับริมทะเลไปยังขอบฝั่งตรงข้าม 96 ไมล์จะต้องใช้เวลากี่นาทีสำหรับธนาคารหมอกที่จะครอบคลุมหนึ่งในสี่ของเมือง?",
+      "answer_number": "180"
+    }
+  ],
+  "ja": [
+    {
+      "idx": 20,
+      "question": "フォグバンクが海から巻き込まれ、都市を覆います。市の3マイルごとにカバーするのに30分かかります。ただし、風速は1時間で半分になることがわかっています。都市がオーシャンフロントの向かい側に72マイルの場合、反対側の内陸の端まで、フォグバンクが都市の4分の1をカバーするのに何分かかりますか？",
+      "answer_number": "300"
+    },
+    {
+      "idx": 21,
+      "question": "フォグバンクが海から巻き込まれ、都市を覆います。市の10マイルごとに75分かかります。ただし、風速は1時間で半分になることがわかっています。都市がオーシャンフロントの向かいに72マイルの場合、反対側の内陸の端まで、フォグバンクが市の1/4をカバーするのに何分かかりますか？",
+      "answer_number": "210"
+    },
+    {
+      "idx": 22,
+      "question": "フォグバンクが海から巻き込まれ、都市を覆います。市の3マイルごとに60分かかります。ただし、風速は1時間で半分になることがわかっています。都市がオーシャンフロントの向かいに54マイルの場合、反対側の内陸の端まで、フォグバンクが市の1/3をカバーするのに何分かかりますか？",
+      "answer_number": "660"
+    },
+    {
+      "idx": 23,
+      "question": "フォグバンクが海から巻き込まれ、都市を覆います。市内の6マイルごとに60分かかります。ただし、風速は1時間で半分になることがわかっています。都市がオーシャンフロントの向かい側に72マイルの場合、反対側の内陸の端まで、フォグバンクが市の1/3をカバーするのに何分かかりますか？",
+      "answer_number": "420"
+    },
+    {
+      "idx": 24,
+      "question": "フォグバンクが海から巻き込まれ、都市を覆います。市の5マイルごとにカバーするのに25分かかります。ただし、風速は1時間で半分になることがわかっています。都市がオーシャンフロントの向かいにある54マイルの場合、反対側の内陸の端まで、フォグバンクが市の1/2をカバーするのに何分かかりますか？",
+      "answer_number": "210"
+    },
+    {
+      "idx": 25,
+      "question": "フォグバンクが海から巻き込まれ、都市を覆います。市の3マイルごとにカバーするのに90分かかります。ただし、風速は1時間で半分になることがわかっています。都市がオーシャンフロントの向かい側に78マイルの場合、反対側の内陸の端まで、フォグバンクが都市の3分の1をカバーするのに何分かかりますか？",
+      "answer_number": "1500"
+    },
+    {
+      "idx": 26,
+      "question": "フォグバンクが海から巻き込まれ、都市を覆います。市の13マイルごとにカバーするのに30分かかります。ただし、風速は1時間で半分になることがわかっています。都市がオーシャンフロントの向かい側に78マイルの場合、反対側の内陸の端まで、フォグバンクが市の1/2をカバーするのに何分かかりますか？",
+      "answer_number": "120"
+    },
+    {
+      "idx": 27,
+      "question": "フォグバンクが海から巻き込まれ、都市を覆います。市の3マイルごとに15分かかります。ただし、風速は1時間で半分になることがわかっています。都市がオーシャンフロントの向かいにある96マイルの場合、反対側の内陸の端まで、フォグバンクが都市の4分の1をカバーするのに何分かかりますか？",
+      "answer_number": "180"
+    }
+  ],
+  "es": [
+    {
+      "idx": 20,
+      "question": "Un banco de niebla llega desde el océano para cubrir una ciudad.Se necesitan 30 minutos para cubrir cada 3 millas de la ciudad.Sin embargo, sabemos que la velocidad del viento se reducirá a la mitad en una hora.Si la ciudad está a 72 millas desde el frente del mar hasta el límite interior opuesto, ¿cuántos minutos tardará en el banco de niebla para cubrir una cuarta parte de la ciudad?",
+      "answer_number": "300"
+    },
+    {
+      "idx": 21,
+      "question": "Un banco de niebla llega desde el océano para cubrir una ciudad.Se necesitan 75 minutos para cubrir cada 10 millas de la ciudad.Sin embargo, sabemos que la velocidad del viento se reducirá a la mitad en una hora.Si la ciudad está a 72 millas desde el frente del océano hasta la orilla del interior opuesto, ¿cuántos minutos tardará en el banco de niebla para cubrir 1/4 de la ciudad?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 22,
+      "question": "Un banco de niebla llega desde el océano para cubrir una ciudad.Se tarda 60 minutos en cubrir cada 3 millas de la ciudad.Sin embargo, sabemos que la velocidad del viento se reducirá a la mitad en una hora.Si la ciudad está a 54 millas desde el frente del mar hasta el borde interior opuesto, ¿cuántos minutos tardará en el banco de niebla para cubrir 1/3 de la ciudad?",
+      "answer_number": "660"
+    },
+    {
+      "idx": 23,
+      "question": "Un banco de niebla llega desde el océano para cubrir una ciudad.Se necesitan 60 minutos para cubrir cada 6 millas de la ciudad.Sin embargo, sabemos que la velocidad del viento se reducirá a la mitad en una hora.Si la ciudad está a 72 millas desde el frente del mar hasta el borde interior opuesto, ¿cuántos minutos tardará en el banco de niebla para cubrir 1/3 de la ciudad?",
+      "answer_number": "420"
+    },
+    {
+      "idx": 24,
+      "question": "Un banco de niebla llega desde el océano para cubrir una ciudad.Se necesitan 25 minutos para cubrir cada 5 millas de la ciudad.Sin embargo, sabemos que la velocidad del viento se reducirá a la mitad en una hora.Si la ciudad está a 54 millas desde el frente del mar hasta la orilla del interior opuesto, ¿cuántos minutos tardará en el banco de niebla para cubrir 1/2 de la ciudad?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 25,
+      "question": "Un banco de niebla llega desde el océano para cubrir una ciudad.Se necesitan 90 minutos para cubrir cada 3 millas de la ciudad.Sin embargo, sabemos que la velocidad del viento se reducirá a la mitad en una hora.Si la ciudad está a 78 millas desde el frente del océano hasta la orilla del interior opuesto, ¿cuántos minutos tardará en el banco de niebla para cubrir un tercio de la ciudad?",
+      "answer_number": "1500"
+    },
+    {
+      "idx": 26,
+      "question": "Un banco de niebla llega desde el océano para cubrir una ciudad.Se necesitan 30 minutos para cubrir cada 13 millas de la ciudad.Sin embargo, sabemos que la velocidad del viento se reducirá a la mitad en una hora.Si la ciudad está a 78 millas desde el frente del océano hasta la orilla del interior opuesto, ¿cuántos minutos tardará en el banco de niebla para cubrir 1/2 de la ciudad?",
+      "answer_number": "120"
+    },
+    {
+      "idx": 27,
+      "question": "Un banco de niebla llega desde el océano para cubrir una ciudad.Se necesitan 15 minutos para cubrir cada 3 millas de la ciudad.Sin embargo, sabemos que la velocidad del viento se reducirá a la mitad en una hora.Si la ciudad está a 96 millas desde el frente del mar hasta la orilla del interior opuesto, ¿cuántos minutos tardará en el banco de niebla para cubrir una cuarta parte de la ciudad?",
+      "answer_number": "180"
+    }
+  ],
+  "de": [
+    {
+      "idx": 20,
+      "question": "Eine Nebelbank rollt aus dem Meer ein, um eine Stadt zu bedecken.Es dauert 30 Minuten, um alle 3 Meilen der Stadt abzudecken.Wir wissen jedoch, dass die Windgeschwindigkeit in einer Stunde halbiert wird.Wenn die Stadt 72 Meilen gegenüber der Meerfront bis zum gegenüberliegenden Inland -Rand ist, wie viele Minuten dauert es, bis die Nebelbank ein Viertel der Stadt abdeckt?",
+      "answer_number": "300"
+    },
+    {
+      "idx": 21,
+      "question": "Eine Nebelbank rollt aus dem Meer ein, um eine Stadt zu bedecken.Es dauert 75 Minuten, um alle 10 Meilen der Stadt abzudecken.Wir wissen jedoch, dass die Windgeschwindigkeit in einer Stunde halbiert wird.Wenn die Stadt 72 Meilen gegenüber dem Meer bis zum gegenüberliegenden Inland -Rand ist, wie viele Minuten dauert es, bis die Nebelbank 1/4 der Stadt abdeckt?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 22,
+      "question": "Eine Nebelbank rollt aus dem Meer ein, um eine Stadt zu bedecken.Es dauert 60 Minuten, um alle 3 Meilen der Stadt abzudecken.Wir wissen jedoch, dass die Windgeschwindigkeit in einer Stunde halbiert wird.Wenn die Stadt 54 Meilen gegenüber dem Meer bis zum gegenüberliegenden Inland -Rand ist, wie viele Minuten dauert es, bis die Nebelbank 1/3 der Stadt abdeckt?",
+      "answer_number": "660"
+    },
+    {
+      "idx": 23,
+      "question": "Eine Nebelbank rollt aus dem Meer ein, um eine Stadt zu bedecken.Es dauert 60 Minuten, um alle 6 Meilen der Stadt zu bedecken.Wir wissen jedoch, dass die Windgeschwindigkeit in einer Stunde halbiert wird.Wenn die Stadt 72 Meilen gegenüber dem Meer bis zum gegenüberliegenden Inland -Rand ist, wie viele Minuten dauert es, bis die Nebelbank 1/3 der Stadt abdeckt?",
+      "answer_number": "420"
+    },
+    {
+      "idx": 24,
+      "question": "Eine Nebelbank rollt aus dem Meer ein, um eine Stadt zu bedecken.Es dauert 25 Minuten, um alle 5 Meilen der Stadt abzudecken.Wir wissen jedoch, dass die Windgeschwindigkeit in einer Stunde halbiert wird.Wenn die Stadt 54 Meilen gegenüber dem Meer bis zum gegenüberliegenden Inland -Rand ist, wie viele Minuten dauert es, bis die Nebelbank den 1/2 der Stadt abdeckt?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 25,
+      "question": "Eine Nebelbank rollt aus dem Meer ein, um eine Stadt zu bedecken.Es dauert 90 Minuten, um alle 3 Meilen der Stadt abzudecken.Wir wissen jedoch, dass die Windgeschwindigkeit in einer Stunde halbiert wird.Wenn die Stadt 78 Meilen gegenüber dem Meer bis zum gegenüberliegenden Inland -Rand ist, wie viele Minuten dauert es, bis die Nebelbank ein Drittel der Stadt abdeckt?",
+      "answer_number": "1500"
+    },
+    {
+      "idx": 26,
+      "question": "Eine Nebelbank rollt aus dem Meer ein, um eine Stadt zu bedecken.Es dauert 30 Minuten, um alle 13 Meilen der Stadt abzudecken.Wir wissen jedoch, dass die Windgeschwindigkeit in einer Stunde halbiert wird.Wenn die Stadt 78 Meilen gegenüber dem Meer bis zum gegenüberliegenden Inland -Rand ist, wie viele Minuten dauert es, bis die Nebelbank 1/2 der Stadt abdeckt?",
+      "answer_number": "120"
+    },
+    {
+      "idx": 27,
+      "question": "Eine Nebelbank rollt aus dem Meer ein, um eine Stadt zu bedecken.Es dauert 15 Minuten, um alle 3 Meilen der Stadt abzudecken.Wir wissen jedoch, dass die Windgeschwindigkeit in einer Stunde halbiert wird.Wenn die Stadt 96 Meilen gegenüber dem Meer bis zum gegenüberliegenden Inland -Rand ist, wie viele Minuten dauert es, bis die Nebelbank ein Viertel der Stadt abdeckt?",
+      "answer_number": "180"
+    }
+  ]
+}

@@ -1,0 +1,978 @@
+{
+  "summary": "Blind-generate reasoning on real MGSM-Symbolic problems across 5 languages, then inspect for structural failure modes",
+  "agentCount": 10,
+  "logs": [],
+  "result": [
+    {
+      "language": "zh",
+      "generation": {
+        "language": "zh",
+        "solutions": [
+          {
+            "idx": 20,
+            "native_reasoning": "已知条件：雾银行覆盖城市的速度是每3英里需要30分钟。\n先求出雾银行的移动速率：3英里 ÷ 30分钟 = 0.1英里/分钟，也就是说每覆盖1英里需要30÷3=10分钟。\n城市从海滨到内陆边缘共72英里，四分之一的距离是：72 × 1/4 = 18英里。\n题目提到风速会在一小时内减半，但这里只需要计算覆盖18英里所需的时间，用给定的初始速率直接计算即可：\n所需时间 = 18英里 × 10分钟/英里 = 180分钟。\n所以雾银行覆盖该城市四分之一所需的时间是180分钟。",
+            "english_gloss": "Given: the fog bank covers the city at a rate of every 3 miles per 30 minutes.\nFirst find the speed: 3 miles ÷ 30 minutes = 0.1 miles/minute, i.e., it takes 30÷3=10 minutes per mile.\nThe city spans 72 miles from the coast to the inland edge, so a quarter of that distance is: 72 × 1/4 = 18 miles.\nThe problem mentions the wind speed will halve within an hour, but we only need the time to cover 18 miles, so we compute directly using the given initial rate:\nTime needed = 18 miles × 10 minutes/mile = 180 minutes.\nSo the fog bank needs 180 minutes to cover a quarter of the city.",
+            "final_answer_given": "180分钟"
+          },
+          {
+            "idx": 21,
+            "native_reasoning": "已知条件：雾银行覆盖城市的速度是每10英里需要75分钟。\n城市共72英里，四分之一的距离是：72 × 1/4 = 18英里。\n用给定的速率按比例计算所需时间：\n时间 = 18英里 ÷ 10英里 × 75分钟 = 1.8 × 75 = 135分钟。\n风速减半的信息在此不影响这一段距离的计算，因为我们只需按初始速率求出覆盖18英里所需的时间。\n所以雾银行覆盖该城市四分之一所需的时间是135分钟。",
+            "english_gloss": "Given: the fog bank covers the city at a rate of every 10 miles per 75 minutes.\nThe city is 72 miles across, so a quarter of that distance is: 72 × 1/4 = 18 miles.\nUsing the given rate proportionally:\nTime = 18 miles ÷ 10 miles × 75 minutes = 1.8 × 75 = 135 minutes.\nThe wind-speed-halving detail doesn't affect this calculation for this distance, since we only need to find the time to cover 18 miles at the initial rate.\nSo the fog bank needs 135 minutes to cover a quarter of the city.",
+            "final_answer_given": "135分钟"
+          },
+          {
+            "idx": 22,
+            "native_reasoning": "已知条件：雾银行覆盖城市的速度是每3英里需要60分钟。\n城市共54英里，三分之一的距离是：54 × 1/3 = 18英里。\n按比例计算所需时间：\n时间 = 18英里 ÷ 3英里 × 60分钟 = 6 × 60 = 360分钟。\n风速减半的说明在此不影响求解这一段距离所需的时间，直接用初始速率计算即可。\n所以雾银行覆盖该城市三分之一所需的时间是360分钟。",
+            "english_gloss": "Given: the fog bank covers the city at a rate of every 3 miles per 60 minutes.\nThe city is 54 miles across, so a third of that distance is: 54 × 1/3 = 18 miles.\nCalculating proportionally:\nTime = 18 miles ÷ 3 miles × 60 minutes = 6 × 60 = 360 minutes.\nThe wind-speed-halving note doesn't affect finding the time for this distance; we just use the initial rate.\nSo the fog bank needs 360 minutes to cover a third of the city.",
+            "final_answer_given": "360分钟"
+          },
+          {
+            "idx": 23,
+            "native_reasoning": "已知条件：雾银行覆盖城市的速度是每6英里需要60分钟。\n城市共72英里，三分之一的距离是：72 × 1/3 = 24英里。\n按比例计算所需时间：\n时间 = 24英里 ÷ 6英里 × 60分钟 = 4 × 60 = 240分钟。\n风速减半的信息此处不影响这一计算，直接用给定速率求解即可。\n所以雾银行覆盖该城市三分之一所需的时间是240分钟。",
+            "english_gloss": "Given: the fog bank covers the city at a rate of every 6 miles per 60 minutes.\nThe city is 72 miles across, so a third of that distance is: 72 × 1/3 = 24 miles.\nCalculating proportionally:\nTime = 24 miles ÷ 6 miles × 60 minutes = 4 × 60 = 240 minutes.\nThe wind-speed-halving info doesn't affect this calculation; we solve directly with the given rate.\nSo the fog bank needs 240 minutes to cover a third of the city.",
+            "final_answer_given": "240分钟"
+          },
+          {
+            "idx": 24,
+            "native_reasoning": "已知条件：雾银行覆盖城市的速度是每5英里需要25分钟。\n城市共54英里，二分之一的距离是：54 × 1/2 = 27英里。\n按比例计算所需时间：\n时间 = 27英里 ÷ 5英里 × 25分钟 = 5.4 × 25 = 135分钟。\n风速减半的信息不影响此处的计算，直接使用初始速率求解。\n所以雾银行覆盖该城市二分之一所需的时间是135分钟。",
+            "english_gloss": "Given: the fog bank covers the city at a rate of every 5 miles per 25 minutes.\nThe city is 54 miles across, so half of that distance is: 54 × 1/2 = 27 miles.\nCalculating proportionally:\nTime = 27 miles ÷ 5 miles × 25 minutes = 5.4 × 25 = 135 minutes.\nThe wind-speed-halving info doesn't affect this calculation; solve directly with the initial rate.\nSo the fog bank needs 135 minutes to cover half of the city.",
+            "final_answer_given": "135分钟"
+          },
+          {
+            "idx": 25,
+            "native_reasoning": "已知条件：雾银行覆盖城市的速度是每3英里需要90分钟。\n城市共78英里，三分之一的距离是：78 × 1/3 = 26英里。\n按比例计算所需时间：\n时间 = 26英里 ÷ 3英里 × 90分钟 = 26 × 30 = 780分钟。\n风速减半的信息此处不影响这一计算，直接用初始速率求解即可。\n所以雾银行覆盖该城市三分之一所需的时间是780分钟。",
+            "english_gloss": "Given: the fog bank covers the city at a rate of every 3 miles per 90 minutes.\nThe city is 78 miles across, so a third of that distance is: 78 × 1/3 = 26 miles.\nCalculating proportionally:\nTime = 26 miles ÷ 3 miles × 90 minutes = 26 × 30 = 780 minutes.\nThe wind-speed-halving info doesn't affect this calculation; solve directly with the initial rate.\nSo the fog bank needs 780 minutes to cover a third of the city.",
+            "final_answer_given": "780分钟"
+          },
+          {
+            "idx": 26,
+            "native_reasoning": "已知条件：雾银行覆盖城市的速度是每13英里需要30分钟。\n城市共78英里，二分之一的距离是：78 × 1/2 = 39英里。\n按比例计算所需时间：\n时间 = 39英里 ÷ 13英里 × 30分钟 = 3 × 30 = 90分钟。\n风速减半的信息此处不影响这一计算，直接用初始速率求解即可。\n所以雾银行覆盖该城市二分之一所需的时间是90分钟。",
+            "english_gloss": "Given: the fog bank covers the city at a rate of every 13 miles per 30 minutes.\nThe city is 78 miles across, so half of that distance is: 78 × 1/2 = 39 miles.\nCalculating proportionally:\nTime = 39 miles ÷ 13 miles × 30 minutes = 3 × 30 = 90 minutes.\nThe wind-speed-halving info doesn't affect this calculation; solve directly with the initial rate.\nSo the fog bank needs 90 minutes to cover half of the city.",
+            "final_answer_given": "90分钟"
+          },
+          {
+            "idx": 27,
+            "native_reasoning": "已知条件：雾银行覆盖城市的速度是每3英里需要15分钟。\n城市共96英里，四分之一的距离是：96 × 1/4 = 24英里。\n按比例计算所需时间：\n时间 = 24英里 ÷ 3英里 × 15分钟 = 8 × 15 = 120分钟。\n风速减半的信息此处不影响这一计算，直接用初始速率求解即可。\n所以雾银行覆盖该城市四分之一所需的时间是120分钟。",
+            "english_gloss": "Given: the fog bank covers the city at a rate of every 3 miles per 15 minutes.\nThe city is 96 miles across, so a quarter of that distance is: 96 × 1/4 = 24 miles.\nCalculating proportionally:\nTime = 24 miles ÷ 3 miles × 15 minutes = 8 × 15 = 120 minutes.\nThe wind-speed-halving info doesn't affect this calculation; solve directly with the initial rate.\nSo the fog bank needs 120 minutes to cover a quarter of the city.",
+            "final_answer_given": "120分钟"
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 20,
+            "ground_truth_answer": "300",
+            "answer_given": "180分钟",
+            "correct": false,
+            "brief_verdict": "Computed a single direct-proportion time (180) and explicitly waved away the wind-halving step; true answer requires splitting into pre/post-60-min segments (=300).",
+            "compositional_collapse_evidence": "The problem mentions the wind speed will halve within an hour, but we only need the time to cover 18 miles, so we compute directly using the given initial rate: Time needed = 18 miles × 10 minutes/mile = 180 minutes.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 21,
+            "ground_truth_answer": "210",
+            "answer_given": "135分钟",
+            "correct": false,
+            "brief_verdict": "Same dismissal pattern: direct proportional time (135) given instead of accounting for rate halving after 60 min (correct=210).",
+            "compositional_collapse_evidence": "The wind-speed-halving detail doesn't affect this calculation for this distance, since we only need to find the time to cover 18 miles at the initial rate.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 22,
+            "ground_truth_answer": "660",
+            "answer_given": "360分钟",
+            "correct": false,
+            "brief_verdict": "Direct proportional time (360) given; ignores that after 60 min the fog's speed halves, which is required to reach the true 660.",
+            "compositional_collapse_evidence": "The wind-speed-halving note doesn't affect finding the time for this distance; we just use the initial rate.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 23,
+            "ground_truth_answer": "420",
+            "answer_given": "240分钟",
+            "correct": false,
+            "brief_verdict": "Direct proportional time (240) given, again explicitly dismissing the halving condition; correct answer with halving accounted for is 420.",
+            "compositional_collapse_evidence": "The wind-speed-halving info doesn't affect this calculation; we solve directly with the given rate.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 24,
+            "ground_truth_answer": "210",
+            "answer_given": "135分钟",
+            "correct": false,
+            "brief_verdict": "Direct proportional time (135) given while explicitly dismissing the halving rule; correct answer incorporating the speed change is 210.",
+            "compositional_collapse_evidence": "The wind-speed-halving info doesn't affect this calculation; solve directly with the initial rate.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 25,
+            "ground_truth_answer": "1500",
+            "answer_given": "780分钟",
+            "correct": false,
+            "brief_verdict": "Direct proportional time (780) given; omitting the post-60-minute half-rate segment yields a large underestimate versus the true 1500.",
+            "compositional_collapse_evidence": "The wind-speed-halving info doesn't affect this calculation; solve directly with the initial rate.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 26,
+            "ground_truth_answer": "120",
+            "answer_given": "90分钟",
+            "correct": false,
+            "brief_verdict": "Direct proportional time (90) given, again dismissing the halving detail; true answer requiring the split calculation is 120.",
+            "compositional_collapse_evidence": "The wind-speed-halving info doesn't affect this calculation; solve directly with the initial rate.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 27,
+            "ground_truth_answer": "180",
+            "answer_given": "120分钟",
+            "correct": false,
+            "brief_verdict": "Direct proportional time (120) given; correct calculation splitting pre/post-halving segments yields 180.",
+            "compositional_collapse_evidence": "The wind-speed-halving info doesn't affect this calculation; solve directly with the initial rate.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          }
+        ],
+        "language": "zh",
+        "overall_summary": "All 8 solutions are incorrect, and the failure is uniform and highly distinctive: a pure Compositional Collapse. In every case the model correctly computes the base rate and the target fractional distance, but it explicitly surfaces the wind-halving condition from the prompt and then consciously discards it (near-identical boilerplate sentences like \"the wind-speed-halving info doesn't affect this calculation; solve directly with the initial rate\" appear in 7 of 8 items), collapsing sub-parts (2)-(3)-(4) of the required structure (recognize the rate change at 60 minutes, split distance covered before/after, sum the two segments) into a single flat proportional calculation. This is not Reasoning Drift, since the arithmetic that is actually performed is internally self-consistent and correct given the (flawed) simplified approach the model chose — there is no cascading error partway through a correct chain, just an entirely omitted branch of reasoning. Format Instability is absent throughout: every response has a complete, well-structured chain (given conditions → rate → fractional distance → proportional time → dismissal clause → final answer sentence) with no truncation or garbled numbers. Language Interference is also absent: reasoning remains entirely in Chinese with no unexpected code-switching. So in this Chinese-language batch, the four failure modes are cleanly distinguishable from one another — Compositional Collapse is the dominant, consistently-evidenced failure, while Reasoning Drift, Format Instability, and Language Interference are all clearly and uniformly absent."
+      }
+    },
+    {
+      "language": "th",
+      "generation": {
+        "language": "Thai (th)",
+        "solutions": [
+          {
+            "idx": 20,
+            "native_reasoning": "โจทย์บอกว่าหมอกใช้เวลา 30 นาที ในการครอบคลุมทุก ๆ 3 ไมล์ของเมือง ดังนั้นอัตราการเคลื่อนที่ของหมอกคือ 30 นาที ÷ 3 ไมล์ = 10 นาทีต่อไมล์\n\nเมืองมีความกว้างจากริมทะเลถึงขอบฝั่งตรงข้าม 72 ไมล์ เราต้องการหาว่าหมอกใช้เวลาเท่าไหร่ในการครอบคลุมหนึ่งในสี่ (1/4) ของเมือง\n\nระยะทางหนึ่งในสี่ของเมือง = 72 ÷ 4 = 18 ไมล์\n\nเวลาที่ใช้ = 18 ไมล์ × 10 นาที/ไมล์ = 180 นาที\n\n(ข้อมูลเรื่องความเร็วลมลดลงครึ่งหนึ่งในหนึ่งชั่วโมงเป็นข้อมูลเสริมที่ไม่จำเป็นต้องใช้ในการคำนวณนี้ เพราะโจทย์ให้อัตราการครอบคลุมของหมอกมาโดยตรงแล้ว)\n\nดังนั้นคำตอบคือ 180 นาที",
+            "english_gloss": "The problem states the fog takes 30 minutes to cover every 3 miles of the city, so the fog's rate is 30 minutes ÷ 3 miles = 10 minutes per mile.\n\nThe city is 72 miles wide from the ocean shore to the opposite edge. We need to find how long it takes the fog to cover one quarter (1/4) of the city.\n\nOne quarter of the city's distance = 72 ÷ 4 = 18 miles.\n\nTime needed = 18 miles × 10 minutes/mile = 180 minutes.\n\n(The detail about wind speed halving every hour is extra information not needed for this calculation, since the fog's coverage rate is given directly.)\n\nSo the answer is 180 minutes.",
+            "final_answer_given": "180 minutes"
+          },
+          {
+            "idx": 21,
+            "native_reasoning": "หมอกใช้เวลา 75 นาที ในการครอบคลุมทุก ๆ 10 ไมล์ของเมือง ดังนั้นอัตราการเคลื่อนที่คือ 75 ÷ 10 = 7.5 นาทีต่อไมล์\n\nเมืองกว้าง 72 ไมล์ ต้องการหาเวลาที่ใช้ครอบคลุม 1/4 ของเมือง\n\nระยะทาง 1/4 ของเมือง = 72 ÷ 4 = 18 ไมล์\n\nเวลาที่ใช้ = 18 × 7.5 = 135 นาที\n\n(เรื่องความเร็วลมลดลงครึ่งหนึ่งในหนึ่งชั่วโมงไม่เกี่ยวข้องกับการคำนวณนี้ เพราะเราใช้อัตราการครอบคลุมที่โจทย์ให้มาโดยตรง)\n\nดังนั้นคำตอบคือ 135 นาที",
+            "english_gloss": "The fog takes 75 minutes to cover every 10 miles of the city, so its rate is 75 ÷ 10 = 7.5 minutes per mile.\n\nThe city is 72 miles wide; we need the time to cover 1/4 of the city.\n\nOne quarter of the city = 72 ÷ 4 = 18 miles.\n\nTime needed = 18 × 7.5 = 135 minutes.\n\n(The wind speed halving detail is irrelevant to this calculation since we use the given coverage rate directly.)\n\nSo the answer is 135 minutes.",
+            "final_answer_given": "135 minutes"
+          },
+          {
+            "idx": 22,
+            "native_reasoning": "หมอกใช้เวลา 60 นาที ในการครอบคลุมทุก ๆ 3 ไมล์ ดังนั้นอัตราการเคลื่อนที่ = 60 ÷ 3 = 20 นาทีต่อไมล์\n\nเมืองกว้าง 54 ไมล์ ต้องการหาเวลาครอบคลุม 1/3 ของเมือง\n\nระยะทาง 1/3 ของเมือง = 54 ÷ 3 = 18 ไมล์\n\nเวลาที่ใช้ = 18 × 20 = 360 นาที\n\n(ข้อมูลลมลดความเร็วครึ่งหนึ่งในหนึ่งชั่วโมงเป็นข้อมูลที่ไม่จำเป็นสำหรับคำถามนี้ เพราะเราใช้อัตราที่โจทย์กำหนดไว้แล้วในการคำนวณโดยตรง)\n\nดังนั้นคำตอบคือ 360 นาที",
+            "english_gloss": "The fog takes 60 minutes to cover every 3 miles, so its rate is 60 ÷ 3 = 20 minutes per mile.\n\nThe city is 54 miles wide; we need the time to cover 1/3 of the city.\n\nOne third of the city = 54 ÷ 3 = 18 miles.\n\nTime needed = 18 × 20 = 360 minutes.\n\n(The wind speed halving detail is not needed for this question, since we use the rate given directly.)\n\nSo the answer is 360 minutes.",
+            "final_answer_given": "360 minutes"
+          },
+          {
+            "idx": 23,
+            "native_reasoning": "หมอกใช้เวลา 60 นาที ในการครอบคลุมทุก ๆ 6 ไมล์ ดังนั้นอัตราการเคลื่อนที่ = 60 ÷ 6 = 10 นาทีต่อไมล์\n\nเมืองกว้าง 72 ไมล์ ต้องการหาเวลาครอบคลุม 1/3 ของเมือง\n\nระยะทาง 1/3 ของเมือง = 72 ÷ 3 = 24 ไมล์\n\nเวลาที่ใช้ = 24 × 10 = 240 นาที\n\n(ข้อมูลลมลดความเร็วครึ่งหนึ่งในหนึ่งชั่วโมงไม่มีผลต่อคำตอบ เนื่องจากคำนวณจากอัตราการครอบคลุมของหมอกที่ให้ไว้โดยตรง)\n\nดังนั้นคำตอบคือ 240 นาที",
+            "english_gloss": "The fog takes 60 minutes to cover every 6 miles, so its rate is 60 ÷ 6 = 10 minutes per mile.\n\nThe city is 72 miles wide; we need the time to cover 1/3 of the city.\n\nOne third of the city = 72 ÷ 3 = 24 miles.\n\nTime needed = 24 × 10 = 240 minutes.\n\n(The wind speed halving detail doesn't affect the answer since we compute directly from the given coverage rate.)\n\nSo the answer is 240 minutes.",
+            "final_answer_given": "240 minutes"
+          },
+          {
+            "idx": 24,
+            "native_reasoning": "หมอกใช้เวลา 25 นาที ในการครอบคลุมทุก ๆ 5 ไมล์ ดังนั้นอัตราการเคลื่อนที่ = 25 ÷ 5 = 5 นาทีต่อไมล์\n\nเมืองกว้าง 54 ไมล์ ต้องการหาเวลาครอบคลุมครึ่งหนึ่ง (1/2) ของเมือง\n\nระยะทางครึ่งหนึ่งของเมือง = 54 ÷ 2 = 27 ไมล์\n\nเวลาที่ใช้ = 27 × 5 = 135 นาที\n\n(ข้อมูลลมลดความเร็วครึ่งหนึ่งในหนึ่งชั่วโมงเป็นข้อมูลเสริมที่ไม่ต้องใช้ในการคำนวณนี้)\n\nดังนั้นคำตอบคือ 135 นาที",
+            "english_gloss": "The fog takes 25 minutes to cover every 5 miles, so its rate is 25 ÷ 5 = 5 minutes per mile.\n\nThe city is 54 miles wide; we need the time to cover half (1/2) of the city.\n\nHalf the city = 54 ÷ 2 = 27 miles.\n\nTime needed = 27 × 5 = 135 minutes.\n\n(The wind speed halving detail is extra information not needed for this calculation.)\n\nSo the answer is 135 minutes.",
+            "final_answer_given": "135 minutes"
+          },
+          {
+            "idx": 25,
+            "native_reasoning": "หมอกใช้เวลา 90 นาที ในการครอบคลุมทุก ๆ 3 ไมล์ ดังนั้นอัตราการเคลื่อนที่ = 90 ÷ 3 = 30 นาทีต่อไมล์\n\nเมืองกว้าง 78 ไมล์ ต้องการหาเวลาครอบคลุม 1/3 ของเมือง\n\nระยะทาง 1/3 ของเมือง = 78 ÷ 3 = 26 ไมล์\n\nเวลาที่ใช้ = 26 × 30 = 780 นาที\n\n(ข้อมูลลมลดความเร็วครึ่งหนึ่งในหนึ่งชั่วโมงไม่จำเป็นต้องนำมาคำนวณ เพราะโจทย์ให้อัตราการครอบคลุมของหมอกไว้ตรง ๆ แล้ว)\n\nดังนั้นคำตอบคือ 780 นาที",
+            "english_gloss": "The fog takes 90 minutes to cover every 3 miles, so its rate is 90 ÷ 3 = 30 minutes per mile.\n\nThe city is 78 miles wide; we need the time to cover 1/3 of the city.\n\nOne third of the city = 78 ÷ 3 = 26 miles.\n\nTime needed = 26 × 30 = 780 minutes.\n\n(The wind speed halving detail doesn't need to be used since the fog's coverage rate is given directly.)\n\nSo the answer is 780 minutes.",
+            "final_answer_given": "780 minutes"
+          },
+          {
+            "idx": 26,
+            "native_reasoning": "หมอกใช้เวลา 30 นาที ในการครอบคลุมทุก ๆ 13 ไมล์ ดังนั้นอัตราการเคลื่อนที่ = 30 ÷ 13 นาทีต่อไมล์\n\nเมืองกว้าง 78 ไมล์ ต้องการหาเวลาครอบคลุมครึ่งหนึ่ง (1/2) ของเมือง\n\nระยะทางครึ่งหนึ่งของเมือง = 78 ÷ 2 = 39 ไมล์\n\nเวลาที่ใช้ = 39 × (30 ÷ 13) = (39 ÷ 13) × 30 = 3 × 30 = 90 นาที\n\n(ข้อมูลลมลดความเร็วครึ่งหนึ่งในหนึ่งชั่วโมงเป็นข้อมูลที่ไม่จำเป็นสำหรับการคำนวณนี้)\n\nดังนั้นคำตอบคือ 90 นาที",
+            "english_gloss": "The fog takes 30 minutes to cover every 13 miles, so its rate is 30 ÷ 13 minutes per mile.\n\nThe city is 78 miles wide; we need the time to cover half (1/2) of the city.\n\nHalf the city = 78 ÷ 2 = 39 miles.\n\nTime needed = 39 × (30 ÷ 13) = (39 ÷ 13) × 30 = 3 × 30 = 90 minutes.\n\n(The wind speed halving detail is not needed for this calculation.)\n\nSo the answer is 90 minutes.",
+            "final_answer_given": "90 minutes"
+          },
+          {
+            "idx": 27,
+            "native_reasoning": "หมอกใช้เวลา 15 นาที ในการครอบคลุมทุก ๆ 3 ไมล์ ดังนั้นอัตราการเคลื่อนที่ = 15 ÷ 3 = 5 นาทีต่อไมล์\n\nเมืองกว้าง 96 ไมล์ ต้องการหาเวลาครอบคลุม 1/4 ของเมือง\n\nระยะทาง 1/4 ของเมือง = 96 ÷ 4 = 24 ไมล์\n\nเวลาที่ใช้ = 24 × 5 = 120 นาที\n\n(ข้อมูลลมลดความเร็วครึ่งหนึ่งในหนึ่งชั่วโมงไม่มีผลต่อคำตอบนี้ เพราะใช้อัตราที่โจทย์กำหนดไว้แล้วโดยตรง)\n\nดังนั้นคำตอบคือ 120 นาที",
+            "english_gloss": "The fog takes 15 minutes to cover every 3 miles, so its rate is 15 ÷ 3 = 5 minutes per mile.\n\nThe city is 96 miles wide; we need the time to cover 1/4 of the city.\n\nOne quarter of the city = 96 ÷ 4 = 24 miles.\n\nTime needed = 24 × 5 = 120 minutes.\n\n(The wind speed halving detail doesn't affect this answer since we use the rate given directly.)\n\nSo the answer is 120 minutes.",
+            "final_answer_given": "120 minutes"
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 20,
+            "ground_truth_answer": "300",
+            "answer_given": "180 minutes",
+            "correct": false,
+            "brief_verdict": "Computed initial rate and fraction-of-city distance correctly but explicitly discarded the required wind-halving/rate-change step, landing on 180 instead of the correct 300.",
+            "compositional_collapse_evidence": "\"(The detail about wind speed halving every hour is extra information not needed for this calculation, since the fog's coverage rate is given directly.)\" — the model explicitly drops the required 60-minute rate-change sub-step (verified: 6 mi in first 60 min at 10 min/mi, remaining 12 mi at doubled 20 min/mi = 240, total 60+240=300, matching ground truth), rather than merging it into a single flat rate calculation.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 21,
+            "ground_truth_answer": "210",
+            "answer_given": "135 minutes",
+            "correct": false,
+            "brief_verdict": "Correct rate (7.5 min/mi) and correct 1/4-of-city distance (18 mi) but omits the post-60-minute rate change, giving 135 instead of 210.",
+            "compositional_collapse_evidence": "\"(The wind speed halving detail is irrelevant to this calculation since we use the given coverage rate directly.)\" — omits computing distance covered before vs. after the 60-minute mark (verified correct path: 8 mi in first 60 min, remaining 10 mi at doubled 15 min/mi = 150, total 60+150=210).",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 22,
+            "ground_truth_answer": "660",
+            "answer_given": "360 minutes",
+            "correct": false,
+            "brief_verdict": "Rate and 1/3-distance sub-computations are correct, but the rate-change-after-60-minutes step is skipped entirely, producing 360 instead of 660.",
+            "compositional_collapse_evidence": "\"(The wind speed halving detail is not needed for this question, since we use the rate given directly.)\" — drops the required piecewise (before/after 60 min) computation (verified: 3 mi in first 60 min at 20 min/mi, remaining 15 mi at doubled 40 min/mi = 600, total 60+600=660).",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 23,
+            "ground_truth_answer": "420",
+            "answer_given": "240 minutes",
+            "correct": false,
+            "brief_verdict": "Initial rate and 1/3-of-city distance are correct, but the wind-halving/rate-change segment is never applied, yielding 240 instead of 420.",
+            "compositional_collapse_evidence": "\"(The wind speed halving detail doesn't affect the answer since we compute directly from the given coverage rate.)\" — the four-part structure collapses to a single flat-rate multiplication, skipping the before/after-60-minute split (verified: 6 mi in first 60 min at 10 min/mi, remaining 18 mi at doubled 20 min/mi = 360, total 60+360=420).",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 24,
+            "ground_truth_answer": "210",
+            "answer_given": "135 minutes",
+            "correct": false,
+            "brief_verdict": "Correct rate (5 min/mi) and correct half-of-city distance (27 mi), but the mid-problem rate change after 60 minutes is dropped, giving 135 instead of 210.",
+            "compositional_collapse_evidence": "\"(The wind speed halving detail is extra information not needed for this calculation.)\" — omits computing distance before vs. after the wind change (verified: 12 mi in first 60 min at 5 min/mi, remaining 15 mi at doubled 10 min/mi = 150, total 60+150=210).",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 25,
+            "ground_truth_answer": "1500",
+            "answer_given": "780 minutes",
+            "correct": false,
+            "brief_verdict": "Rate and 1/3-distance calculations are correct, but the required rate-change-after-60-minutes segment is entirely absent, giving 780 instead of 1500.",
+            "compositional_collapse_evidence": "\"(The wind speed halving detail doesn't need to be used since the fog's coverage rate is given directly.)\" — the required before/after-60-minute split is never performed (verified: 2 mi in first 60 min at 30 min/mi, remaining 24 mi at doubled 60 min/mi = 1440, total 60+1440=1500).",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 26,
+            "ground_truth_answer": "120",
+            "answer_given": "90 minutes",
+            "correct": false,
+            "brief_verdict": "Correct fractional rate (30/13 min/mi) and correct half-of-city distance (39 mi), but again the wind-halving step is dismissed, giving 90 instead of 120.",
+            "compositional_collapse_evidence": "\"(The wind speed halving detail is not needed for this calculation.)\" — skips splitting the journey into pre-/post-60-minute segments (verified: 26 mi covered in first 60 min at 30/13 min/mi, remaining 13 mi at doubled 60/13 min/mi = 60, total 60+60=120).",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 27,
+            "ground_truth_answer": "180",
+            "answer_given": "120 minutes",
+            "correct": false,
+            "brief_verdict": "Rate (5 min/mi) and 1/4-of-city distance (24 mi) are correctly computed, but the after-60-minute rate change is discarded, giving 120 instead of 180.",
+            "compositional_collapse_evidence": "\"(The wind speed halving detail doesn't affect this answer since we use the rate given directly.)\" — drops the required piecewise before/after-60-minute computation (verified: 12 mi covered in first 60 min at 5 min/mi, remaining 12 mi at doubled 10 min/mi = 120, total 60+120=180).",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          }
+        ],
+        "language": "Thai (th)",
+        "overall_summary": "All 8 Thai-language solutions are incorrect, and all fail for the identical, explicit reason: each correctly computes the initial coverage rate and the target fraction of the city's distance, but then explicitly rationalizes away the required \"wind speed halves after 60 minutes\" sub-step with a parenthetical remark (e.g., \"extra information not needed,\" \"irrelevant,\" \"doesn't affect the answer\") and applies the single initial rate across the entire distance. Manually reconstructing the intended piecewise mechanism (distance covered in the first 60 minutes at the original rate, then remaining distance at the halved rate/doubled time) reproduces the ground-truth answer exactly in all 8 cases, confirming that the wind-halving step is in fact load-bearing and its omission is the sole source of error. This is a textbook, cleanly isolated case of Compositional Collapse as defined: one specific sub-part of the required 4-part structure (recognizing and applying the rate change) is uniformly dropped, while the other sub-parts (rate computation, fraction-of-city distance) are computed correctly, so there is no arithmetic cascade to call Reasoning Drift, no structural/output breakdown to call Format Instability, and no unexpected code-switching to call Language Interference. In this batch, Compositional Collapse is very visibly and unambiguously distinguishable from the other two failure modes — the model even self-narrates its own (mistaken) justification for dropping the step, making the failure mode diagnosis unusually clear-cut rather than speculative."
+      }
+    },
+    {
+      "language": "ja",
+      "generation": {
+        "language": "ja",
+        "solutions": [
+          {
+            "idx": 20,
+            "native_reasoning": "まず、フォグバンクが進む速さを求めます。「3マイルごとに30分かかる」ので、1マイルあたりにかかる時間は30÷3=10分です。\n次に、都市はオーシャンフロントから反対側の内陸の端まで72マイルあります。フォグバンクが都市の4分の1をカバーするということは、72÷4=18マイル分進むということです。\n1マイルあたり10分かかるので、18マイルをカバーするのにかかる時間は18×10=180分です。\nしたがって、答えは180分です。",
+            "english_gloss": "First, find the fog bank's rate. Since it covers every 3 miles in 30 minutes, the time per mile is 30÷3=10 minutes.\nThe city spans 72 miles from the oceanfront to the opposite inland edge. Covering 1/4 of the city means covering 72÷4=18 miles.\nAt 10 minutes per mile, covering 18 miles takes 18×10=180 minutes.\nSo the answer is 180 minutes.",
+            "final_answer_given": "180分"
+          },
+          {
+            "idx": 21,
+            "native_reasoning": "まず速さを求めます。「10マイルごとに75分かかる」ので、1マイルあたりの時間は75÷10=7.5分です。\n都市は72マイルなので、4分の1は72÷4=18マイルです。\n18マイルをカバーするのにかかる時間は18×7.5=135分です。\nしたがって、答えは135分です。",
+            "english_gloss": "First find the rate: it covers every 10 miles in 75 minutes, so the time per mile is 75÷10=7.5 minutes.\nThe city is 72 miles, so 1/4 of it is 72÷4=18 miles.\nCovering 18 miles takes 18×7.5=135 minutes.\nSo the answer is 135 minutes.",
+            "final_answer_given": "135分"
+          },
+          {
+            "idx": 22,
+            "native_reasoning": "速さを求めます。「3マイルごとに60分かかる」ので、1マイルあたりの時間は60÷3=20分です。\n都市は54マイルなので、3分の1は54÷3=18マイルです。\n18マイルをカバーするのにかかる時間は18×20=360分です。\nしたがって、答えは360分です。",
+            "english_gloss": "Find the rate: it covers every 3 miles in 60 minutes, so the time per mile is 60÷3=20 minutes.\nThe city is 54 miles, so 1/3 of it is 54÷3=18 miles.\nCovering 18 miles takes 18×20=360 minutes.\nSo the answer is 360 minutes.",
+            "final_answer_given": "360分"
+          },
+          {
+            "idx": 23,
+            "native_reasoning": "速さを求めます。「6マイルごとに60分かかる」ので、1マイルあたりの時間は60÷6=10分です。\n都市は72マイルなので、3分の1は72÷3=24マイルです。\n24マイルをカバーするのにかかる時間は24×10=240分です。\nしたがって、答えは240分です。",
+            "english_gloss": "Find the rate: it covers every 6 miles in 60 minutes, so the time per mile is 60÷6=10 minutes.\nThe city is 72 miles, so 1/3 of it is 72÷3=24 miles.\nCovering 24 miles takes 24×10=240 minutes.\nSo the answer is 240 minutes.",
+            "final_answer_given": "240分"
+          },
+          {
+            "idx": 24,
+            "native_reasoning": "速さを求めます。「5マイルごとに25分かかる」ので、1マイルあたりの時間は25÷5=5分です。\n都市は54マイルなので、2分の1は54÷2=27マイルです。\n27マイルをカバーするのにかかる時間は27×5=135分です。\nしたがって、答えは135分です。",
+            "english_gloss": "Find the rate: it covers every 5 miles in 25 minutes, so the time per mile is 25÷5=5 minutes.\nThe city is 54 miles, so 1/2 of it is 54÷2=27 miles.\nCovering 27 miles takes 27×5=135 minutes.\nSo the answer is 135 minutes.",
+            "final_answer_given": "135分"
+          },
+          {
+            "idx": 25,
+            "native_reasoning": "速さを求めます。「3マイルごとに90分かかる」ので、1マイルあたりの時間は90÷3=30分です。\n都市は78マイルなので、3分の1は78÷3=26マイルです。\n26マイルをカバーするのにかかる時間は26×30=780分です。\nしたがって、答えは780分です。",
+            "english_gloss": "Find the rate: it covers every 3 miles in 90 minutes, so the time per mile is 90÷3=30 minutes.\nThe city is 78 miles, so 1/3 of it is 78÷3=26 miles.\nCovering 26 miles takes 26×30=780 minutes.\nSo the answer is 780 minutes.",
+            "final_answer_given": "780分"
+          },
+          {
+            "idx": 26,
+            "native_reasoning": "速さを求めます。「13マイルごとに30分かかる」ので、1マイルあたりの時間は30÷13分です。\n都市は78マイルなので、2分の1は78÷2=39マイルです。\n39マイルをカバーするのにかかる時間は39×(30÷13)分です。39は13の3倍なので、39×30÷13=3×30=90分になります。\nしたがって、答えは90分です。",
+            "english_gloss": "Find the rate: it covers every 13 miles in 30 minutes, so the time per mile is 30÷13 minutes.\nThe city is 78 miles, so 1/2 of it is 78÷2=39 miles.\nCovering 39 miles takes 39×(30÷13) minutes. Since 39 is 3 times 13, this equals 3×30=90 minutes.\nSo the answer is 90 minutes.",
+            "final_answer_given": "90分"
+          },
+          {
+            "idx": 27,
+            "native_reasoning": "速さを求めます。「3マイルごとに15分かかる」ので、1マイルあたりの時間は15÷3=5分です。\n都市は96マイルなので、4分の1は96÷4=24マイルです。\n24マイルをカバーするのにかかる時間は24×5=120分です。\nしたがって、答えは120分です。",
+            "english_gloss": "Find the rate: it covers every 3 miles in 15 minutes, so the time per mile is 15÷3=5 minutes.\nThe city is 96 miles, so 1/4 of it is 96÷4=24 miles.\nCovering 24 miles takes 24×5=120 minutes.\nSo the answer is 120 minutes.",
+            "final_answer_given": "120分"
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 20,
+            "correct": false,
+            "answer_given": "180分",
+            "ground_truth_answer": "300",
+            "brief_verdict": "Incorrect (180 vs 300): reasoning applies a single flat rate (10 min/mile) to the full 18-mile target with no 60-minute rate-change/wind-halving step, so the two-phase distance split required by the problem is entirely missing.",
+            "compositional_collapse_evidence": "\"At 10 minutes per mile, covering 18 miles takes 18×10=180 minutes.\" — the whole 18-mile distance is covered at one uniform rate; there is no mention of a 60-minute mark, a wind/rate change, or splitting the distance into a before/after portion (sub-parts 2 and 3 of the required structure are dropped).",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 21,
+            "correct": false,
+            "answer_given": "135分",
+            "ground_truth_answer": "210",
+            "brief_verdict": "Incorrect (135 vs 210): same pattern — flat single-rate multiplication over the full 18-mile fraction, no rate-change step after 60 minutes.",
+            "compositional_collapse_evidence": "\"Covering 18 miles takes 18×7.5=135 minutes.\" — single constant rate applied to the entire target distance with no 60-minute checkpoint or halved-speed phase computed.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 22,
+            "correct": false,
+            "answer_given": "360分",
+            "ground_truth_answer": "660",
+            "brief_verdict": "Incorrect (360 vs 660): rate and fraction-of-city computed, but the required 60-minute wind-halving split is never introduced, so only the pre-change rate is used for the whole distance.",
+            "compositional_collapse_evidence": "\"Covering 18 miles takes 18×20=360 minutes.\" — the model never checks whether 18 miles exceeds the distance coverable in the first 60 minutes, so the rate-halving phase is entirely omitted.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 23,
+            "correct": false,
+            "answer_given": "240分",
+            "ground_truth_answer": "420",
+            "brief_verdict": "Incorrect (240 vs 420): identical structural omission — no two-phase (pre/post 60-minute) distance-time computation.",
+            "compositional_collapse_evidence": "\"Covering 24 miles takes 24×10=240 minutes.\" — single flat-rate multiplication for the entire 24-mile target; no recognition of a rate change partway through.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 24,
+            "correct": false,
+            "answer_given": "135分",
+            "ground_truth_answer": "210",
+            "brief_verdict": "Incorrect (135 vs 210): same missing-step pattern — the 1/2-of-city distance is covered entirely at the initial rate.",
+            "compositional_collapse_evidence": "\"Covering 27 miles takes 27×5=135 minutes.\" — no split of the 27-mile distance into a portion covered before 60 minutes (at the original rate) and a portion after (at half speed).",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 25,
+            "correct": false,
+            "answer_given": "780分",
+            "ground_truth_answer": "1500",
+            "brief_verdict": "Incorrect (780 vs 1500): largest absolute gap in the set, consistent with the missing rate-change phase compounding over a longer distance.",
+            "compositional_collapse_evidence": "\"Covering 26 miles takes 26×30=780 minutes.\" — entire 26-mile target computed with one constant rate; the required 60-minute/wind-halving juncture is never addressed.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 26,
+            "correct": false,
+            "answer_given": "90分",
+            "ground_truth_answer": "120",
+            "brief_verdict": "Incorrect (90 vs 120): even with an extra (correct) simplification step for the fractional rate, the model still never introduces the 60-minute rate-halving event.",
+            "compositional_collapse_evidence": "\"Covering 39 miles takes 39×(30÷13) minutes. Since 39 is 3 times 13, this equals 3×30=90 minutes.\" — despite the added algebraic manipulation, the whole 39-mile distance is still processed under a single unchanging rate; the mandatory rate-change/two-phase structure is absent.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 27,
+            "correct": false,
+            "answer_given": "120分",
+            "ground_truth_answer": "180",
+            "brief_verdict": "Incorrect (120 vs 180): same systematic omission of the post-60-minute rate change.",
+            "compositional_collapse_evidence": "\"Covering 24 miles takes 24×5=120 minutes.\" — flat single-rate computation for the full 24-mile target, no accounting for a rate change at the 60-minute mark.",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          }
+        ],
+        "language": "ja",
+        "overall_summary": "Back-solving the ground-truth numbers shows the intended problem structure requires: (1) an initial rate, (2) a checkpoint at 60 minutes where the fog's speed halves (time-per-mile doubles), (3) splitting the target fraction-of-city distance into a pre-60-minute segment (at the original rate) and a post-60-minute segment (at the halved rate), and (4) summing 60 + remaining-time. All 8 solutions independently reproduce this exact omission: every one computes a correct per-mile rate, correctly identifies the fractional distance (1/4, 1/3, or 1/2 of the city), and then multiplies that whole distance by the single initial rate — never introducing the 60-minute checkpoint or the halved-rate phase. This is a clean, consistent, and unanimous Compositional Collapse (dropping required sub-parts 2 and 3) across the entire set, not an accumulating arithmetic slip — the errors do not cascade from an early mistake but instead reflect a structurally simpler (wrong) model of the problem applied uniformly and correctly by its own (incomplete) logic. Reasoning Drift, Format Instability, and Language Interference are all absent: every response is fully in Japanese with no code-switching, has a complete rate → fraction → multiplication → final-answer structure with no garbled/truncated output, and shows no internal arithmetic error relative to its own (flawed) approach. In this Japanese-language batch, Compositional Collapse is therefore the only failure mode present and is very cleanly distinguishable — it manifests identically and diagnostically (the missing 60-minute/rate-halving step) in all 8 items, while the other three modes show zero evidence."
+      }
+    },
+    {
+      "language": "es",
+      "generation": {
+        "language": "es",
+        "solutions": [
+          {
+            "idx": 20,
+            "native_reasoning": "Primero calculo la velocidad del banco de niebla: tarda 30 minutos en cubrir cada 3 millas, así que la velocidad es 30 ÷ 3 = 10 minutos por milla. La ciudad mide 72 millas de ancho, entonces una cuarta parte de la ciudad es 72 ÷ 4 = 18 millas. Para cubrir esas 18 millas a razón de 10 minutos por milla, se necesitan 18 × 10 = 180 minutos. El dato sobre que el viento se reducirá a la mitad en una hora es información adicional que no se necesita para responder cuánto tarda en cubrir esa distancia con la velocidad dada. Respuesta final: 180 minutos.",
+            "english_gloss": "First I calculate the fog bank's speed: it takes 30 minutes to cover every 3 miles, so the speed is 30 ÷ 3 = 10 minutes per mile. The city is 72 miles wide, so a quarter of the city is 72 ÷ 4 = 18 miles. To cover those 18 miles at a rate of 10 minutes per mile, it takes 18 × 10 = 180 minutes. The detail about the wind speed halving in an hour is extra information not needed to answer how long it takes to cover that distance at the given rate. Final answer: 180 minutes.",
+            "final_answer_given": "180 minutos"
+          },
+          {
+            "idx": 21,
+            "native_reasoning": "La velocidad del banco de niebla es de 75 minutos por cada 10 millas, es decir, 75 ÷ 10 = 7.5 minutos por milla. La ciudad mide 72 millas de ancho, así que un cuarto de la ciudad equivale a 72 ÷ 4 = 18 millas. Para cubrir 18 millas a 7.5 minutos por milla, se necesitan 18 × 7.5 = 135 minutos. El dato de que la velocidad del viento se reducirá a la mitad en una hora no es necesario para este cálculo, ya que solo se pide el tiempo para cubrir esa fracción usando la velocidad indicada. Respuesta final: 135 minutos.",
+            "english_gloss": "The fog bank's speed is 75 minutes per 10 miles, i.e., 75 ÷ 10 = 7.5 minutes per mile. The city is 72 miles wide, so a quarter of the city is 72 ÷ 4 = 18 miles. To cover 18 miles at 7.5 minutes per mile requires 18 × 7.5 = 135 minutes. The detail that wind speed will halve in an hour is not needed for this calculation, since we're only asked for the time to cover that fraction at the given rate. Final answer: 135 minutes.",
+            "final_answer_given": "135 minutos"
+          },
+          {
+            "idx": 22,
+            "native_reasoning": "La velocidad del banco de niebla es 60 minutos por cada 3 millas, es decir, 60 ÷ 3 = 20 minutos por milla. La ciudad mide 54 millas de ancho, así que un tercio de la ciudad es 54 ÷ 3 = 18 millas. Para cubrir 18 millas a 20 minutos por milla, se necesitan 18 × 20 = 360 minutos. La información sobre la reducción de la velocidad del viento a la mitad en una hora es un dato adicional que no afecta el cálculo del tiempo pedido con la velocidad dada. Respuesta final: 360 minutos.",
+            "english_gloss": "The fog bank's speed is 60 minutes per 3 miles, i.e., 60 ÷ 3 = 20 minutes per mile. The city is 54 miles wide, so a third of the city is 54 ÷ 3 = 18 miles. To cover 18 miles at 20 minutes per mile requires 18 × 20 = 360 minutes. The information about wind speed halving in an hour is extra data that doesn't affect the calculation of the requested time using the given rate. Final answer: 360 minutes.",
+            "final_answer_given": "360 minutos"
+          },
+          {
+            "idx": 23,
+            "native_reasoning": "La velocidad del banco de niebla es 60 minutos por cada 6 millas, es decir, 60 ÷ 6 = 10 minutos por milla. La ciudad mide 72 millas de ancho, así que un tercio de la ciudad es 72 ÷ 3 = 24 millas. Para cubrir 24 millas a 10 minutos por milla, se necesitan 24 × 10 = 240 minutos. El dato del viento reduciéndose a la mitad en una hora no es relevante para calcular el tiempo con la velocidad indicada. Respuesta final: 240 minutos.",
+            "english_gloss": "The fog bank's speed is 60 minutes per 6 miles, i.e., 60 ÷ 6 = 10 minutes per mile. The city is 72 miles wide, so a third of the city is 72 ÷ 3 = 24 miles. To cover 24 miles at 10 minutes per mile requires 24 × 10 = 240 minutes. The detail about wind halving in an hour is not relevant to calculating the time at the given rate. Final answer: 240 minutes.",
+            "final_answer_given": "240 minutos"
+          },
+          {
+            "idx": 24,
+            "native_reasoning": "La velocidad del banco de niebla es 25 minutos por cada 5 millas, es decir, 25 ÷ 5 = 5 minutos por milla. La ciudad mide 54 millas de ancho, así que la mitad de la ciudad es 54 ÷ 2 = 27 millas. Para cubrir 27 millas a 5 minutos por milla, se necesitan 27 × 5 = 135 minutos. El dato sobre la reducción de la velocidad del viento a la mitad en una hora no afecta este cálculo. Respuesta final: 135 minutos.",
+            "english_gloss": "The fog bank's speed is 25 minutes per 5 miles, i.e., 25 ÷ 5 = 5 minutes per mile. The city is 54 miles wide, so half the city is 54 ÷ 2 = 27 miles. To cover 27 miles at 5 minutes per mile requires 27 × 5 = 135 minutes. The detail about wind speed halving in an hour does not affect this calculation. Final answer: 135 minutes.",
+            "final_answer_given": "135 minutos"
+          },
+          {
+            "idx": 25,
+            "native_reasoning": "La velocidad del banco de niebla es 90 minutos por cada 3 millas, es decir, 90 ÷ 3 = 30 minutos por milla. La ciudad mide 78 millas de ancho, así que un tercio de la ciudad es 78 ÷ 3 = 26 millas. Para cubrir 26 millas a 30 minutos por milla, se necesitan 26 × 30 = 780 minutos. La información sobre el viento reduciéndose a la mitad en una hora no es necesaria para este cálculo con la velocidad dada. Respuesta final: 780 minutos.",
+            "english_gloss": "The fog bank's speed is 90 minutes per 3 miles, i.e., 90 ÷ 3 = 30 minutes per mile. The city is 78 miles wide, so a third of the city is 78 ÷ 3 = 26 miles. To cover 26 miles at 30 minutes per mile requires 26 × 30 = 780 minutes. The information about wind halving in an hour is not needed for this calculation with the given rate. Final answer: 780 minutes.",
+            "final_answer_given": "780 minutos"
+          },
+          {
+            "idx": 26,
+            "native_reasoning": "La velocidad del banco de niebla es 30 minutos por cada 13 millas, es decir, 30 ÷ 13 minutos por milla. La ciudad mide 78 millas de ancho, así que la mitad de la ciudad es 78 ÷ 2 = 39 millas. Para cubrir 39 millas a razón de 30/13 minutos por milla: 39 × (30/13) = 3 × 30 = 90 minutos (porque 39 ÷ 13 = 3). El dato del viento reduciéndose a la mitad en una hora no es relevante para este cálculo. Respuesta final: 90 minutos.",
+            "english_gloss": "The fog bank's speed is 30 minutes per 13 miles, i.e., 30 ÷ 13 minutes per mile. The city is 78 miles wide, so half the city is 78 ÷ 2 = 39 miles. To cover 39 miles at a rate of 30/13 minutes per mile: 39 × (30/13) = 3 × 30 = 90 minutes (since 39 ÷ 13 = 3). The wind halving detail is not relevant to this calculation. Final answer: 90 minutes.",
+            "final_answer_given": "90 minutos"
+          },
+          {
+            "idx": 27,
+            "native_reasoning": "La velocidad del banco de niebla es 15 minutos por cada 3 millas, es decir, 15 ÷ 3 = 5 minutos por milla. La ciudad mide 96 millas de ancho, así que una cuarta parte de la ciudad es 96 ÷ 4 = 24 millas. Para cubrir 24 millas a 5 minutos por milla, se necesitan 24 × 5 = 120 minutos. El dato sobre la reducción de la velocidad del viento a la mitad en una hora no afecta este cálculo. Respuesta final: 120 minutos.",
+            "english_gloss": "The fog bank's speed is 15 minutes per 3 miles, i.e., 15 ÷ 3 = 5 minutes per mile. The city is 96 miles wide, so a quarter of the city is 96 ÷ 4 = 24 miles. To cover 24 miles at 5 minutes per mile requires 24 × 5 = 120 minutes. The detail about wind speed halving in an hour does not affect this calculation. Final answer: 120 minutes.",
+            "final_answer_given": "120 minutos"
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 20,
+            "answer_given": "180",
+            "ground_truth_answer": "300",
+            "correct": false,
+            "brief_verdict": "Computes rate and quarter-city distance correctly but explicitly discards the wind-halving clause as irrelevant, so it never splits the 18 miles into a pre-60-min and post-60-min (doubled-time) segment — collapse, not drift.",
+            "compositional_collapse_evidence": "\"The detail about the wind speed halving in an hour is extra information not needed to answer how long it takes to cover that distance at the given rate.\"",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 21,
+            "answer_given": "135",
+            "ground_truth_answer": "210",
+            "correct": false,
+            "brief_verdict": "Same pattern: correct rate (7.5 min/mile) and correct quarter-distance (18 miles), but wind-halving sub-step is dismissed rather than applied, missing the required split into two rate phases.",
+            "compositional_collapse_evidence": "\"The detail that wind speed will halve in an hour is not needed for this calculation, since we're only asked for the time to cover that fraction at the given rate.\"",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 22,
+            "answer_given": "360",
+            "ground_truth_answer": "660",
+            "correct": false,
+            "brief_verdict": "Correct rate (20 min/mile) and correct third-of-city distance (18 miles), but the mandatory rate-change-after-60-min sub-step is explicitly waved off as extra data.",
+            "compositional_collapse_evidence": "\"The information about wind speed halving in an hour is extra data that doesn't affect the calculation of the requested time using the given rate.\"",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 23,
+            "answer_given": "240",
+            "ground_truth_answer": "420",
+            "correct": false,
+            "brief_verdict": "Correct rate (10 min/mile) and correct third-of-city distance (24 miles), but again the wind-halving/rate-change requirement is dropped entirely.",
+            "compositional_collapse_evidence": "\"The detail about wind halving in an hour is not relevant to calculating the time at the given rate.\"",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 24,
+            "answer_given": "135",
+            "ground_truth_answer": "210",
+            "correct": false,
+            "brief_verdict": "Correct rate (5 min/mile) and correct half-city distance (27 miles), but the halving-after-60-minutes sub-step is again dismissed as inconsequential.",
+            "compositional_collapse_evidence": "\"The detail about wind speed halving in an hour does not affect this calculation.\"",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 25,
+            "answer_given": "780",
+            "ground_truth_answer": "1500",
+            "correct": false,
+            "brief_verdict": "Correct rate (30 min/mile) and correct third-of-city distance (26 miles), but the wind-halving requirement is again treated as irrelevant, producing less than half the true (larger) answer.",
+            "compositional_collapse_evidence": "\"The information about wind halving in an hour is not needed for this calculation with the given rate.\"",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 26,
+            "answer_given": "90",
+            "ground_truth_answer": "120",
+            "correct": false,
+            "brief_verdict": "Correct fractional rate (30/13 min/mile) and correct half-city distance (39 miles) with correct arithmetic simplification, but the mandatory two-phase rate-change step is dropped.",
+            "compositional_collapse_evidence": "\"The wind halving detail is not relevant to this calculation.\"",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 27,
+            "answer_given": "120",
+            "ground_truth_answer": "180",
+            "correct": false,
+            "brief_verdict": "Correct rate (5 min/mile) and correct quarter-city distance (24 miles), but once more the wind-speed-halving sub-step is discarded instead of applied.",
+            "compositional_collapse_evidence": "\"The detail about wind speed halving in an hour does not affect this calculation.\"",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          }
+        ],
+        "language": "es",
+        "overall_summary": "All 8 Spanish-language solutions are wrong, and all fail in exactly the same structural way: compositional collapse. Every response correctly computes the fog bank's per-mile rate and correctly identifies the target fraction (quarter/third/half) of the city width, but then explicitly reasons that the \"wind speed halves after one hour\" clause is superfluous extra information and answers using a single constant rate for the entire distance. The ground-truth solutions require splitting the trip into a pre-60-minute segment (original rate) and a post-60-minute segment (doubled time-per-mile, since wind/fog speed halves), then summing — a required sub-step that every single sample explicitly identifies and then discards. Because the arithmetic performed within the (wrong) simplified model is itself correct and consistent (rate × distance = time, done properly), there is no evidence of reasoning drift — the error isn't an accumulating computational slip but a categorical omission of one whole problem component present from the first mention of wind speed. No format instability was observed in any sample: each response follows a clean, complete rate → fraction → multiplication → explicit dismissal → final-answer structure with no truncation or garbled numbers. No language interference was observed either: every native_reasoning stays consistently in Spanish with no unexpected code-switching. In this language sample, compositional collapse is therefore sharply and uniformly distinguishable as the dominant (and essentially only) failure mode, while reasoning drift, format instability, and language interference are cleanly absent and not conflated with it — the three failure modes are well distinguishable here precisely because only one of them actually manifests, and it manifests identically and explicitly (via an inline justification for ignoring the wind-halving clause) across all 8 items."
+      }
+    },
+    {
+      "language": "de",
+      "generation": {
+        "language": "de",
+        "solutions": [
+          {
+            "idx": 20,
+            "native_reasoning": "Zuerst bestimme ich die anfängliche Geschwindigkeit des Nebels: Er legt 3 Meilen in 30 Minuten zurück, also beträgt die Rate 3/30 = 0,1 Meilen pro Minute (das entspricht 6 Meilen pro Stunde). Die Zielstrecke ist ein Viertel der Stadt: 72 Meilen ÷ 4 = 18 Meilen. In der ersten Stunde (60 Minuten) schafft der Nebel bei dieser Rate 0,1 × 60 = 6 Meilen. Da 18 Meilen mehr sind als die 6 Meilen, die in der ersten Stunde abgedeckt werden, dauert es länger als eine Stunde, und die Windgeschwindigkeit hat sich nach dieser Stunde halbiert. Die neue Rate beträgt also 0,05 Meilen pro Minute. Es bleiben noch 18 − 6 = 12 Meilen übrig. Die Zeit dafür bei der halbierten Rate: 12 ÷ 0,05 = 240 Minuten. Gesamtzeit: 60 + 240 = 300 Minuten.",
+            "english_gloss": "First I determine the fog's initial speed: it covers 3 miles in 30 minutes, so the rate is 3/30 = 0.1 miles per minute (6 miles per hour). The target distance is a quarter of the city: 72 miles ÷ 4 = 18 miles. In the first hour (60 minutes) the fog covers 0.1 × 60 = 6 miles at this rate. Since 18 miles is more than the 6 miles covered in the first hour, it takes longer than an hour, and the wind speed has halved after that hour. The new rate is thus 0.05 miles per minute. 18 − 6 = 12 miles remain. Time for that at the halved rate: 12 ÷ 0.05 = 240 minutes. Total time: 60 + 240 = 300 minutes.",
+            "final_answer_given": "300 Minuten"
+          },
+          {
+            "idx": 21,
+            "native_reasoning": "Die anfängliche Rate ist 10 Meilen in 75 Minuten, also 10/75 = 2/15 ≈ 0,1333 Meilen pro Minute (8 Meilen pro Stunde). Die Zielstrecke ist ein Viertel von 72 Meilen = 18 Meilen. In der ersten Stunde (60 Minuten) legt der Nebel 8 Meilen zurück. Da 18 Meilen mehr als 8 Meilen sind, wird nach einer Stunde die Windgeschwindigkeit halbiert, die neue Rate beträgt also 1/15 ≈ 0,0667 Meilen pro Minute (4 Meilen pro Stunde). Es bleiben 18 − 8 = 10 Meilen übrig. Zeit dafür: 10 ÷ (1/15) = 150 Minuten. Gesamtzeit: 60 + 150 = 210 Minuten.",
+            "english_gloss": "The initial rate is 10 miles in 75 minutes, i.e. 10/75 = 2/15 ≈ 0.1333 miles per minute (8 miles per hour). The target distance is a quarter of 72 miles = 18 miles. In the first hour (60 minutes) the fog covers 8 miles. Since 18 miles exceeds 8 miles, after one hour the wind speed halves, giving a new rate of 1/15 ≈ 0.0667 miles per minute (4 miles per hour). 18 − 8 = 10 miles remain. Time for that: 10 ÷ (1/15) = 150 minutes. Total time: 60 + 150 = 210 minutes.",
+            "final_answer_given": "210 Minuten"
+          },
+          {
+            "idx": 22,
+            "native_reasoning": "Die anfängliche Rate ist 3 Meilen in 60 Minuten, also 3/60 = 0,05 Meilen pro Minute (3 Meilen pro Stunde). Die Zielstrecke ist ein Drittel von 54 Meilen = 18 Meilen. In der ersten Stunde legt der Nebel 3 Meilen zurück. Da 18 Meilen deutlich mehr sind, halbiert sich die Windgeschwindigkeit nach einer Stunde auf 0,025 Meilen pro Minute (1,5 Meilen pro Stunde). Es bleiben 18 − 3 = 15 Meilen übrig. Zeit dafür: 15 ÷ 0,025 = 600 Minuten. Gesamtzeit: 60 + 600 = 660 Minuten.",
+            "english_gloss": "The initial rate is 3 miles in 60 minutes, i.e. 3/60 = 0.05 miles per minute (3 miles per hour). The target distance is a third of 54 miles = 18 miles. In the first hour the fog covers 3 miles. Since 18 miles is much more, the wind speed halves after one hour to 0.025 miles per minute (1.5 miles per hour). 18 − 3 = 15 miles remain. Time for that: 15 ÷ 0.025 = 600 minutes. Total time: 60 + 600 = 660 minutes.",
+            "final_answer_given": "660 Minuten"
+          },
+          {
+            "idx": 23,
+            "native_reasoning": "Die anfängliche Rate ist 6 Meilen in 60 Minuten, also 6/60 = 0,1 Meilen pro Minute (6 Meilen pro Stunde). Die Zielstrecke ist ein Drittel von 72 Meilen = 24 Meilen. In der ersten Stunde legt der Nebel 6 Meilen zurück. Da 24 Meilen mehr sind als 6 Meilen, halbiert sich die Windgeschwindigkeit nach einer Stunde auf 0,05 Meilen pro Minute (3 Meilen pro Stunde). Es bleiben 24 − 6 = 18 Meilen übrig. Zeit dafür: 18 ÷ 0,05 = 360 Minuten. Gesamtzeit: 60 + 360 = 420 Minuten.",
+            "english_gloss": "The initial rate is 6 miles in 60 minutes, i.e. 6/60 = 0.1 miles per minute (6 miles per hour). The target distance is a third of 72 miles = 24 miles. In the first hour the fog covers 6 miles. Since 24 miles is more than 6 miles, the wind speed halves after one hour to 0.05 miles per minute (3 miles per hour). 24 − 6 = 18 miles remain. Time for that: 18 ÷ 0.05 = 360 minutes. Total time: 60 + 360 = 420 minutes.",
+            "final_answer_given": "420 Minuten"
+          },
+          {
+            "idx": 24,
+            "native_reasoning": "Die anfängliche Rate ist 5 Meilen in 25 Minuten, also 5/25 = 0,2 Meilen pro Minute (12 Meilen pro Stunde). Die Zielstrecke ist die Hälfte von 54 Meilen = 27 Meilen. In der ersten Stunde legt der Nebel 12 Meilen zurück. Da 27 Meilen mehr sind als 12 Meilen, halbiert sich die Windgeschwindigkeit nach einer Stunde auf 0,1 Meilen pro Minute (6 Meilen pro Stunde). Es bleiben 27 − 12 = 15 Meilen übrig. Zeit dafür: 15 ÷ 0,1 = 150 Minuten. Gesamtzeit: 60 + 150 = 210 Minuten.",
+            "english_gloss": "The initial rate is 5 miles in 25 minutes, i.e. 5/25 = 0.2 miles per minute (12 miles per hour). The target distance is half of 54 miles = 27 miles. In the first hour the fog covers 12 miles. Since 27 miles is more than 12 miles, the wind speed halves after one hour to 0.1 miles per minute (6 miles per hour). 27 − 12 = 15 miles remain. Time for that: 15 ÷ 0.1 = 150 minutes. Total time: 60 + 150 = 210 minutes.",
+            "final_answer_given": "210 Minuten"
+          },
+          {
+            "idx": 25,
+            "native_reasoning": "Die anfängliche Rate ist 3 Meilen in 90 Minuten, also 3/90 = 1/30 ≈ 0,0333 Meilen pro Minute (2 Meilen pro Stunde). Die Zielstrecke ist ein Drittel von 78 Meilen = 26 Meilen. In der ersten Stunde legt der Nebel 2 Meilen zurück. Da 26 Meilen deutlich mehr sind, halbiert sich die Windgeschwindigkeit nach einer Stunde auf 1/60 ≈ 0,0167 Meilen pro Minute (1 Meile pro Stunde). Es bleiben 26 − 2 = 24 Meilen übrig. Zeit dafür: 24 ÷ (1/60) = 1440 Minuten. Gesamtzeit: 60 + 1440 = 1500 Minuten.",
+            "english_gloss": "The initial rate is 3 miles in 90 minutes, i.e. 3/90 = 1/30 ≈ 0.0333 miles per minute (2 miles per hour). The target distance is a third of 78 miles = 26 miles. In the first hour the fog covers 2 miles. Since 26 miles is much more, the wind speed halves after one hour to 1/60 ≈ 0.0167 miles per minute (1 mile per hour). 26 − 2 = 24 miles remain. Time for that: 24 ÷ (1/60) = 1440 minutes. Total time: 60 + 1440 = 1500 minutes.",
+            "final_answer_given": "1500 Minuten"
+          },
+          {
+            "idx": 26,
+            "native_reasoning": "Die anfängliche Rate ist 13 Meilen in 30 Minuten, also 13/30 ≈ 0,4333 Meilen pro Minute (26 Meilen pro Stunde). Die Zielstrecke ist die Hälfte von 78 Meilen = 39 Meilen. In der ersten Stunde legt der Nebel 26 Meilen zurück. Da 39 Meilen mehr sind als 26 Meilen, halbiert sich die Windgeschwindigkeit nach einer Stunde auf 13/60 Meilen pro Minute (13 Meilen pro Stunde). Es bleiben 39 − 26 = 13 Meilen übrig. Zeit dafür: 13 ÷ (13/60) = 60 Minuten. Gesamtzeit: 60 + 60 = 120 Minuten.",
+            "english_gloss": "The initial rate is 13 miles in 30 minutes, i.e. 13/30 ≈ 0.4333 miles per minute (26 miles per hour). The target distance is half of 78 miles = 39 miles. In the first hour the fog covers 26 miles. Since 39 miles is more than 26 miles, the wind speed halves after one hour to 13/60 miles per minute (13 miles per hour). 39 − 26 = 13 miles remain. Time for that: 13 ÷ (13/60) = 60 minutes. Total time: 60 + 60 = 120 minutes.",
+            "final_answer_given": "120 Minuten"
+          },
+          {
+            "idx": 27,
+            "native_reasoning": "Die anfängliche Rate ist 3 Meilen in 15 Minuten, also 3/15 = 0,2 Meilen pro Minute (12 Meilen pro Stunde). Die Zielstrecke ist ein Viertel von 96 Meilen = 24 Meilen. In der ersten Stunde legt der Nebel 12 Meilen zurück. Da 24 Meilen mehr sind als 12 Meilen, halbiert sich die Windgeschwindigkeit nach einer Stunde auf 0,1 Meilen pro Minute (6 Meilen pro Stunde). Es bleiben 24 − 12 = 12 Meilen übrig. Zeit dafür: 12 ÷ 0,1 = 120 Minuten. Gesamtzeit: 60 + 120 = 180 Minuten.",
+            "english_gloss": "The initial rate is 3 miles in 15 minutes, i.e. 3/15 = 0.2 miles per minute (12 miles per hour). The target distance is a quarter of 96 miles = 24 miles. In the first hour the fog covers 12 miles. Since 24 miles is more than 12 miles, the wind speed halves after one hour to 0.1 miles per minute (6 miles per hour). 24 − 12 = 12 miles remain. Time for that: 12 ÷ 0.1 = 120 minutes. Total time: 60 + 120 = 180 minutes.",
+            "final_answer_given": "180 Minuten"
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 20,
+            "correct": true,
+            "ground_truth_answer": "300",
+            "answer_given": "300 Minuten",
+            "brief_verdict": "All steps correctly executed (rate, quarter-city target, first-hour distance, wind-halving, remaining time); final answer matches ground truth exactly.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 21,
+            "correct": true,
+            "ground_truth_answer": "210",
+            "answer_given": "210 Minuten",
+            "brief_verdict": "Correct rate (2/15 mi/min), correct quarter-city target (18 mi), correct halving and remaining-distance computation; matches ground truth.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 22,
+            "correct": true,
+            "ground_truth_answer": "660",
+            "answer_given": "660 Minuten",
+            "brief_verdict": "Correctly uses third-of-city fraction (18 mi target from 54), correct halving of rate to 1.5 mph, arithmetic checks out to 660.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 23,
+            "correct": true,
+            "ground_truth_answer": "420",
+            "answer_given": "420 Minuten",
+            "brief_verdict": "Third-of-city fraction (24 mi from 72), rate halving, and remaining distance/time all correctly computed to reach 420.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 24,
+            "correct": true,
+            "ground_truth_answer": "210",
+            "answer_given": "210 Minuten",
+            "brief_verdict": "Half-of-city fraction (27 mi from 54) correctly identified and applied along with rate halving; total matches ground truth.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 25,
+            "correct": true,
+            "ground_truth_answer": "1500",
+            "answer_given": "1500 Minuten",
+            "brief_verdict": "Small initial rate (1/30 mi/min) and third-of-city target (26 mi) correctly carried through halving step to a large but correct 1500-minute total.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 26,
+            "correct": true,
+            "ground_truth_answer": "120",
+            "answer_given": "120 Minuten",
+            "brief_verdict": "Half-of-city target (39 mi from 78) and halved rate (13/60 mi/min) correctly combined to give exactly 120 minutes.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 27,
+            "correct": true,
+            "ground_truth_answer": "180",
+            "answer_given": "180 Minuten",
+            "brief_verdict": "Quarter-of-city target (24 mi from 96) and rate-halving step correctly applied; final sum of 180 matches ground truth.",
+            "compositional_collapse_evidence": "none",
+            "reasoning_drift_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          }
+        ]
+      }
+    }
+  ],
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Generate"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Inspect"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "generate:zh",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "ac634263995ced800",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785966754989,
+      "queuedAt": 1785966753421,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "zh",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in zh, to solve the following 8 math word problems one by one. For EACH problem, think step by step in zh (the same language as the question) and end with a clear final numeric answer. Do not skip problems. Do not mention any research study, taxonomy, or evaluation — just solve each problem as naturally as you would for a real user.\n\n…",
+      "lastProgressAt": 1785966817096,
+      "tokens": 19866,
+      "toolCalls": 1,
+      "durationMs": 62107,
+      "resultPreview": "{\"language\":\"zh\",\"solutions\":[{\"idx\":20,\"native_reasoning\":\"已知条件：雾银行覆盖城市的速度是每3英里需要30分钟。\\n先求出雾银行的移动速率：3英里 ÷ 30分钟 = 0.1英里/分钟，也就是说每覆盖1英里需要30÷3=10分钟。\\n城市从海滨到内陆边缘共72英里，四分之一的距离是：72 × 1/4 = 18英里。\\n题目提到风速会在一小时内减半，但这里只需要计算覆盖18英里所需的时间，用给定的初始速率直接计算即可：\\n所需时间 = 18英里 × 10分钟/英里 = 180分钟。\\n所以雾银行覆盖该城市四分之一所需的时间是180分钟。\",\"english_gloss\":\"Given: the fog bank covers the city at a rate of every 3 miles per 30 minutes.\\nF…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "generate:th",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a06555aa980ea93c5",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785966755430,
+      "queuedAt": 1785966753421,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Thai (th)",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in th, to solve the following 8 math word problems one by one. For EACH problem, think step by step in th (the same language as the question) and end with a clear final numeric answer. Do not skip problems. Do not mention any research study, taxonomy, or evaluation — just solve each problem as naturally as you would for a real user.\n\n…",
+      "lastProgressAt": 1785966825823,
+      "tokens": 21051,
+      "toolCalls": 1,
+      "durationMs": 70393,
+      "resultPreview": "{\"language\":\"Thai (th)\",\"solutions\":[{\"idx\":20,\"native_reasoning\":\"โจทย์บอกว่าหมอกใช้เวลา 30 นาที ในการครอบคลุมทุก ๆ 3 ไมล์ของเมือง ดังนั้นอัตราการเคลื่อนที่ของหมอกคือ 30 นาที ÷ 3 ไมล์ = 10 นาทีต่อไมล์\\n\\nเมืองมีความกว้างจากริมทะเลถึงขอบฝั่งตรงข้าม 72 ไมล์ เราต้องการหาว่าหมอกใช้เวลาเท่าไหร่ในการครอบคลุมหนึ่งในสี่ (1/4) ของเมือง\\n\\nระยะทางหนึ่งในสี่ของเมือง = 72 ÷ 4 = 18 ไมล์\\n\\nเวลาที่ใช้ = 18 ไมล…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "generate:ja",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "ac433bbf22a18a8a3",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785966755407,
+      "queuedAt": 1785966753421,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "ja",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in ja, to solve the following 8 math word problems one by one. For EACH problem, think step by step in ja (the same language as the question) and end with a clear final numeric answer. Do not skip problems. Do not mention any research study, taxonomy, or evaluation — just solve each problem as naturally as you would for a real user.\n\n…",
+      "lastProgressAt": 1785966820106,
+      "tokens": 19989,
+      "toolCalls": 1,
+      "durationMs": 64699,
+      "resultPreview": "{\"language\":\"ja\",\"solutions\":[{\"idx\":20,\"native_reasoning\":\"まず、フォグバンクが進む速さを求めます。「3マイルごとに30分かかる」ので、1マイルあたりにかかる時間は30÷3=10分です。\\n次に、都市はオーシャンフロントから反対側の内陸の端まで72マイルあります。フォグバンクが都市の4分の1をカバーするということは、72÷4=18マイル分進むということです。\\n1マイルあたり10分かかるので、18マイルをカバーするのにかかる時間は18×10=180分です。\\nしたがって、答えは180分です。\",\"english_gloss\":\"First, find the fog bank's rate. Since it covers every 3 miles in 30 minutes, the time per mile is 30÷3…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "generate:es",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a2edab722dde42075",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785966755294,
+      "queuedAt": 1785966753421,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "es",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in es, to solve the following 8 math word problems one by one. For EACH problem, think step by step in es (the same language as the question) and end with a clear final numeric answer. Do not skip problems. Do not mention any research study, taxonomy, or evaluation — just solve each problem as naturally as you would for a real user.\n\n…",
+      "lastProgressAt": 1785966818769,
+      "tokens": 20299,
+      "toolCalls": 1,
+      "durationMs": 63475,
+      "resultPreview": "{\"language\":\"es\",\"solutions\":[{\"idx\":20,\"native_reasoning\":\"Primero calculo la velocidad del banco de niebla: tarda 30 minutos en cubrir cada 3 millas, así que la velocidad es 30 ÷ 3 = 10 minutos por milla. La ciudad mide 72 millas de ancho, entonces una cuarta parte de la ciudad es 72 ÷ 4 = 18 millas. Para cubrir esas 18 millas a razón de 10 minutos por milla, se necesitan 18 × 10 = 180 minutos. …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "generate:de",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a99efb0d0d85423ed",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785966755320,
+      "queuedAt": 1785966753421,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "de",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in de, to solve the following 8 math word problems one by one. For EACH problem, think step by step in de (the same language as the question) and end with a clear final numeric answer. Do not skip problems. Do not mention any research study, taxonomy, or evaluation — just solve each problem as naturally as you would for a real user.\n\n…",
+      "lastProgressAt": 1785966866233,
+      "tokens": 20541,
+      "toolCalls": 1,
+      "durationMs": 110913,
+      "resultPreview": "{\"language\":\"de\",\"solutions\":[{\"idx\":20,\"native_reasoning\":\"Zuerst bestimme ich die anfängliche Geschwindigkeit des Nebels: Er legt 3 Meilen in 30 Minuten zurück, also beträgt die Rate 3/30 = 0,1 Meilen pro Minute (das entspricht 6 Meilen pro Stunde). Die Zielstrecke ist ein Viertel der Stadt: 72 Meilen ÷ 4 = 18 Meilen. In der ersten Stunde (60 Minuten) schafft der Nebel bei dieser Rate 0,1 × 60 =…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "inspect:zh",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a72f35b0af8996a11",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785966818448,
+      "queuedAt": 1785966817097,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "zh",
+      "promptPreview": "You are inspecting AI-generated math reasoning for specific structural failure modes. You were NOT the one who generated this reasoning — your job is purely diagnostic and skeptical; only tag a failure mode if there is genuine textual evidence, do not tag failures speculatively.\n\nDefinitions:\n- Compositional Collapse: the reasoning fails to maintain the problem's multi-part logical structure (e.g.…",
+      "lastProgressAt": 1785966874839,
+      "tokens": 22994,
+      "toolCalls": 1,
+      "durationMs": 56391,
+      "resultPreview": "{\"findings\":[{\"idx\":20,\"ground_truth_answer\":\"300\",\"answer_given\":\"180分钟\",\"correct\":false,\"brief_verdict\":\"Computed a single direct-proportion time (180) and explicitly waved away the wind-halving step; true answer requires splitting into pre/post-60-min segments (=300).\",\"compositional_collapse_evidence\":\"The problem mentions the wind speed will halve within an hour, but we only need the time to …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 7,
+      "label": "inspect:es",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a0ed35f5d78b7e85a",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785966820084,
+      "queuedAt": 1785966818773,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "es",
+      "promptPreview": "You are inspecting AI-generated math reasoning for specific structural failure modes. You were NOT the one who generated this reasoning — your job is purely diagnostic and skeptical; only tag a failure mode if there is genuine textual evidence, do not tag failures speculatively.\n\nDefinitions:\n- Compositional Collapse: the reasoning fails to maintain the problem's multi-part logical structure (e.g.…",
+      "lastProgressAt": 1785966874900,
+      "tokens": 22956,
+      "toolCalls": 1,
+      "durationMs": 54816,
+      "resultPreview": "{\"findings\":[{\"idx\":20,\"answer_given\":\"180\",\"ground_truth_answer\":\"300\",\"correct\":false,\"brief_verdict\":\"Computes rate and quarter-city distance correctly but explicitly discards the wind-halving clause as irrelevant, so it never splits the 18 miles into a pre-60-min and post-60-min (doubled-time) segment — collapse, not drift.\",\"compositional_collapse_evidence\":\"\\\"The detail about the wind speed …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 8,
+      "label": "inspect:ja",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a63ff8aa69cd31a97",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785966821342,
+      "queuedAt": 1785966820106,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "ja",
+      "promptPreview": "You are inspecting AI-generated math reasoning for specific structural failure modes. You were NOT the one who generated this reasoning — your job is purely diagnostic and skeptical; only tag a failure mode if there is genuine textual evidence, do not tag failures speculatively.\n\nDefinitions:\n- Compositional Collapse: the reasoning fails to maintain the problem's multi-part logical structure (e.g.…",
+      "lastProgressAt": 1785966896999,
+      "tokens": 21871,
+      "toolCalls": 1,
+      "durationMs": 75657,
+      "resultPreview": "{\"findings\":[{\"idx\":20,\"correct\":false,\"answer_given\":\"180分\",\"ground_truth_answer\":\"300\",\"brief_verdict\":\"Incorrect (180 vs 300): reasoning applies a single flat rate (10 min/mile) to the full 18-mile target with no 60-minute rate-change/wind-halving step, so the two-phase distance split required by the problem is entirely missing.\",\"compositional_collapse_evidence\":\"\\\"At 10 minutes per mile, cove…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 9,
+      "label": "inspect:th",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a982b392200ec1363",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785966827306,
+      "queuedAt": 1785966825824,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Thai (th)",
+      "promptPreview": "You are inspecting AI-generated math reasoning for specific structural failure modes. You were NOT the one who generated this reasoning — your job is purely diagnostic and skeptical; only tag a failure mode if there is genuine textual evidence, do not tag failures speculatively.\n\nDefinitions:\n- Compositional Collapse: the reasoning fails to maintain the problem's multi-part logical structure (e.g.…",
+      "lastProgressAt": 1785966888328,
+      "tokens": 24436,
+      "toolCalls": 1,
+      "durationMs": 61022,
+      "resultPreview": "{\"findings\":[{\"idx\":20,\"ground_truth_answer\":\"300\",\"answer_given\":\"180 minutes\",\"correct\":false,\"brief_verdict\":\"Computed initial rate and fraction-of-city distance correctly but explicitly discarded the required wind-halving/rate-change step, landing on 180 instead of the correct 300.\",\"compositional_collapse_evidence\":\"\\\"(The detail about wind speed halving every hour is extra information not ne…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 10,
+      "label": "inspect:de",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "aefc2ac31f1688d89",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785966867861,
+      "queuedAt": 1785966866237,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are inspecting AI-generated math reasoning for specific structural failure modes. You were NOT the one who generated this reasoning — your job is purely diagnostic and skeptical; only tag a failure mode if there is genuine textual evidence, do not tag failures speculatively.\n\nDefinitions:\n- Compositional Collapse: the reasoning fails to maintain the problem's multi-part logical structure (e.g.…",
+      "lastProgressAt": 1785966895912,
+      "tokens": 27491,
+      "toolCalls": 2,
+      "durationMs": 28051,
+      "resultPreview": "{\"findings\":[{\"idx\":20,\"correct\":true,\"ground_truth_answer\":\"300\",\"answer_given\":\"300 Minuten\",\"brief_verdict\":\"All steps correctly executed (rate, quarter-city target, first-hour distance, wind-halving, remaining time); final answer matches ground truth exactly.\",\"compositional_collapse_evidence\":\"none\",\"reasoning_drift_evidence\":\"none\",\"format_instability_evidence\":\"none\",\"language_interference_…"
+    }
+  ],
+  "totalTokens": 221494,
+  "totalToolCalls": 11
+}

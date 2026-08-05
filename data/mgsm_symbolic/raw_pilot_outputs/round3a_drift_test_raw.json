@@ -1,0 +1,678 @@
+{
+  "summary": "Blind-generate reasoning on long sequential-chain problems (popcorn rate stages, declining-collection-rate) across 5 languages, inspect specifically for Reasoning Drift vs Compositional Collapse",
+  "agentCount": 10,
+  "logs": [],
+  "result": [
+    {
+      "language": "zh",
+      "generation": {
+        "language": "zh",
+        "solutions": [
+          {
+            "idx": 271,
+            "english_gloss": "First find how many signatures the sisters already have combined: 17 (Daphne) + 31 (Olivia) = 48. They want 120 combined by the end of the break, so they still need 120 - 48 = 72 more signatures over the remaining 3 weeks. Daphne's average weekly rate during the first 3 weeks was 17/3 signatures per week. Since she now only collects on weekends, her weekly amount drops by 5 compared to the previous week, for each of the 3 remaining weeks: week1 = 17/3 - 5 = 2/3; week2 = 2/3 - 5 = -13/3; week3 = -13/3 - 5 = -28/3. Summing these gives Daphne's total contribution over the 3 remaining weeks: 2/3 + (-13/3) + (-28/3) = -39/3 = -13. So Olivia must supply 72 - (-13) = 85 signatures over the 3 remaining weeks, i.e., 85/3 ≈ 28.33 signatures per week.",
+            "final_answer_given": "85/3 ≈ 28.33 个签名/周 (约28又1/3个)",
+            "native_reasoning": "先算姐妹俩现在一共有多少个签名：达芙妮17个 + 奥利维亚31个 = 48个。\n她们希望在春假结束时两人合计达到120个，所以剩下3周里还需要收集 120 - 48 = 72 个签名。\n\n先看达芙妮：她在前3周一共收集了17个签名，平均每周约 17/3 个。剩下的3周里，她只能在周末收集，每周的收藏量比前一周减少5个：\n第1周：17/3 - 5 = 2/3\n第2周：2/3 - 5 = -13/3\n第3周：-13/3 - 5 = -28/3\n把这三周加起来，达芙妮这3周的总贡献 = 2/3 + (-13/3) + (-28/3) = -39/3 = -13。\n\n因此，奥利维亚需要负责的部分 = 72 - (-13) = 85 个签名，分摊到剩下的3周，即每周需要 85/3 ≈ 28.33 个签名。\n\n所以奥利维亚每周大约需要收集28又1/3个签名，才能确保两人达到120个的目标。"
+          },
+          {
+            "idx": 272,
+            "english_gloss": "First find the combined signatures so far: 30 (Ava) + 37 (Quinn) = 67. They want 135 combined by the end of the break, so they need 135 - 67 = 68 more over the remaining 2 weeks. Ava's average weekly rate in the first 3 weeks was 30/3 = 10 per week. Since she now collects only on weekends, her weekly amount drops by 5 compared to the previous week for each of the 2 remaining weeks: week1 = 10 - 5 = 5; week2 = 5 - 5 = 0. So Ava's total over the 2 remaining weeks is 5 + 0 = 5. Quinn must then supply 68 - 5 = 63 signatures over 2 weeks, i.e., 63/2 = 31.5 signatures per week.",
+            "final_answer_given": "63/2 = 31.5 个签名/周",
+            "native_reasoning": "先算两姐妹现在一共有多少个签名：艾娃30个 + 奎因37个 = 67个。\n她们希望在春假结束时两人合计达到135个，所以剩下2周里还需要收集 135 - 67 = 68 个签名。\n\n先看艾娃：她在前3周一共收集了30个签名，平均每周 30/3 = 10个。剩下的2周里，她只能在周末收集，每周比前一周减少5个：\n第1周：10 - 5 = 5\n第2周：5 - 5 = 0\n艾娃这2周合计贡献 = 5 + 0 = 5个。\n\n因此，奎因需要负责的部分 = 68 - 5 = 63 个签名，分摊到剩下的2周，即每周需要 63/2 = 31.5 个签名。\n\n所以奎因每周需要收集31.5个签名，才能确保两人达到135个的目标。"
+          },
+          {
+            "idx": 451,
+            "english_gloss": "First 26 seconds: 80 kernels pop. Next 26 seconds: double that, 2×80=160. Next 26 seconds: increases to 3 times the initial rate, 3×80=240. Last 26 seconds: drops to half of the previous 26 seconds, 240/2=120. After Benjamin removes the pot from heat, a quarter of the kernels popped in the last 26 seconds also pop from residual heat: 120/4=30. Total popped kernels = 80+160+240+120+30 = 630. Benjamin gives 1/7 of the popcorn to his brother Yousef: 630/7=90 kernels to the brother, leaving Benjamin with 630-90=540. So Benjamin ate 540-90=450 more kernels than his brother.",
+            "final_answer_given": "450 块",
+            "native_reasoning": "先分阶段计算爆米花弹出的数量：\n第一个26秒：弹出80个。\n第二个26秒：数量翻倍，即 2×80 = 160个。\n第三个26秒：增加到初始弹出率的3倍，即 3×80 = 240个。\n第四个（最后）26秒：弹出速度降到上一阶段的一半，即 240 ÷ 2 = 120个。\n\n本杰明把锅从火上取下后，最后26秒弹出数量的四分之一还会因为余热继续弹出，即 120 ÷ 4 = 30个。\n\n把所有阶段加起来，总共弹出的爆米花数量 = 80 + 160 + 240 + 120 + 30 = 630个。\n\n本杰明把爆米花的1/7送给了弟弟优素福，即优素福得到 630 ÷ 7 = 90个，本杰明自己剩下 630 - 90 = 540个。\n\n所以本杰明比弟弟多吃的爆米花数量 = 540 - 90 = 450块。"
+          },
+          {
+            "idx": 458,
+            "english_gloss": "First 30 seconds: 100 kernels pop. Next 30 seconds: double that, 2×100=200. Next 30 seconds: increases to 4 times the initial rate, 4×100=400. Last 30 seconds: drops to half of the previous 30 seconds, 400/2=200. After removing from heat, a quarter of the kernels popped in the last 30 seconds also pop from residual heat: 200/4=50. Total popped kernels = 100+200+400+200+50 = 950. Deshawn gives 2/5 of the popcorn to his brother Ibrahim: 950×2/5=380 kernels to the brother, leaving Deshawn with 950-380=570. So Deshawn ate 570-380=190 more kernels than his brother.",
+            "final_answer_given": "190 块",
+            "native_reasoning": "先分阶段计算爆米花弹出的数量：\n第一个30秒：弹出100个。\n第二个30秒：数量翻倍，即 2×100 = 200个。\n第三个30秒：增加到初始弹出率的4倍，即 4×100 = 400个。\n第四个（最后）30秒：弹出速度降到上一阶段的一半，即 400 ÷ 2 = 200个。\n\nDeshawn把锅从火上移开后，最后30秒弹出数量的四分之一还会因为余热继续弹出，即 200 ÷ 4 = 50个。\n\n把所有阶段加起来，总共弹出的爆米花数量 = 100 + 200 + 400 + 200 + 50 = 950个。\n\nDeshawn把爆米花的2/5送给了弟弟易卜拉欣，即易卜拉欣得到 950 × 2/5 = 380个，Deshawn自己剩下 950 - 380 = 570个。\n\n所以Deshawn比弟弟多吃的爆米花数量 = 570 - 380 = 190块。"
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 271,
+            "correct": false,
+            "answer_given": "85/3 ≈ 28.33",
+            "ground_truth_answer": "19",
+            "first_error_location": "The stage modeling Daphne's declining weekly collection rate for the 3 remaining weeks",
+            "steps_before_error_correct": "yes",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "The model invents a base rate by dividing Daphne's 3-week total by 3 (17/3), then applies a recursive -5 decrement week over week: 17/3-5=2/3, 2/3-5=-13/3, -13/3-5=-28/3. This produces physically impossible NEGATIVE weekly signature counts, which is a clear sign the decline-rate stage was never correctly constructed from its first application (a real problem cannot have someone collect -28/3 signatures in a week). This is a wholesale misapplication of the required 'declining rate over remaining weeks' structural component, not a numeric slip carried through an otherwise-sound model.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Compositional collapse: correct initial subtraction (48, then 72 needed) but the declining-rate mechanic for the remaining weeks is fundamentally broken from its first use, yielding nonsensical negative weekly values and a final answer (28.33) far from the ground truth (19)."
+          },
+          {
+            "idx": 272,
+            "correct": false,
+            "answer_given": "63/2 = 31.5",
+            "ground_truth_answer": "29",
+            "first_error_location": "The stage modeling Ava's declining weekly collection rate for the 2 remaining weeks",
+            "steps_before_error_correct": "yes",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "Uses the identical flawed template as idx 271: computes Ava's 3-week average (30/3=10) as a 'current rate' and then recursively subtracts 5 for each remaining week (10-5=5, 5-5=0), summing to 5. Reverse-engineering from the ground truth (29/week for Quinn over 2 weeks => Quinn total 58 => Ava's required total contribution is 10, not 5) shows the recursive double-decrement of the base average is an unjustified structural rule applied identically (and wrongly) across both this problem and idx 271, rather than an isolated arithmetic typo — the same broken decline-modeling stage that produced negative values in 271 is applied here too, just without producing an obviously-impossible negative number this time.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Compositional collapse via the same broken declining-rate template used in idx 271: initial subtraction (67, then 68 needed) is correct, but the recursive week-over-week decrement rule applied to Ava's rate is structurally wrong, giving 31.5 instead of the ground truth 29."
+          },
+          {
+            "idx": 451,
+            "correct": true,
+            "answer_given": "450",
+            "ground_truth_answer": "450",
+            "first_error_location": "none",
+            "steps_before_error_correct": "not_applicable",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Fully correct: all five stages (80, 160, 240, 120, +30 residual = 630 total; 1/7 to brother = 90; 540-90=450) match the ground truth exactly."
+          },
+          {
+            "idx": 458,
+            "correct": true,
+            "answer_given": "190",
+            "ground_truth_answer": "190",
+            "first_error_location": "none",
+            "steps_before_error_correct": "not_applicable",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Fully correct: all five stages (100, 200, 400, 200, +50 residual = 950 total; 2/5 to brother = 380; 570-380=190) match the ground truth exactly."
+          }
+        ],
+        "language": "zh",
+        "overall_summary": "No genuine Reasoning Drift was observed in this batch. Two problems (451, 458 — the popcorn-popping 4/5-stage sequential problems) were fully correct end-to-end with no errors of any kind. The two problems that produced wrong answers (271, 272 — the sisters'-signature-collection problems) both fail via Compositional Collapse rather than Reasoning Drift: in both cases the early bookkeeping (combined signatures so far, amount still needed) is correct, but the very next required structural piece — modeling how the declining collector's weekly rate behaves over the remaining weeks — is misconstructed from its first application in an identical, templated way across both problems (deriving a fractional 3-week 'average' and then recursively subtracting the weekly decrease). This is not a one-off numeric slip that then gets faithfully propagated; it is a wholesale wrong model of that stage, most starkly evidenced in idx 271 where the chain produces physically impossible NEGATIVE weekly signature counts (2/3, -13/3, -28/3), which could never occur if the model had gotten the recurrence's structure right and merely mis-added or mis-carried a number. Because the same broken rate-decline template is reused verbatim in idx 272 (with a different, still-wrong outcome relative to ground truth), this points to a systematic structural misunderstanding of that problem stage rather than an isolated arithmetic slip — the hallmark of Compositional Collapse, not Reasoning Drift."
+      }
+    },
+    {
+      "language": "th",
+      "generation": {
+        "language": "th",
+        "solutions": [
+          {
+            "idx": 271,
+            "native_reasoning": "Daphne เก็บลายเซ็นได้ 17 ครั้งในช่วง 3 สัปดาห์แรก ดังนั้นอัตราเฉลี่ยของเธอในช่วงนั้นคือ 17/3 ลายเซ็นต่อสัปดาห์ ในอีก 3 สัปดาห์ที่เหลือ เธอลดอัตราการเก็บลง 5 ต่อสัปดาห์ (เพราะเก็บได้เฉพาะวันหยุดสุดสัปดาห์) ทำให้อัตราใหม่ของเธอ = 17/3 - 5 = 2/3 ลายเซ็นต่อสัปดาห์ ดังนั้นใน 3 สัปดาห์ที่เหลือเธอจะเก็บเพิ่มได้ 3 × (2/3) = 2 ลายเซ็น รวมทั้งหมดตลอดการหยุดพัก Daphne จะมี 17 + 2 = 19 ลายเซ็น เป้าหมายรวมของสองพี่น้องคือ 120 ลายเซ็น ดังนั้น Olivia ต้องมีทั้งหมด 120 - 19 = 101 ลายเซ็นเมื่อจบการหยุดพัก ตอนนี้ Olivia มีอยู่แล้ว 31 ลายเซ็น จึงต้องเก็บเพิ่มอีก 101 - 31 = 70 ลายเซ็น ภายใน 3 สัปดาห์ที่เหลือ นั่นคืออัตราเฉลี่ย 70/3 ≈ 23.33 ลายเซ็นต่อสัปดาห์ เนื่องจากไม่สามารถเก็บลายเซ็นเป็นเศษส่วนได้ และโจทย์ต้องการให้ 'แน่ใจ' ว่าบรรลุเป้าหมาย จึงต้องปัดขึ้นเป็นจำนวนเต็ม คือ Olivia ต้องเก็บอย่างน้อย 24 ลายเซ็นต่อสัปดาห์",
+            "english_gloss": "Daphne collected 17 signatures in the first 3 weeks, so her average rate was 17/3 per week. In the remaining 3 weeks she reduces her weekly rate by 5 (weekends only), giving a new rate of 17/3 - 5 = 2/3 per week, so she'll add 3 × (2/3) = 2 more signatures, for a final total of 17 + 2 = 19. The combined goal is 120, so Olivia must have 120 - 19 = 101 by the end. She already has 31, so she needs 101 - 31 = 70 more over the remaining 3 weeks, i.e. about 23.33 per week. Since you can't collect a fractional signature and the goal must be guaranteed, round up to a whole number: Olivia needs to collect at least 24 signatures per week.",
+            "final_answer_given": "24"
+          },
+          {
+            "idx": 272,
+            "native_reasoning": "Ava เก็บลายเซ็นได้ 30 ครั้งในช่วง 3 สัปดาห์แรก อัตราเฉลี่ยของเธอคือ 30/3 = 10 ลายเซ็นต่อสัปดาห์ ในอีก 2 สัปดาห์ที่เหลือ เธอลดอัตราลง 5 ต่อสัปดาห์ ทำให้อัตราใหม่ = 10 - 5 = 5 ลายเซ็นต่อสัปดาห์ ดังนั้นเธอจะเก็บเพิ่มได้ 5 × 2 = 10 ลายเซ็น รวมทั้งหมด Ava จะมี 30 + 10 = 40 ลายเซ็นเมื่อจบการหยุดพัก เป้าหมายรวมคือ 135 ลายเซ็น ดังนั้น Quinn ต้องมีทั้งหมด 135 - 40 = 95 ลายเซ็น ตอนนี้ Quinn มีอยู่แล้ว 37 ลายเซ็น จึงต้องเก็บเพิ่มอีก 95 - 37 = 58 ลายเซ็น ภายใน 2 สัปดาห์ที่เหลือ นั่นคืออัตรา 58/2 = 29 ลายเซ็นต่อสัปดาห์",
+            "english_gloss": "Ava collected 30 signatures in the first 3 weeks, an average rate of 30/3 = 10 per week. In the remaining 2 weeks she reduces her rate by 5 per week, giving a new rate of 10 - 5 = 5 per week, so she adds 5 × 2 = 10 more, for a total of 30 + 10 = 40. The combined goal is 135, so Quinn must reach 135 - 40 = 95 total. She already has 37, so she needs 95 - 37 = 58 more over the remaining 2 weeks, i.e. 58 / 2 = 29 signatures per week.",
+            "final_answer_given": "29"
+          },
+          {
+            "idx": 451,
+            "native_reasoning": "26 วินาทีแรก ป๊อปได้ 80 เมล็ด (อัตราเริ่มต้น) 26 วินาทีที่สอง ป๊อปได้ 2 เท่าของ 80 คือ 160 เมล็ด 26 วินาทีที่สาม อัตราเพิ่มเป็น 3 เท่าของอัตราเริ่มต้น คือ 3 × 80 = 240 เมล็ด 26 วินาทีสุดท้าย อัตราลดลงครึ่งหนึ่งของช่วงก่อนหน้า คือ 240 / 2 = 120 เมล็ด หลังยกออกจากไฟแล้ว มีเมล็ดโผล่เพิ่มอีกจากความร้อนที่เหลือ เท่ากับ 1/4 ของจำนวนที่โผล่ในช่วง 26 วินาทีสุดท้าย คือ 120 / 4 = 30 เมล็ด รวมข้าวโพดคั่วทั้งหมด = 80 + 160 + 240 + 120 + 30 = 630 เมล็ด เบนจามินให้ยูซุฟ 1/7 ของทั้งหมด คือ 630 / 7 = 90 เมล็ด เบนจามินเหลือ 630 - 90 = 540 เมล็ด ดังนั้นเบนจามินกินมากกว่ายูซุฟอยู่ 540 - 90 = 450 เมล็ด",
+            "english_gloss": "First 26 seconds: 80 kernels pop (initial rate). Second 26 seconds: 2× that = 160 kernels. Third 26 seconds: rate rises to 3× the initial rate = 3×80 = 240 kernels. Final 26 seconds: rate drops to half of the previous interval = 240/2 = 120 kernels. After removing from heat, residual heat pops an extra 1/4 of the last interval's amount = 120/4 = 30 kernels. Total popcorn = 80+160+240+120+30 = 630 kernels. Benjamin gives Yusuf 1/7 of the total = 630/7 = 90 kernels, leaving Benjamin with 630-90 = 540. So Benjamin eats 540-90 = 450 more kernels than his brother.",
+            "final_answer_given": "450"
+          },
+          {
+            "idx": 458,
+            "native_reasoning": "30 วินาทีแรก ป๊อปได้ 100 เมล็ด (อัตราเริ่มต้น) 30 วินาทีที่สอง ป๊อปได้ 2 เท่าของ 100 คือ 200 เมล็ด 30 วินาทีที่สาม อัตราเพิ่มเป็น 4 เท่าของอัตราเริ่มต้น คือ 4 × 100 = 400 เมล็ด 30 วินาทีสุดท้าย อัตราลดลงครึ่งหนึ่งของช่วงก่อนหน้า คือ 400 / 2 = 200 เมล็ด หลังยกออกจากไฟแล้ว มีเมล็ดโผล่เพิ่มอีกเท่ากับ 1/4 ของจำนวนที่โผล่ในช่วง 30 วินาทีสุดท้าย คือ 200 / 4 = 50 เมล็ด รวมข้าวโพดคั่วทั้งหมด = 100 + 200 + 400 + 200 + 50 = 950 เมล็ด Deshawn ให้อิบราฮิม 2/5 ของทั้งหมด คือ 950 × 2/5 = 380 เมล็ด Deshawn เหลือ 950 - 380 = 570 เมล็ด ดังนั้น Deshawn กินมากกว่าอิบราฮิมอยู่ 570 - 380 = 190 เมล็ด",
+            "english_gloss": "First 30 seconds: 100 kernels pop (initial rate). Second 30 seconds: 2× that = 200 kernels. Third 30 seconds: rate rises to 4× the initial rate = 4×100 = 400 kernels. Final 30 seconds: rate drops to half of the previous interval = 400/2 = 200 kernels. After removing from heat, an extra 1/4 of the last interval's amount pops from residual heat = 200/4 = 50 kernels. Total popcorn = 100+200+400+200+50 = 950 kernels. Deshawn gives Ibrahim 2/5 of the total = 950×2/5 = 380 kernels, leaving Deshawn with 950-380 = 570. So Deshawn eats 570-380 = 190 more kernels than his brother.",
+            "final_answer_given": "190"
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 271,
+            "correct": false,
+            "answer_given": "24",
+            "ground_truth_answer": "19",
+            "steps_before_error_correct": "yes",
+            "first_error_location": "The chain correctly computes Daphne's grand total (17/3 - 5 = 2/3 new rate; 3 × 2/3 = 2 extra; 17 + 2 = 19), which exactly matches the ground truth of 19. The divergence occurs immediately AFTER this correct, complete answer: instead of stopping, the model treats 19 as a mere intermediate value and launches into an unrequested continuation about a second person 'Olivia' needing to reach a combined goal of 120, then applies an ad hoc 'round up because you can't collect fractional signatures' rule to land on a final answer of 24.",
+            "reasoning_drift_evidence": "None in the strict sense defined. This is not a numeric/tracking slip that corrupts and then propagates through the SAME required computation chain — the required chain (Daphne's total) was completed correctly and left untouched. The 70/3≈23.33→24 step is a self-contained, freshly-invented sub-computation layered on top of the correct answer, not a mis-carried value from it.",
+            "compositional_collapse_evidence": "Does not cleanly fit either: this is the inverse of the defined pattern. Rather than dropping/misapplying a required structural stage, the model ADDS an entire extraneous, seemingly unrequired stage (Olivia's catch-up requirement, plus a rounding heuristic) after already deriving the correct requested value, and reports that instead. It resembles a 'failure to terminate at the correct answer / question misidentification' error, not a wholesale-omitted structural part.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Model gets the actually-correct answer (19) via a fully correct sequential chain, then overrides it with a fabricated/unrequested continuation (Olivia's per-week catch-up rate with rounding), giving 24. This looks like a distinct 'answered an over-extended or misidentified question' failure — not a clean reasoning-drift numeric slip, and not a classic dropped-stage compositional collapse."
+          },
+          {
+            "idx": 272,
+            "correct": true,
+            "answer_given": "29",
+            "ground_truth_answer": "29",
+            "steps_before_error_correct": "not_applicable",
+            "first_error_location": "none",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Fully correct: Ava's 3-week total (30, rate 10/wk) → reduced rate (5/wk) → extra 10 over 2 weeks → Ava total 40 → combined goal 135 → Quinn's required total 95 → remaining need 58 → 58/2 = 29 per week. Every stage matches what the problem requires and lands exactly on the ground truth of 29."
+          },
+          {
+            "idx": 451,
+            "correct": true,
+            "answer_given": "450",
+            "ground_truth_answer": "450",
+            "steps_before_error_correct": "not_applicable",
+            "first_error_location": "none",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Fully correct 4-interval popcorn computation (80, 160, 240, 120) plus residual-heat stage (30) summing to 630, then the 1/7 sharing split (90 / 540) yielding a difference of 450 — every stage and multiplier applied correctly and in the right order, matching ground truth exactly."
+          },
+          {
+            "idx": 458,
+            "correct": true,
+            "answer_given": "190",
+            "ground_truth_answer": "190",
+            "steps_before_error_correct": "not_applicable",
+            "first_error_location": "none",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Fully correct 4-interval popcorn computation (100, 200, 400, 200) plus residual-heat stage (50) summing to 950, then the 2/5 sharing split (380 / 570) yielding a difference of 190 — matches ground truth exactly with all stages correctly composed."
+          }
+        ]
+      }
+    },
+    {
+      "language": "ja",
+      "generation": {
+        "language": "ja",
+        "solutions": [
+          {
+            "idx": 271,
+            "native_reasoning": "最初の3週間が終わった時点で、ダフネは17件、オリビアは31件の署名を集めており、二人合わせて17+31=48件です。姉妹はあと3週間の春休みがあり、休み終了までに二人合わせて120件の署名に到達することを目標にしています。したがって残り3週間で追加で必要な件数は120-48=72件です。残りの3週間、ダフネは週末にしか署名を集められないため、週あたり5件のペースになります。3週間で5×3=15件を集めることになります。よって、オリビアが残り3週間で集めなければならない件数は72-15=57件です。これを3週間で均等に割ると、オリビアは1週間あたり57÷3=19件の署名を集める必要があります。",
+            "english_gloss": "After the first 3 weeks, Daphne has 17 signatures and Olivia has 31, for a combined total of 17+31=48. The sisters have 3 more weeks of break and want to reach a combined total of 120 signatures by the end. So they still need 120-48=72 more signatures over the remaining 3 weeks. During these remaining 3 weeks, Daphne can only collect on weekends, so her rate becomes 5 signatures per week; over 3 weeks that's 5×3=15. So Olivia must collect 72-15=57 signatures over the remaining 3 weeks, i.e., 57÷3=19 signatures per week.",
+            "final_answer_given": "19"
+          },
+          {
+            "idx": 272,
+            "native_reasoning": "最初の3週間が終わった時点で、エイバは30件、クインは37件の署名を集めており、二人合わせて30+37=67件です。姉妹はあと2週間の春休みがあり、休み終了までに合計135件の署名に到達したいと考えています。したがって残り2週間で追加で必要な件数は135-67=68件です。残りの2週間、エイバは週末にしか署名を集められないため、週あたり5件のペースになり、2週間で5×2=10件集めます。よって、クインが残り2週間で集めなければならない件数は68-10=58件です。これを2週間で均等に割ると、クインは1週間あたり58÷2=29件の署名を集める必要があります。",
+            "english_gloss": "After the first 3 weeks, Ava has 30 signatures and Quinn has 37, totaling 30+37=67. The sisters have 2 more weeks and want to reach a combined total of 135 signatures by the end of the break. So they need 135-67=68 more over the remaining 2 weeks. During these 2 weeks, Ava can only collect on weekends at a rate of 5 per week, giving 5×2=10 over 2 weeks. So Quinn must collect 68-10=58 over the remaining 2 weeks, i.e., 58÷2=29 signatures per week.",
+            "final_answer_given": "29"
+          },
+          {
+            "idx": 451,
+            "native_reasoning": "最初の26秒で80個のカーネルがポップします。次の26秒ではその2倍の80×2=160個がポップします。その次の26秒では初期のポップレートの3倍、つまり80×3=240個がポップします。最後の26秒では、直前の26秒(240個)の半分の速度になるので240÷2=120個がポップします。ベンジャミンが鍋を熱から外した後、最後の26秒でポップした量(120個)の4分の1がさらに余熱でポップするので120÷4=30個追加されます。したがって作られたポップコーンの総数は80+160+240+120+30=630個です。ベンジャミンは兄のユスフにこの630個の1/7、つまり630×1/7=90個を渡します。残りの630-90=540個をベンジャミンが食べることになります。ベンジャミンがユスフより多く食べる個数は540-90=450個です。",
+            "english_gloss": "In the first 26 seconds, 80 kernels pop. In the next 26 seconds, double that amount pops: 80×2=160. In the next 26 seconds, the rate rises to 3 times the initial rate: 80×3=240. In the final 26 seconds, the rate is half of the previous 26 seconds' rate: 240÷2=120. After removing the pan from heat, a quarter of the last 26 seconds' amount (120) pops from residual heat: 120÷4=30. So total popcorn made = 80+160+240+120+30=630. Benjamin gives his brother Yusuf 1/7 of this: 630×1/7=90. Benjamin eats the remaining 630-90=540. The difference between what Benjamin eats and what Yusuf gets is 540-90=450.",
+            "final_answer_given": "450"
+          },
+          {
+            "idx": 458,
+            "native_reasoning": "最初の30秒で100個のカーネルがポップします。次の30秒ではその2倍の100×2=200個がポップします。その次の30秒では初期のポップレートの4倍、つまり100×4=400個がポップします。最後の30秒では、直前の30秒(400個)の半分の速度になるので400÷2=200個がポップします。デショーンが鍋を熱から外した後、最後の30秒でポップした量(200個)の4分の1がさらに残留熱でポップするので200÷4=50個追加されます。したがって作られたポップコーンの総数は100+200+400+200+50=950個です。デショーンは兄のイブラヒムにこの950個の2/5、つまり950×2/5=380個を渡します。残りの950-380=570個をデショーンが食べることになります。デショーンがイブラヒムより多く食べる個数は570-380=190個です。",
+            "english_gloss": "In the first 30 seconds, 100 kernels pop. In the next 30 seconds, double that pops: 100×2=200. In the next 30 seconds, the rate rises to 4 times the initial rate: 100×4=400. In the final 30 seconds, the rate is half of the previous 30 seconds' rate: 400÷2=200. After removing the pan from heat, a quarter of the last 30 seconds' amount (200) pops from residual heat: 200÷4=50. So total popcorn made = 100+200+400+200+50=950. Deshawn gives his brother Ibrahim 2/5 of this: 950×2/5=380. Deshawn eats the remaining 950-380=570. The difference between what Deshawn eats and what Ibrahim gets is 570-380=190.",
+            "final_answer_given": "190"
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 271,
+            "correct": true,
+            "answer_given": "19",
+            "ground_truth_answer": "19",
+            "first_error_location": "none",
+            "steps_before_error_correct": "not_applicable",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Fully correct: 17+31=48 combined after 3 weeks; needs 120-48=72 more; Daphne's weekend-only rate (5/wk) yields 15 over 3 weeks; Olivia needs 72-15=57 over 3 weeks = 19/week. Matches ground truth exactly, no slip or omission at any stage."
+          },
+          {
+            "idx": 272,
+            "correct": true,
+            "answer_given": "29",
+            "ground_truth_answer": "29",
+            "first_error_location": "none",
+            "steps_before_error_correct": "not_applicable",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Fully correct: 30+37=67; needs 135-67=68 more over 2 weeks; Ava's weekend rate (5/wk) gives 10 over 2 weeks; Quinn needs 68-10=58 over 2 weeks = 29/week. Matches ground truth, all stages correctly composed."
+          },
+          {
+            "idx": 451,
+            "correct": true,
+            "answer_given": "450",
+            "ground_truth_answer": "450",
+            "first_error_location": "none",
+            "steps_before_error_correct": "not_applicable",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Fully correct 4-stage popcorn computation: 80, 160 (2x), 240 (3x initial), 120 (half of prior stage), plus 30 residual-heat bonus (1/4 of last stage) = 630 total. 1/7 to Yusuf=90, Benjamin eats 540, difference 540-90=450. Every multiplier and stage correctly tracked and propagated; matches ground truth."
+          },
+          {
+            "idx": 458,
+            "correct": true,
+            "answer_given": "190",
+            "ground_truth_answer": "190",
+            "first_error_location": "none",
+            "steps_before_error_correct": "not_applicable",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Fully correct 4-stage popcorn computation: 100, 200 (2x), 400 (4x initial), 200 (half of prior stage), plus 50 residual-heat bonus (1/4 of last stage) = 950 total. 2/5 to Ibrahim=380, Deshawn eats 570, difference 570-380=190. All stages and multipliers correctly applied; matches ground truth."
+          }
+        ],
+        "language": "ja",
+        "overall_summary": "No failures of either type were observed in this batch — all four solutions (idx 271, 272, 451, 458) arrived at the exact ground-truth answers via fully correct, internally consistent multi-stage reasoning, with every stage (declining collection targets with a fixed weekend-only rate for one sister in 271/272; the four popping-rate stages plus residual-heat bonus, split ratio, and eat-vs-give difference in 451/458) correctly identified and composed in the right order. Since there is no divergence point in any of the four chains, neither genuine Reasoning Drift nor Compositional Collapse can be demonstrated here — this batch simply does not contain an example of either failure mode to distinguish between."
+      }
+    },
+    {
+      "language": "es",
+      "generation": {
+        "language": "es",
+        "solutions": [
+          {
+            "idx": 271,
+            "native_reasoning": "Primero calculo cuántas firmas tienen entre las dos hermanas después de las primeras 3 semanas: Daphne tiene 17 y Olivia tiene 31, así que juntas tienen 17 + 31 = 48 firmas.\n\nEl objetivo es llegar a 120 firmas entre ambas al final de las vacaciones, así que en las 3 semanas restantes necesitan reunir en total 120 - 48 = 72 firmas más.\n\nEn las 3 semanas que quedan, Daphne solo puede salir los fines de semana, por lo que su colección semanal se reduce a 5 firmas por semana. En las 3 semanas restantes, Daphne reunirá 5 x 3 = 15 firmas en total.\n\nEso significa que Olivia debe aportar el resto: 72 - 15 = 57 firmas durante esas 3 semanas.\n\nPara saber cuántas firmas necesita por semana, divido 57 entre 3 semanas: 57 / 3 = 19.\n\nPor lo tanto, Olivia necesita recolectar 19 firmas por semana para que juntas alcancen las 120 firmas.",
+            "english_gloss": "First I calculate how many signatures the two sisters have together after the first 3 weeks: Daphne has 17 and Olivia has 31, so together they have 17 + 31 = 48 signatures.\n\nThe goal is to reach 120 signatures between them by the end of the break, so in the remaining 3 weeks they need to gather 120 - 48 = 72 more signatures in total.\n\nIn the remaining 3 weeks, Daphne can only go out on weekends, so her weekly collection is reduced to 5 signatures per week. Over the remaining 3 weeks, Daphne will gather 5 x 3 = 15 signatures in total.\n\nThat means Olivia must contribute the rest: 72 - 15 = 57 signatures during those 3 weeks.\n\nTo find out how many signatures she needs per week, I divide 57 by 3 weeks: 57 / 3 = 19.\n\nTherefore, Olivia needs to collect 19 signatures per week so that together they reach 120 signatures.",
+            "final_answer_given": "19"
+          },
+          {
+            "idx": 272,
+            "native_reasoning": "Primero sumo las firmas que ya tienen Ava y Quinn después de las 3 semanas iniciales: Ava tiene 30 y Quinn tiene 37, entonces juntas tienen 30 + 37 = 67 firmas.\n\nEl objetivo final es 135 firmas entre las dos, así que en las 2 semanas restantes necesitan conseguir 135 - 67 = 68 firmas más.\n\nDurante esas 2 semanas, Ava solo puede recolectar los fines de semana, por lo que su colección semanal se reduce a 5 firmas por semana. En las 2 semanas que quedan, Ava reunirá 5 x 2 = 10 firmas en total.\n\nEntonces Quinn debe conseguir el resto: 68 - 10 = 58 firmas en esas 2 semanas.\n\nPara hallar cuántas firmas necesita por semana, divido 58 entre 2: 58 / 2 = 29.\n\nPor lo tanto, Quinn necesita recolectar 29 firmas por semana para que juntas lleguen a las 135 firmas.",
+            "english_gloss": "First I add up the signatures Ava and Quinn already have after the initial 3 weeks: Ava has 30 and Quinn has 37, so together they have 30 + 37 = 67 signatures.\n\nThe final goal is 135 signatures between them, so in the remaining 2 weeks they need to get 135 - 67 = 68 more signatures.\n\nDuring those 2 weeks, Ava can only collect on weekends, so her weekly collection is reduced to 5 signatures per week. Over the remaining 2 weeks, Ava will gather 5 x 2 = 10 signatures in total.\n\nSo Quinn must get the rest: 68 - 10 = 58 signatures in those 2 weeks.\n\nTo find how many signatures she needs per week, I divide 58 by 2: 58 / 2 = 29.\n\nTherefore, Quinn needs to collect 29 signatures per week so that together they reach 135 signatures.",
+            "final_answer_given": "29"
+          },
+          {
+            "idx": 451,
+            "native_reasoning": "Voy a calcular cuántos núcleos aparecen en cada tramo de 26 segundos.\n\nPrimeros 26 segundos: aparecen 80 núcleos.\n\nSiguientes 26 segundos: aparecen 2 veces esa cantidad, es decir 2 x 80 = 160 núcleos.\n\nSiguientes 26 segundos: la tasa aumenta a 3 veces la tasa inicial, es decir 3 x 80 = 240 núcleos.\n\nÚltimos 26 segundos: el estallido disminuye a la mitad de la velocidad del tramo anterior (240), es decir 240 / 2 = 120 núcleos.\n\nDespués de quitar la sartén del fuego, por el calor residual aparece una cuarta parte de lo que apareció en los últimos 26 segundos: 120 / 4 = 30 núcleos adicionales.\n\nSumo todo para obtener el total de palomitas hechas: 80 + 160 + 240 + 120 + 30 = 630 palomitas.\n\nBenjamin le da a su hermano Yusuf 1/7 del total: 630 / 7 = 90 palomitas para Yusuf.\n\nLo que le queda a Benjamin es 630 - 90 = 540 palomitas.\n\nLa diferencia entre lo que come Benjamin y lo que come Yusuf es 540 - 90 = 450 palomitas.\n\nPor lo tanto, Benjamin come 450 palomitas más que su hermano.",
+            "english_gloss": "I will calculate how many kernels pop in each 26-second interval.\n\nFirst 26 seconds: 80 kernels pop.\n\nNext 26 seconds: twice that amount pop, i.e. 2 x 80 = 160 kernels.\n\nNext 26 seconds: the rate increases to 3 times the initial rate, i.e. 3 x 80 = 240 kernels.\n\nLast 26 seconds: popping slows to half the speed of the previous interval (240), i.e. 240 / 2 = 120 kernels.\n\nAfter removing the pan from the heat, a quarter of what popped in the last 26 seconds also pops from residual heat: 120 / 4 = 30 additional kernels.\n\nI add it all up to get the total popcorn made: 80 + 160 + 240 + 120 + 30 = 630 pieces of popcorn.\n\nBenjamin gives his brother Yusuf 1/7 of the total: 630 / 7 = 90 pieces of popcorn for Yusuf.\n\nWhat's left for Benjamin is 630 - 90 = 540 pieces.\n\nThe difference between what Benjamin eats and what Yusuf eats is 540 - 90 = 450 pieces.\n\nTherefore, Benjamin eats 450 more pieces of popcorn than his brother.",
+            "final_answer_given": "450"
+          },
+          {
+            "idx": 458,
+            "native_reasoning": "Calculo cuántos núcleos aparecen en cada tramo de 30 segundos.\n\nPrimeros 30 segundos: aparecen 100 núcleos.\n\nSiguientes 30 segundos: aparecen 2 veces esa cantidad, es decir 2 x 100 = 200 núcleos.\n\nSiguientes 30 segundos: la tasa aumenta a 4 veces la tasa inicial, es decir 4 x 100 = 400 núcleos.\n\nÚltimos 30 segundos: el estallido disminuye a la mitad de la velocidad del tramo anterior (400), es decir 400 / 2 = 200 núcleos.\n\nDespués de quitar la sartén del fuego, por el calor residual aparece una cuarta parte de lo que apareció en los últimos 30 segundos: 200 / 4 = 50 núcleos adicionales.\n\nSumo todo para obtener el total de palomitas hechas: 100 + 200 + 400 + 200 + 50 = 950 palomitas.\n\nDeshawn le da a su hermano Ibrahim 2/5 del total: 950 x 2/5 = 380 palomitas para Ibrahim.\n\nLo que le queda a Deshawn es 950 - 380 = 570 palomitas.\n\nLa diferencia entre lo que come Deshawn y lo que come Ibrahim es 570 - 380 = 190 palomitas.\n\nPor lo tanto, Deshawn come 190 palomitas más que su hermano.",
+            "english_gloss": "I calculate how many kernels pop in each 30-second interval.\n\nFirst 30 seconds: 100 kernels pop.\n\nNext 30 seconds: twice that amount pop, i.e. 2 x 100 = 200 kernels.\n\nNext 30 seconds: the rate increases to 4 times the initial rate, i.e. 4 x 100 = 400 kernels.\n\nLast 30 seconds: popping slows to half the speed of the previous interval (400), i.e. 400 / 2 = 200 kernels.\n\nAfter removing the pan from the heat, a quarter of what popped in the last 30 seconds also pops from residual heat: 200 / 4 = 50 additional kernels.\n\nI add it all up to get the total popcorn made: 100 + 200 + 400 + 200 + 50 = 950 pieces of popcorn.\n\nDeshawn gives his brother Ibrahim 2/5 of the total: 950 x 2/5 = 380 pieces of popcorn for Ibrahim.\n\nWhat's left for Deshawn is 950 - 380 = 570 pieces.\n\nThe difference between what Deshawn eats and what Ibrahim eats is 570 - 380 = 190 pieces.\n\nTherefore, Deshawn eats 190 more pieces of popcorn than his brother.",
+            "final_answer_given": "190"
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 271,
+            "correct": true,
+            "answer_given": "19",
+            "ground_truth_answer": "19",
+            "brief_verdict": "Fully correct: 17+31=48 combined so far; needs 72 more over 3 weeks; Daphne (weekend-only, 5/wk) contributes 15; Olivia needs 57/3=19/week. Matches ground truth exactly, no slip or omission.",
+            "first_error_location": "none",
+            "steps_before_error_correct": "not_applicable",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 272,
+            "correct": true,
+            "answer_given": "29",
+            "ground_truth_answer": "29",
+            "brief_verdict": "Fully correct: 30+37=67 combined; needs 68 more over 2 weeks; Ava (weekend-only, 5/wk) contributes 10; Quinn needs 58/2=29/week. Matches ground truth exactly.",
+            "first_error_location": "none",
+            "steps_before_error_correct": "not_applicable",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 451,
+            "correct": true,
+            "answer_given": "450",
+            "ground_truth_answer": "450",
+            "brief_verdict": "Fully correct 5-stage sum (80+160+240+120+30=630), correct 1/7 split (90 to Yusuf, 540 kept), correct difference 540-90=450. Matches ground truth exactly.",
+            "first_error_location": "none",
+            "steps_before_error_correct": "not_applicable",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          },
+          {
+            "idx": 458,
+            "correct": true,
+            "answer_given": "190",
+            "ground_truth_answer": "190",
+            "brief_verdict": "Fully correct 5-stage sum (100+200+400+200+50=950), correct 2/5 split (380 to Ibrahim, 570 kept), correct difference 570-380=190. Matches ground truth exactly.",
+            "first_error_location": "none",
+            "steps_before_error_correct": "not_applicable",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none"
+          }
+        ],
+        "language": "es",
+        "overall_summary": "No genuine Reasoning Drift (nor Compositional Collapse) was observed in this batch — all four solutions are fully correct, arriving at the exact ground-truth answers through complete, structurally sound multi-stage chains (correct handling of every stage/multiplier in the two popcorn-rate problems, and correct handling of the reduced weekend-collection rate plus the algebraic solve-for-weekly-rate step in the two signature-collection problems). No numeric slip, mis-carried value, dropped stage, or misapplied rate-change was found in any of the four traces, so there is no example of either failure mode to report from this set."
+      }
+    },
+    {
+      "language": "de",
+      "generation": {
+        "language": "de",
+        "solutions": [
+          {
+            "idx": 271,
+            "native_reasoning": "Nach den ersten 3 Wochen haben Daphne und Olivia zusammen 17 + 31 = 48 Unterschriften. Ihr gemeinsames Ziel bis zum Ende der Ferien beträgt 120 Unterschriften. Es fehlen also noch 120 - 48 = 72 Unterschriften, die in den restlichen 3 Wochen gesammelt werden müssen. Da Daphne in den restlichen Wochen nur am Wochenende sammeln kann und ihre wöchentliche Menge sogar sinkt, kann man sich nicht auf einen festen Beitrag von ihr verlassen. Damit die Schwestern ihr Ziel in jedem Fall (sicher) erreichen, muss Olivia die verbleibenden 72 Unterschriften allein durch ihre eigene wöchentliche Sammlung abdecken. Verteilt auf die 3 verbleibenden Wochen ergibt das 72 / 3 = 24 Unterschriften pro Woche.",
+            "english_gloss": "After the first 3 weeks, Daphne and Olivia together have 17 + 31 = 48 signatures. Their combined goal by the end of the break is 120 signatures. So 120 - 48 = 72 signatures are still needed over the remaining 3 weeks. Since Daphne can now only collect on weekends and her weekly amount is even decreasing, one cannot rely on a fixed contribution from her. To make sure the sisters reach their goal in any case, Olivia must cover the remaining 72 signatures through her own weekly collection alone. Spread over the 3 remaining weeks, that is 72 / 3 = 24 signatures per week.",
+            "final_answer_given": "24"
+          },
+          {
+            "idx": 272,
+            "native_reasoning": "Nach den ersten 3 Wochen haben Ava und Quinn zusammen 30 + 37 = 67 Unterschriften. Das gemeinsame Ziel bis zum Ende der Ferien ist 135 Unterschriften. Es fehlen also 135 - 67 = 68 Unterschriften für die restlichen 2 Wochen. Da Ava in den restlichen Wochen nur am Wochenende sammeln kann und ihre wöchentliche Menge sinkt, kann man sich nicht auf einen sicheren Beitrag von ihr verlassen. Damit die Schwestern ihr Ziel garantiert erreichen, muss Quinn die verbleibenden 68 Unterschriften allein durch ihre eigene wöchentliche Sammlung sicherstellen. Verteilt auf die 2 verbleibenden Wochen ergibt das 68 / 2 = 34 Unterschriften pro Woche.",
+            "english_gloss": "After the first 3 weeks, Ava and Quinn together have 30 + 37 = 67 signatures. Their combined goal by the end of the break is 135 signatures. So 135 - 67 = 68 signatures are still needed over the remaining 2 weeks. Since Ava can now only collect on weekends and her weekly amount is decreasing, one cannot rely on a guaranteed contribution from her. To make sure the sisters definitely reach their goal, Quinn must secure the remaining 68 signatures through her own weekly collection alone. Spread over the 2 remaining weeks, that is 68 / 2 = 34 signatures per week.",
+            "final_answer_given": "34"
+          },
+          {
+            "idx": 451,
+            "native_reasoning": "In den ersten 26 Sekunden platzen 80 Kerne. In den nächsten 26 Sekunden platzen 2-mal so viele wie im ersten Intervall, also 2 × 80 = 160 Kerne. In den darauffolgenden 26 Sekunden steigt die Poprate auf das Dreifache der anfänglichen Rate, also 3 × 80 = 240 Kerne. In den letzten 26 Sekunden verlangsamt sich das Platzen auf die Hälfte der Rate des dritten Intervalls, also 240 / 2 = 120 Kerne. Während des Kochens platzen insgesamt 80 + 160 + 240 + 120 = 600 Kerne. Nachdem Benjamin die Pfanne von der Hitze genommen hat, platzt durch die Restwärme noch ein Viertel der Menge des letzten Intervalls, also 120 / 4 = 30 weitere Kerne. Insgesamt hat Benjamin also 600 + 30 = 630 Popcornstücke. Er gibt seinem Bruder Yusuf 1/7 davon: 630 / 7 = 90 Stück. Benjamin selbst behält also 630 - 90 = 540 Stück. Der Unterschied zwischen Benjamins und Yusufs Anteil beträgt 540 - 90 = 450. Benjamin muss also 450 Stück mehr essen als sein Bruder.",
+            "english_gloss": "In the first 26 seconds, 80 kernels pop. In the next 26 seconds, twice as many pop as in the first interval, i.e. 2 × 80 = 160 kernels. In the following 26 seconds, the popping rate rises to three times the initial rate, i.e. 3 × 80 = 240 kernels. In the last 26 seconds, the popping slows to half the rate of the third interval, i.e. 240 / 2 = 120 kernels. During cooking, a total of 80 + 160 + 240 + 120 = 600 kernels pop. After Benjamin takes the pan off the heat, a quarter of the amount from the last interval pops additionally from residual heat, i.e. 120 / 4 = 30 more kernels. So Benjamin has a total of 600 + 30 = 630 popcorn pieces. He gives his brother Yusuf 1/7 of that: 630 / 7 = 90 pieces. Benjamin himself keeps 630 - 90 = 540 pieces. The difference between Benjamin's and Yusuf's share is 540 - 90 = 450. So Benjamin must eat 450 pieces more than his brother.",
+            "final_answer_given": "450"
+          },
+          {
+            "idx": 458,
+            "native_reasoning": "In den ersten 30 Sekunden platzen 100 Kerne. In den nächsten 30 Sekunden platzen 2-mal so viele wie im ersten Intervall, also 2 × 100 = 200 Kerne. In den darauffolgenden 30 Sekunden steigt die Poprate auf das Vierfache der anfänglichen Rate, also 4 × 100 = 400 Kerne. In den letzten 30 Sekunden verlangsamt sich das Platzen auf die Hälfte der Rate des dritten Intervalls, also 400 / 2 = 200 Kerne. Während des Kochens platzen insgesamt 100 + 200 + 400 + 200 = 900 Kerne. Nachdem Deshawn die Pfanne von der Hitze genommen hat, platzt durch die Restwärme noch ein Viertel der Menge des letzten Intervalls, also 200 / 4 = 50 weitere Kerne. Insgesamt hat Deshawn also 900 + 50 = 950 Popcornstücke. Er gibt seinem Bruder Ibrahim 2/5 davon: 2/5 × 950 = 380 Stück. Deshawn selbst behält also 950 - 380 = 570 Stück. Der Unterschied zwischen Deshawns und Ibrahims Anteil beträgt 570 - 380 = 190. Deshawn muss also 190 Stück mehr essen als sein Bruder.",
+            "english_gloss": "In the first 30 seconds, 100 kernels pop. In the next 30 seconds, twice as many pop as in the first interval, i.e. 2 × 100 = 200 kernels. In the following 30 seconds, the popping rate rises to four times the initial rate, i.e. 4 × 100 = 400 kernels. In the last 30 seconds, the popping slows to half the rate of the third interval, i.e. 400 / 2 = 200 kernels. During cooking, a total of 100 + 200 + 400 + 200 = 900 kernels pop. After Deshawn takes the pan off the heat, a quarter of the amount from the last interval pops additionally from residual heat, i.e. 200 / 4 = 50 more kernels. So Deshawn has a total of 900 + 50 = 950 popcorn pieces. He gives his brother Ibrahim 2/5 of that: 2/5 × 950 = 380 pieces. Deshawn himself keeps 950 - 380 = 570 pieces. The difference between Deshawn's and Ibrahim's share is 570 - 380 = 190. So Deshawn must eat 190 pieces more than his brother.",
+            "final_answer_given": "190"
+          }
+        ]
+      },
+      "inspection": {
+        "findings": [
+          {
+            "idx": 271,
+            "answer_given": "24",
+            "ground_truth_answer": "19",
+            "correct": false,
+            "first_error_location": "The step where the remaining 72 signatures needed for weeks 4-6 is divided by 3 and assigned entirely to Olivia (72/3=24)",
+            "steps_before_error_correct": "yes",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "The model explicitly reasons 'man kann sich nicht auf einen festen Beitrag von ihr [Daphne] verlassen' and therefore assigns Olivia the entire remaining 72 signatures, never attempting to compute Daphne's continuing (declining, weekend-only) contribution over the final 3 weeks at all. This is a required structural sub-part of the problem (Daphne's ongoing contribution) that is dropped wholesale via a rationalized shortcut, not a numeric slip within an attempted calculation of that stage.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Incorrect (24 vs. 19). Compositional collapse: the model invents a rationale to skip computing Daphne's declining remaining contribution entirely rather than mis-tracking a number within that computation."
+          },
+          {
+            "idx": 272,
+            "answer_given": "34",
+            "ground_truth_answer": "29",
+            "correct": false,
+            "first_error_location": "The step where the remaining 68 signatures needed for the last 2 weeks is divided by 2 and assigned entirely to Quinn (68/2=34)",
+            "steps_before_error_correct": "yes",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "Same pattern as idx 271: the model states 'man kann sich nicht auf einen sicheren Beitrag von ihr [Ava] verlassen' and dumps the full remaining requirement onto Quinn, never engaging with Ava's declining weekend contribution as a computational stage at all. This is the identical structural omission appearing in a sibling problem instance, confirming it is a templated skipped stage rather than a one-off arithmetic slip.",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Incorrect (34 vs. 29). Compositional collapse, identical in structure to idx 271 — a required contribution-tracking stage for the other sister is never attempted."
+          },
+          {
+            "idx": 451,
+            "answer_given": "450",
+            "ground_truth_answer": "450",
+            "correct": true,
+            "first_error_location": "none",
+            "steps_before_error_correct": "not_applicable",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Fully correct 4-stage popcorn computation (80+160+240+120=600, +30 residual=630, 1/7 to brother=90, difference=450) matching ground truth exactly."
+          },
+          {
+            "idx": 458,
+            "answer_given": "190",
+            "ground_truth_answer": "190",
+            "correct": true,
+            "first_error_location": "none",
+            "steps_before_error_correct": "not_applicable",
+            "reasoning_drift_evidence": "none",
+            "compositional_collapse_evidence": "none",
+            "format_instability_evidence": "none",
+            "language_interference_evidence": "none",
+            "brief_verdict": "Fully correct 4-stage popcorn computation (100+200+400+200=900, +50 residual=950, 2/5 to brother=380, difference=190) matching ground truth exactly."
+          }
+        ],
+        "language": "de",
+        "overall_summary": "No genuine Reasoning Drift was observed in this batch. Two of the four problems (idx 451, 458) are fully correct four-stage sequential computations with every dependent stage (rate multiplier, residual popping, fraction given away, difference) correctly carried forward — these show what correct sequential propagation looks like, but contain no error to classify. The two incorrect problems (idx 271, 272) both fail identically via Compositional Collapse, not Reasoning Drift: after correctly computing the shortfall (120-48=72 and 135-67=68 respectively), the model does not make a numeric/tracking slip while attempting to account for the first sister's continuing declining weekend contribution — instead it explicitly rationalizes skipping that entire required sub-stage ('man kann sich nicht auf einen festen/sicheren Beitrag von ihr verlassen') and dumps the full remaining total onto the second sister. Because this omitted stage was never attempted at all (in both parallel problem instances, with near-identical phrasing), it is a structural/compositional gap rather than a correct-start-then-slip error, so it does not qualify as Reasoning Drift."
+      }
+    }
+  ],
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Generate"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Inspect"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "generate:zh",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a1dffdc14648f9978",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970205863,
+      "queuedAt": 1785970203396,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "zh",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in zh, to solve the following 4 math word problems one by one. These involve multi-stage sequential processes (e.g., rates that change stage by stage, or weekly totals that build on each other) — think step by step in zh, carrying forward each intermediate value explicitly, and end with a clear final numeric answer. Do not skip proble…",
+      "lastProgressAt": 1785970428469,
+      "tokens": 19914,
+      "toolCalls": 1,
+      "durationMs": 222606,
+      "resultPreview": "{\"language\":\"zh\",\"solutions\":[{\"idx\":271,\"english_gloss\":\"First find how many signatures the sisters already have combined: 17 (Daphne) + 31 (Olivia) = 48. They want 120 combined by the end of the break, so they still need 120 - 48 = 72 more signatures over the remaining 3 weeks. Daphne's average weekly rate during the first 3 weeks was 17/3 signatures per week. Since she now only collects on week…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "generate:th",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a894d5292c4ca7df2",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970207955,
+      "queuedAt": 1785970203396,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "th",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in th, to solve the following 4 math word problems one by one. These involve multi-stage sequential processes (e.g., rates that change stage by stage, or weekly totals that build on each other) — think step by step in th, carrying forward each intermediate value explicitly, and end with a clear final numeric answer. Do not skip proble…",
+      "lastProgressAt": 1785970589351,
+      "tokens": 40553,
+      "toolCalls": 7,
+      "durationMs": 381396,
+      "resultPreview": "{\"language\":\"th\",\"solutions\":[{\"idx\":271,\"native_reasoning\":\"Daphne เก็บลายเซ็นได้ 17 ครั้งในช่วง 3 สัปดาห์แรก ดังนั้นอัตราเฉลี่ยของเธอในช่วงนั้นคือ 17/3 ลายเซ็นต่อสัปดาห์ ในอีก 3 สัปดาห์ที่เหลือ เธอลดอัตราการเก็บลง 5 ต่อสัปดาห์ (เพราะเก็บได้เฉพาะวันหยุดสุดสัปดาห์) ทำให้อัตราใหม่ของเธอ = 17/3 - 5 = 2/3 ลายเซ็นต่อสัปดาห์ ดังนั้นใน 3 สัปดาห์ที่เหลือเธอจะเก็บเพิ่มได้ 3 × (2/3) = 2 ลายเซ็น รวมทั้งหมดต…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "generate:ja",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a6d0484643b3d4ec2",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970206734,
+      "queuedAt": 1785970203396,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "ja",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in ja, to solve the following 4 math word problems one by one. These involve multi-stage sequential processes (e.g., rates that change stage by stage, or weekly totals that build on each other) — think step by step in ja, carrying forward each intermediate value explicitly, and end with a clear final numeric answer. Do not skip proble…",
+      "lastProgressAt": 1785970424263,
+      "tokens": 36324,
+      "toolCalls": 6,
+      "durationMs": 217529,
+      "resultPreview": "{\"language\":\"ja\",\"solutions\":[{\"idx\":271,\"native_reasoning\":\"最初の3週間が終わった時点で、ダフネは17件、オリビアは31件の署名を集めており、二人合わせて17+31=48件です。姉妹はあと3週間の春休みがあり、休み終了までに二人合わせて120件の署名に到達することを目標にしています。したがって残り3週間で追加で必要な件数は120-48=72件です。残りの3週間、ダフネは週末にしか署名を集められないため、週あたり5件のペースになります。3週間で5×3=15件を集めることになります。よって、オリビアが残り3週間で集めなければならない件数は72-15=57件です。これを3週間で均等に割ると、オリビアは1週間あたり57÷3=19件の署名を集める必要があります。\",\"english_gloss\":\"After the first 3 we…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "generate:es",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a900691858dfe4ce2",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970211493,
+      "queuedAt": 1785970203396,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "es",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in es, to solve the following 4 math word problems one by one. These involve multi-stage sequential processes (e.g., rates that change stage by stage, or weekly totals that build on each other) — think step by step in es, carrying forward each intermediate value explicitly, and end with a clear final numeric answer. Do not skip proble…",
+      "lastProgressAt": 1785970316435,
+      "tokens": 20246,
+      "toolCalls": 1,
+      "durationMs": 104942,
+      "resultPreview": "{\"language\":\"es\",\"solutions\":[{\"idx\":271,\"native_reasoning\":\"Primero calculo cuántas firmas tienen entre las dos hermanas después de las primeras 3 semanas: Daphne tiene 17 y Olivia tiene 31, así que juntas tienen 17 + 31 = 48 firmas.\\n\\nEl objetivo es llegar a 120 firmas entre ambas al final de las vacaciones, así que en las 3 semanas restantes necesitan reunir en total 120 - 48 = 72 firmas más.\\…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "generate:de",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a450ca2f83016592d",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970208904,
+      "queuedAt": 1785970203396,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "de",
+      "promptPreview": "You are a helpful multilingual assistant. A user has asked you, in de, to solve the following 4 math word problems one by one. These involve multi-stage sequential processes (e.g., rates that change stage by stage, or weekly totals that build on each other) — think step by step in de, carrying forward each intermediate value explicitly, and end with a clear final numeric answer. Do not skip proble…",
+      "lastProgressAt": 1785970327916,
+      "tokens": 20475,
+      "toolCalls": 1,
+      "durationMs": 119012,
+      "resultPreview": "{\"language\":\"de\",\"solutions\":[{\"idx\":271,\"native_reasoning\":\"Nach den ersten 3 Wochen haben Daphne und Olivia zusammen 17 + 31 = 48 Unterschriften. Ihr gemeinsames Ziel bis zum Ende der Ferien beträgt 120 Unterschriften. Es fehlen also noch 120 - 48 = 72 Unterschriften, die in den restlichen 3 Wochen gesammelt werden müssen. Da Daphne in den restlichen Wochen nur am Wochenende sammeln kann und ihr…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "inspect:es",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "af38e4de85b96ad4b",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970317856,
+      "queuedAt": 1785970316436,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "es",
+      "promptPreview": "You are inspecting AI-generated math reasoning to distinguish two specific failure modes on long, multi-stage SEQUENTIAL problems (where each stage's value depends on a prior stage's computed value — e.g., a 4-stage popcorn-popping-rate problem, or a 3-week declining-collection-rate problem). You did NOT generate this reasoning — be skeptical, and require genuine textual/numeric evidence for any t…",
+      "lastProgressAt": 1785970341074,
+      "tokens": 23359,
+      "toolCalls": 1,
+      "durationMs": 23217,
+      "resultPreview": "{\"findings\":[{\"idx\":271,\"correct\":true,\"answer_given\":\"19\",\"ground_truth_answer\":\"19\",\"brief_verdict\":\"Fully correct: 17+31=48 combined so far; needs 72 more over 3 weeks; Daphne (weekend-only, 5/wk) contributes 15; Olivia needs 57/3=19/week. Matches ground truth exactly, no slip or omission.\",\"first_error_location\":\"none\",\"steps_before_error_correct\":\"not_applicable\",\"reasoning_drift_evidence\":\"n…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 7,
+      "label": "inspect:de",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a6578e3a5e5bc1955",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970329593,
+      "queuedAt": 1785970327922,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "de",
+      "promptPreview": "You are inspecting AI-generated math reasoning to distinguish two specific failure modes on long, multi-stage SEQUENTIAL problems (where each stage's value depends on a prior stage's computed value — e.g., a 4-stage popcorn-popping-rate problem, or a 3-week declining-collection-rate problem). You did NOT generate this reasoning — be skeptical, and require genuine textual/numeric evidence for any t…",
+      "lastProgressAt": 1785970407842,
+      "tokens": 22816,
+      "toolCalls": 1,
+      "durationMs": 78248,
+      "resultPreview": "{\"findings\":[{\"idx\":271,\"answer_given\":\"24\",\"ground_truth_answer\":\"19\",\"correct\":false,\"first_error_location\":\"The step where the remaining 72 signatures needed for weeks 4-6 is divided by 3 and assigned entirely to Olivia (72/3=24)\",\"steps_before_error_correct\":\"yes\",\"reasoning_drift_evidence\":\"none\",\"compositional_collapse_evidence\":\"The model explicitly reasons 'man kann sich nicht auf einen fe…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 8,
+      "label": "inspect:ja",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a80a2d72ff1b0addc",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970426575,
+      "queuedAt": 1785970425374,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "ja",
+      "promptPreview": "You are inspecting AI-generated math reasoning to distinguish two specific failure modes on long, multi-stage SEQUENTIAL problems (where each stage's value depends on a prior stage's computed value — e.g., a 4-stage popcorn-popping-rate problem, or a 3-week declining-collection-rate problem). You did NOT generate this reasoning — be skeptical, and require genuine textual/numeric evidence for any t…",
+      "lastProgressAt": 1785970451265,
+      "tokens": 21962,
+      "toolCalls": 1,
+      "durationMs": 24690,
+      "resultPreview": "{\"findings\":[{\"idx\":271,\"correct\":true,\"answer_given\":\"19\",\"ground_truth_answer\":\"19\",\"first_error_location\":\"none\",\"steps_before_error_correct\":\"not_applicable\",\"reasoning_drift_evidence\":\"none\",\"compositional_collapse_evidence\":\"none\",\"format_instability_evidence\":\"none\",\"language_interference_evidence\":\"none\",\"brief_verdict\":\"Fully correct: 17+31=48 combined after 3 weeks; needs 120-48=72 more;…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 9,
+      "label": "inspect:zh",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a0744ef97f9d9c84b",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970429802,
+      "queuedAt": 1785970428473,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "zh",
+      "promptPreview": "You are inspecting AI-generated math reasoning to distinguish two specific failure modes on long, multi-stage SEQUENTIAL problems (where each stage's value depends on a prior stage's computed value — e.g., a 4-stage popcorn-popping-rate problem, or a 3-week declining-collection-rate problem). You did NOT generate this reasoning — be skeptical, and require genuine textual/numeric evidence for any t…",
+      "lastProgressAt": 1785970605771,
+      "tokens": 22550,
+      "toolCalls": 1,
+      "durationMs": 175969,
+      "resultPreview": "{\"findings\":[{\"idx\":271,\"correct\":false,\"answer_given\":\"85/3 ≈ 28.33\",\"ground_truth_answer\":\"19\",\"first_error_location\":\"The stage modeling Daphne's declining weekly collection rate for the 3 remaining weeks\",\"steps_before_error_correct\":\"yes\",\"reasoning_drift_evidence\":\"none\",\"compositional_collapse_evidence\":\"The model invents a base rate by dividing Daphne's 3-week total by 3 (17/3), then appli…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 10,
+      "label": "inspect:th",
+      "phaseIndex": 2,
+      "phaseTitle": "Inspect",
+      "agentId": "a334ac086aaaf39e9",
+      "model": "claude-sonnet-5[1m]",
+      "state": "done",
+      "startedAt": 1785970591742,
+      "queuedAt": 1785970590465,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are inspecting AI-generated math reasoning to distinguish two specific failure modes on long, multi-stage SEQUENTIAL problems (where each stage's value depends on a prior stage's computed value — e.g., a 4-stage popcorn-popping-rate problem, or a 3-week declining-collection-rate problem). You did NOT generate this reasoning — be skeptical, and require genuine textual/numeric evidence for any t…",
+      "lastProgressAt": 1785970697397,
+      "tokens": 23210,
+      "toolCalls": 1,
+      "durationMs": 105655,
+      "resultPreview": "{\"findings\":[{\"idx\":271,\"correct\":false,\"answer_given\":\"24\",\"ground_truth_answer\":\"19\",\"steps_before_error_correct\":\"yes\",\"first_error_location\":\"The chain correctly computes Daphne's grand total (17/3 - 5 = 2/3 new rate; 3 × 2/3 = 2 extra; 17 + 2 = 19), which exactly matches the ground truth of 19. The divergence occurs immediately AFTER this correct, complete answer: instead of stopping, the mod…"
+    }
+  ],
+  "totalTokens": 251409,
+  "totalToolCalls": 21
+}
