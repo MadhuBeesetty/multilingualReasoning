@@ -1,0 +1,23 @@
+## References for PAPER_DRAFT.md
+
+Cobbe, K., Kosaraju, V., Bavarian, M., Chen, M., Jun, H., Kaiser, L., Plappert, M., Tworek, J., Hilton, J., Nakano, R., Hesse, C., & Schulman, J. (2021). Training Verifiers to Solve Math Word Problems. *arXiv preprint arXiv:2110.14168*. https://arxiv.org/abs/2110.14168
+
+Huang, F., Yong, H., Wu, C., Zhao, X., Ye, W., Zhang, Y., Chen, H., Liu, Z., Sun, Y., & Zhou, J. (2023). A Comprehensive Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions. *arXiv preprint arXiv:2311.05232*. https://arxiv.org/abs/2311.05232
+
+Kaplan, J., McCandlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., Close, S., Farhi, A., Gao, L., Hendel, D., Hilton, J., Hough, S., Humphreys, H., Johns, J., Kernion, J., Conerly, L., Landau, J., Ndousse, K., Odiz, O., ... Amodei, D. (2020). Scaling Laws for Neural Language Models. *arXiv preprint arXiv:2001.08361*. https://arxiv.org/abs/2001.08361
+
+Kojima, T., Gu, S. S., Reid, M., Matsuo, Y., & Iwasawa, Y. (2022). Large Language Models are Zero-Shot Reasoners. *arXiv preprint arXiv:2205.11916*. https://arxiv.org/abs/2205.11916
+
+Hoffmann, J., Borgeaud, S., Mensch, A., Perez, E., Prabhu, S. S., Protasiewicz, J., Ray, A., Casas, A., Roussez, J. L., Driessche, G. v. d., Pitler, E., Leike, J., Xia, F., Besley, T., Chen, Y., Kravchuk, L., Saunders, S., Vulić, I., Font, J. L. P., ... Sifre, L. (2022). Training Compute-Optimal Large Language Models. *arXiv preprint arXiv:2203.15556*. https://arxiv.org/abs/2203.15556
+
+Lewkowycz, A., Andreassen, A., Dohan, D., Dyer, E., Michalewski, H., Ramasesh, V., Slone, A., Anil, C., Schlag, I., Gutman, T., Wu, Y., Hu, Z., Creswell, A., Agrawal, D., Sifre, L., Norouzi, M., & Gur, I. (2023). Solving Quantitative Reasoning Problems with Language Models. *arXiv preprint arXiv:2402.07144*. https://arxiv.org/abs/2402.07144
+
+Liang, P. P., Bommasani, R., Lee, T., Tsvetkov, Y., Leskovec, J., & Ré, C. (2022). Holistic Evaluation of Language Models. *arXiv preprint arXiv:2211.09110*. https://arxiv.org/abs/2211.09110
+
+Ovalle, A., Drissi, Y., Ruis, L., Soldaini, L., Suhr, A., McDougall, D., & Kassner, N. (2024). Beg to Differ: Large Language Models' Struggle With Reasoning About Reasoning. *arXiv preprint arXiv:2512.22712*. https://arxiv.org/abs/2512.22712
+
+Ranaldi, G., & Pucci, A. (2025). Multilingual Reasoning via Self-training. In *Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)*.
+
+Vig, J., & Belinkov, Y. (2019). Analyzing the Structure of Attention in a Transformer Language Model. In *Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics* (pp. 63–76). https://arxiv.org/abs/1906.04341
+
+Wei, J., Tay, Y., Bommasani, R., Raffel, C., Zoph, B., Fedus, W., Levy, O., Saxe, G. B., Uszkoreit, J., Shazeer, N., & Hoffman, J. (2023). Emergent Abilities of Large Language Models. In *Transactions on Machine Learning Research*. https://arxiv.org/abs/2206.07682
