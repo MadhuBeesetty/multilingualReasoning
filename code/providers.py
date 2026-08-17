@@ -1,6 +1,6 @@
 """Minimal provider abstraction for calling a real, independently-hosted
-model-under-test (generator) via the Anthropic or OpenRouter (OpenAI-compatible)
-APIs.
+model-under-test (generator) via the Anthropic, OpenRouter (OpenAI-compatible),
+or Ollama (local OpenAI-compatible) APIs.
 
 This module is pure library code: no CLI, no file I/O, no prompt-building.
 Both run_inference.py and inspect_traces.py import from here.
@@ -25,6 +25,7 @@ import openai
 ANTHROPIC_API_KEY_ENV = "ANTHROPIC_API_KEY"
 OPENROUTER_API_KEY_ENV = "OPENROUTER_API_KEY"
 OPENROUTER_DEFAULT_BASE_URL = "https://openrouter.ai/api/v1"
+OLLAMA_DEFAULT_BASE_URL = "http://localhost:11434/v1"
 
 # Documented fallback only. run_inference.py makes --model required, so this
 # constant is never actually exercised by the CLI. Deliberately NOT reused as
@@ -133,6 +134,51 @@ class AnthropicProvider:
 
 
 # ---------------------------------------------------------------------------
+# Ollama provider (local, OpenAI-compatible)
+# ---------------------------------------------------------------------------
+
+
+class OllamaProvider:
+    """Calls a model running locally via Ollama's OpenAI-compatible API.
+
+    Ollama models are free, local, and require no API keys — just a running
+    Ollama server (`ollama serve`) and a pulled model (`ollama pull <model>`).
+    """
+
+    def __init__(
+        self,
+        model: str,
+        base_url: str = OLLAMA_DEFAULT_BASE_URL,
+        max_tokens: int = DEFAULT_MAX_TOKENS,
+        max_retries: int = DEFAULT_MAX_RETRIES,
+    ) -> None:
+        self.model = model
+        self.max_tokens = max_tokens
+        self._client = openai.OpenAI(
+            api_key="not-needed-for-ollama",  # Ollama doesn't check this
+            base_url=base_url,
+            max_retries=max_retries,
+        )
+
+    def generate(self, system_prompt: str, user_prompt: str) -> str:
+        try:
+            response = self._client.chat.completions.create(
+                model=self.model,
+                max_tokens=self.max_tokens,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt},
+                ],
+            )
+        except Exception as e:
+            raise ProviderError(
+                f"Ollama request failed: {type(e).__name__}: {e}"
+            ) from e
+
+        return response.choices[0].message.content or ""
+
+
+# ---------------------------------------------------------------------------
 # OpenAI-compatible provider (OpenRouter, or any other OpenAI-compatible host)
 # ---------------------------------------------------------------------------
 
@@ -197,7 +243,7 @@ def get_provider(name: str, model: str, **kwargs) -> Provider:
     """Dispatch to the right provider by name.
 
     kwargs are passed through to the provider constructor (e.g. base_url for
-    openrouter). Unknown kwargs left as None by the CLI (e.g. an unset
+    openrouter/ollama). Unknown kwargs left as None by the CLI (e.g. an unset
     --base-url) should be filtered out by the caller before calling this.
     """
     key = name.lower()
@@ -205,7 +251,9 @@ def get_provider(name: str, model: str, **kwargs) -> Provider:
         return AnthropicProvider(model=model, **kwargs)
     if key == "openrouter":
         return OpenAICompatibleProvider(model=model, **kwargs)
-    raise ValueError(f"Unknown provider: {name!r} (expected 'anthropic' or 'openrouter')")
+    if key == "ollama":
+        return OllamaProvider(model=model, **kwargs)
+    raise ValueError(f"Unknown provider: {name!r} (expected 'anthropic', 'openrouter', or 'ollama')")
 
 
 # ---------------------------------------------------------------------------

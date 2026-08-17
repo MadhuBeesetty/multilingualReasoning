@@ -1,0 +1,204 @@
+{
+  "summary": "Blind generation run (Ollama, local/offline): model=phi:3.5-mini, base_url=http://localhost:11434/v1, problems_file=../data/mgsm_symbolic/pilot_round1_fogbank_problems.json, require_format_tags=False",
+  "provider": "ollama",
+  "model": "phi:3.5-mini",
+  "base_url": "http://localhost:11434/v1",
+  "require_format_tags": false,
+  "result": [
+    {
+      "language": "zh",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 20,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 21,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 22,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 23,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 24,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 25,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 26,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 27,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          }
+        ]
+      }
+    },
+    {
+      "language": "th",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 20,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 21,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 22,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 23,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 24,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 25,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 26,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 27,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          }
+        ]
+      }
+    },
+    {
+      "language": "ja",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 20,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 21,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 22,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 23,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 24,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 25,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 26,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 27,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          }
+        ]
+      }
+    },
+    {
+      "language": "es",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 20,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 21,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 22,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 23,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 24,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 25,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 26,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 27,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          }
+        ]
+      }
+    },
+    {
+      "language": "de",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 20,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 21,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 22,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 23,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 24,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 25,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 26,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          },
+          {
+            "idx": 27,
+            "raw_output": "[GENERATION_ERROR] ProviderError: Ollama request failed: NotFoundError: Error code: 404 - {'error': {'message': \"model 'phi:3.5-mini' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}"
+          }
+        ]
+      }
+    }
+  ]
+}

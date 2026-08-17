@@ -12,8 +12,8 @@ downstream inspect_traces.py step still calls the real Anthropic API for the
 fixed inspector; that part is unchanged and not free.)
 
 Usage:
-    python run_inference_ollama.py \\
-        --problems ../data/mgsm_symbolic/pilot_round1_fogbank_problems.json \\
+    python run_inference_ollama.py \
+        --problems ../data/mgsm_symbolic/pilot_round1_fogbank_problems.json \
         --out ../data/mgsm_symbolic/raw_pilot_outputs/round1_deepseek-r1-14b_generation.json
     # defaults to model deepseek-r1:14b against http://localhost:11434/v1
 """
