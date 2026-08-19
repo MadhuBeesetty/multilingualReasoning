@@ -1,0 +1,69 @@
+{
+  "summary": "Blind generation run (Ollama, local/offline): model=deepseek-r1:14b, base_url=http://localhost:11434/v1, problems_file=data/mgsm_symbolic/pilot_round3b_format_newlangs_problems.json, require_format_tags=True",
+  "provider": "ollama",
+  "model": "deepseek-r1:14b",
+  "base_url": "http://localhost:11434/v1",
+  "require_format_tags": true,
+  "result": [
+    {
+      "language": "it",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 40,
+            "raw_output": "\n\n<formalisation>\nIl cane di Mateo ha 149 cuccioli, 25 dei quali inizialmente hanno punti. Dopo la visita al veterinario, la metà dei cuccioli non puntati acquire punte visibili, portando il totale a 87 cuccioli con punti per Mateo. Il cane di Mohammed ha 49 cuccioli, 12 dei quali hanno punti. Ibrahim ha 54 cani, ciascuno con 13 cuccioli con macchie. Sommando tutti i cuccioli, si ottengono un totale di 900 cuccioli e 801 con punti.\n</formalisation>\n\n<reasoning>\nStep 1: Computare il numero finale dei cuccioli con punti per Mateo dopo la visita al veterinario.  \nStep 2: Sommare i cuuccioli con punti di Mohammed e di Ibrahim.  \nStep 3: Calcolare il totale dei cuccioli e il totale con punti.  \nStep 4: Determinare la percentuale dei cuccioli con punti.\n</reasoning>\n\n<answer>89%\\</answer>"
+          },
+          {
+            "idx": 41,
+            "raw_output": "\n\n<formalisation>Oscar’s dog has 130 puppies, of which 28 have points. After a vet visit, half of the non-pointed puppies are found to have hidden points. Andre’s dog has 44 puppies, with 14 having points. Jin owns 66 dogs, each with 11 spotted puppies. We need to find the percentage of all puppies that have points.</formalisation>\n\n<reasoning>Step 1: Calculate Oscar's final number of puppies with points.\n- Initially, 28/130 puppies have points.\n- Non-pointed: 130 -28=102. Half have hidden points: 102/2=51.\n- Total after vet visit: 28 +51=79.\n\nStep 2: Andre's contribution remains the same:\n- 14 puppies with points.\n\nStep 3: Jin's total puppies:\n- Each dog has 11 spotted puppies:66×11=726.\n\nStep 4: Sum all puppies and those with points.\n- Total puppies:130( Oscar) +44 (Andre)+726 (Jin)=900.\n- Puppies with points:79( Oscar)+14 (Andre)+726 (Jin)=819.\n\nStep 5: Calculate the percentage:\n- (819/900)×100%≈91%.</reasoning>\n\n<answer>91%</answer>"
+          }
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 40,
+            "raw_output": "\n\n<formalisation>\nUn problème mathématique impliquant trois personnes ayant des chiots avec ou sans taches est à résoudre pour déterminer le pourcentage total de chiots ayant des taches sur l'ensemble des chiots. Les données fournies sont les suivantes :\n- Mateo a 149 chiots, dont 25 ont des taches.\n- Mohammed a 49 chiots, dont 12 ont des taches.\n- Ibrahim a 54 chiens, chacun ayant 13 chiots avec des taches. Après une visite chez le vétérinaire, il est découvert que la moitié des chiots non tachetés de Mateo avaient en réalité des taches invisibles.\n</formalisation>\n\n<reasoning>\n1. **Données initiales pour Mateo** : 149 chiots, dont 25 ont des taches. Les chiots sans taches sont donc 149 - 25 = 124. À la suite de la visite vétérinaire, la moitié de ces 124 chiots non tachetés avaient des taches invisibles, ce qui donne 124 / 2 = 62 nouveaux chiots avec des taches. Donc, le nombre total de chiots avec des taches pour Mateo devient 25 + 62 = 87.\n\n2. **Données pour Mohammed** : 49 chiots, dont 12 ont des taches. Aucune modification n'est apportée à ces données.\n\n3. **Données pour Ibrahim** : Ibrahim possède 54 chiens, chacun ayant 13 chiots avec des taches. Le total de chiots avec des taches pour Ibrahim est donc 54 * 13 = 702.\n\n4. **Calcul du nombre total de chiots et le nombre total de chiots avec des taches** :\n   - Total de chiots = 149 (Mateo) + 49 (Mohammed) + 702 (Ibrahim) = 900 chiots.\n   - Total de chiots avec des taches = 87 (Mateo) + 12 (Mohammed) + 702 (Ibrahim) = 801 chiots.\n\n5. **Calcul du pourcentage** : (801 / 900) * 100 = 89%.\n</reasoning>\n\nLe pourcentage de chiots ayant des taches sur l'ensemble des chiots est donc de :\n\n$\\boxed{89\\%}$"
+          },
+          {
+            "idx": 41,
+            "raw_output": "\n\n<formalisation>Oscar a un chien avec 130 chiots, dont 28 ont des taches. André en a 44, 14 ayant des taches. Jin a 66 chiens, chacun ayant 11 chiots à taches. Après la visite du vétérinaire, Oscar apprend que 50 % de ses chiots non exposés avaient des taches invisibles.</formalisation>\n\n<reasoning>  \nStep 1: Calculer le nombre total de chiots pour chaque propriétaire.\n- Oscar : 130 chiots\n- André : 44 chiots\n- Jin : (66 chiens × 11 chiots/chien) = 726 chiots\n\nStep 2: Calculer les chiots avec des taches initialement.\n- Oscar : 28 taches\n- André : 14 taches\n- Jin : 726 taches (chaque chien de Jin a 11 chiots à taches)\n\nStep 3: Considérer la découverte d’Oscar.\n- Chiots non tachetés initialement : 130 - 28 = 102\n- Découverte du vétérinaire : (102 × 50%) = 51 chiots additionnels\n- Nouveau nombre de chiots à taches pour Oscar : 28 + 51 = 79\n\nStep 4: Calculer les totaux cumulatifs.\n- Total chiots avec taches : 79 (Oscar) + 14 (André) + 726 (Jin) = 819\n- Total chiots : 130 (Oscar) + 44 (André) + 726 (Jin) = 900\n\nStep 5: Calculer le pourcentage.\n- (819 / 900) × 100% = 91%\n</reasoning>\n\n<answer>91%</answer>"
+          }
+        ]
+      }
+    },
+    {
+      "language": "ru",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 40,
+            "raw_output": "\n\n<formalisation>Матео имеет 149 щенков, из которых 25 имеют пятна, и после посещения ветеринара еще 62 щенка также имеют невидимые пятна. Мухаммед имеет 49 щенков, из которых 12 имеют пятна. Ибрагим имеет 54 собаки, каждая из которых рожает по 13 щенков с пятнами.</formalisation>\n\n<reasoning>  \nШаг 1: Вычислить количество щенков у Ибрагима:\n- Количество щенков = 54 * 13 = 702  \nШаг 2: Общее количество всех щенков:\n- У Матео: 149  \n- У Мухаммеда: 49  \n- У Ибрагима: 702  \n- Всего щенков = 149 + 49 + 702 = 900  \nШаг 3: Общее количество щенков с пятнами:\n- У Матео: 25 видимых + 62 невидимых (половина из 124 неподвижных) = 87  \n- У Мухаммеда: 12  \n- У Ибрагима: 702  \n- Всего щенков с пятнами = 87 + 12 + 702 = 801  \nШаг 4: Вычислить процент щенков с пятнами:\n- Процент = (801 / 900) * 100 = 89%  \n</reasoning>\n\n<answer>89%</answer>"
+          },
+          {
+            "idx": 41,
+            "raw_output": "\n\n<formalisation>\nУ Оскара 130 щенков, из которых 28 имеют пятны. У Андре 44 щенка, из которых 14 mają пăтна. У Джея 66 собаки, у всякой з котои 11 пиятненціва. Оскър спостави, че половина от неподвижните щенки имат потаені пятни.</formalisation>\n\n<reasoning>\nStep 1: Calculate the total number of puppies for each person:\n- У Оскара 130 щенков\n- У Андре 44 щенков\n- У Джея 66 * 11 = 726 щенков\n\nStep 2: Calculate the total number of spotted puppies before the visit to the vet:\n- У Оскара: 28 щенки с пятна\n- У Андре:14 щенка с пятна\n- У Джея:726 щенки с пятна\n\nStep 3: Calculate the total number of puppies and spotted puppies before the vet:\n- Total puppies: 130 + 44 + 726 = 899 puppies\n- Total spotted puppies before vet: 28 +14+725=867\n\nStep 4: Determine the number of new spotted puppies after vet:\n- У Оскара, неподвижните щенки (130 - 28 =102) имат половини неявлени пятни\n- New spotted puppies from Oscar: 102 / 2 =51\n\nStep 5: Calculate total spotted puppies after vet:\n- Total spotted puppies:867 +51=918 \n\nStep 6: Calculate the percentage of spotted puppies:\n(918 / 899) * 100 ≈96.56%\n</reasoning>\n\n<answer>96.56%</answer>"
+          }
+        ]
+      }
+    },
+    {
+      "language": "sw",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 40,
+            "raw_output": "\n\n<formalisation>\nBa wa sanaa wa mbwa wote wana matangazo ni pamoja kwa aba Mateo, Mohammed na ibrahim. Mbwa ya Mateo inaweza kuonekana 149, ambayo meandaro mowe wawakiliana na 25 watoto wa mbwa hapa ndogo (hawa matangazo). Mbwa wa Mohammed inaweza kuonekana 49, ambayo meandaro mowe wawakiliana na 12 watoto hapa ndogo. Ibrahim inaweaza kuonekana 54, kabisa yao walizungumzia na 13 wa matangazo.\n\nKwa baada ya ziara zake kendi ya daktari, Mateo aligundua kuwa nusu ya watoto wake ambao hawajapatikana kweli wana matangazo hayako. Hamu, ni asilimia ngapi ya watoto ya mbwa wote wana matangazo?\n</formalisation>\n\n<reasoning>\nPamoja kwa aba:\n- Mbwa wa Mateo: 149 wa sanaa →25 ha matangazo → 149 -25 =124 wana matangazo.\n- Mbwa ya Mohammed:49→12→ 49-12=37 wana matangazo.\n- Ibrahim:54→ kabisa, 54 wana matangazo.\n\nSumu zote za matangazo yamoja:\n124 (Mateo) +37 ( Mohammed)+54(Ibrahim)= 215\n</reasoning>\n\n<answer>\n\\boxed{215}\n</answer>"
+          },
+          {
+            "idx": 41,
+            "raw_output": "\n\n<formalisation>\nOscar have 130 dog puppies with 28 having some condition. After correction, only half (14) actually have the condition.\nAndre has 44 puppies with 14 having the condition.\nJane has 66 puppies with 11 having the condition.\nTotal affected puppies: 14 + 14 + 11.\n\n</formalisation>\n<reasoning>Step 1: Oscar's corrected count is 14 (half of 28).  \nStep 2: Add Andre's 14.  \nStep 3: Add Jane's 11.</reasoning>\n<answer>39</answer>\n\n<formalisation>Oscar a cha kioongo cha kazi cha matangazo ya watoto wa mbwa katika nyumbani ha wadafu.</formalisation>\n<reasoning>Paschal:</reasoning>\n<answer>39</answer>"
+          }
+        ]
+      }
+    }
+  ]
+}

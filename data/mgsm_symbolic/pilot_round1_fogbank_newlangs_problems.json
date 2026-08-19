@@ -1,0 +1,170 @@
+{
+  "it": [
+    {
+      "idx": 20,
+      "question": "Una banca nebbia arriva dall'oceano per coprire una città.Ci vogliono 30 minuti per coprire ogni 3 miglia della città.Tuttavia, sappiamo che la velocità del vento verrà dimezzata tra un'ora.Se la città si trova a 72 miglia di fronte all'oceano fino al bordo interiore opposto, quanti minuti ci vorranno per la banca della nebbia per coprire un quarto della città?",
+      "answer_number": "300"
+    },
+    {
+      "idx": 21,
+      "question": "Una banca nebbia arriva dall'oceano per coprire una città.Ci vogliono 75 minuti per coprire ogni 10 miglia della città.Tuttavia, sappiamo che la velocità del vento verrà dimezzata tra un'ora.Se la città si trova a 72 miglia di fronte all'oceano fino al bordo interiore opposto, quanti minuti ci vorranno affinché la banca della nebbia copra 1/4 della città?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 22,
+      "question": "Una banca nebbia arriva dall'oceano per coprire una città.Ci vogliono 60 minuti per coprire ogni 3 miglia della città.Tuttavia, sappiamo che la velocità del vento verrà dimezzata tra un'ora.Se la città si trova a 54 miglia di fronte all'oceano fino al bordo interiore opposto, quanti minuti ci vorranno affinché la banca della nebbia copra 1/3 della città?",
+      "answer_number": "660"
+    },
+    {
+      "idx": 23,
+      "question": "Una banca nebbia arriva dall'oceano per coprire una città.Ci vogliono 60 minuti per coprire ogni 6 miglia della città.Tuttavia, sappiamo che la velocità del vento verrà dimezzata tra un'ora.Se la città si trova a 72 miglia di fronte all'oceano fino al bordo interiore opposto, quanti minuti ci vorranno per la banca della nebbia per coprire 1/3 della città?",
+      "answer_number": "420"
+    },
+    {
+      "idx": 24,
+      "question": "Una banca nebbia arriva dall'oceano per coprire una città.Ci vogliono 25 minuti per coprire ogni 5 miglia della città.Tuttavia, sappiamo che la velocità del vento verrà dimezzata tra un'ora.Se la città si trova a 54 miglia di fronte all'oceano fino al bordo interiore opposto, quanti minuti ci vorranno affinché la banca della nebbia copra 1/2 della città?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 25,
+      "question": "Una banca nebbia arriva dall'oceano per coprire una città.Ci vogliono 90 minuti per coprire ogni 3 miglia della città.Tuttavia, sappiamo che la velocità del vento verrà dimezzata tra un'ora.Se la città si trova a 78 miglia di fronte all'oceano fino al bordo interiore opposto, quanti minuti ci vorranno per la banca della nebbia per coprire un terzo della città?",
+      "answer_number": "1500"
+    },
+    {
+      "idx": 26,
+      "question": "Una banca nebbia arriva dall'oceano per coprire una città.Ci vogliono 30 minuti per coprire ogni 13 miglia della città.Tuttavia, sappiamo che la velocità del vento verrà dimezzata tra un'ora.Se la città si trova a 78 miglia di fronte all'oceano fino al bordo interiore opposto, quanti minuti ci vorranno affinché la banca della nebbia copra 1/2 della città?",
+      "answer_number": "120"
+    },
+    {
+      "idx": 27,
+      "question": "Una banca nebbia arriva dall'oceano per coprire una città.Ci vogliono 15 minuti per coprire ogni 3 miglia della città.Tuttavia, sappiamo che la velocità del vento verrà dimezzata tra un'ora.Se la città si trova a 96 miglia di fronte all'oceano fino al bordo interiore opposto, quanti minuti ci vorranno per la banca della nebbia per coprire un quarto della città?",
+      "answer_number": "180"
+    }
+  ],
+  "fr": [
+    {
+      "idx": 20,
+      "question": "Une banque de brouillard arrive depuis l'océan pour couvrir une ville.Il faut 30 minutes pour couvrir tous les 3 miles de la ville.Cependant, nous savons que la vitesse du vent va être divisée par deux en une heure.Si la ville est à 72 miles du bord de l'océan à l'opposé à l'intérieur des terres, combien de minutes faudra-t-il à la banque de brouillard pour couvrir un quart de la ville?",
+      "answer_number": "300"
+    },
+    {
+      "idx": 21,
+      "question": "Une banque de brouillard arrive depuis l'océan pour couvrir une ville.Il faut 75 minutes pour couvrir tous les 10 miles de la ville.Cependant, nous savons que la vitesse du vent va être divisée par deux en une heure.Si la ville est à 72 miles du bord de l'océan à l'opposé à l'intérieur des terres, combien de minutes prendra-t-il à la banque de brouillard pour couvrir 1/4 de la ville?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 22,
+      "question": "Une banque de brouillard arrive depuis l'océan pour couvrir une ville.Il faut 60 minutes pour couvrir tous les 3 miles de la ville.Cependant, nous savons que la vitesse du vent va être divisée par deux en une heure.Si la ville est à 54 miles du bord de l'océan à l'opposé à l'intérieur des terres, combien de minutes faudra-t-il à la banque de brouillard pour couvrir 1/3 de la ville?",
+      "answer_number": "660"
+    },
+    {
+      "idx": 23,
+      "question": "Une banque de brouillard arrive depuis l'océan pour couvrir une ville.Il faut 60 minutes pour couvrir tous les 6 miles de la ville.Cependant, nous savons que la vitesse du vent va être divisée par deux en une heure.Si la ville est à 72 miles de l'autre côté du bord de l'océan à l'opposé à l'intérieur des terres, combien de minutes prendra-t-il à la banque de brouillard pour couvrir 1/3 de la ville?",
+      "answer_number": "420"
+    },
+    {
+      "idx": 24,
+      "question": "Une banque de brouillard arrive depuis l'océan pour couvrir une ville.Il faut 25 minutes pour couvrir tous les 5 miles de la ville.Cependant, nous savons que la vitesse du vent va être divisée par deux en une heure.Si la ville est à 54 miles du bord de l'océan à l'opposé à l'intérieur des terres, combien de minutes faudra-t-il à la banque de brouillard pour couvrir la moitié de la ville?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 25,
+      "question": "Une banque de brouillard arrive depuis l'océan pour couvrir une ville.Il faut 90 minutes pour couvrir tous les 3 miles de la ville.Cependant, nous savons que la vitesse du vent va être divisée par deux en une heure.Si la ville est à 78 miles du bord de l'océan à l'opposé à l'intérieur des terres, combien de minutes faudra-t-il à la banque de brouillard pour couvrir un tiers de la ville?",
+      "answer_number": "1500"
+    },
+    {
+      "idx": 26,
+      "question": "Une banque de brouillard arrive depuis l'océan pour couvrir une ville.Il faut 30 minutes pour couvrir tous les 13 miles de la ville.Cependant, nous savons que la vitesse du vent va être divisée par deux en une heure.Si la ville est à 78 miles du bord de l'océan à l'opposé à l'intérieur des terres, combien de minutes prendra-t-il à la banque de brouillard pour couvrir la moitié de la ville?",
+      "answer_number": "120"
+    },
+    {
+      "idx": 27,
+      "question": "Une banque de brouillard arrive depuis l'océan pour couvrir une ville.Il faut 15 minutes pour couvrir tous les 3 miles de la ville.Cependant, nous savons que la vitesse du vent va être divisée par deux en une heure.Si la ville est à 96 miles de l'autre côté du bord de l'océan à l'opposé à l'intérieur des terres, combien de minutes faudra-t-il à la banque de brouillard pour couvrir un quart de la ville?",
+      "answer_number": "180"
+    }
+  ],
+  "ru": [
+    {
+      "idx": 20,
+      "question": "Банк тумана катится из океана, чтобы покрыть город.Требуется 30 минут, чтобы покрыть каждые 3 мили города.Тем не менее, мы знаем, что скорость ветра будет сокращена вдвое за один час.Если город находится в 72 милях от океана до противоположного внутреннего края, сколько минут потребуется для тумана, чтобы покрыть четверть города?",
+      "answer_number": "300"
+    },
+    {
+      "idx": 21,
+      "question": "Банк тумана катится из океана, чтобы покрыть город.Требуется 75 минут, чтобы покрыть каждые 10 миль города.Тем не менее, мы знаем, что скорость ветра будет сокращена вдвое за один час.Если город находится в 72 милях от океана до противоположного внутреннего края, сколько минут потребуется для тумана, чтобы покрыть 1/4 города?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 22,
+      "question": "Банк тумана катится из океана, чтобы покрыть город.Требуется 60 минут, чтобы покрыть каждые 3 мили города.Тем не менее, мы знаем, что скорость ветра будет сокращена вдвое за один час.Если город находится в 54 милях от океана до противоположного внутреннего края, сколько минут потребуется для тумана, чтобы покрыть 1/3 города?",
+      "answer_number": "660"
+    },
+    {
+      "idx": 23,
+      "question": "Банк тумана катится из океана, чтобы покрыть город.Требуется 60 минут, чтобы покрыть каждые 6 миль города.Тем не менее, мы знаем, что скорость ветра будет сокращена вдвое за один час.Если город находится в 72 милях от океана до противоположного внутреннего края, сколько минут потребуется для тумана, чтобы покрыть 1/3 города?",
+      "answer_number": "420"
+    },
+    {
+      "idx": 24,
+      "question": "Банк тумана катится из океана, чтобы покрыть город.Требуется 25 минут, чтобы покрыть каждые 5 миль города.Тем не менее, мы знаем, что скорость ветра будет сокращена вдвое за один час.Если город находится в 54 милях от океана до противоположного внутреннего края, сколько минут потребуется для тумана, чтобы покрыть 1/2 города?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 25,
+      "question": "Банк тумана катится из океана, чтобы покрыть город.Требуется 90 минут, чтобы покрыть каждые 3 мили города.Тем не менее, мы знаем, что скорость ветра будет сокращена вдвое за один час.Если город находится в 78 милях от океана до противоположного внутреннего края, сколько минут потребуется для тумана, чтобы покрыть треть города?",
+      "answer_number": "1500"
+    },
+    {
+      "idx": 26,
+      "question": "Банк тумана катится из океана, чтобы покрыть город.Требуется 30 минут, чтобы покрыть каждые 13 миль города.Тем не менее, мы знаем, что скорость ветра будет сокращена вдвое за один час.Если город находится в 78 милях от океана до противоположного внутреннего края, сколько минут потребуется для тумана, чтобы покрыть 1/2 города?",
+      "answer_number": "120"
+    },
+    {
+      "idx": 27,
+      "question": "Банк тумана катится из океана, чтобы покрыть город.Требуется 15 минут, чтобы покрыть каждые 3 мили города.Тем не менее, мы знаем, что скорость ветра будет сокращена вдвое за один час.Если город находится в 96 милях от океана до противоположного внутреннего края, сколько минут потребуется для тумана, чтобы покрыть четверть города?",
+      "answer_number": "180"
+    }
+  ],
+  "sw": [
+    {
+      "idx": 20,
+      "question": "Benki ya ukungu inaingia kutoka baharini kufunika mji.Inachukua dakika 30 kufunika kila maili 3 ya jiji.Walakini, tunajua kuwa kasi ya upepo itasimamishwa kwa saa moja.Ikiwa jiji ni maili 72 kutoka baharini hadi ukingo wa kando ya mashambani, itachukua dakika ngapi kwa Benki ya ukungu kufunika robo ya jiji?",
+      "answer_number": "300"
+    },
+    {
+      "idx": 21,
+      "question": "Benki ya ukungu inaingia kutoka baharini kufunika mji.Inachukua dakika 75 kufunika kila maili 10 ya jiji.Walakini, tunajua kuwa kasi ya upepo itasimamishwa kwa saa moja.Ikiwa jiji ni maili 72 kutoka baharini hadi ukingo wa kando ya mashambani, itachukua dakika ngapi kwa Benki ya ukungu kufunika 1/4 ya jiji?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 22,
+      "question": "Benki ya ukungu inaingia kutoka baharini kufunika mji.Inachukua dakika 60 kufunika kila maili 3 ya jiji.Walakini, tunajua kuwa kasi ya upepo itasimamishwa kwa saa moja.Ikiwa jiji ni maili 54 kutoka baharini hadi ukingo wa kando ya mashambani, itachukua dakika ngapi kwa Benki ya ukungu kufunika 1/3 ya jiji?",
+      "answer_number": "660"
+    },
+    {
+      "idx": 23,
+      "question": "Benki ya ukungu inaingia kutoka baharini kufunika mji.Inachukua dakika 60 kufunika kila maili 6 ya jiji.Walakini, tunajua kuwa kasi ya upepo itasimamishwa kwa saa moja.Ikiwa jiji ni maili 72 kutoka baharini hadi ukingo wa kando ya mashambani, itachukua dakika ngapi kwa Benki ya ukungu kufunika 1/3 ya jiji?",
+      "answer_number": "420"
+    },
+    {
+      "idx": 24,
+      "question": "Benki ya ukungu inaingia kutoka baharini kufunika mji.Inachukua dakika 25 kufunika kila maili 5 ya jiji.Walakini, tunajua kuwa kasi ya upepo itasimamishwa kwa saa moja.Ikiwa jiji ni maili 54 kutoka baharini kwenda kando kando ya mashambani, itachukua dakika ngapi kwa Benki ya ukungu kufunika 1/2 ya jiji?",
+      "answer_number": "210"
+    },
+    {
+      "idx": 25,
+      "question": "Benki ya ukungu inaingia kutoka baharini kufunika mji.Inachukua dakika 90 kufunika kila maili 3 ya jiji.Walakini, tunajua kuwa kasi ya upepo itasimamishwa kwa saa moja.Ikiwa mji ni maili 78 kutoka baharini hadi ukingo wa kando ya mashambani, itachukua dakika ngapi kwa Benki ya ukungu kufunika theluthi ya jiji?",
+      "answer_number": "1500"
+    },
+    {
+      "idx": 26,
+      "question": "Benki ya ukungu inaingia kutoka baharini kufunika mji.Inachukua dakika 30 kufunika kila maili 13 ya jiji.Walakini, tunajua kuwa kasi ya upepo itasimamishwa kwa saa moja.Ikiwa mji ni maili 78 kutoka baharini hadi ukingo wa kando ya mashambani, itachukua dakika ngapi kwa Benki ya ukungu kufunika 1/2 ya jiji?",
+      "answer_number": "120"
+    },
+    {
+      "idx": 27,
+      "question": "Benki ya ukungu inaingia kutoka baharini kufunika mji.Inachukua dakika 15 kufunika kila maili 3 ya jiji.Walakini, tunajua kuwa kasi ya upepo itasimamishwa kwa saa moja.Ikiwa jiji ni maili 96 kutoka bahari ya mbele hadi kando kando ya mashambani, itachukua dakika ngapi kwa benki ya ukungu kufunika robo ya jiji?",
+      "answer_number": "180"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "it": [
+    {
+      "idx": 140,
+      "question": "Qasim raccoglie spazzatura da 5 diversi complessi di appartamenti.I primi 4 hanno 100 appartamenti ciascuno e l'ultimo è il 30% più grande degli altri 4 combinati.Tuttavia, questa settimana, 5 appartamenti di ciascuno dei primi 4 complessi erano vacanti e non hanno richiesto un servizio di raccolta.Qasim raccoglie spazzatura 2 volte a settimana da ogni luogo e viene pagato ₣ 0,3 per raccolta per ogni appartamento.Guadagna anche un ulteriore 10% in suggerimenti.Quanti soldi guadagna in una settimana?",
+      "answer_number": "594"
+    },
+    {
+      "idx": 141,
+      "question": "Hiroshi raccoglie spazzatura da 6 diversi complessi di appartamenti.I primi 5 hanno 100 appartamenti ciascuno e l'ultimo è il 40% più grande degli altri 5 combinati.Tuttavia, questa settimana, 8 appartamenti di ciascuno dei primi 5 complessi erano vacanti e non hanno richiesto un servizio di raccolta.Hiroshi raccoglie spazzatura 2 volte a settimana da ogni luogo e viene pagato ₣ 0,25 per raccolta per ogni appartamento.Guadagna anche un ulteriore 10% in suggerimenti.Quanti soldi guadagna in una settimana?",
+      "answer_number": "638"
+    },
+    {
+      "idx": 220,
+      "question": "Diego sceglie 67 ananas mercoledì.Quindi sceglie 176 ananas giovedì.Venerdì, sceglie Quintuple il numero di ananas che ha fatto mercoledì.Sabato, sceglie la metà della quantità di ciò che ha scelto negli ultimi 3 giorni combinati.Domenica, Diego venderà ananas in scatole di 17 ananas ciascuno.Venderà ogni scatola per $ 12.Quanto farà Diego?",
+      "answer_number": "612"
+    },
+    {
+      "idx": 221,
+      "question": "Deshawn sceglie 142 pere sabato.Quindi sceglie 172 pere di domenica.Lunedì sceglie il triplo del numero di pere che ha fatto sabato.Martedì, sceglie la metà della quantità di ciò che ha scelto negli ultimi 3 giorni combinati.Mercoledì, Deshawn venderà pere in scatole di 15 pere ciascuna.Venderà ogni scatola per $ 14.Quanto farà Deshawn?",
+      "answer_number": "1036"
+    },
+    {
+      "idx": 300,
+      "question": "Yara ha visto una balena di 32 piedi con 16 remora, ogni 12 pollici di lunghezza ad essa.Quindi, 1/2 delle Remoras nuotò via.Più tardi, Yara ha visto un'altra balena di 10 piedi con 6 remora, ogni 8 pollici di lunghezza, attaccata ad essa.In media, quale percentuale della lunghezza del corpo di ogni balena è coperta dalle Remoras?",
+      "answer_number": "32"
+    },
+    {
+      "idx": 301,
+      "question": "Ali vide una balena di 30 piedi con 18 remora, ogni 15 pollici di lunga durata ad essa.Quindi, 1/3 dei Remoras nuotò via.Più tardi, Ali ha visto un'altra balena di 10 piedi con 6 remora, ogni 8 pollici di lunghezza, attaccata ad essa.In media, quale percentuale della lunghezza del corpo di ogni balena è coperta dalle Remoras?",
+      "answer_number": "45"
+    },
+    {
+      "idx": 490,
+      "question": "Nella classe di 100 studenti della signora Johnson, il 46% della classe è giocatori di calcio.Della classe rimanente, il 50% degli studenti è membro del Club Robotica o parte dei ballerini.Questi 3 gruppi di studenti dovranno partire presto oggi per recarsi in una competizione in trasferta.La metà dei giocatori di calcio è assente per essere malati.Inoltre, 3 cheerleader accompagneranno ciascuno di questi gruppi.Quanti studenti stanno partendo presto alla competizione?",
+      "answer_number": "59"
+    },
+    {
+      "idx": 491,
+      "question": "Nella classe di 150 studenti della signora Johnson, il 40% della classe è giocatori di calcio.Della classe rimanente, il 30% degli studenti è ballerini o parte dei membri del coro.Questi 3 gruppi di studenti dovranno partire presto oggi per recarsi in una competizione in trasferta.La metà dei giocatori di calcio è assente per essere malati.Inoltre, 3 cheerleader accompagneranno ciascuno di questi gruppi.Quanti studenti stanno partendo presto alla competizione?",
+      "answer_number": "66"
+    }
+  ],
+  "fr": [
+    {
+      "idx": 140,
+      "question": "Qasim recueille les ordures de 5 complexes d'appartements différents.Les 4 premiers ont 100 appartements chacun et le dernier est 30% plus grand que les 4 autres combinés.Cependant, cette semaine, 5 appartements de chacun des 4 premiers complexes ont été vacants et n'ont pas nécessité de service de collecte.Qasim recueille les ordures 2 fois par semaine de chaque endroit et il est payé ₣ 0,3 par collection pour chaque appartement.Il gagne également 10% supplémentaires en pourboires.Combien d'argent gagne-t-il en une semaine?",
+      "answer_number": "594"
+    },
+    {
+      "idx": 141,
+      "question": "Hiroshi recueille les ordures de 6 complexes d'appartements différents.Les 5 premiers ont 100 appartements chacun et le dernier est 40% plus grand que les 5 autres combinés.Cependant, cette semaine, 8 appartements de chacun des 5 premiers complexes ont été vacants et n'ont pas nécessité de service de collecte.Hiroshi recueille les ordures 2 fois par semaine de chaque endroit et il est payé ₣ 0,25 par collection pour chaque appartement.Il gagne également 10% supplémentaires en pourboires.Combien d'argent gagne-t-il en une semaine?",
+      "answer_number": "638"
+    },
+    {
+      "idx": 220,
+      "question": "Diego choisit 67 ananas mercredi.Puis il choisit 176 ananas jeudi.Vendredi, il choisit Quintuple le nombre d'ananas qu'il a fait mercredi.Samedi, il choisit la moitié du nombre de ce qu'il a choisi au cours des 3 derniers jours combinés.Dimanche, Diego va vendre des ananas dans des boîtes de 17 ananas chacune.Il va vendre chaque boîte pour 12 $.Combien va faire Diego?",
+      "answer_number": "612"
+    },
+    {
+      "idx": 221,
+      "question": "Deshawn choisit 142 poires samedi.Puis il choisit 172 poires dimanche.Lundi, il choisit le triple du nombre de poires qu'il a faites samedi.Mardi, il choisit la moitié du nombre de ce qu'il a choisi au cours des 3 derniers jours combinés.Mercredi, Deshawn va vendre des poires dans des boîtes de 15 poires chacune.Il va vendre chaque boîte pour 14 $.Combien va faire Deshawn?",
+      "answer_number": "1036"
+    },
+    {
+      "idx": 300,
+      "question": "Yara a vu une baleine de 32 pieds avec 16 remoras, chaque 12 pouces de long s'y attacher.Ensuite, 1/2 des remoras a nagé.Plus tard, Yara a vu une autre baleine de 10 pieds avec 6 remoras, chacun de 8 pouces de long, attaché à elle.En moyenne, quel pourcentage de la longueur du corps de chaque baleine est couvert par les remoras?",
+      "answer_number": "32"
+    },
+    {
+      "idx": 301,
+      "question": "Ali a vu une baleine de 30 pieds avec 18 remoras, chaque 15 pouces de long s'y attacher.Puis, 1/3 des remoras ont nagé.Plus tard, Ali a vu une autre baleine de 10 pieds avec 6 remoras, chacun de 8 pouces de long, attaché à elle.En moyenne, quel pourcentage de la longueur du corps de chaque baleine est couvert par les remoras?",
+      "answer_number": "45"
+    },
+    {
+      "idx": 490,
+      "question": "Dans la classe de 100 élèves de Mme Johnson, 46% de la classe sont des joueurs de football.Sur la classe restante, 50% des étudiants sont des membres du club de robotique ou une partie des danseurs.Ces 3 groupes d'étudiants devront partir tôt aujourd'hui pour se rendre à une compétition à l'extérieur.La moitié des joueurs de football sont absents pour être malades.En outre, 3 pom-pom girls accompagneront chacun de ces groupes.Combien d'étudiants partent tôt au concours?",
+      "answer_number": "59"
+    },
+    {
+      "idx": 491,
+      "question": "Dans la classe de Mme Johnson de 150 étudiants, 40% de la classe sont des joueurs de football.Sur la classe restante, 30% des étudiants sont des danseurs ou faisant partie des membres de la chorale.Ces 3 groupes d'étudiants devront partir tôt aujourd'hui pour se rendre à une compétition à l'extérieur.La moitié des joueurs de football sont absents pour être malades.En outre, 3 pom-pom girls accompagneront chacun de ces groupes.Combien d'étudiants partent tôt au concours?",
+      "answer_number": "66"
+    }
+  ],
+  "ru": [
+    {
+      "idx": 140,
+      "question": "Касим собирает мусор из 5 различных жилых комплексов.Первые 4 имеют 100 квартир, а последние - на 30% больше, чем остальные 4 вместе взятые.Однако на этой неделе 5 квартир из каждого из первых 4 комплексов были вакантными и не требовали услуги по сбору.Касим собирает мусор 2 раза в неделю из каждого места, и ему платят 0,3 за коллекцию за каждую квартиру.Он также зарабатывает дополнительные 10% в советах.Сколько денег он зарабатывает за неделю?",
+      "answer_number": "594"
+    },
+    {
+      "idx": 141,
+      "question": "Хироши собирает мусор из 6 различных жилых комплексов.Первые 5 имеют 100 квартир каждая, а последняя - на 40% больше, чем остальные 5 вместе взятых.Однако на этой неделе 8 квартир из каждого из первых 5 комплексов были вакантными и не требовали услуги по сбору.Хироши собирает мусор 2 раза в неделю из каждого места, и ему платят 0,25 за коллекцию для каждой квартиры.Он также зарабатывает дополнительные 10% в советах.Сколько денег он зарабатывает за неделю?",
+      "answer_number": "638"
+    },
+    {
+      "idx": 220,
+      "question": "Диего выбирает 67 ананасов в среду.Затем он выбирает 176 ананасов в четверг.В пятницу он выбирает Quintuple количество ананасов, которые он сделал в среду.В субботу он выбирает половину количества того, что он выбрал за последние 3 дня вместе взятых.В воскресенье Диего собирается продавать ананасы в коробках по 17 ананасов каждый.Он собирается продать каждую коробку за 12 долларов.Сколько будет заработать Диего?",
+      "answer_number": "612"
+    },
+    {
+      "idx": 221,
+      "question": "Deshawn выбирает 142 груши в субботу.Затем он выбирает 172 груши в воскресенье.В понедельник он выбирает тройной количество груш, которые он сделал в субботу.Во вторник он выбирает половину количества того, что он выбрал за последние 3 дня вместе взятых.В среду Deshawn собирается продавать груши в коробках по 15 груш каждая.Он собирается продать каждую коробку за 14 долларов.Сколько будет заработать Deshawn?",
+      "answer_number": "1036"
+    },
+    {
+      "idx": 300,
+      "question": "Яра увидела 32-футовый кит с 16 ремора, каждый из которых был прикреплен к нему 12 дюймов.Затем 1/2 от Remoras уплыл.Позже Яра увидела еще один 10-футовый кит с 6 Remoras, каждый 8 дюймов в длину.В среднем, какой процент длины тела каждого кита покрывается Remoras?",
+      "answer_number": "32"
+    },
+    {
+      "idx": 301,
+      "question": "Али увидел 30-футовый кит с 18 Remoras, каждый из которых был прикреплен к нему 15 дюймов.Затем 1/3 от Remoras уплыл.Позже Али увидел еще один 10-футовый кит с 6 Remoras, каждые 8 ​​дюймов в длину, к нему.В среднем, какой процент длины тела каждого кита покрывается Remoras?",
+      "answer_number": "45"
+    },
+    {
+      "idx": 490,
+      "question": "В классе из 100 учеников г -жи Джонсон 46% класса являются футболистами.Из оставшегося класса 50% студентов являются членами клуба робототехники или частью танцоров.Этим 3 группам студентов нужно уехать сегодня рано, чтобы поехать на выездную соревнования.Половина футболистов отсутствует за то, что заболел.Кроме того, 3 чирлидера будут сопровождать каждую из этих групп.Сколько студентов уезжают рано на соревнования?",
+      "answer_number": "59"
+    },
+    {
+      "idx": 491,
+      "question": "В классе мисс Джонсон из 150 учеников 40% класса - футболисты.Из оставшегося класса 30% студентов являются танцорами или являются частью членов хора.Этим 3 группам студентов нужно уехать сегодня рано, чтобы поехать на выездную соревнования.Половина футболистов отсутствует за то, что заболел.Кроме того, 3 чирлидера будут сопровождать каждую из этих групп.Сколько студентов уезжают рано на соревнования?",
+      "answer_number": "66"
+    }
+  ],
+  "sw": [
+    {
+      "idx": 140,
+      "question": "Qasim inakusanya takataka kutoka kwa nyumba 5 tofauti za ghorofa.4 za kwanza zina vyumba 100 kila moja na ya mwisho ni 30% kubwa kuliko ile nyingine 4 pamoja.Walakini, wiki hii, vyumba 5 kutoka kwa kila moja ya vifaa 4 vya kwanza vilikuwa wazi na hazikuhitaji huduma ya ukusanyaji.Qasim hukusanya takataka mara 2 kwa wiki kutoka kila mahali na analipwa ₣ 0.3 kwa mkusanyiko kwa kila ghorofa.Yeye pia hupata 10% ya ziada katika vidokezo.Je! Yeye hufanya pesa ngapi kwa wiki?",
+      "answer_number": "594"
+    },
+    {
+      "idx": 141,
+      "question": "Hiroshi hukusanya takataka kutoka kwa tata 6 tofauti za ghorofa.5 za kwanza zina vyumba 100 kila moja na ya mwisho ni 40% kubwa kuliko ile nyingine 5 pamoja.Walakini, wiki hii, vyumba 8 kutoka kwa kila moja ya vifaa 5 vya kwanza vilikuwa wazi na hazikuhitaji huduma ya ukusanyaji.Hiroshi hukusanya takataka mara 2 kwa wiki kutoka kila mahali na analipwa ₣ 0.25 kwa mkusanyiko kwa kila ghorofa.Yeye pia hupata 10% ya ziada katika vidokezo.Je! Yeye hufanya pesa ngapi kwa wiki?",
+      "answer_number": "638"
+    },
+    {
+      "idx": 220,
+      "question": "Diego huchukua mananasi 67 Jumatano.Kisha huchukua mananasi 176 Alhamisi.Siku ya Ijumaa, anachagua idadi ya mananasi aliyofanya Jumatano.Siku ya Jumamosi, huchukua nusu ya kiasi cha kile alichochukua katika siku 3 zilizopita pamoja.Siku ya Jumapili, Diego atauza mananasi kwenye masanduku ya mananasi 17 kila moja.Atauza kila sanduku kwa $ 12.Je! Diego atatengeneza kiasi gani?",
+      "answer_number": "612"
+    },
+    {
+      "idx": 221,
+      "question": "Deshawn huchukua pears 142 Jumamosi.Kisha huchukua pears 172 Jumapili.Siku ya Jumatatu, huchukua mara tatu idadi ya pears alizofanya Jumamosi.Siku ya Jumanne, huchukua nusu ya kiasi cha kile alichochukua katika siku 3 zilizopita pamoja.Siku ya Jumatano, Deshawn atauza pears kwenye masanduku ya pears 15 kila moja.Atauza kila sanduku kwa $ 14.Je! DeShawn itafanya kiasi gani?",
+      "answer_number": "1036"
+    },
+    {
+      "idx": 300,
+      "question": "Yara aliona nyangumi wa futi 32 na remoras 16, kila inchi 12 zilizowekwa ndani yake.Halafu, 1/2 ya remoras iliondoka.Baadaye, Yara aliona nyangumi mwingine wa futi 10 na remoras 6, kila inchi 8, zilizowekwa ndani yake.Kwa wastani, ni asilimia ngapi ya urefu wa mwili wa kila nyangumi hufunikwa na remoras?",
+      "answer_number": "32"
+    },
+    {
+      "idx": 301,
+      "question": "Ali aliona nyangumi wa futi 30 na remoras 18, kila inchi 15 zilizowekwa ndani yake.Halafu, 1/3 ya remoras iliondoka.Baadaye, Ali aliona nyangumi mwingine wa futi 10 na remoras 6, kila inchi 8, zilizowekwa ndani yake.Kwa wastani, ni asilimia ngapi ya urefu wa mwili wa kila nyangumi hufunikwa na remoras?",
+      "answer_number": "45"
+    },
+    {
+      "idx": 490,
+      "question": "Katika darasa la Bi Johnson la wanafunzi 100, 46% ya darasa ni wachezaji wa mpira wa miguu.Kati ya darasa lililobaki, 50% ya wanafunzi ni washiriki wa kilabu cha roboti au sehemu ya wachezaji.Vikundi hivi 3 vya wanafunzi vitahitaji kuondoka mapema leo kusafiri kwenda kwenye mashindano ya mbali.Nusu ya wachezaji wa soka hawapo kwa kuwa mgonjwa.Pia, cheerleaders 3 wataandamana na kila moja ya vikundi hivi.Je! Ni wanafunzi wangapi wanaondoka mapema kwenye mashindano?",
+      "answer_number": "59"
+    },
+    {
+      "idx": 491,
+      "question": "Katika darasa la Bi Johnson la wanafunzi 150, 40% ya darasa ni wachezaji wa mpira wa miguu.Kati ya darasa lililobaki, 30% ya wanafunzi ni wachezaji au sehemu ya washiriki wa kwaya.Vikundi hivi 3 vya wanafunzi vitahitaji kuondoka mapema leo kusafiri kwenda kwenye mashindano ya mbali.Nusu ya wachezaji wa soka hawapo kwa kuwa mgonjwa.Pia, cheerleaders 3 wataandamana na kila moja ya vikundi hivi.Je! Ni wanafunzi wangapi wanaondoka mapema kwenye mashindano?",
+      "answer_number": "66"
+    }
+  ]
+}

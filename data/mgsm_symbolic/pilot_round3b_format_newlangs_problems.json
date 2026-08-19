@@ -1,0 +1,50 @@
+{
+  "it": [
+    {
+      "idx": 40,
+      "question": "Il cane di Mateo ha 149 cuccioli, 25 dei quali hanno punti.Il cane di Mohammed ha 49 cuccioli, 12 dei quali hanno punti.Ibrahim ha 54 cani, ognuno con 13 cuccioli con macchie.Dopo una visita al veterinario, Mateo ha scoperto che la metà dei suoi cuccioli non puntati ha effettivamente punti che non erano prima visibili.Quale percentuale di tutti i cuccioli ha punti?",
+      "answer_number": "89"
+    },
+    {
+      "idx": 41,
+      "question": "Il cane di Oscar ha 130 cuccioli, 28 dei quali hanno punti.Il cane di Andre ha 44 cuccioli, 14 dei quali hanno punti.Jin ha 66 cani, ognuno con 11 cuccioli con macchie.Dopo una visita al veterinario, Oscar ha scoperto che la metà dei suoi cuccioli non puntati ha effettivamente punti che non erano prima visibili.Quale percentuale di tutti i cuccioli ha punti?",
+      "answer_number": "91"
+    }
+  ],
+  "fr": [
+    {
+      "idx": 40,
+      "question": "Le chien de Mateo a 149 chiots, dont 25 ont des taches.Le chien de Mohammed a 49 chiots, dont 12 ont des taches.Ibrahim a 54 chiens, chacun ayant 13 chiots avec des taches.Après une visite chez le vétérinaire, Mateo a découvert que la moitié de ses chiots non exposés avait en fait des taches qui n'étaient pas visibles auparavant.Quel pourcentage de tous les chiots ont des taches?",
+      "answer_number": "89"
+    },
+    {
+      "idx": 41,
+      "question": "Le chien d'Oscar a 130 chiots, dont 28 ont des taches.Le chien d'Andre a 44 chiots, dont 14 ont des taches.Jin a 66 chiens, chacun ayant 11 chiots avec des taches.Après une visite chez le vétérinaire, Oscar a découvert que la moitié de ses chiots non exposés avait en fait des taches qui n'étaient pas visibles auparavant.Quel pourcentage de tous les chiots ont des taches?",
+      "answer_number": "91"
+    }
+  ],
+  "ru": [
+    {
+      "idx": 40,
+      "question": "Собака Матео имеет 149 щенков, 25 из которых имеют пятна.У собаки Мухаммеда 49 щенков, 12 из которых имеют пятна.У Ибрагима есть 54 собаки, каждая из которых имеет 13 щенков с пятнами.После посещения ветеринара Матео обнаружил, что половина его неподвижных щенков на самом деле имеют пятна, которые раньше не были видны.Какой процент всех щенков имеет пятна?",
+      "answer_number": "89"
+    },
+    {
+      "idx": 41,
+      "question": "У собаки Оскара 130 щенков, 28 из которых имеют пятна.У собаки Андре 44 щенка, 14 из которых имеют пятна.У Джина 66 собак, каждая из которых имеет 11 щенков с пятнами.После посещения ветеринара Оскар обнаружил, что половина его неподвижных щенков на самом деле имеют пятна, которые раньше не были видны.Какой процент всех щенков имеет пятна?",
+      "answer_number": "91"
+    }
+  ],
+  "sw": [
+    {
+      "idx": 40,
+      "question": "Mbwa wa Mateo ana watoto wa mbwa 149, 25 kati yao wana matangazo.Mbwa wa Mohammed ana watoto 49, 12 kati yao wana matangazo.Ibrahim ana mbwa 54, kila mmoja akiwa na watoto 13 wenye matangazo.Baada ya ziara ya daktari, Mateo aligundua kuwa nusu ya watoto wake ambao hawajapatikana kweli wana matangazo ambayo hayakuonekana hapo awali.Je! Ni asilimia ngapi ya watoto wa mbwa wote wana matangazo?",
+      "answer_number": "89"
+    },
+    {
+      "idx": 41,
+      "question": "Mbwa wa Oscar ana watoto wa mbwa 130, 28 kati yao wana matangazo.Mbwa wa Andre ana watoto wa mbwa 44, 14 kati yao wana matangazo.Jin ana mbwa 66, kila mmoja akiwa na watoto 11 na matangazo.Baada ya ziara ya daktari, Oscar aligundua kuwa nusu ya watoto wake ambao hawajapatikana kweli wana matangazo ambayo hayakuonekana hapo awali.Je! Ni asilimia ngapi ya watoto wa mbwa wote wana matangazo?",
+      "answer_number": "91"
+    }
+  ]
+}

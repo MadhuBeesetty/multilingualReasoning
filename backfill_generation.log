@@ -1,0 +1,262 @@
+
+================================================================================
+BACKFILL GENERATION - LAPTOP (M4 Pro)
+================================================================================
+[2026-08-18 21:24:39] Timestamp: Tue Aug 18 21:24:39 PDT 2026
+[2026-08-18 21:24:39] Models: phi3.5:latest neural-chat:latest mistral:latest deepseek-r1:14b
+[2026-08-18 21:24:39] Rounds: 1:fogbank 2:diverse 3a:drift 3b:format
+[2026-08-18 21:24:39] New languages: it, fr, ru, sw
+[2026-08-18 21:24:39] Workers: 8
+[2026-08-18 21:24:39] Log file: backfill_generation.log
+[2026-08-18 21:24:39] NOTE: Generation only (no inspection) — inspection done separately later
+
+================================================================================
+PRE-FLIGHT CHECKS
+================================================================================
+[2026-08-18 21:24:39] Checking Ollama server...
+[2026-08-18 21:24:39] ✅ Ollama server reachable
+[2026-08-18 21:24:39] Checking Python environment...
+Python 3.12.7
+[2026-08-18 21:24:39] ✅ Python available
+[2026-08-18 21:24:39] Checking scripts...
+[2026-08-18 21:24:39] ✅ All scripts found
+
+================================================================================
+STEP 1: Creating Filtered Problem Files
+================================================================================
+[2026-08-18 21:24:39] ✅ Filtered problems already exist, skipping creation
+[2026-08-18 21:24:39] ✅ All 4 filtered problem files verified
+
+================================================================================
+STEP 2: Generation Pass - All Models
+================================================================================
+
+================================================================================
+MODEL 1/4: phi3.5:latest
+================================================================================
+[2026-08-18 21:24:39] Starting generation for phi3.5:latest...
+[2026-08-18 21:24:39] [1/16] Round 1 (fogbank)
+[2026-08-18 21:24:39]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/8 [00:00<?, ?it/s][it] generating:  12%|█▎        | 1/8 [00:16<01:57, 16.81s/it][it] generating:  25%|██▌       | 2/8 [00:41<02:07, 21.18s/it][it] generating:  38%|███▊      | 3/8 [01:31<02:53, 34.67s/it][it] generating:  50%|█████     | 4/8 [01:37<01:32, 23.14s/it][it] generating:  62%|██████▎   | 5/8 [01:52<01:01, 20.44s/it]
+================================================================================
+BACKFILL GENERATION - LAPTOP (M4 Pro)
+================================================================================
+[2026-08-18 21:26:40] Timestamp: Tue Aug 18 21:26:40 PDT 2026
+[2026-08-18 21:26:40] Models: phi3.5:latest neural-chat:latest mistral:latest deepseek-r1:14b
+[2026-08-18 21:26:40] Rounds: 1:fogbank 2:diverse 3a:drift 3b:format
+[2026-08-18 21:26:40] New languages: it, fr, ru, sw
+[2026-08-18 21:26:40] Workers: 8
+[2026-08-18 21:26:40] Log file: backfill_generation.log
+[2026-08-18 21:26:40] NOTE: Generation only (no inspection) — inspection done separately later
+
+================================================================================
+PRE-FLIGHT CHECKS
+================================================================================
+[2026-08-18 21:26:40] Checking Ollama server...
+[2026-08-18 21:26:40] ✅ Ollama server reachable
+[2026-08-18 21:26:40] Checking Python environment...
+Python 3.12.7
+[2026-08-18 21:26:40] ✅ Python available
+[2026-08-18 21:26:40] Checking scripts...
+[2026-08-18 21:26:40] ✅ All scripts found
+
+================================================================================
+STEP 1: Creating Filtered Problem Files
+================================================================================
+[2026-08-18 21:26:40] ✅ Filtered problems already exist, skipping creation
+[2026-08-18 21:26:40] ✅ All 4 filtered problem files verified
+
+================================================================================
+STEP 2: Generation Pass - All Models
+================================================================================
+
+================================================================================
+MODEL 1/4: phi3.5:latest
+================================================================================
+[2026-08-18 21:26:40] Starting generation for phi3.5:latest...
+[2026-08-18 21:26:40] [1/16] Round 1 (fogbank)
+[2026-08-18 21:26:40]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/8 [00:00<?, ?it/s][it] generating:  75%|███████▌  | 6/8 [02:04<00:34, 17.38s/it][it] generating:  88%|████████▊ | 7/8 [02:16<00:15, 15.57s/it][it] generating: 100%|██████████| 8/8 [02:30<00:00, 15.11s/it][it] generating: 100%|██████████| 8/8 [02:30<00:00, 18.79s/it]
+[fr] generating:   0%|          | 0/8 [00:00<?, ?it/s][it] generating:  12%|█▎        | 1/8 [00:46<05:27, 46.83s/it][it] generating:  25%|██▌       | 2/8 [00:56<02:28, 24.72s/it][it] generating:  38%|███▊      | 3/8 [01:08<01:35, 19.09s/it][it] generating:  50%|█████     | 4/8 [01:16<00:59, 14.92s/it][it] generating:  62%|██████▎   | 5/8 [01:41<00:55, 18.45s/it][it] generating:  75%|███████▌  | 6/8 [01:54<00:32, 16.48s/it][it] generating:  88%|████████▊ | 7/8 [02:01<00:13, 13.51s/it][it] generating: 100%|██████████| 8/8 [02:08<00:00, 11.31s/it][it] generating: 100%|██████████| 8/8 [02:08<00:00, 16.04s/it]
+[fr] generating:   0%|          | 0/8 [00:00<?, ?it/s][fr] generating:  12%|█▎        | 1/8 [06:58<48:47, 418.16s/it][fr] generating:  25%|██▌       | 2/8 [07:01<17:24, 174.03s/it][fr] generating:  38%|███▊      | 3/8 [07:07<08:07, 97.54s/it] [fr] generating:  50%|█████     | 4/8 [07:11<04:01, 60.30s/it][fr] generating:  62%|██████▎   | 5/8 [07:36<02:23, 47.84s/it][fr] generating:  75%|███████▌  | 6/8 [07:45<01:09, 34.65s/it][fr] generating:  88%|████████▊ | 7/8 [08:41<00:41, 41.65s/it][fr] generating: 100%|██████████| 8/8 [08:48<00:00, 30.65s/it][fr] generating: 100%|██████████| 8/8 [08:48<00:00, 66.12s/it]
+[ru] generating:   0%|          | 0/8 [00:00<?, ?it/s][ru] generating:  12%|█▎        | 1/8 [00:11<01:20, 11.53s/it][ru] generating:  25%|██▌       | 2/8 [00:32<01:42, 17.05s/it][ru] generating:  38%|███▊      | 3/8 [00:56<01:40, 20.07s/it][ru] generating:  50%|█████     | 4/8 [01:52<02:17, 34.45s/it][ru] generating:  62%|██████▎   | 5/8 [02:02<01:16, 25.45s/it][ru] generating:  75%|███████▌  | 6/8 [02:27<00:50, 25.33s/it][ru] generating:  88%|████████▊ | 7/8 [03:23<00:35, 35.41s/it][ru] generating: 100%|██████████| 8/8 [03:33<00:00, 27.24s/it][ru] generating: 100%|██████████| 8/8 [03:33<00:00, 26.64s/it]
+[sw] generating:   0%|          | 0/8 [00:00<?, ?it/s][sw] generating:  12%|█▎        | 1/8 [00:02<00:17,  2.51s/it][sw] generating:  25%|██▌       | 2/8 [00:09<00:30,  5.12s/it][sw] generating:  38%|███▊      | 3/8 [00:13<00:23,  4.74s/it][sw] generating:  50%|█████     | 4/8 [00:20<00:21,  5.39s/it][sw] generating:  62%|██████▎   | 5/8 [00:26<00:17,  5.76s/it][sw] generating:  75%|███████▌  | 6/8 [00:33<00:12,  6.03s/it][sw] generating:  88%|████████▊ | 7/8 [00:34<00:04,  4.38s/it][sw] generating: 100%|██████████| 8/8 [00:41<00:00,  5.20s/it][sw] generating: 100%|██████████| 8/8 [00:41<00:00,  5.13s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round1_phi3.5_latest_backfill_generation.json
+[2026-08-18 21:41:52]   ✅ Generated (136K)
+[2026-08-18 21:41:52] [2/16] Round 2 (diverse)
+[2026-08-18 21:41:52]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/8 [00:00<?, ?it/s][it] generating:  12%|█▎        | 1/8 [00:00<00:03,  1.83it/s][it] generating:  25%|██▌       | 2/8 [00:07<00:24,  4.12s/it][it] generating:  38%|███▊      | 3/8 [00:09<00:17,  3.50s/it][it] generating:  50%|█████     | 4/8 [00:12<00:12,  3.12s/it][it] generating:  62%|██████▎   | 5/8 [00:17<00:10,  3.64s/it][it] generating:  75%|███████▌  | 6/8 [00:25<00:10,  5.35s/it][it] generating:  88%|████████▊ | 7/8 [00:33<00:06,  6.09s/it][it] generating: 100%|██████████| 8/8 [00:39<00:00,  6.27s/it][it] generating: 100%|██████████| 8/8 [00:39<00:00,  5.00s/it]
+[fr] generating:   0%|          | 0/8 [00:00<?, ?it/s][fr] generating:  12%|█▎        | 1/8 [00:06<00:47,  6.72s/it][fr] generating:  25%|██▌       | 2/8 [00:10<00:28,  4.76s/it][fr] generating:  38%|███▊      | 3/8 [00:15<00:25,  5.13s/it][fr] generating:  50%|█████     | 4/8 [00:29<00:33,  8.42s/it][fr] generating:  62%|██████▎   | 5/8 [00:30<00:17,  5.72s/it][fr] generating:  75%|███████▌  | 6/8 [00:35<00:11,  5.72s/it][fr] generating:  88%|████████▊ | 7/8 [00:42<00:05,  5.88s/it][fr] generating: 100%|██████████| 8/8 [00:50<00:00,  6.86s/it][fr] generating: 100%|██████████| 8/8 [00:50<00:00,  6.37s/it]
+[ru] generating:   0%|          | 0/8 [00:00<?, ?it/s][ru] generating:  12%|█▎        | 1/8 [00:06<00:43,  6.22s/it][ru] generating:  25%|██▌       | 2/8 [00:13<00:41,  6.91s/it][ru] generating:  38%|███▊      | 3/8 [00:20<00:34,  6.89s/it][ru] generating:  50%|█████     | 4/8 [00:21<00:18,  4.65s/it][ru] generating:  62%|██████▎   | 5/8 [00:30<00:18,  6.04s/it][ru] generating:  75%|███████▌  | 6/8 [00:35<00:11,  5.75s/it][ru] generating:  88%|████████▊ | 7/8 [00:41<00:05,  5.72s/it][ru] generating: 100%|██████████| 8/8 [00:47<00:00,  5.94s/it][ru] generating: 100%|██████████| 8/8 [00:47<00:00,  5.93s/it]
+[sw] generating:   0%|          | 0/8 [00:00<?, ?it/s][sw] generating:  12%|█▎        | 1/8 [00:05<00:41,  5.88s/it][sw] generating:  25%|██▌       | 2/8 [00:16<00:51,  8.51s/it][sw] generating:  38%|███▊      | 3/8 [00:38<01:14, 14.82s/it][sw] generating:  50%|█████     | 4/8 [00:45<00:47, 11.88s/it][sw] generating:  62%|██████▎   | 5/8 [00:52<00:30, 10.08s/it][sw] generating:  75%|███████▌  | 6/8 [00:58<00:17,  8.74s/it][sw] generating:  88%|████████▊ | 7/8 [01:00<00:06,  6.42s/it][sw] generating: 100%|██████████| 8/8 [01:06<00:00,  6.18s/it][sw] generating: 100%|██████████| 8/8 [01:06<00:00,  8.28s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round2_phi3.5_latest_backfill_generation.json
+[2026-08-18 21:45:18]   ✅ Generated ( 52K)
+[2026-08-18 21:45:18] [3/16] Round 3a (drift)
+[2026-08-18 21:45:18]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/4 [00:00<?, ?it/s][it] generating:  25%|██▌       | 1/4 [00:20<01:02, 20.75s/it][it] generating:  50%|█████     | 2/4 [00:28<00:26, 13.02s/it][it] generating:  75%|███████▌  | 3/4 [00:36<00:10, 10.66s/it][it] generating: 100%|██████████| 4/4 [00:42<00:00,  8.89s/it][it] generating: 100%|██████████| 4/4 [00:42<00:00, 10.59s/it]
+[fr] generating:   0%|          | 0/4 [00:00<?, ?it/s][fr] generating:  25%|██▌       | 1/4 [00:09<00:29,  9.78s/it][fr] generating:  50%|█████     | 2/4 [00:16<00:15,  7.84s/it][fr] generating:  75%|███████▌  | 3/4 [00:21<00:06,  6.53s/it][fr] generating: 100%|██████████| 4/4 [00:26<00:00,  6.20s/it][fr] generating: 100%|██████████| 4/4 [00:26<00:00,  6.73s/it]
+[ru] generating:   0%|          | 0/4 [00:00<?, ?it/s][ru] generating:  25%|██▌       | 1/4 [00:01<00:04,  1.57s/it][ru] generating:  50%|█████     | 2/4 [00:07<00:07,  3.94s/it][ru] generating:  75%|███████▌  | 3/4 [00:11<00:03,  3.91s/it][ru] generating: 100%|██████████| 4/4 [00:16<00:00,  4.37s/it][ru] generating: 100%|██████████| 4/4 [00:16<00:00,  4.03s/it]
+[sw] generating:   0%|          | 0/4 [00:00<?, ?it/s][sw] generating:  25%|██▌       | 1/4 [00:03<00:11,  3.75s/it][sw] generating:  50%|█████     | 2/4 [00:06<00:06,  3.25s/it][sw] generating:  75%|███████▌  | 3/4 [00:12<00:04,  4.63s/it][sw] generating: 100%|██████████| 4/4 [00:16<00:00,  4.32s/it][sw] generating: 100%|██████████| 4/4 [00:16<00:00,  4.19s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round3a_phi3.5_latest_backfill_generation.json
+[2026-08-18 21:47:01]   ✅ Generated ( 28K)
+[2026-08-18 21:47:01] [4/16] Round 3b (format)
+[2026-08-18 21:47:01]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/2 [00:00<?, ?it/s][it] generating:  50%|█████     | 1/2 [00:20<00:20, 20.19s/it][it] generating: 100%|██████████| 2/2 [00:26<00:00, 11.83s/it][it] generating: 100%|██████████| 2/2 [00:26<00:00, 13.08s/it]
+[fr] generating:   0%|          | 0/2 [00:00<?, ?it/s][fr] generating:  50%|█████     | 1/2 [00:06<00:06,  6.56s/it][fr] generating: 100%|██████████| 2/2 [00:09<00:00,  4.41s/it][fr] generating: 100%|██████████| 2/2 [00:09<00:00,  4.73s/it]
+[ru] generating:   0%|          | 0/2 [00:00<?, ?it/s][ru] generating:  50%|█████     | 1/2 [00:05<00:05,  5.34s/it][ru] generating: 100%|██████████| 2/2 [00:07<00:00,  3.44s/it][ru] generating: 100%|██████████| 2/2 [00:07<00:00,  3.73s/it]
+[sw] generating:   0%|          | 0/2 [00:00<?, ?it/s][sw] generating:  50%|█████     | 1/2 [00:06<00:06,  6.60s/it][sw] generating: 100%|██████████| 2/2 [00:15<00:00,  8.16s/it][sw] generating: 100%|██████████| 2/2 [00:15<00:00,  7.93s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round3b_phi3.5_latest_backfill_generation.json
+[2026-08-18 21:48:01]   ✅ Generated ( 16K)
+[2026-08-18 21:48:01] ✅ phi3.5:latest generation complete!
+
+================================================================================
+MODEL 2/4: neural-chat:latest
+================================================================================
+[2026-08-18 21:48:01] Starting generation for neural-chat:latest...
+[2026-08-18 21:48:01] [5/16] Round 1 (fogbank)
+[2026-08-18 21:48:01]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/8 [00:00<?, ?it/s][it] generating:  12%|█▎        | 1/8 [00:17<02:02, 17.52s/it][it] generating:  25%|██▌       | 2/8 [00:27<01:18, 13.12s/it][it] generating:  38%|███▊      | 3/8 [00:33<00:49,  9.90s/it][it] generating:  50%|█████     | 4/8 [00:39<00:33,  8.25s/it][it] generating:  62%|██████▎   | 5/8 [01:35<01:16, 25.52s/it][it] generating:  75%|███████▌  | 6/8 [01:43<00:38, 19.44s/it][it] generating:  88%|████████▊ | 7/8 [01:54<00:16, 16.82s/it][it] generating: 100%|██████████| 8/8 [02:00<00:00, 13.44s/it][it] generating: 100%|██████████| 8/8 [02:00<00:00, 15.10s/it]
+[fr] generating:   0%|          | 0/8 [00:00<?, ?it/s][fr] generating:  12%|█▎        | 1/8 [00:10<01:11, 10.27s/it][fr] generating:  25%|██▌       | 2/8 [00:27<01:26, 14.38s/it][fr] generating:  38%|███▊      | 3/8 [00:35<00:56, 11.23s/it][fr] generating:  50%|█████     | 4/8 [00:42<00:38,  9.65s/it][fr] generating:  62%|██████▎   | 5/8 [01:11<00:49, 16.57s/it][fr] generating:  75%|███████▌  | 6/8 [01:16<00:25, 12.83s/it][fr] generating:  88%|████████▊ | 7/8 [01:25<00:11, 11.50s/it][fr] generating: 100%|██████████| 8/8 [01:30<00:00,  9.45s/it][fr] generating: 100%|██████████| 8/8 [01:30<00:00, 11.31s/it]
+[ru] generating:   0%|          | 0/8 [00:00<?, ?it/s][ru] generating:  12%|█▎        | 1/8 [00:09<01:07,  9.64s/it][ru] generating:  25%|██▌       | 2/8 [00:16<00:46,  7.72s/it][ru] generating:  38%|███▊      | 3/8 [00:20<00:30,  6.04s/it][ru] generating:  50%|█████     | 4/8 [00:27<00:25,  6.41s/it][ru] generating:  62%|██████▎   | 5/8 [00:33<00:19,  6.58s/it][ru] generating:  75%|███████▌  | 6/8 [00:39<00:12,  6.28s/it][ru] generating:  88%|████████▊ | 7/8 [00:45<00:05,  6.00s/it][ru] generating: 100%|██████████| 8/8 [00:57<00:00,  8.07s/it][ru] generating: 100%|██████████| 8/8 [00:57<00:00,  7.19s/it]
+[sw] generating:   0%|          | 0/8 [00:00<?, ?it/s][sw] generating:  12%|█▎        | 1/8 [02:42<19:00, 162.99s/it][sw] generating:  25%|██▌       | 2/8 [02:48<07:03, 70.51s/it] [sw] generating:  38%|███▊      | 3/8 [02:53<03:23, 40.65s/it][sw] generating:  50%|█████     | 4/8 [03:04<01:55, 28.78s/it][sw] generating:  62%|██████▎   | 5/8 [03:11<01:02, 20.99s/it][sw] generating:  75%|███████▌  | 6/8 [03:24<00:36, 18.21s/it][sw] generating:  88%|████████▊ | 7/8 [03:38<00:16, 16.87s/it][sw] generating: 100%|██████████| 8/8 [03:46<00:00, 14.16s/it][sw] generating: 100%|██████████| 8/8 [03:46<00:00, 28.37s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round1_neural-chat_latest_backfill_generation.json
+[2026-08-18 21:56:18]   ✅ Generated ( 76K)
+[2026-08-18 21:56:18] [6/16] Round 2 (diverse)
+[2026-08-18 21:56:18]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/8 [00:00<?, ?it/s][it] generating:  12%|█▎        | 1/8 [01:51<13:02, 111.81s/it][it] generating:  25%|██▌       | 2/8 [02:01<05:08, 51.46s/it] [it] generating:  38%|███▊      | 3/8 [02:12<02:46, 33.39s/it][it] generating:  50%|█████     | 4/8 [02:25<01:40, 25.11s/it][it] generating:  62%|██████▎   | 5/8 [02:38<01:02, 20.74s/it][it] generating:  75%|███████▌  | 6/8 [02:50<00:35, 17.66s/it][it] generating:  88%|████████▊ | 7/8 [02:59<00:14, 14.87s/it][it] generating: 100%|██████████| 8/8 [03:05<00:00, 12.31s/it][it] generating: 100%|██████████| 8/8 [03:05<00:00, 23.25s/it]
+[fr] generating:   0%|          | 0/8 [00:00<?, ?it/s][fr] generating:  12%|█▎        | 1/8 [00:16<01:55, 16.53s/it][fr] generating:  25%|██▌       | 2/8 [00:23<01:06, 11.13s/it][fr] generating:  38%|███▊      | 3/8 [00:40<01:07, 13.53s/it][fr] generating:  50%|█████     | 4/8 [01:02<01:07, 16.90s/it][fr] generating:  62%|██████▎   | 5/8 [01:09<00:40, 13.50s/it][fr] generating:  75%|███████▌  | 6/8 [01:35<00:35, 17.69s/it][fr] generating:  88%|████████▊ | 7/8 [01:44<00:14, 14.95s/it][fr] generating: 100%|██████████| 8/8 [02:04<00:00, 16.40s/it][fr] generating: 100%|██████████| 8/8 [02:04<00:00, 15.55s/it]
+[ru] generating:   0%|          | 0/8 [00:00<?, ?it/s][ru] generating:  12%|█▎        | 1/8 [00:23<02:47, 23.96s/it][ru] generating:  25%|██▌       | 2/8 [00:32<01:30, 15.10s/it][ru] generating:  38%|███▊      | 3/8 [00:40<00:58, 11.61s/it][ru] generating:  50%|█████     | 4/8 [00:56<00:53, 13.27s/it][ru] generating:  62%|██████▎   | 5/8 [01:03<00:33, 11.07s/it][ru] generating:  75%|███████▌  | 6/8 [01:19<00:25, 12.66s/it][ru] generating:  88%|████████▊ | 7/8 [01:36<00:14, 14.29s/it][ru] generating: 100%|██████████| 8/8 [01:49<00:00, 13.76s/it][ru] generating: 100%|██████████| 8/8 [01:49<00:00, 13.67s/it]
+[sw] generating:   0%|          | 0/8 [00:00<?, ?it/s][sw] generating:  12%|█▎        | 1/8 [00:08<00:58,  8.41s/it][sw] generating:  25%|██▌       | 2/8 [00:18<00:55,  9.29s/it][sw] generating:  38%|███▊      | 3/8 [00:29<00:51, 10.33s/it][sw] generating:  50%|█████     | 4/8 [00:36<00:35,  8.98s/it][sw] generating:  62%|██████▎   | 5/8 [00:46<00:27,  9.19s/it][sw] generating:  75%|███████▌  | 6/8 [00:56<00:18,  9.50s/it][sw] generating:  88%|████████▊ | 7/8 [01:04<00:09,  9.06s/it][sw] generating: 100%|██████████| 8/8 [01:14<00:00,  9.37s/it][sw] generating: 100%|██████████| 8/8 [01:14<00:00,  9.33s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round2_neural-chat_latest_backfill_generation.json
+[2026-08-18 22:04:33]   ✅ Generated ( 72K)
+[2026-08-18 22:04:33] [7/16] Round 3a (drift)
+[2026-08-18 22:04:33]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/4 [00:00<?, ?it/s][it] generating:  25%|██▌       | 1/4 [02:42<08:08, 162.76s/it][it] generating:  50%|█████     | 2/4 [02:52<02:25, 72.92s/it] [it] generating:  75%|███████▌  | 3/4 [03:14<00:49, 49.39s/it][it] generating: 100%|██████████| 4/4 [03:37<00:00, 39.19s/it][it] generating: 100%|██████████| 4/4 [03:37<00:00, 54.44s/it]
+[fr] generating:   0%|          | 0/4 [00:00<?, ?it/s][fr] generating:  25%|██▌       | 1/4 [00:12<00:38, 12.76s/it][fr] generating:  50%|█████     | 2/4 [00:25<00:25, 12.75s/it][fr] generating:  75%|███████▌  | 3/4 [00:51<00:18, 18.80s/it][fr] generating: 100%|██████████| 4/4 [03:14<00:00, 67.87s/it][fr] generating: 100%|██████████| 4/4 [03:14<00:00, 48.65s/it]
+[ru] generating:   0%|          | 0/4 [00:00<?, ?it/s][ru] generating:  25%|██▌       | 1/4 [00:10<00:32, 10.80s/it][ru] generating:  50%|█████     | 2/4 [00:28<00:30, 15.05s/it][ru] generating:  75%|███████▌  | 3/4 [00:48<00:17, 17.03s/it][ru] generating: 100%|██████████| 4/4 [00:58<00:00, 14.47s/it][ru] generating: 100%|██████████| 4/4 [00:58<00:00, 14.69s/it]
+[sw] generating:   0%|          | 0/4 [00:00<?, ?it/s][sw] generating:  25%|██▌       | 1/4 [00:17<00:51, 17.16s/it][sw] generating:  50%|█████     | 2/4 [00:26<00:25, 12.85s/it][sw] generating:  75%|███████▌  | 3/4 [00:43<00:14, 14.31s/it][sw] generating: 100%|██████████| 4/4 [00:56<00:00, 14.11s/it][sw] generating: 100%|██████████| 4/4 [00:56<00:00, 14.21s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round3a_neural-chat_latest_backfill_generation.json
+[2026-08-18 22:13:22]   ✅ Generated ( 80K)
+[2026-08-18 22:13:22] [8/16] Round 3b (format)
+[2026-08-18 22:13:22]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/2 [00:00<?, ?it/s][it] generating:  50%|█████     | 1/2 [00:13<00:13, 13.16s/it][it] generating: 100%|██████████| 2/2 [00:22<00:00, 10.99s/it][it] generating: 100%|██████████| 2/2 [00:22<00:00, 11.31s/it]
+[fr] generating:   0%|          | 0/2 [00:00<?, ?it/s][fr] generating:  50%|█████     | 1/2 [00:11<00:11, 11.48s/it][fr] generating: 100%|██████████| 2/2 [00:21<00:00, 10.71s/it][fr] generating: 100%|██████████| 2/2 [00:21<00:00, 10.83s/it]
+[ru] generating:   0%|          | 0/2 [00:00<?, ?it/s][ru] generating:  50%|█████     | 1/2 [00:15<00:15, 15.58s/it][ru] generating: 100%|██████████| 2/2 [00:30<00:00, 15.08s/it][ru] generating: 100%|██████████| 2/2 [00:30<00:00, 15.16s/it]
+[sw] generating:   0%|          | 0/2 [00:00<?, ?it/s][sw] generating:  50%|█████     | 1/2 [00:09<00:09,  9.97s/it][sw] generating: 100%|██████████| 2/2 [00:26<00:00, 14.07s/it][sw] generating: 100%|██████████| 2/2 [00:26<00:00, 13.45s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round3b_neural-chat_latest_backfill_generation.json
+[2026-08-18 22:15:05]   ✅ Generated ( 16K)
+[2026-08-18 22:15:05] ✅ neural-chat:latest generation complete!
+
+================================================================================
+MODEL 3/4: mistral:latest
+================================================================================
+[2026-08-18 22:15:05] Starting generation for mistral:latest...
+[2026-08-18 22:15:05] [9/16] Round 1 (fogbank)
+[2026-08-18 22:15:05]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/8 [00:00<?, ?it/s][it] generating:  12%|█▎        | 1/8 [00:14<01:41, 14.46s/it][it] generating:  25%|██▌       | 2/8 [00:27<01:20, 13.44s/it][it] generating:  38%|███▊      | 3/8 [00:38<01:01, 12.38s/it][it] generating:  50%|█████     | 4/8 [00:44<00:39,  9.99s/it][it] generating:  62%|██████▎   | 5/8 [00:52<00:28,  9.38s/it][it] generating:  75%|███████▌  | 6/8 [01:07<00:22, 11.05s/it][it] generating:  88%|████████▊ | 7/8 [01:28<00:14, 14.27s/it][it] generating: 100%|██████████| 8/8 [01:36<00:00, 12.55s/it][it] generating: 100%|██████████| 8/8 [01:36<00:00, 12.12s/it]
+[fr] generating:   0%|          | 0/8 [00:00<?, ?it/s][fr] generating:  12%|█▎        | 1/8 [00:06<00:42,  6.12s/it][fr] generating:  25%|██▌       | 2/8 [00:15<00:48,  8.09s/it][fr] generating:  38%|███▊      | 3/8 [00:22<00:36,  7.37s/it][fr] generating:  50%|█████     | 4/8 [00:27<00:26,  6.59s/it][fr] generating:  62%|██████▎   | 5/8 [00:37<00:23,  7.70s/it][fr] generating:  75%|███████▌  | 6/8 [00:46<00:16,  8.41s/it][fr] generating:  88%|████████▊ | 7/8 [00:54<00:07,  8.00s/it][fr] generating: 100%|██████████| 8/8 [01:00<00:00,  7.54s/it][fr] generating: 100%|██████████| 8/8 [01:00<00:00,  7.58s/it]
+[ru] generating:   0%|          | 0/8 [00:00<?, ?it/s][ru] generating:  12%|█▎        | 1/8 [00:13<01:32, 13.24s/it][ru] generating:  25%|██▌       | 2/8 [00:18<00:51,  8.57s/it][ru] generating:  38%|███▊      | 3/8 [00:29<00:48,  9.66s/it][ru] generating:  50%|█████     | 4/8 [00:39<00:38,  9.74s/it][ru] generating:  62%|██████▎   | 5/8 [00:58<00:39, 13.27s/it][ru] generating:  75%|███████▌  | 6/8 [01:09<00:24, 12.49s/it][ru] generating:  88%|████████▊ | 7/8 [01:17<00:10, 10.74s/it][ru] generating: 100%|██████████| 8/8 [01:24<00:00,  9.72s/it][ru] generating: 100%|██████████| 8/8 [01:24<00:00, 10.57s/it]
+[sw] generating:   0%|          | 0/8 [00:00<?, ?it/s][sw] generating:  12%|█▎        | 1/8 [00:12<01:26, 12.35s/it][sw] generating:  25%|██▌       | 2/8 [00:25<01:18, 13.00s/it][sw] generating:  38%|███▊      | 3/8 [00:33<00:51, 10.38s/it][sw] generating:  50%|█████     | 4/8 [00:49<00:50, 12.61s/it][sw] generating:  62%|██████▎   | 5/8 [00:56<00:31, 10.63s/it][sw] generating:  75%|███████▌  | 6/8 [01:08<00:22, 11.34s/it][sw] generating:  88%|████████▊ | 7/8 [01:21<00:11, 11.81s/it][sw] generating: 100%|██████████| 8/8 [01:28<00:00, 10.30s/it][sw] generating: 100%|██████████| 8/8 [01:28<00:00, 11.10s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round1_mistral_latest_backfill_generation.json
+[2026-08-18 22:20:37]   ✅ Generated ( 56K)
+[2026-08-18 22:20:37] [10/16] Round 2 (diverse)
+[2026-08-18 22:20:37]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/8 [00:00<?, ?it/s][it] generating:  12%|█▎        | 1/8 [00:14<01:42, 14.67s/it][it] generating:  25%|██▌       | 2/8 [00:32<01:37, 16.31s/it][it] generating:  38%|███▊      | 3/8 [00:41<01:05, 13.13s/it][it] generating:  50%|█████     | 4/8 [00:46<00:40, 10.06s/it][it] generating:  62%|██████▎   | 5/8 [00:54<00:27,  9.28s/it][it] generating:  75%|███████▌  | 6/8 [01:05<00:19,  9.95s/it][it] generating:  88%|████████▊ | 7/8 [01:17<00:10, 10.37s/it][it] generating: 100%|██████████| 8/8 [01:28<00:00, 10.53s/it][it] generating: 100%|██████████| 8/8 [01:28<00:00, 11.01s/it]
+[fr] generating:   0%|          | 0/8 [00:00<?, ?it/s][fr] generating:  12%|█▎        | 1/8 [00:14<01:40, 14.42s/it][fr] generating:  25%|██▌       | 2/8 [00:20<00:58,  9.79s/it][fr] generating:  38%|███▊      | 3/8 [00:32<00:52, 10.43s/it][fr] generating:  50%|█████     | 4/8 [00:40<00:37,  9.45s/it][fr] generating:  62%|██████▎   | 5/8 [00:58<00:37, 12.57s/it][fr] generating:  75%|███████▌  | 6/8 [01:10<00:25, 12.62s/it][fr] generating:  88%|████████▊ | 7/8 [01:17<00:10, 10.81s/it][fr] generating: 100%|██████████| 8/8 [01:27<00:00, 10.49s/it][fr] generating: 100%|██████████| 8/8 [01:27<00:00, 10.98s/it]
+[ru] generating:   0%|          | 0/8 [00:00<?, ?it/s][ru] generating:  12%|█▎        | 1/8 [00:08<01:01,  8.73s/it][ru] generating:  25%|██▌       | 2/8 [00:19<01:01, 10.19s/it][ru] generating:  38%|███▊      | 3/8 [00:26<00:43,  8.62s/it][ru] generating:  50%|█████     | 4/8 [00:35<00:34,  8.59s/it][ru] generating:  62%|██████▎   | 5/8 [00:45<00:27,  9.20s/it][ru] generating:  75%|███████▌  | 6/8 [00:55<00:19,  9.62s/it][ru] generating:  88%|████████▊ | 7/8 [01:09<00:10, 10.80s/it][ru] generating: 100%|██████████| 8/8 [01:17<00:00, 10.15s/it][ru] generating: 100%|██████████| 8/8 [01:17<00:00,  9.74s/it]
+[sw] generating:   0%|          | 0/8 [00:00<?, ?it/s][sw] generating:  12%|█▎        | 1/8 [00:11<01:19, 11.40s/it][sw] generating:  25%|██▌       | 2/8 [00:21<01:04, 10.72s/it][sw] generating:  38%|███▊      | 3/8 [00:28<00:43,  8.78s/it][sw] generating:  50%|█████     | 4/8 [00:36<00:34,  8.51s/it][sw] generating:  62%|██████▎   | 5/8 [00:42<00:23,  7.76s/it][sw] generating:  75%|███████▌  | 6/8 [00:56<00:19,  9.72s/it][sw] generating:  88%|████████▊ | 7/8 [01:04<00:09,  9.33s/it][sw] generating: 100%|██████████| 8/8 [01:17<00:00, 10.29s/it][sw] generating: 100%|██████████| 8/8 [01:17<00:00,  9.63s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round2_mistral_latest_backfill_generation.json
+[2026-08-18 22:26:09]   ✅ Generated ( 48K)
+[2026-08-18 22:26:09] [11/16] Round 3a (drift)
+[2026-08-18 22:26:09]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/4 [00:00<?, ?it/s][it] generating:  25%|██▌       | 1/4 [00:25<01:17, 25.70s/it][it] generating:  50%|█████     | 2/4 [00:32<00:29, 14.69s/it][it] generating:  75%|███████▌  | 3/4 [00:43<00:13, 13.09s/it][it] generating: 100%|██████████| 4/4 [00:58<00:00, 13.79s/it][it] generating: 100%|██████████| 4/4 [00:58<00:00, 14.68s/it]
+[fr] generating:   0%|          | 0/4 [00:00<?, ?it/s][fr] generating:  25%|██▌       | 1/4 [00:08<00:25,  8.40s/it][fr] generating:  50%|█████     | 2/4 [00:15<00:15,  7.56s/it][fr] generating:  75%|███████▌  | 3/4 [00:25<00:08,  8.78s/it][fr] generating: 100%|██████████| 4/4 [00:37<00:00,  9.85s/it][fr] generating: 100%|██████████| 4/4 [00:37<00:00,  9.27s/it]
+[ru] generating:   0%|          | 0/4 [00:00<?, ?it/s][ru] generating:  25%|██▌       | 1/4 [00:10<00:30, 10.19s/it][ru] generating:  50%|█████     | 2/4 [00:31<00:33, 16.71s/it][ru] generating:  75%|███████▌  | 3/4 [00:37<00:11, 11.92s/it][ru] generating: 100%|██████████| 4/4 [00:48<00:00, 11.59s/it][ru] generating: 100%|██████████| 4/4 [00:48<00:00, 12.19s/it]
+[sw] generating:   0%|          | 0/4 [00:00<?, ?it/s][sw] generating:  25%|██▌       | 1/4 [00:11<00:33, 11.22s/it][sw] generating:  50%|█████     | 2/4 [00:22<00:22, 11.13s/it][sw] generating:  75%|███████▌  | 3/4 [00:29<00:09,  9.44s/it][sw] generating: 100%|██████████| 4/4 [00:42<00:00, 10.69s/it][sw] generating: 100%|██████████| 4/4 [00:42<00:00, 10.58s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round3a_mistral_latest_backfill_generation.json
+[2026-08-18 22:29:17]   ✅ Generated ( 32K)
+[2026-08-18 22:29:17] [12/16] Round 3b (format)
+[2026-08-18 22:29:17]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/2 [00:00<?, ?it/s][it] generating:  50%|█████     | 1/2 [00:10<00:10, 10.13s/it][it] generating: 100%|██████████| 2/2 [00:23<00:00, 11.90s/it][it] generating: 100%|██████████| 2/2 [00:23<00:00, 11.64s/it]
+[fr] generating:   0%|          | 0/2 [00:00<?, ?it/s][fr] generating:  50%|█████     | 1/2 [00:11<00:11, 11.48s/it][fr] generating: 100%|██████████| 2/2 [00:21<00:00, 10.41s/it][fr] generating: 100%|██████████| 2/2 [00:21<00:00, 10.57s/it]
+[ru] generating:   0%|          | 0/2 [00:00<?, ?it/s][ru] generating:  50%|█████     | 1/2 [00:09<00:09,  9.94s/it][ru] generating: 100%|██████████| 2/2 [00:21<00:00, 10.71s/it][ru] generating: 100%|██████████| 2/2 [00:21<00:00, 10.59s/it]
+[sw] generating:   0%|          | 0/2 [00:00<?, ?it/s][sw] generating:  50%|█████     | 1/2 [00:05<00:05,  5.30s/it][sw] generating: 100%|██████████| 2/2 [00:15<00:00,  8.42s/it][sw] generating: 100%|██████████| 2/2 [00:15<00:00,  7.96s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round3b_mistral_latest_backfill_generation.json
+[2026-08-18 22:30:39]   ✅ Generated ( 16K)
+[2026-08-18 22:30:39] ✅ mistral:latest generation complete!
+
+================================================================================
+MODEL 4/4: deepseek-r1:14b
+================================================================================
+[2026-08-18 22:30:39] Starting generation for deepseek-r1:14b...
+[2026-08-18 22:30:39] [13/16] Round 1 (fogbank)
+[2026-08-18 22:30:39]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/8 [00:00<?, ?it/s][it] generating:  12%|█▎        | 1/8 [00:50<05:54, 50.62s/it][it] generating:  25%|██▌       | 2/8 [03:43<12:14, 122.39s/it][it] generating:  38%|███▊      | 3/8 [05:34<09:45, 117.12s/it][it] generating:  50%|█████     | 4/8 [06:00<05:24, 81.13s/it] [it] generating:  62%|██████▎   | 5/8 [07:57<04:42, 94.28s/it][it] generating:  75%|███████▌  | 6/8 [10:56<04:05, 122.99s/it][it] generating:  88%|████████▊ | 7/8 [13:14<02:08, 128.06s/it][it] generating: 100%|██████████| 8/8 [15:07<00:00, 123.16s/it][it] generating: 100%|██████████| 8/8 [15:07<00:00, 113.44s/it]
+[fr] generating:   0%|          | 0/8 [00:00<?, ?it/s][fr] generating:  12%|█▎        | 1/8 [06:01<42:08, 361.26s/it][fr] generating:  25%|██▌       | 2/8 [06:41<17:15, 172.54s/it][fr] generating:  38%|███▊      | 3/8 [07:18<09:13, 110.68s/it][fr] generating:  50%|█████     | 4/8 [10:33<09:36, 144.03s/it][fr] generating:  62%|██████▎   | 5/8 [16:21<10:52, 217.36s/it][fr] generating:  75%|███████▌  | 6/8 [17:18<05:26, 163.04s/it][fr] generating:  88%|████████▊ | 7/8 [21:43<03:16, 196.19s/it][fr] generating: 100%|██████████| 8/8 [22:11<00:00, 142.71s/it][fr] generating: 100%|██████████| 8/8 [22:11<00:00, 166.44s/it]
+[ru] generating:   0%|          | 0/8 [00:00<?, ?it/s][ru] generating:  12%|█▎        | 1/8 [00:38<04:30, 38.68s/it][ru] generating:  25%|██▌       | 2/8 [01:15<03:44, 37.47s/it][ru] generating:  38%|███▊      | 3/8 [01:36<02:29, 29.98s/it][ru] generating:  50%|█████     | 4/8 [02:00<01:51, 27.79s/it][ru] generating:  62%|██████▎   | 5/8 [02:44<01:40, 33.38s/it][ru] generating:  75%|███████▌  | 6/8 [03:24<01:11, 35.72s/it][ru] generating:  88%|████████▊ | 7/8 [05:18<01:01, 61.25s/it][ru] generating: 100%|██████████| 8/8 [06:52<00:00, 71.77s/it][ru] generating: 100%|██████████| 8/8 [06:52<00:00, 51.55s/it]
+[sw] generating:   0%|          | 0/8 [00:00<?, ?it/s][sw] generating:  12%|█▎        | 1/8 [00:18<02:11, 18.81s/it][sw] generating:  25%|██▌       | 2/8 [00:46<02:25, 24.32s/it][sw] generating:  38%|███▊      | 3/8 [01:50<03:30, 42.01s/it][sw] generating:  50%|█████     | 4/8 [03:37<04:32, 68.02s/it][sw] generating:  62%|██████▎   | 5/8 [03:56<02:30, 50.18s/it][sw] generating:  75%|███████▌  | 6/8 [05:19<02:02, 61.40s/it][sw] generating:  88%|████████▊ | 7/8 [06:16<00:59, 59.89s/it][sw] generating: 100%|██████████| 8/8 [06:58<00:00, 54.14s/it][sw] generating: 100%|██████████| 8/8 [06:58<00:00, 52.29s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round1_deepseek-r1_14b_backfill_generation.json
+[2026-08-18 23:21:50]   ✅ Generated ( 48K)
+[2026-08-18 23:21:50] [14/16] Round 2 (diverse)
+[2026-08-18 23:21:50]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/8 [00:00<?, ?it/s][it] generating:  12%|█▎        | 1/8 [00:25<02:56, 25.23s/it][it] generating:  25%|██▌       | 2/8 [00:52<02:37, 26.27s/it][it] generating:  38%|███▊      | 3/8 [01:27<02:31, 30.27s/it][it] generating:  50%|█████     | 4/8 [05:55<08:16, 124.13s/it][it] generating:  62%|██████▎   | 5/8 [06:46<04:53, 97.82s/it] [it] generating:  75%|███████▌  | 6/8 [07:28<02:37, 78.86s/it][it] generating:  88%|████████▊ | 7/8 [09:21<01:30, 90.11s/it][it] generating: 100%|██████████| 8/8 [10:33<00:00, 84.28s/it][it] generating: 100%|██████████| 8/8 [10:33<00:00, 79.20s/it]
+[fr] generating:   0%|          | 0/8 [00:00<?, ?it/s][fr] generating:  12%|█▎        | 1/8 [02:22<16:36, 142.29s/it][fr] generating:  25%|██▌       | 2/8 [03:02<08:13, 82.28s/it] [fr] generating:  38%|███▊      | 3/8 [04:39<07:23, 88.78s/it][fr] generating:  50%|█████     | 4/8 [04:57<04:03, 60.92s/it][fr] generating:  62%|██████▎   | 5/8 [05:41<02:44, 54.93s/it][fr] generating:  75%|███████▌  | 6/8 [06:12<01:33, 46.60s/it][fr] generating:  88%|████████▊ | 7/8 [08:27<01:15, 75.81s/it][fr] generating: 100%|██████████| 8/8 [12:23<00:00, 126.73s/it][fr] generating: 100%|██████████| 8/8 [12:23<00:00, 92.97s/it] 
+[ru] generating:   0%|          | 0/8 [00:00<?, ?it/s][ru] generating:  12%|█▎        | 1/8 [00:37<04:19, 37.09s/it][ru] generating:  25%|██▌       | 2/8 [01:21<04:06, 41.11s/it][ru] generating:  38%|███▊      | 3/8 [01:54<03:07, 37.43s/it][ru] generating:  50%|█████     | 4/8 [02:29<02:25, 36.49s/it][ru] generating:  62%|██████▎   | 5/8 [02:51<01:34, 31.49s/it][ru] generating:  75%|███████▌  | 6/8 [03:37<01:12, 36.24s/it][ru] generating:  88%|████████▊ | 7/8 [04:00<00:31, 31.85s/it][ru] generating: 100%|██████████| 8/8 [04:47<00:00, 36.69s/it][ru] generating: 100%|██████████| 8/8 [04:47<00:00, 35.88s/it]
+[sw] generating:   0%|          | 0/8 [00:00<?, ?it/s][sw] generating:  12%|█▎        | 1/8 [00:33<03:51, 33.04s/it][sw] generating:  25%|██▌       | 2/8 [00:58<02:51, 28.58s/it][sw] generating:  38%|███▊      | 3/8 [02:01<03:40, 44.17s/it][sw] generating:  50%|█████     | 4/8 [02:22<02:21, 35.32s/it][sw] generating:  62%|██████▎   | 5/8 [05:57<04:59, 99.93s/it][sw] generating:  75%|███████▌  | 6/8 [06:25<02:30, 75.50s/it][sw] generating:  88%|████████▊ | 7/8 [06:53<00:59, 59.94s/it][sw] generating: 100%|██████████| 8/8 [07:16<00:00, 48.26s/it][sw] generating: 100%|██████████| 8/8 [07:16<00:00, 54.59s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round2_deepseek-r1_14b_backfill_generation.json
+[2026-08-18 23:56:52]   ✅ Generated ( 28K)
+[2026-08-18 23:56:52] [15/16] Round 3a (drift)
+[2026-08-18 23:56:52]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/4 [00:00<?, ?it/s][it] generating:  25%|██▌       | 1/4 [03:34<10:44, 214.84s/it][it] generating:  50%|█████     | 2/4 [05:04<04:42, 141.01s/it][it] generating:  75%|███████▌  | 3/4 [09:14<03:10, 190.83s/it][it] generating: 100%|██████████| 4/4 [15:22<00:00, 260.71s/it][it] generating: 100%|██████████| 4/4 [15:22<00:00, 230.53s/it]
+[fr] generating:   0%|          | 0/4 [00:00<?, ?it/s][fr] generating:  25%|██▌       | 1/4 [00:40<02:01, 40.34s/it][fr] generating:  50%|█████     | 2/4 [01:24<01:25, 42.86s/it][fr] generating:  75%|███████▌  | 3/4 [02:07<00:42, 42.94s/it][fr] generating: 100%|██████████| 4/4 [02:39<00:00, 38.40s/it][fr] generating: 100%|██████████| 4/4 [02:39<00:00, 39.86s/it]
+[ru] generating:   0%|          | 0/4 [00:00<?, ?it/s][ru] generating:  25%|██▌       | 1/4 [04:22<13:08, 262.92s/it][ru] generating:  50%|█████     | 2/4 [06:29<06:05, 182.87s/it][ru] generating:  75%|███████▌  | 3/4 [15:07<05:35, 335.86s/it][ru] generating: 100%|██████████| 4/4 [15:46<00:00, 218.76s/it][ru] generating: 100%|██████████| 4/4 [15:46<00:00, 236.73s/it]
+[sw] generating:   0%|          | 0/4 [00:00<?, ?it/s][sw] generating:  25%|██▌       | 1/4 [01:45<05:17, 105.79s/it][sw] generating:  50%|█████     | 2/4 [02:06<01:52, 56.04s/it] [sw] generating:  75%|███████▌  | 3/4 [02:27<00:39, 39.69s/it][sw] generating: 100%|██████████| 4/4 [02:55<00:00, 35.13s/it][sw] generating: 100%|██████████| 4/4 [02:55<00:00, 43.84s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round3a_deepseek-r1_14b_backfill_generation.json
+[2026-08-19 00:33:38]   ✅ Generated ( 24K)
+[2026-08-19 00:33:38] [16/16] Round 3b (format)
+[2026-08-19 00:33:38]   → Generating traces (workers=8)...
+[it] generating:   0%|          | 0/2 [00:00<?, ?it/s][it] generating:  50%|█████     | 1/2 [01:10<01:10, 70.11s/it][it] generating: 100%|██████████| 2/2 [02:40<00:00, 81.89s/it][it] generating: 100%|██████████| 2/2 [02:40<00:00, 80.12s/it]
+[fr] generating:   0%|          | 0/2 [00:00<?, ?it/s][fr] generating:  50%|█████     | 1/2 [02:54<02:54, 174.10s/it][fr] generating: 100%|██████████| 2/2 [04:06<00:00, 114.19s/it][fr] generating: 100%|██████████| 2/2 [04:06<00:00, 123.17s/it]
+[ru] generating:   0%|          | 0/2 [00:00<?, ?it/s][ru] generating:  50%|█████     | 1/2 [00:42<00:42, 42.92s/it][ru] generating: 100%|██████████| 2/2 [01:48<00:00, 56.36s/it][ru] generating: 100%|██████████| 2/2 [01:48<00:00, 54.35s/it]
+[sw] generating:   0%|          | 0/2 [00:00<?, ?it/s][sw] generating:  50%|█████     | 1/2 [00:23<00:23, 23.35s/it][sw] generating: 100%|██████████| 2/2 [00:50<00:00, 25.64s/it][sw] generating: 100%|██████████| 2/2 [00:50<00:00, 25.29s/it]
+Wrote generation output to data/mgsm_symbolic/raw_pilot_outputs/round3b_deepseek-r1_14b_backfill_generation.json
+[2026-08-19 00:43:05]   ✅ Generated ( 12K)
+[2026-08-19 00:43:05] ✅ deepseek-r1:14b generation complete!
+
+================================================================================
+VERIFICATION
+================================================================================
+[2026-08-19 00:43:05] Expected generation files: 16 (4 models × 4 rounds)
+[2026-08-19 00:43:05] Actual generation files:       16
+[2026-08-19 00:43:05] ✅ All generation files created successfully
+[2026-08-19 00:43:05] Backfill generation files created:
+  data/mgsm_symbolic/raw_pilot_outputs/round1_deepseek-r1_14b_backfill_generation.json (45K)
+  data/mgsm_symbolic/raw_pilot_outputs/round1_mistral_latest_backfill_generation.json (52K)
+  data/mgsm_symbolic/raw_pilot_outputs/round1_neural-chat_latest_backfill_generation.json (76K)
+  data/mgsm_symbolic/raw_pilot_outputs/round1_phi3.5_latest_backfill_generation.json (134K)
+  data/mgsm_symbolic/raw_pilot_outputs/round2_deepseek-r1_14b_backfill_generation.json (28K)
+  data/mgsm_symbolic/raw_pilot_outputs/round2_mistral_latest_backfill_generation.json (48K)
+  data/mgsm_symbolic/raw_pilot_outputs/round2_neural-chat_latest_backfill_generation.json (71K)
+  data/mgsm_symbolic/raw_pilot_outputs/round2_phi3.5_latest_backfill_generation.json (52K)
+  data/mgsm_symbolic/raw_pilot_outputs/round3a_deepseek-r1_14b_backfill_generation.json (24K)
+  data/mgsm_symbolic/raw_pilot_outputs/round3a_mistral_latest_backfill_generation.json (28K)
+  data/mgsm_symbolic/raw_pilot_outputs/round3a_neural-chat_latest_backfill_generation.json (78K)
+  data/mgsm_symbolic/raw_pilot_outputs/round3a_phi3.5_latest_backfill_generation.json (25K)
+  data/mgsm_symbolic/raw_pilot_outputs/round3b_deepseek-r1_14b_backfill_generation.json (10K)
+  data/mgsm_symbolic/raw_pilot_outputs/round3b_mistral_latest_backfill_generation.json (13K)
+  data/mgsm_symbolic/raw_pilot_outputs/round3b_neural-chat_latest_backfill_generation.json (16K)
+  data/mgsm_symbolic/raw_pilot_outputs/round3b_phi3.5_latest_backfill_generation.json (15K)
+[2026-08-19 00:43:05] Total size of generation files: 16K
+
+================================================================================
+GENERATION COMPLETE ✅
+================================================================================
+[2026-08-19 00:43:05] Timestamp: Wed Aug 19 00:43:05 PDT 2026
+[2026-08-19 00:43:05] All results in: data/mgsm_symbolic/raw_pilot_outputs
+[2026-08-19 00:43:05] Log file: backfill_generation.log
+[2026-08-19 00:43:05] 
+[2026-08-19 00:43:05] Next steps:
+[2026-08-19 00:43:05]   1. Commit generation files to GitHub
+[2026-08-19 00:43:05]   2. Run inspection pass separately (with Claude API) when ready
+[2026-08-19 00:43:05]   3. Merge backfill results with original 7-language results in analysis
+[2026-08-19 00:43:05] 

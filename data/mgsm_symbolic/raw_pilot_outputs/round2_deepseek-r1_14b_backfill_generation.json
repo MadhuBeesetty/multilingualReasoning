@@ -1,0 +1,165 @@
+{
+  "summary": "Blind generation run (Ollama, local/offline): model=deepseek-r1:14b, base_url=http://localhost:11434/v1, problems_file=data/mgsm_symbolic/pilot_round2_diverse_newlangs_problems.json, require_format_tags=False",
+  "provider": "ollama",
+  "model": "deepseek-r1:14b",
+  "base_url": "http://localhost:11434/v1",
+  "require_format_tags": false,
+  "result": [
+    {
+      "language": "it",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 140,
+            "raw_output": "\n\nCalcoliamo passo dopo passo quanto guadagna Qasim in una settimana.\n\n### DATI:\n- **Complessi di appartamenti:**\n  - 4 complessi con 100 appartamenti ciascuno.\n  - ultimo complesso: 30% più grande rispetto alla somma dei primi quattro.\n  \n- **Situazione questa settimana:**\n  - 5 appartamenti in ognuno dei primi 4 complessi sono vacanti e non richiedono servizio.\n  \n- **Servizio di raccolta:**\n  - Raccolta effettuata 2 volte a settimana da ogni appartamento.\n  - Pagamento di €0,3 per ogni raccolta.\n  \n- **Premio extra:**\n  - 10% in suggerimenti.\n\n### Passaggi:\n1. **Calcolo numero degli appartamenti:**\n   - Complessi 1-4: 4 × 100 = **400 appartamenti**.\n   - Ultimo complesso: 30% più grande di 400 → 400 × 1,3 = **520 appartamenti**.\n\n2. **Calcolo appartamenti servibili questa settimana:**\n   - Appartamenti vacanti nei primi 4 complessi: 4 × 5 = **20 appartamenti**.\n   - Totale appartamenti servibili: (400 - 20) + 520 = **900 appartamenti**.\n\n3. **Calcolo guadagno da raccolta spazzatura:**\n   - Raccolte totali: 900 × 2 volte = **1800 raccolte**.\n   - Guadagno per raccolte: 1800 × €0,3 = **€540**.\n\n4. **Calcolo guadagno extra (10% suggerimenti):**\n   - Premio: 10% di €540 = €54.\n   - **Guadagno totale:** €540 + €54 = **€594**.\n\n### Risposta finale:\nQasim guadagna \\(\\boxed{594}\\) euro in una settimana."
+          },
+          {
+            "idx": 141,
+            "raw_output": "\n\nHiroshi guadagna ¥638 in una settimana. \n\nCalcolo passo-passante:\n\n1. **Primi cinque complessi**:\n   - Ciascuno ha 100 appartamenti.\n   - 8 appartamenti vuoti per complesso: 92 appartamenti serviti.\n   - Pagata per ogni visita: 92 * 0,25 = ¥23\n   - 2 visite a settimana: 2 * 23 = ¥46 per complesso.\n   - Totale per 5 complessi: 5 * 46 = ¥230\n\n2. **Sesto complexo**:\n   - 700 appartamenti (40% più grande di 500).\n   - Pagata per ogni visita: 700 * 0,25 = ¥175\n   - 2 visite a settimana: 2 * 175 = ¥350\n\n3. **Guadagno base**: 230 + 350 = ¥580\n\n4. **Rimborso per suggerimenti (10%)**: 580 * 0,10 = ¥58\n\n5. **Guadagno totale**: 580 + 58 = ¥638\n\nRisposta finale: ₣638"
+          },
+          {
+            "idx": 220,
+            "raw_output": "\n\n**Soluzione:**\n\nAnalizziamo passo dopo passo le scelte di Diego:\n\n1. **Mercoledì:** Sceglie **67** ananas.\n\n2. **Giovedì:** Sceglie **176** ananas.\n\n3. **Venerdì:** sceglie Quintuple (5 volte) il numero di ananas che ha scelto mercoledì:\n   \\[\n   5 \\times 67 = 335 \\text{ ananas}\n   \\]\n\n4. **Sabato:** Sceglie la metà della quantità di ananas scelte negli ultimi 3 giorni (giovedì + venerdì) combinati:\n   \\[\n   \\frac{176 + 335}{2} = \\frac{511}{2} = 255,5 \\text{ ananas}\n   \\]\n   \n   *Nota:* Poiché non è possibile avere una parte di arancia, arrotondiamo a **256** ananas per il calcolo finale.\n\n5. **Totalizzare le scelte:**\n   - Giovedì: 176\n   - Venerdì: 335\n   - Sabato: 256\n\n   Somma totale:\n   \\[\n   176 + 335 + 256 = 767 \\text{ ananas}\n   \\]\n\n6. **Domenica:** Diego venderà tutte le arance in scatole di 17 ananas ciascuna:\n   \\[\n   \\frac{767}{17} \\approx 45,12\n   \\]\n   \n   Poiché non è possibile avere una scatola parziale, dovrà utilizzare **46** scatole.\n\n7. **Guadagno totale:**\n   \\[\n   46 \\text{ scatole} \\times \\$12/\\text{scatola} = \\$552\n   \\]\n\n**Risposta finale:** Diego guadagnerà $\\boxed{552}$ dollari."
+          },
+          {
+            "idx": 221,
+            "raw_output": "\n\nDeshawn guadagnerà $\\boxed{1036}$ dollari."
+          },
+          {
+            "idx": 300,
+            "raw_output": "\n\nLa media percentuale della lunghezza coperta delle rai per ogni balena è del 32.5%.\n\n**Passaggi:**\n1. **Balena 1:**  \n   - Lunghezza: 32 piedi = 384 pollici.  \n   - Numero di rai inizialmente: 16, ma i rai nuotati via sono metà: 8 rai restanti.  \n   - Lunghezza totale delle rai: 8 × 12\" = 96\".  \n   - Percentuale coperta: (96 / 384) × 100% = 25%.\n\n2. **Balena 2:**  \n   - Lunghezza: 10 piedi = 120 pollici.  \n   - Numero di rai: 6.  \n   - Lunghezza totale delle rai: 6 × 8\" = 48\".  \n   - Percentuale coperta: (48 / 120) × 100% = 40%.\n\n3. **Media percentuale:**  \n   Media tra 25% e 40% è (25 + 40)/2 = 32.5%.\n\n**Risposta finale:** \\boxed{32.5\\%}"
+          },
+          {
+            "idx": 301,
+            "raw_output": "\n\nWe are given information about two whales observed by the user. We need to calculate the average coverage percentage for these whales after considering their respective remora lengths.\n\n1. **First Whale (Whale A)**:\n   - Length: 30 feet = 360 inches\n   - Number of remoras: 18\n   - Length per remora: 15 inches\n   - Total length covered by remoras: \\(18 \\times 15 = 270\\) inches\n   - Coverage percentage: \\(\\frac{270}{360} \\times 100 = 75\\%\\)\n\n2. **Second Whale (Whale B)**:\n   - Length: 10 feet = 120 inches\n   - Number of remoras: 6\n   - Length per remora: 8 inches\n   - Total length covered by remoras: \\(6 \\times 8 = 48\\) inches\n   - Coverage percentage: \\(\\frac{48}{120} \\times 100 = 40\\%\\)\n\n3. **Average Calculation**:\n   - We consider the coverage percentages of both whales when they were first observed.\n   - Average coverage percentage: \\(\\frac{75 + 40}{2} = \\frac{115}{2} = 57.5\\%\\)\n\nThus, the average coverage percentage for both whales is:\n\n\\[\n\\boxed{57.5\\%}\n\\]"
+          },
+          {
+            "idx": 490,
+            "raw_output": "\n\nNella classe di 100 studenti:\n\n1. **Giocatori di calcio:** 46% di 100 = 46studenti.\n2. **Rimangono:** 100 - 46 = 54 studenti.\n3. **Della rimanente classe:**\n   - 50% dei rimanenti = membri del Club Robotica o ballerini = 0,5×54=27studenti.\n4. **Partecipanti ai gruppi:**\n   - Giocatori di calcio presenti: La metà di 46 = 23studenti (gli altri sono assenti).\n   - Membri del Club Robotica o ballerini: 27studenti.\n5. **Cheerleader:** 3 per ogni gruppo ⇒ 3gruppi×3=9 cheerleaders.\n\n**Totali che partono:**\n46 giocatori di calcio sono diventati 23 presenti + 27 del club robotica/ballerini + 9 cheerleaders = **59studenti.**\n\n\\boxed{59}"
+          },
+          {
+            "idx": 491,
+            "raw_output": "\n\nPer risolvere il problema, seguiamo questi passaggi:\n\n1. **Calcolare il numero dei giocatori di calcio:**\n   - La classe ha un totale di 150 studenti.\n   - Il 40% sono giocatori di calcio.\n   \n   \\[\n   Giocatori\\ di\\ calcio = 150 \\times 0.40 = 60\n   \\]\n\n2. **Determinare quante persone rimangono dopo gli assenti:**\n   - La metà dei giocatori è assente.\n\n   \\[\n   Assenti = \\frac{60}{2} = 30\n   \\]\n   \n   Quindi, i giocatori di calcio che partiranno sono:\n   \n   \\[\n   Giocatori\\ partenti = 60 - 30 = 30\n   \\]\n\n3. **Calcolare il numero dei ballerini e dei membri del coro:**\n   - Della classe rimanente (150 - 60 = 90 studenti), il 30% sono ballerini o membri del coro.\n   \n   \\[\n   Ballerini\\ e\\ coristi = 90 \\times 0.30 = 27\n   \\]\n\n4. **Calcolare il numero dei cheerleader:**\n   - Ci sono 3 cheerleader per ogni gruppo (calcio, ballo/coro).\n   \n   \\[\n   Cheerleader\\ totali = 3\\ gruppi \\times 3\\ = 9\n   \\]\n\n5. **Sommare tutti i partecipanti alla gara:**\n   \n   \\[\n   Totale\\ studenti\\ partenti = Giocatori\\ partenti + Ballerini\\ e\\ coristi + Cheerleader\\\\\n   = 30 + 27 + 9 = 66\n   \\]\n\n**Risposta finale:**\n\n\\boxed{66}"
+          }
+        ]
+      }
+    },
+    {
+      "language": "fr",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 140,
+            "raw_output": "\n\nStep-by-step explanation:\n\n1. 计算第五个 apartment complex 的单元数：\n   - 前四个各100个，总计400。\n   - 第五个比前四者大30%，即400×1.3=520个。\n\n2. 计算Qasim每处的垃圾收集收入：\n   - 前四个公寓：每个有95个单元被服务（因为5空置），每周去两次。每次收入是95×0.3=28.5€，两次则为57€。\n   - 第五个公寓：无空置，即520单元。同样每周去两次，每次收入520×0.3=156€，两次总为312€。\n\n3. 总垃圾收集费：\n   - 前四个：4×57=228€\n   - 第五个：312€\n   - 总计：228+312=540€\n\n4. 加上小费，总收入是基本工资的10%：即540×0.1=54€。\n\n5. 总额：540+54=594€.\n\n**Réponse finale :**\n\nQasim gagne **₣ 594** en une semaine."
+          },
+          {
+            "idx": 141,
+            "raw_output": "\n\nHiroshi gagne ¥  \\boxed{638} en une semaine."
+          },
+          {
+            "idx": 220,
+            "raw_output": "\n\nDiego vendra 51 boîtes d'ananas, chacune à 12 $, ce qui lui rapportera un revenu total de **612 $**.\n\n**Réponse finale :**\n$\\boxed{612}$"
+          },
+          {
+            "idx": 221,
+            "raw_output": "\n\nDeshawn vendra 74 boîtes de poires, chacune contenant 15 poires. Il vendra chaque boîte pour 14 $, donc son total sera 74 × 14 = **1 036 ** dollars.\n\nIl gagnera \\boxed{1036} $."
+          },
+          {
+            "idx": 300,
+            "raw_output": "\n\nEn analysant les données pour chaque baleine :\n\n- Baleine de 32 pieds : la longueur totale couverte par les remoras est le double du corps, donc 50%.\n- Baleine de 10 pieds : la longueur totale couverte par les remoras est un tiers du corps, donc 40%.\n\nPour obtenir la moyenne des pourcentages :\n(50 + 40) / 2 = 45%\n\n**Réponse finale :**\n\nEn moyenne, $\\boxed{45\\%}$ de la longueur du corps de chaque baleine est couvert par les remoras."
+          },
+          {
+            "idx": 301,
+            "raw_output": "\n\nAli a observé deux baleines. La première avait 30 pieds et était attachée à 18 remoras de 15 pouces chacune, couvrant 75 % de sa longueur. La seconde avait 10 pieds et 6 remoras de 8 pouces, couvrant 40 %. En moyenne, la couverture est de 57,5 %.\n\nLa réponse finale :\n\n\\boxed{57,5}"
+          },
+          {
+            "idx": 490,
+            "raw_output": "\n\nTotal number of students leaving early is the sum of football players present (23) and non-football students in robotics or dance (27). So, 23 + 27 = 50 students.\n\n**Answer:** \\boxed{50}"
+          },
+          {
+            "idx": 491,
+            "raw_output": "\n\n**Step-by-Step Explanation:**\n\n1. **Total Students:** Mrs. Johnson has 150 students.\n\n2. **Football Players:** \n   - 40% of 150 = (40/100) * 150 = 60 students.\n\n3. **Remaining Students After Football Players:** \n   - 150 - 60 = 90 students.\n\n4. **Dancers or Chorale Members:**\n   - 30% of 90 = (30/100) * 90 = 27 students.\n\n5. **Sick Football Players:**\n   - Half of the football players are sick, so half cannot attend.\n   - Sick footballers = 60 / 2 = 30\n   - Thus, footballers attending = 60 - 30 = 30\n\n6. **Accompanying Pom-Pom Girls:**\n   - Each group will have 3 pom-pom girls.\n   - There are three groups: footballers, dancers, and pom-poms (assuming pom-poms are a student group).\n\n7. **Total Students Leaving Early:**\n   - Footballers attending:30\n   - Dancers/chorale:27\n   - Pom-pom girls (if considered a separate group):3\n   - Total = 30 + 27 + 3 = 60 students.\n\n**Answer:** 60 étudiants partent tôt au concours."
+          }
+        ]
+      }
+    },
+    {
+      "language": "ru",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 140,
+            "raw_output": "\n\nКасим зарабатывает **297** евро в неделю."
+          },
+          {
+            "idx": 141,
+            "raw_output": "\n\nДавайте разберёмся с этой задачей шаг за шагом.\n\n**Первый шаг: Понимание проблемы**\n\nХироши собирает мусор из 6 жилых комплексов. Первые 5 по 100 квартир каждое, а шестой — на 40% больше, чем суммарно первые пять.\n\n**Второй шаг: Расчёты**\n\n1. **Общее количество квартир в первых пяти комплексах**:\n   \\[\n   5 \\text{ комплексов} \\times 100 \\text{ квартир} = 500 \\text{ квартир}\n   \\]\n\n2. **Количество квартир в шестом комплексе**:\n   \\[\n   \\text{Шестой комплекс} = 500 \\text{ квартир} + (40\\% \\times 500) = 500 + 200 = 700 \\text{ квартир}\n   \\]\n\n**Третий шаг: Учет вакантных квартир**\n\n- С каждым из первых пяти комплексов — по 8 вакантных квартир:\n  \\[\n  5 \\times 8 = 40 \\text{ квартир}\n  \\]\n\n**Четвёртый шаг: Определение количества обслуживаемых квартир**\n\n1. **Мусорование**:\n   - Первыми пятью комплексами:\n     \\[\n     500 \\text{ квартир} - 40 \\text{ вакантных} = 460 \\text{ квартир}\n     \\]\n   - Шестым комплексом:\n     \\[\n     700 \\text{ квартир}\n     \\]\n\n2. **Всего обслуживаемых квартир**:\n   \\[\n   460 + 700 = 1160 \\text{ квартир}\n   \\]\n\n**Пятый шаг: Расчёт оплаты за сбор мусора**\n\n- Оплата составляет 0,25 единиц за каждую квартиру:\n  \\[\n  1160 \\times 0.25 = 290 \\text{ единиц}\n  \\]\n\n**Шестой шаг: Учет дополнительного дохода из советов**\n\n- Дополнительные 10% к основному доходу:\n  \\[\n  290 \\times 1.1 (10\\%) = 319 \\text{ единиц}\n  \\]\n\n**Седьмой шаг: Итоговый результат**\n\nХироши зарабатывает за неделю **319**.\n\n\\boxed{319}"
+          },
+          {
+            "idx": 220,
+            "raw_output": "\n\nДиего собрал:\n- Среда: 67 аниліса\n- Четверг: 176 аниліса\n- П'ятниця: 5 × 67 = 335 аниліса\n- Субота: (67 + 176 + 335) ÷ 2 = 289 аниліса\n\nВсього анилісів: 67 + 176 + 335 + 289 = 867.\n\nКількість коробок: 867 ÷ 17 = 51.\n\nЗаробки: 51 × $12 = $612.\n\n\\boxed{612}"
+          },
+          {
+            "idx": 221,
+            "raw_output": "\n\nDeshawn collects pears over four days:\n\n- Saturday: 142 pears\n- Sunday: 172 pears\n- Monday: triple the amount from Saturday → \\(3 \\times 142 = 426\\) pears\n- Tuesday: half of the total collected in the last three days → \\(\\frac{142 + 172 + 426}{2} = 370\\) pears\n\nTotal pears collected: \\(142 + 172 + 426 + 370 = 1110\\)\n\nBoxes for sale: Each box contains 15 pears → \\(\\frac{1110}{15} = 74\\) boxes\n\nEarnings per box: \\$14 → \\(74 \\times 14 = \\$1036\\)\n\nDeshawn will earn \\(\\boxed{1036}\\) dollars."
+          },
+          {
+            "idx": 300,
+            "raw_output": "\n\nЧтобы определить средний процент длины тела китов, который покрывают риморасы, выполните следующие шаги:\n\n### Для первого кита:\n- **Длина:** 32 фута = 384 дюйма\n- **Количество риморасов:** 16\n- **Длина каждого римораса:** 12 дюймов\n- **Общая длина всех риморасов на первом ките:** \\( 16 \\times 12 = 192 \\) дюйма\n\nПоловина риморасов уплыла, осталось:\n- **Оставшиеся риморасы:** \\( \\frac{16}{2} = 8 \\)\n- **Общая оставшаяся длина риморасов на первом ките:** \\( 8 \\times 12 = 96 \\) дюйма\n\n### Для второго кита:\n- **Длина:** 10 футов = 120 дюймов\n- **Количество риморасов:** 6\n- **Длина каждого римораса:** 8 дюймов\n- **Общая длина всех риморасов на втором ките:** \\( 6 \\times 8 = 48 \\) дюйма\n\n### Общая оценка:\n- **Общая длина тела обоих китов:** \\( 32 + 10 = 42 \\) фута = 504 дюйма\n- **Общая длина всех риморасов на обоих китах:** \\( 96 + 48 = 144 \\) дюйма\n\n### Средний процент покрытия:\n\\[\n\\text{Процент} = \\left( \\frac{\\text{Общая длина риморасов}}{\\text{Общая длина китов}} \\right) \\times 100 = \\left( \\frac{144}{504} \\right) \\times 100 \\approx 28.57\\%\n\\]\n\n**Ответ: 28.57%**\n\n\\boxed{28.57\\%}"
+          },
+          {
+            "idx": 301,
+            "raw_output": "\n\nВ среднем, 45% длины тела каждого кита покрывается Remoras.\n\n\\boxed{45}"
+          },
+          {
+            "idx": 490,
+            "raw_output": "\n\nСначала определим количество футболистов: 46% от 100 учеников равно 46 человек.\n\nОставшиеся ученики: 100 - 46 = 54 человека. Из них 50% относится к клубу робототехники или танцорам, что составляет 27 человек.\n\nОбщее количество уезжающих:\n\n46 (футболисты) + 27 (робототехника и танцы) = 73 человека.\n\nКаждой из трёх групп сопровождают 3 чирлидера: 3 × 3 = 9 чирлидеров.\n\nВсего уезжают: 73 + 9 = 82 человека.\n\n\\boxed{82}"
+          },
+          {
+            "idx": 491,
+            "raw_output": "\n\n66"
+          }
+        ]
+      }
+    },
+    {
+      "language": "sw",
+      "generation": {
+        "solutions": [
+          {
+            "idx": 140,
+            "raw_output": "\n\nThe detailed calculation is as follows:\n\n- Four places × Ksh 100 = Ksh 400\n- One place × 30% more than Ksh 100 = Ksh 130\n- Weekly collections = Ksh 400 + Ksh 130 = Ksh 530\n- Over two weeks, total collections = Ksh 530 × 2 = Ksh 1,060\n\nExpenses:\n- Each trip costs Ksh 0.3; if he visits each of the five places twice a week, that's 10 trips.\n- Expenses for two weeks = 10 × Ksh 0.3 = Ksh 3\n\nAdditional Income:\n- He gets an extra 10% on his sales (vidokezo).\n- 10% of Ksh 1,060 = Ksh 106\n- Total earnings before deductions and markup: Ksh 1,060 + Ksh 106 = Ksh 1,166\n\nSubtract expenses:\nKsh 1,166 - Ksh 3 = Ksh 1,163\n\n**Answer:**  \nHe will have a total of **\\boxed{1157}** shillings.  \n\n(NOTE: The original thought process had conflicting interpretations leading to two possible results, but after careful consideration, the correct amount is 1,057. Adjustments were made for clarity.)"
+          },
+          {
+            "idx": 141,
+            "raw_output": "\n\nSure, let's solve the problem step by step:\n\n**Problem Explanation (Translated):**\nHiroshi washes windows for 6 different customers:\n- The first 5 customers have 100 windows each.\n- The last customer has 40% more than the previous ones (for 5 of them).\n\nHe works twice a week and charges ¥0.25 per window, but he receives an additional 10% from discussions.\n\n**Solution:**\n\n1. **Determine the total number of windows Hiroshi washes per week:**\n   - First 5 customers: \\(5 \\times 100 = 500\\) windows\n   - Last customer: \\( (100 + 40\\% \\text{ of } 100) = 140 \\) windows\n\n2. **Total windows per week:**\n   \\[\n   500 + 140 = 640 \\text{ windows}\n   \\]\n\n3. **Calculate Hiroshi's earnings before the additional 10%:**\n   - He works twice a week.\n   - Earnings per window: ¥0.25\n   - Total earnings:\n     \\[\n     (640 \\times ¥0.25) \\times 2 = ¥320 \\times 2 = ¥640\n     \\]\n\n4. **Add the 10% from discussions:**\n   \\[\n   ¥640 + (¥640 \\times 10\\%) = ¥640 + ¥64 = ¥704\n   \\]\n\n**Final Answer:**\nHiroshi earns \\(\\boxed{¥704}\\) per week."
+          },
+          {
+            "idx": 220,
+            "raw_output": "\n\nLet's solve the problem step by step:\n\n1. **Collection of Bananas:**\n   - On **Ijumaa (Wednesday)**, Diego bought bananas:\n     \\[\n     17 \\text{ boxes} \\times 12 \\text{ bananas/box} = 204 \\text{ bananas}\n     \\]\n     \n2. **Bananas Collected Before Sunday:**\n   - From the previous days (**Jumatano (Friday)** and **Alhamisi (Thursday)**):\n     \\[\n     67 + 176 = 243 \\text{ bananas}\n     \\]\n   - Including the bananas bought on Wednesday:\n     \\[\n     243 + 204 = 447 \\text{ bananas}\n     \\]\n\n3. **Bananas Eaten on Sunday:**\n   - Diego ate half of the collected bananas:\n     \\[\n     \\frac{447}{2} = 223.5\n     \\]\n   - Since we can't have half a banana, it's reasonable to assume he ate 224 bananas and has 223 left.\n\n**Final Answer:**\n\\[\n\\boxed{223}\n\\]\n\nDiego ni ndani za mananasi **223**."
+          },
+          {
+            "idx": 221,
+            "raw_output": "\n\nMfano wa mafunzo:\n\nDeshawn unachobada pears katika wanamo, na kuanza yeye unahitaji kukombusha pears 142 Jumamosi. Kisha, Deshawn unahitaji ubadilisha pears 172 Jumapili. Kala tu, Jumatatu siku,Deshaun anaguvua mara tatu idadi ya pears alizofanya, na katika siku anatetehusu ubachulikiana kia pears.\n\nHii inaweza kuwa mafunzo yoyote yenye maoni yao. Lakinayefikirisha kuhusu ikiwanja hivyo:\n\n1. **Siku ya Jumamosi (Bado):**\n   - Deshawn utachukua pears 142.\n   - Kila pear unachasua kwongwa $15.\n   - Ukubwa na kuchukua 142 pears: 142 * $15 = $**2,130**\n\n2. **Siku ya Jumapili (Mwisho):**\n   - Deshawn utachukua pears 172.\n   - Kila pear unachasua kwongwa $15.\n   - Ukubwa na kuchukua 172 pears: 172 * $15 = $**2,580**\n\n3. **Siku ya Jumatatu (Mwisho ulimwengu wamke):**\n   - Deshawn utasema mara tatu idadi ya pears alizofanya katika siku zote.\n   - Pears alizecha: 142 - (106) = 36\n   - Kupitia siku wa Jumatatu, Deshawn umetoa pears 3/4 ya ucheshi wa siku wa Jumamosi.\n   - Idadi ya pears yanatokana: (3/4) * 142 = **106.5** peharau, lakini hivyo ni mafunzo kama halisi inaweza kuonekana kwa vyanzo yao.\n   - Kupitia siku wa Jumatatu, Deshawn utasema mara nne ya pears za siku wa Jumamosi.\n\n4. **Siku ya Jumanne (Mwisho ulimwengu wamke):**\n   - Deshawn unachulikiana kailivyo ya pears za siku wa Jumapili.\n   - Pears zote za siku wa Jumapili: 172\n   - Deshawn umetoa (nusu) ya pears zaitibaye ni 86 peharau.\n   - Kupitia siku wa Jumanne, Deshawn utasema mara mbalimbali ya pears za siku wa Jumapili.\n\n5. **Siku ya Jumatano (Nishatilize):**\n   - Deshawn unatoa pears za kila sanduku ya 15.\n   - Kupitia siku huu, Deshawn utasema kila sanduku ya 15 ye matokeo ye yake.\n\nKwa hivyo, suma ya mbadiliko hata siku ya Jumatano:\n\n- **Ucheshi:**\n  - Siku wa Jumamosi: $2,130\n  - Siku wa Jumapili: $2,580\n  - Total: **$4,710**\n\n- **Matokeo:**\n  - Pears ya siku wa Jumatatuu: 106 peharau * $14 = $**1,484**\n  - Pears ya siku wa Jumanne na Jumatano: 86 peharau * $14 = $**1,204**\n  - Total matokeo: **$2,688**\n\nUmbadiliko:\n$$\nMumbadiliko = Matokeo - Ucheshi = $2,688 - $4,710 = \\boxed{\\text{\\$}2,022 Loss}\n$$\n\nDeshawn itaendeleza **\\$2,022** (Umbadiliko Wastani)."
+          },
+          {
+            "idx": 300,
+            "raw_output": "\n\nYaro aliona nyangumi wa futi 32 na remoras 16 zilizowekwa ndani yake. Kila anu inchi 12 ya urefu wa mwili zinaelewa, unaonyesha kwamba:\n\n- Urefu wa mwili ya nyangumi = 32 × 12 = 384 cm³\n- Urefu wa mwili ya remoras = 16 × 12 = 192 cm³\n\nHivyo, jinsi la kati:\nUrefu Totali = 384 cm³ + 192 cm³ = **576 cm³**\n\nBadalisha, kweli, 1/2 ya remoras iliondoka. Hivyo na sasa una 8 remoras (16 ÷ 2) ikiwa 8 wa wakati wengi halishudumzo.\n\nKwa uchumi nyanguni nyangumi mwingine wa futi 10 na remoras 6, kila inchi 8 zilizowekwa:\n\n- Urefu wa mwili ya nyangumi = 10 × 8 = 80 cm³\n- Urefu wa mwili ya remoras = 6 × 8 = 48 cm³\n\nHivyo, jinsi la kati:\nUrefu Totali = 80 cm³ + 48 cm³ = **128 cm³**\n\nUwakilishi, uwezo wa nyanguni halisi kuwa urefu wa mwili ya kila nyangumi hufunikwa na remoras ikiwa usafisita:\n\n- Urefu kwa nguvu ya nyanguni: 576 cm³ (badala)\n- Urefu kwa nguvu nyanguni mwingine: 128 cm³\n- Jinsi la kati totali: **576 cm³ + 128 cm³ = 704 cm³**\n\nLakini, maanisha kwa leteo ni asilimia ngapi ya urefu? Urefu wa mwili unaonyesha kwamba:\n\n- 576 cm³ = 0.576 liters\n- 128 cm³ = 0.128 liters\n\nUrefu Totali = **0.576 L + 0.128 L = 0.704 liters**\n\nKwa done, yara alinozaji asilimia ngapi ya urefu wa mwili ya kila nyangumi halisi kuwasihudumzo.\n\n\\boxed{0.704 \\text{ liter}}"
+          },
+          {
+            "idx": 301,
+            "raw_output": "\n\nKweli, tunajenga jinsi hivyo:\n\n**Group 1:**\n- **Futi:** 30 nyangumi * 15 zilizowekwa inchi = 450 asilimia\n- **Remoras:** 18 remoras * 15 zilizowekwa inchi = 270 asilimia\n\n**Group 2:**\n- **Futi:** 10 nyangumi * 8 zilizowekwa inchi = 80 asilimia\n- **Remoras:** 6 remoras * 8 zilizowekwa inchi = 48 asilimia\n\n**Umaumzo wa 1/3 ya remoras yantiliana:**\n- 1/3 ya 18 remoras = 6 remoras\n- Zaidi kutoka Group 1: \n  - Futi maneno: 30 * 15 = 450 kg\n  - Remoras ilima: (18 - 6) * 15 = 12 * 15 = 180 kg\n\n**Umaumzo wa Group 2:**\n- Futi maneno: 10 * 8 = 80 kg\n- Remoras zote: 6 * 8 = 48 kg\n\n**Sum total:**\n- Maneno fuyaga ya futi: 450 + 80 = 530 kg\n- Maneno fuyaga ya remora: 180 + 48 = 228 kg\n- **Totalis kutoa asilimia ngapi:** 530 + 228 = **758 kg**\n\n\\boxed{758}"
+          },
+          {
+            "idx": 490,
+            "raw_output": "\n\n**Problem Analysis:**\n\nWe need to determine how many students are absent from Johnson’s Biology class today.\n\n**Given Data:**\n- Total students in class: 100\n- Percentage of bird enthusiasts (wachezaji wa miguu): 46%\n- During absence:\n  - 50% of the students were absent.\n  - Half of these absentees were either sick or part of the bird club.\n  - 3 cheerleaders accompanied each missing student.\n\n**Solution:**\n\n1. **Calculate the number of bird enthusiasts:**\n   \n   \\[\n   46\\% \\text{ of } 100 = 0.46 \\times 100 = 46 \\text{ students}\n   \\]\n\n2. **Determine the number of absent students during the recent absence:**\n   \n   \\[\n   50\\% \\text{ of } 100 = 0.50 \\times 100 = 50 \\text{ students}\n   \\]\n   \n3. **Find out how many of these absentees were sick or part of the bird club:**\n   \n   \\[\n   \\frac{50}{2} = 25 \\text{ students}\n   \\]\n   \n4. **Determine the number of cheerleaders involved:**\n   \n   \\[\n   3 \\text{ cheerleaders/student} \\times 25 \\text{ students} = 75 \\text{ cheerleaders}\n   \\]\n\n**Total Absent Students Today:**\n\n\\[\n\\text{Sick Students} + \\text{Cheerleaders} = 2 + 75 = 77\n\\]\n\nTherefore, the total number of students absent from class today is:\n\n\\[\n\\boxed{77}\n\\]"
+          },
+          {
+            "idx": 491,
+            "raw_output": "\n\nTutafuta wanafunzi wanaondoka mapema kwenye mashindano, tunaadifunika kureeltoka katika mbele:\n\n1. **Wanafunzi wa bi Johnson**: 150\n2. **Wachezaji**:\n   - ya mpira wa miguu: 40% ya 150 = 60\n3. **Kati ya darasa lililobaki**:\n   - 30% ya wanafunzi: 30% ya 150 = 45 ( lakini nusu ya wachezaji hawamgonjwa, na vikundi haoni gatihitaji kuondoka)\n   \n4. **Vikundi hivi**:\n   - 3 wa vikundi hivyo\n\n5. **Cheerleaders**: 3 wataandamana.\n\n**Mfano ya hesa yamekubwa sana!**\n\n- Nusu ya wachezaji: 60 / 2 = 30\n- Wadanganyifu: 18 (nusu wa 36 kusafiri)\n- Makazi (bado ni wanafunzi): 15 + ?\n\nMwisho, tunawapa **63** wanafunzi wanaondoka mapema.\n\n\\boxed{27}"
+          }
+        ]
+      }
+    }
+  ]
+}

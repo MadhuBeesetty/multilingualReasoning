@@ -1,0 +1,90 @@
+{
+  "it": [
+    {
+      "idx": 271,
+      "question": "Daphne e Olivia sono sorelle del Cairo che adorano raccogliere le firme dalle star del cinema.Durante le loro vacanze di primavera da scuola, le sorelle trascorrono ogni pomeriggio a raccogliere firme.Dopo 3 settimane, Daphne e Olivia confrontano i loro libri autografi, contando il numero di firme che ogni sorella ha raccolto.Daphne ha 17 firme nel suo libro e Olivia ha 31. Le sorelle hanno altre 3 settimane di pause di primavera e decidono di voler raggiungere 120 firme tra loro entro la fine della pausa.Tuttavia, durante le restanti 3 settimane, Daphne è in grado di raccogliere firme solo nei fine settimana, riducendo la sua collezione settimanale di 5 a settimana, mentre Olivia decide di aumentare la sua collezione settimanale.Di quante firme dovranno raccogliere Olivia a settimana per assicurarsi che raggiungano il loro obiettivo?",
+      "answer_number": "19"
+    },
+    {
+      "idx": 272,
+      "question": "Ava e Quinn sono sorelle di Helsinki che adorano raccogliere firme dagli autori.Durante le loro vacanze di primavera da scuola, le sorelle trascorrono ogni pomeriggio a raccogliere firme.Dopo 3 settimane, Ava e Quinn confrontano i loro libri di autografi, contando il numero di firme che ogni sorella ha raccolto.Ava ha 30 firme nel suo libro e Quinn ne ha 37. Le sorelle hanno altre 2 settimane di primavera e decidono di voler raggiungere 135 firme tra loro entro la fine della pausa.Tuttavia, durante le restanti 2 settimane, AVA è in grado di raccogliere firme solo nei fine settimana, riducendo la sua collezione settimanale di 5 a settimana, mentre Quinn decide di aumentare la sua collezione settimanale.Di quante firme dovranno raccogliere Quinn a settimana per assicurarsi che raggiungano il loro obiettivo?",
+      "answer_number": "29"
+    },
+    {
+      "idx": 451,
+      "question": "Benjamin sta facendo scoppiare popcorn per uno spuntino.Mentre la padella dei kernel si riscalda, i kernel iniziano a spuntare più velocemente.80 pop nei primi 26 secondi di cucina, quindi 2 volte quella quantità nei successivi 26 secondi.I kernel aumentano a 3 volte il tasso di scoppio iniziale nei prossimi 26 secondi.Negli ultimi 26 secondi, lo scoppio rallenta fino alla metà della velocità con gli ultimi 26 secondi.Dopo che Benjamin toglie la padella dal caldo, un quarto del numero di kernel che è saltato negli ultimi 26 secondi di cucina è scoppiato anche dal caldo residuo.Benjamin dà 1/7 dei popcorn fatti a suo fratello Yusuf.Quanti altri pezzi di popcorn devono mangiare Benjamin di suo fratello?",
+      "answer_number": "450"
+    },
+    {
+      "idx": 458,
+      "question": "Deshawn sta scoppiando popcorn per uno spuntino.Mentre la padella dei kernel si riscalda, i kernel iniziano a spuntare più velocemente.100 pop nei primi 30 secondi di cottura, quindi 2 volte quella quantità nei successivi 30 secondi.I kernel aumentano a 4 volte il tasso di scoppio iniziale nei prossimi 30 secondi.Negli ultimi 30 secondi, lo scoppio rallenta fino alla metà della velocità con gli ultimi 30 secondi.Dopo che Deshawn toglie la padella dal caldo, un quarto del numero di kernel che è saltato negli ultimi 30 secondi di cucina è scoppiato dal caldo residuo.Deshawn dà 2/5 dei popcorn fatti a suo fratello Ibrahim.Quanti altri pezzi di popcorn devono mangiare Deshawn di suo fratello?",
+      "answer_number": "190"
+    }
+  ],
+  "fr": [
+    {
+      "idx": 271,
+      "question": "Daphne et Olivia sont des sœurs du Caire qui aiment collecter des signatures de stars de cinéma.Pendant leurs vacances de printemps de l'école, les sœurs passent chaque après-midi à collecter des signatures.Après 3 semaines, Daphne et Olivia comparent leurs livres d'autographes, comptant le nombre de signatures que chaque sœur a collectées.Daphne a 17 signatures dans son livre, et Olivia en a 31. Les sœurs ont 3 semaines de relâche supplémentaires, et ils décident qu'ils veulent atteindre 120 signatures entre eux d'ici la fin de la pause.Cependant, au cours des 3 semaines restantes, Daphne n'est en mesure de collecter des signatures le week-end, réduisant sa collection hebdomadaire de 5 par semaine, tandis qu'Olivia décide d'augmenter sa collection hebdomadaire.Combien de signatures Olivia aura-t-elle besoin pour collecter par semaine pour s'assurer qu'elles atteignent leur objectif?",
+      "answer_number": "19"
+    },
+    {
+      "idx": 272,
+      "question": "Ava et Quinn sont des sœurs d'Helsinki qui aiment collecter des signatures auprès des auteurs.Pendant leurs vacances de printemps de l'école, les sœurs passent chaque après-midi à collecter des signatures.Après 3 semaines, Ava et Quinn comparent leurs livres d'autographes, comptant le nombre de signatures que chaque sœur a collectées.Ava a 30 signatures dans son livre, et Quinn en a 37. Les sœurs ont 2 semaines de vacances de plus, et ils décident qu'ils veulent atteindre 135 signatures entre eux d'ici la fin de la pause.Cependant, au cours des 2 semaines restantes, Ava n'est en mesure de collecter des signatures le week-end, réduisant sa collection hebdomadaire de 5 par semaine, tandis que Quinn décide d'augmenter sa collection hebdomadaire.De combien de signatures Quinn devra-t-elle collecter par semaine pour s'assurer qu'elles atteignent leur objectif?",
+      "answer_number": "29"
+    },
+    {
+      "idx": 451,
+      "question": "Benjamin fait sauter du pop-corn pour une collation.Alors que la casserole des grains se réchauffe, les grains commencent à éclater plus rapidement.80 éclatent dans les 26 premières secondes de cuisson, puis 2 fois ce montant dans les 26 secondes suivantes.Les grains augmentent à 3 fois le taux de popping initial dans les 26 secondes suivantes.Dans les 26 dernières secondes, le popping ralentit à la moitié du taux comme les 26 dernières secondes.Après que Benjamin ait retiré la casserole du feu, un quart du nombre de grains qui ont sauté dans les 26 dernières secondes de cuisson surgissent également de la chaleur résiduelle.Benjamin donne 1/7 du pop-corn fabriqué à son frère Yusuf.Combien de morceaux de pop-corn Benjamin doit-il manger que son frère?",
+      "answer_number": "450"
+    },
+    {
+      "idx": 458,
+      "question": "Deshawn fait sauter du pop-corn pour une collation.Alors que la casserole des grains se réchauffe, les grains commencent à éclater plus rapidement.100 éclatent dans les 30 premières secondes de cuisson, puis 2 fois ce montant dans les 30 prochaines secondes.Les grains augmentent à 4 fois le taux de popping initial dans les 30 prochaines secondes.Dans les 30 dernières secondes, la popping ralentit à la moitié du taux comme les 30 dernières secondes.Après que Deshawn ait retiré la casserole du feu, un quart du nombre de grains qui ont sauté dans les 30 dernières secondes de cuisson surgissent également de la chaleur résiduelle.Deshawn donne 2/5 du pop-corn fait à son frère Ibrahim.Combien de morceaux de pop-corn de Deshawn doit-il manger que son frère?",
+      "answer_number": "190"
+    }
+  ],
+  "ru": [
+    {
+      "idx": 271,
+      "question": "Дафна и Оливия - сестры из Каира, которые любят собирать подписи из кинозвезд.Во время их весенних каникул в школе сестры проводят каждый день, собирая подписи.Через 3 недели Дафна и Оливия сравнивают свои книги по автографам, подсчитывая количество подписей, которую собрала каждая сестра.У Дафны в ее книге 17 подписей, а у Оливии есть 31. Сестры имеют еще 3 недели весенних каникул, и они решают, что хотят достичь 120 подписей между ними к концу перерыва.Однако в течение оставшихся 3 недель Дафни может собирать подписи только по выходным, уменьшая свою еженедельную коллекцию на 5 в неделю, в то время как Оливия решает увеличить свою еженедельную коллекцию.Сколько подписей нужно собирать Оливии в неделю, чтобы убедиться, что они достигают своей цели?",
+      "answer_number": "19"
+    },
+    {
+      "idx": 272,
+      "question": "Ава и Куинн - сестры из Хельсинки, которые любят собирать подписи от авторов.Во время их весенних каникул в школе сестры проводят каждый день, собирая подписи.Через 3 недели Ava и Quinn сравнивают свои книги по автографам, рассчитывая количество подписей, которую собрала каждая сестра.У Авы есть 30 подписей в ее книге, а у Куинна 37. Сестры имеют еще 2 недели весенних каникул, и они решают, что хотят достичь 135 подписей между ними к концу перерыва.Однако в течение оставшихся 2 недель AVA может собирать подписи только по выходным, уменьшая свою еженедельную коллекцию на 5 в неделю, в то время как Куинн решает увеличить свою еженедельную коллекцию.Сколько подписей нужно собирать в неделю, чтобы убедиться, что они достигают своей цели?",
+      "answer_number": "29"
+    },
+    {
+      "idx": 451,
+      "question": "Бенджамин приносит попкорн для перекуса.Когда нагревается кастрюля ядра, ядра начинают быстрее.80 Поп на первые 26 секунд приготовления пищи, а затем в 2 раза больше, чем в следующие 26 секунд.Ядра увеличивается в 3 раза превышает начальную скорость всплеска в течение следующих 26 секунд.За последние 26 секунд всплеск замедляется до половины скорости, чем последние 26 секунд.После того, как Бенджамин снимает сковороду с жары, четверть количества ядер, которые появились в последних 26 секунд приготовления пищи, также выпадает из остаточного тепла.Бенджамин дает 1/7 изготовленного попкорна своему брату Юсуф.Сколько еще кусочков попкорна должен есть Бенджамину, чем его брату?",
+      "answer_number": "450"
+    },
+    {
+      "idx": 458,
+      "question": "Дешон приносит попкорн для перекуса.Когда нагревается кастрюля ядра, ядра начинают быстрее.100 POP за первые 30 секунд приготовления пищи, а затем в 2 раза больше, чем в следующие 30 секунд.Ядра увеличивается до 4 раза превышающей начальную скорость всплеска в течение следующих 30 секунд.За последние 30 секунд всплеск замедляется до половины скорости, чем последние 30 секунд.После того, как Дешон снимает сковороду с жары, четверть количества ядер, которые появились в последних 30 секунд приготовления пищи, также выпадает из остаточной жары.Дешон дает 2/5 изготовленного попкорна своему брату Ибрагиму.Сколько еще кусочков попкорна Дешон должен есть, чем его брату?",
+      "answer_number": "190"
+    }
+  ],
+  "sw": [
+    {
+      "idx": 271,
+      "question": "Daphne na Olivia ni dada kutoka Cairo ambao wanapenda kukusanya saini kutoka kwa nyota za sinema.Wakati wa mapumziko yao ya chemchemi kutoka shuleni, dada hutumia kila alasiri kukusanya saini.Baada ya wiki 3, Daphne na Olivia wanalinganisha vitabu vyao vya picha, kuhesabu idadi ya saini ambazo kila dada amekusanya.Daphne ana saini 17 katika kitabu chake, na Olivia ana 31. Dada wana wiki 3 zaidi za mapumziko ya chemchemi, na wanaamua wanataka kufikia saini 120 kati yao mwishoni mwa mapumziko.Walakini, wakati wa wiki 3 zilizobaki, Daphne ana uwezo wa kukusanya saini mwishoni mwa wiki, kupunguza mkusanyiko wake wa kila wiki na 5 kwa wiki, wakati Olivia anaamua kuongeza mkusanyiko wake wa wiki.Je! Olivia atahitaji kukusanya saini ngapi kwa wiki ili kuhakikisha kuwa wanafikia lengo lao?",
+      "answer_number": "19"
+    },
+    {
+      "idx": 272,
+      "question": "Ava na Quinn ni dada kutoka Helsinki ambao wanapenda kukusanya saini kutoka kwa waandishi.Wakati wa mapumziko yao ya chemchemi kutoka shuleni, dada hutumia kila alasiri kukusanya saini.Baada ya wiki 3, Ava na Quinn kulinganisha vitabu vyao vya picha, kuhesabu idadi ya saini ambazo kila dada amekusanya.Ava ana saini 30 katika kitabu chake, na Quinn ana 37. Dada wana wiki 2 zaidi za mapumziko ya chemchemi, na wanaamua wanataka kufikia saini 135 kati yao mwishoni mwa mapumziko.Walakini, wakati wa wiki 2 zilizobaki, AVA ina uwezo wa kukusanya saini mwishoni mwa wiki, kupunguza mkusanyiko wake wa kila wiki na 5 kwa wiki, wakati Quinn anaamua kuongeza mkusanyiko wake wa kila wiki.Je! Quinn atahitaji kukusanya kwa wiki ngapi ili kuhakikisha kuwa wanafikia lengo lao?",
+      "answer_number": "29"
+    },
+    {
+      "idx": 451,
+      "question": "Benjamin anaingia popcorn kwa vitafunio.Wakati sufuria ya kernels inapoongezeka, kernels zinaanza kuteleza haraka.80 pop katika sekunde 26 za kwanza za kupikia, kisha mara 2 kiasi hicho katika sekunde 26 zijazo.Kernels huongezeka hadi mara 3 kiwango cha kwanza cha popping katika sekunde 26 zijazo.Katika sekunde 26 za mwisho, popping hupungua hadi nusu ya kiwango kama sekunde 26 zilizopita.Baada ya Benjamin kuondoa sufuria kwenye joto, robo ya idadi ya kernels ambazo zilitoka katika sekunde 26 za mwisho za kupikia pia zinatoka kwenye joto la mabaki.Benjamin anatoa 1/7 ya popcorn iliyotengenezwa kwa kaka yake Yusuf.Je! Benjamin anapaswa kula vipande ngapi zaidi ya kaka yake?",
+      "answer_number": "450"
+    },
+    {
+      "idx": 458,
+      "question": "Deshawn ni popping popcorn kwa vitafunio.Wakati sufuria ya kernels inapoongezeka, kernels zinaanza kuteleza haraka.100 pop katika sekunde 30 za kwanza za kupikia, kisha mara 2 kiasi hicho katika sekunde 30 zijazo.Kernels huongezeka hadi mara 4 kiwango cha kwanza cha popping katika sekunde 30 zijazo.Katika sekunde 30 za mwisho, popping hupungua hadi nusu ya kiwango kama sekunde 30 zilizopita.Baada ya DeShawn kuondoa sufuria kwenye joto, robo ya idadi ya kernels ambazo zilitoka katika sekunde 30 za mwisho za kupikia pia zinatoka kutoka kwa joto la mabaki.Deshawn anatoa 2/5 ya popcorn iliyotengenezwa kwa kaka yake Ibrahim.Je! Deshawn anakula zaidi kuliko kaka yake?",
+      "answer_number": "190"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+
+================================================================================
+BACKFILL GENERATION - LAPTOP (M4 Pro)
+================================================================================
+[2026-08-18 21:21:27] Timestamp: Tue Aug 18 21:21:27 PDT 2026
+[2026-08-18 21:21:27] Models: phi3.5 neural-chat:7b mistral-nemo:12b deepseek-r1:14b
+[2026-08-18 21:21:27] Rounds: 1:fogbank 2:diverse 3a:drift 3b:format
+[2026-08-18 21:21:27] New languages: it, fr, ru, sw
+[2026-08-18 21:21:27] Workers: 8
+[2026-08-18 21:21:27] Log file: backfill_generation.log
+[2026-08-18 21:21:27] NOTE: Generation only (no inspection) — inspection done separately later
+
+================================================================================
+PRE-FLIGHT CHECKS
+================================================================================
+[2026-08-18 21:21:27] Checking Ollama server...
+[2026-08-18 21:21:28] ✅ Ollama server reachable
+[2026-08-18 21:21:28] Checking Python environment...
+Python 3.12.7
+[2026-08-18 21:21:28] ✅ Python available
+[2026-08-18 21:21:28] Checking scripts...
+[2026-08-18 21:21:28] ❌ ERROR: code/run_inference_ollama.py not found

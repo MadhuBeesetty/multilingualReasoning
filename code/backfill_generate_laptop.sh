@@ -5,16 +5,22 @@
 
 set -e
 
-cd "$(dirname "$0")" || exit 1
+# Run from repo root so data/ and code/ paths resolve correctly.
+cd "$(dirname "$0")/.." || exit 1
 
 # ============================================================================
 # CONFIG
 # ============================================================================
 
+# Tags must match `ollama list`. Pull any missing model before running:
+#   ollama pull phi3.5:latest
+#   ollama pull neural-chat:latest
+#   ollama pull mistral:latest        # or: ollama pull mistral-nemo:12b
+#   ollama pull deepseek-r1:14b
 MODELS=(
-    "phi3.5"
-    "neural-chat:7b"
-    "mistral-nemo:12b"
+    "phi3.5:latest"
+    "neural-chat:latest"
+    "mistral:latest"
     "deepseek-r1:14b"
 )
 
@@ -143,16 +149,23 @@ for model_idx in "${!MODELS[@]}"; do
         CURRENT_RUN=$((CURRENT_RUN + 1))
 
         PROBLEMS_FILE="$DATA_DIR/pilot_round${round_num}_${round_name}_newlangs_problems.json"
-        GEN_FILE="$OUT_DIR/round${round_num}_${model}_backfill_generation.json"
+        model_slug="${model//:/_}"
+        GEN_FILE="$OUT_DIR/round${round_num}_${model_slug}_backfill_generation.json"
 
         log "[$CURRENT_RUN/$TOTAL_RUNS] Round $round_num ($round_name)"
         log "  → Generating traces (workers=$WORKERS)..."
+
+        FORMAT_FLAG=()
+        if [ "$round_name" = "format" ]; then
+            FORMAT_FLAG=(--require-format-tags)
+        fi
 
         if python code/run_inference_ollama.py \
             --problems "$PROBLEMS_FILE" \
             --model "$model" \
             --out "$GEN_FILE" \
-            --workers "$WORKERS" 2>&1 | tee -a "$LOG_FILE"; then
+            --workers "$WORKERS" \
+            "${FORMAT_FLAG[@]}" 2>&1 | tee -a "$LOG_FILE"; then
 
             # Verify output file
             if [ -f "$GEN_FILE" ]; then
