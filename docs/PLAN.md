@@ -1,6 +1,6 @@
 # Plan: Multilingual Structural Reasoning Failures
 
-**Status**: Early pilot confirmed real signal. Not yet a paper. No fixed deadline — building this properly, submitting when ready.
+**Status**: Research complete. Paper submitted. See `paper/PAPER_DRAFT.md` for the final manuscript.
 
 ## The idea
 
@@ -27,11 +27,11 @@ Full details: `data/mgsm_symbolic/PILOT_FINDINGS.md`.
 ## What's in this folder
 
 - `data/mgsm_symbolic/` — real, public MGSM-Symbolic data (7 languages downloaded so far: zh, th, ja, es, de, bn, te), the pilot problem sets, the raw generation+inspection output backing every claim (`raw_pilot_outputs/`), and the curated findings writeup (`PILOT_FINDINGS.md`).
-- `code/` — empty for now. Next real code needed: a translation-fidelity checker and a real-model inference script (see below).
+- `code/` — inference and inspection scripts: `run_inference.py` (API providers), `run_inference_ollama.py` (local Ollama), `inspect_traces.py` (trace grading), `providers.py` (provider abstraction), `create_filtered_problems.py` (problem filtering), `backfill_generate_laptop.sh` (batch generation).
 - `requirements.txt` — Python deps for the next phase (Anthropic/OpenAI-compatible API clients, data/analysis stack).
 
-**Gitignored, present locally but not in version control:**
-- `Multilingual Reasoning via Self.docx` — source copy of the anchor paper (Ranaldi & Pucci, "Multilingual Reasoning via Self-training", NAACL 2025). Third-party copyrighted material — kept locally for reference, cite via the published paper rather than redistributing this file.
+**Not tracked in version control:**
+- `docs/references/Multilingual Reasoning via Self.docx` — source copy of the anchor paper (Ranaldi & Pucci, "Multilingual Reasoning via Self-training", NAACL 2025). Third-party copyrighted material — kept locally for reference, cite via the published paper rather than redistributing this file.
 - `_archive/` — everything from the first planning pass (7-week/6-category/4-model plan). Kept locally for reference, not in use — it assumed datasets and inference pipelines that turned out to be broken or fabricated, and a paper novelty position that didn't hold up once the real competing literature was checked. Not deleted, just left out of the fresh repo.
 
 ## Next steps (in order, no fixed dates)

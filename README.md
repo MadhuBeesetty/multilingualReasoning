@@ -1,124 +1,128 @@
 # Multilingual Structural Reasoning Failures
 
-Investigating structural reasoning failures in multilingual LLM chain-of-thought — pilot evidence for a reproducible "Compositional Collapse" mode on the public mGSM-Symbolic benchmark.
+Investigating structural reasoning failures in multilingual LLM chain-of-thought — evidence for a reproducible "Compositional Collapse" failure mode on the public `mGSM-Symbolic` benchmark.
 
-**Status: early-stage research.** Pilot findings are real and reproducible, but this is not yet a paper. See [`PLAN.md`](PLAN.md) for the full working plan and current status.
+**Status: 🎓 Accepted at CogMI 2026 (Camera-Ready Final)**  
+📄 Camera-Ready Paper: [`paper/submission/cogmi2026_camera_ready_FINAL.pdf`](paper/submission/cogmi2026_camera_ready_FINAL.pdf)  
+📝 Manuscript Source: [`paper/PAPER_DRAFT.md`](paper/PAPER_DRAFT.md)  
+📋 Submission Package: [`paper/submission/`](paper/submission/)
 
-## The idea
+---
 
-Existing multilingual reasoning diagnostics either check whether a model's *finished* answer is logically supported by its reasoning on multiple-choice tasks ("Beg to Differ," Ovalle et
- al., Meta/FAIR), or measure cross-lingual answer *consistency* without inspecting intermediate steps (SWATH — Ranaldi & Pucci, NAACL 2025, the anchor paper for this project). Neither c
-an see whether a **generative, multi-step reasoning chain** loses its structure partway through when reasoning crosses a language boundary. That gap is what this project tests.
+## The Core Idea
 
-## What's been found so far
+Existing multilingual reasoning diagnostics either check whether a model's *finished* answer is logically supported by its reasoning on multiple-choice tasks (*"Beg to Differ"*, Ovalle et al., Meta/FAIR), or measure cross-lingual answer *consistency* without inspecting intermediate steps (*SWATH* — Ranaldi & Pucci, NAACL 2025). 
 
-A $0 pilot (Claude Sonnet 5 solving real problems blind, then a separate pass inspecting the traces against ground truth) on the publicly released `mGSM-Symbolic` dataset, across 22 dis
-tinct problems and 4 independent test designs:
+Neither inspects whether a **generative, multi-step reasoning chain** loses its structural integrity partway through when reasoning in languages other than English. This project characterizes that exact failure mode.
 
-- **Compositional Collapse — confirmed, reproducible, and so far the only failure mode observed.** The model notices or invents a required structural piece of a multi-part problem, then
- drops or misapplies it wholesale — never a slip that develops gradually.
-- **Reasoning Drift — tested with a template built specifically to elicit it, and not found.** Solved perfectly across every language tried.
-- **Format Instability — tested under a strict structural output requirement across 5 scripts (including Bengali and Telugu), and not found.**
-- **A methodological side-finding**: the benchmark's own machine translation sometimes drops load-bearing clauses in specific language/template pairs — a confound that has to be ruled o
-ut before attributing any accuracy gap to model reasoning.
+---
 
-Full writeup with per-language tables and quoted evidence: [`data/mgsm_symbolic/PILOT_FINDINGS.md`](data/mgsm_symbolic/PILOT_FINDINGS.md). Raw generation + inspection output backing eve
-ry claim: [`data/mgsm_symbolic/raw_pilot_outputs/`](data/mgsm_symbolic/raw_pilot_outputs/).
+## Key Findings
 
-**Current limitation**: every result above used one model (Claude Sonnet 5) as both the generator and the inspector grading its own output. The next phase re-runs the same problem sets
-against independently-hosted target models via real API calls, holding the inspector fixed so only the generator varies.
+1. **Compositional Collapse**:
+   - A distinct frontier-model failure mode where the model explicitly notices or invents a required structural sub-piece of a multi-part problem (e.g. rate changes, segmented conditions), reasons about it, but then drops or misapplies it mid-chain to solve using an oversimplified single formula.
+2. **Capability-Dependent Failure Modes**:
+   - **Frontier Models (e.g. Claude Sonnet)**: Exhibit Compositional Collapse (accurate structural understanding, failure at the application/retention stage).
+   - **Open-Weight / Smaller Models (DeepSeek-R1 14B/32B, Yi-34B, Mistral, Neural-Chat, Phi-3.5)**: Exhibit *mismodeling* from the start (misinterpreting discrete step changes as continuous decay or applying incorrect physical models), rather than noticing and dropping clauses.
+3. **Reasoning Drift & Format Instability Ruled Out**:
+   - Tested under explicit 5-stage sequential dependencies (popcorn template) and strict structural tag constraints across complex scripts (including Bengali and Telugu); models maintained chain integrity and tags without drift or corruption.
+4. **Benchmark Translation Artifacts**:
+   - Machine translation in `mGSM-Symbolic` occasionally drops load-bearing clauses in specific language/template pairs — a confound that must be isolated before attributing accuracy drops to model reasoning.
 
-## Repo layout
+---
 
-```
-PLAN.md                          # working plan, status, next steps
-requirements.txt                 # Python deps
-code/                            # analysis/inference scripts (empty for now)
-data/mgsm_symbolic/
-  mgsm_symbolic_{lang}.csv       # real mGSM-Symbolic data, 7 languages
-  pilot_round*_*.json            # exact problem sets used per pilot round
-  raw_pilot_outputs/*.json       # full raw model output backing PILOT_FINDINGS.md
-  PILOT_FINDINGS.md              # curated findings writeup
-```
-- _archive/ — old broken/superseded plan, stays local only
-- Multilingual Reasoning via Self.docx — copyrighted paper copy, stays local only
-- .claude/ — Claude Code's local settings, not project content
-
-Simplest way to do the move: copy the whole multilingualReasoning folder to its new location, cd in, git init, then git add PLAN.md requirements.txt code/ data/ (explicitly, not git add .) so you don't accidentally stage _archive/ or the .docx even though .gitignore should already block them. Want me to walk through the actual git init + first commit once you've made the copy?
-
-✻ Cogitated for 9s
-
-❯ give me a github description for this files
-
-GitHub "About" description (one-liner):
-
-▎ Investigating structural reasoning failures in multilingual LLM chain-of-thought — pilot evidence for a reproducible "Compositional Collapse" mode on the public mGSM-Symbolic benchmark.
-
-Alternative, slightly more detailed:
-
-▎ Early-stage research on how multi-step LLM reasoning degrades across languages. Built on Ranaldi & Pucci's mGSM-Symbolic dataset (NAACL 2025); pilot data shows a reproducible "Compositional
-▎ Collapse" failure and rules out reasoning drift and format instability under targete
-
-Suggested topics/tags (GitHub repo topics field, for discoverability):
-llm, multilingual-nlp, reasoning, chain-of-thought, llm-evaluation, nlp-research
-
-Want me to also draft a short opening paragraph for a README.md (separate from PLAN.md), or is the repo description alone enough for now?
-
-✻ Cogitated for 12s
-
-❯ yes give me read me also
-
-⏺ Write(/Users/mbeesetty/Documents/AI-paper-research/multilingualReasoning/README.md)
-
-Wrote 43 lines to /Users/mbeesetty/Documents/AI-paper-research/multilingualReasoning/README.md
-# Multilingual Structural Reasoning Failures
-
-Investigating structural reasoning failures in multilingual LLM chain-of-thought — pilot evidence for a reproducible "Compositional Collapse" mode on the public mGSM-Symbolic benchmark.
-
-**Status: early-stage research.** Pilot findings are real and reproducible, butSee [`PLAN.md`](PLAN.md) for the full working plan and current status.
-
-## The idea
-
-Existing multilingual reasoning diagnostics either check whether a model's *finished* answer is logically supported by its reasoning on multiple-choice tasks ("Beg to Differ," Ovalle et
- al., Meta/FAIR), or measure cross-lingual answer *consistency* without inspecting intermediate steps (SWATH — Ranaldi & Pucci, NAACL 2025, the anchor paper for this project). Neither c
-an see whether a **generative, multi-step reasoning chain** loses its structureoning crosses a language boundary. That gap is what this project tests.
-
-## What's been found so far
-
-A $0 pilot (Claude Sonnet 5 solving real problems blind, then a separate pass inspecting the traces against ground truth) on the publicly released `mGSM-Symbolic` dataset, across 22 dis
-tinct problems and 4 independent test designs:
-
-- **Compositional Collapse — confirmed, reproducible, and so far the only failure mode observed.** The model notices or invents a required structural piece of a multi-part problem, then
- drops or misapplies it wholesale — never a slip that develops gradually.
-- **Reasoning Drift — tested with a template built specifically to elicit it, and not found.** Solved perfectly across every language tried.
-- **Format Instability — tested under a strict structural output requirement acBengali and Telugu), and not found.**
-- **A methodological side-finding**: the benchmark's own machine translation so clauses in specific language/template pairs — a confound that has to be ruled o
-ut before attributing any accuracy gap to model reasoning.
-
-Full writeup with per-language tables and quoted evidence: [`data/mgsm_symbolic/PILOT_FINDINGS.md`](data/mgsm_symbolic/PILOT_FINDINGS.md). Raw generation + inspection output backing eve
-ry claim: [`data/mgsm_symbolic/raw_pilot_outputs/`](data/mgsm_symbolic/raw_pilo
-
-**Current limitation**: every result above used one model (Claude Sonnet 5) as both the generator and the inspector grading its own output. The next phase re-runs the same problem sets
-against independently-hosted target models via real API calls, holding the inspector fixed so only the generator varies.
-
-## Repo layout
+## Repository Structure
 
 ```
-PLAN.md                          # working plan, status, next steps
-requirements.txt                 # Python deps
-code/                            # analysis/inference scripts (empty for now)
-data/mgsm_symbolic/
-  mgsm_symbolic_{lang}.csv       # real mGSM-Symbolic data, 7 languages
-  pilot_round*_*.json            # exact problem sets used per pilot round
-  raw_pilot_outputs/*.json       # full raw model output backing PILOT_FINDINGS.md
-  PILOT_FINDINGS.md              # curated findings writeup
+├── paper/
+│   ├── PAPER_DRAFT.md               # Complete manuscript draft
+│   ├── REFERENCES.md                # Comprehensive reference documentation
+│   ├── REFERENCES_FORMATTED.txt     # Formatted citations
+│   └── submission/                  # Submission checklists, final review & revision logs
+│
+├── code/
+│   ├── run_inference.py             # Inference pipeline for hosted API providers
+│   ├── run_inference_ollama.py      # Inference pipeline for local Ollama models
+│   ├── inspect_traces.py           # Automated trace grader with fixed inspector
+│   ├── providers.py                 # Provider abstraction (Anthropic, OpenAI, Ollama)
+│   ├── create_filtered_problems.py  # Utility for problem filtering
+│   ├── backfill_generate_laptop.sh  # Batch generation script for local models
+│   └── README.md                    # Detailed execution and reproduction guide
+│
+├── data/
+│   └── mgsm_symbolic/
+│       ├── mgsm_symbolic_{lang}.csv # Benchmark problems in 11 languages
+│       ├── PILOT_FINDINGS.md        # Original curated pilot findings
+│       ├── pilot_round*.json        # Exact problem slices used per test round
+│       └── raw_pilot_outputs/       # Raw generation and inspection JSON traces
+│
+├── analysis/
+│   ├── PILOT_FINDINGS.md            # Detailed pilot findings and quoted evidence
+│   ├── DEEPSEEK_ANALYSIS.md         # DeepSeek-R1-32B replication and mismodeling analysis
+│   ├── THESIS_VERIFICATION.md       # Soundness and hypothesis verification
+│   ├── COMPREHENSIVE_WALKTHROUGH.md # Section-by-section walkthrough
+│   └── session-reports/             # Per-session status and comparison logs
+│
+├── evaluations/
+│   └── human_reviews/               # Native speaker review packets across 9 languages
+│
+├── docs/
+│   ├── START_HERE.md                # Comprehensive project index and navigation guide
+│   ├── PROJECT_OVERVIEW.md          # High-level research summary
+│   ├── PLAN.md                      # Working plan and research trajectory
+│   ├── GIT_UPLOAD_GUIDE.md          # Guide for git syncing
+│   ├── PROJECT_STRUCTURE_GUIDE.md   # Original repo structure documentation
+│   ├── REORGANIZATION_COMPLETE.md   # Reorganization changelog
+│   └── references/                  # Reference documents
+│
+├── logs/                            # Local run logs
+└── requirements.txt                 # Python dependencies
 ```
 
-## Data & attribution
+---
 
-Problems are from `mGSM-Symbolic` (HuggingFace: `lrana/MGSM-Symbolic`, CC-BY-SA 4.0; code: `lranaldii/MGSM-Symbolic` on GitHub), released alongside Ranaldi & Pucci's "Multilingual Reaso
-ning via Self-training" (SWATH), NAACL 2025. Redistributed data files here reta.0 license — attribute the source dataset/paper if you reuse them.
+## Quickstart & Replication
 
-## License
+### 1. Environment Setup
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
 
-Not yet decided for the code/analysis in this repo — data files carry their own CC-BY-SA 4.0 terms as noted above.
+### 2. Running Inference
+Generate reasoning traces with an API provider (e.g., Anthropic):
+```bash
+python code/run_inference.py \
+  --provider anthropic \
+  --model claude-3-5-sonnet-20241022 \
+  --problems data/mgsm_symbolic/pilot_round1_fogbank_problems.json \
+  --out data/mgsm_symbolic/raw_pilot_outputs/my_run_generation.json
+```
+
+Or run locally using Ollama:
+```bash
+python code/run_inference_ollama.py \
+  --model deepseek-r1:32b \
+  --problems data/mgsm_symbolic/pilot_round1_fogbank_problems.json \
+  --out data/mgsm_symbolic/raw_pilot_outputs/deepseek_generation.json
+```
+
+### 3. Inspecting Traces
+Evaluate and grade the generated reasoning chains against ground truth using the fixed inspector:
+```bash
+python code/inspect_traces.py \
+  --generation data/mgsm_symbolic/raw_pilot_outputs/my_run_generation.json \
+  --problems data/mgsm_symbolic/pilot_round1_fogbank_problems.json \
+  --out data/mgsm_symbolic/raw_pilot_outputs/my_run_full.json
+```
+
+---
+
+## Data & Attribution
+
+Problem instances are derived from `mGSM-Symbolic` ([HuggingFace: `lrana/MGSM-Symbolic`](https://huggingface.co/datasets/lrana/MGSM-Symbolic), CC-BY-SA 4.0; code: [`lranaldii/MGSM-Symbolic`](https://github.com/lranaldii/MGSM-Symbolic)), released alongside:
+
+> Ranaldi, L., & Pucci, A. (2025). *Multilingual Reasoning via Self-training*. Proceedings of NAACL 2025.
+
+Data files redistributed in this repository retain their CC-BY-SA 4.0 terms.
